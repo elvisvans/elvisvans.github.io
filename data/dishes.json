@@ -1,0 +1,10 @@
+[
+  {"id": "hunfei", "ingredients": ["pork", "wonton_skin"], "cookSec": 6, "price": 12, "rarity": "common", "station": "stove", "tags": [], "servesTable": false, "takeaway": false, "mvp": true, "unlock": {"type": "start"}},
+  {"id": "tianchang", "ingredients": ["pork", "chive"], "cookSec": 9, "price": 20, "rarity": "common", "station": "stove", "tags": [], "servesTable": false, "takeaway": false, "mvp": true, "unlock": {"type": "start"}},
+  {"id": "guhun", "ingredients": ["mushroom", "mushroom"], "cookSec": 10, "price": 18, "rarity": "common", "station": "stove", "tags": ["stew"], "servesTable": false, "takeaway": false, "mvp": true, "unlock": {"type": "start"}},
+  {"id": "bainian", "ingredients": ["duck", "golden_rice"], "cookSec": 10, "price": 30, "rarity": "common", "station": "stove", "tags": [], "servesTable": false, "takeaway": true, "mvp": true, "unlock": {"type": "card", "card": "bainian"}},
+  {"id": "yijian", "ingredients": ["duck", "taro"], "cookSec": 18, "price": 40, "rarity": "rare", "station": "stove", "tags": ["slow", "stew"], "servesTable": false, "takeaway": false, "mvp": true, "unlock": {"type": "card", "card": "yijian"}},
+  {"id": "yincha", "ingredients": ["lamb", "black_bean"], "cookSec": 9, "price": 32, "rarity": "common", "station": "stove", "tags": ["sizzle"], "servesTable": false, "takeaway": false, "mvp": true, "unlock": {"type": "card", "card": "yincha"}},
+  {"id": "youkou", "ingredients": ["night_dew_wine", "osmanthus"], "cookSec": 3, "price": 10, "rarity": "common", "station": "bar", "tags": [], "servesTable": false, "takeaway": false, "mvp": true, "unlock": {"type": "start"}},
+  {"id": "tonggan", "ingredients": ["citrus", "bitter_melon"], "cookSec": 7, "price": 28, "rarity": "common", "station": "stove", "tags": [], "servesTable": true, "takeaway": false, "mvp": true, "unlock": {"type": "card", "card": "tonggan"}}
+]

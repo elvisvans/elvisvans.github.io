@@ -1,0 +1,333 @@
+{
+  "panel-bar": {
+    "file": "panel-bar.png",
+    "file2x": "panel-bar-2x.png",
+    "size": [
+      276,
+      102
+    ],
+    "size2x": [
+      552,
+      204
+    ]
+  },
+  "slot": {
+    "file": "slot.png",
+    "file2x": "slot-2x.png",
+    "size": [
+      89,
+      93
+    ],
+    "size2x": [
+      178,
+      186
+    ]
+  },
+  "slot-active": {
+    "file": "slot-active.png",
+    "file2x": "slot-active-2x.png",
+    "size": [
+      114,
+      117
+    ],
+    "size2x": [
+      228,
+      234
+    ]
+  },
+  "scroll-panel": {
+    "file": "scroll-panel.png",
+    "file2x": "scroll-panel-2x.png",
+    "size": [
+      115,
+      226
+    ],
+    "size2x": [
+      230,
+      452
+    ]
+  },
+  "btn-pause": {
+    "file": "btn-pause.png",
+    "file2x": "btn-pause-2x.png",
+    "size": [
+      49,
+      50
+    ],
+    "size2x": [
+      98,
+      100
+    ],
+    "speed": "pause"
+  },
+  "btn-play": {
+    "file": "btn-play.png",
+    "file2x": "btn-play-2x.png",
+    "size": [
+      48,
+      50
+    ],
+    "size2x": [
+      96,
+      100
+    ],
+    "speed": "1x"
+  },
+  "btn-2x": {
+    "file": "btn-2x.png",
+    "file2x": "btn-2x-2x.png",
+    "size": [
+      48,
+      50
+    ],
+    "size2x": [
+      96,
+      100
+    ],
+    "speed": "2x"
+  },
+  "btn-4x": {
+    "file": "btn-4x.png",
+    "file2x": "btn-4x-2x.png",
+    "size": [
+      48,
+      50
+    ],
+    "size2x": [
+      96,
+      100
+    ],
+    "speed": "4x"
+  },
+  "stamp-ok": {
+    "file": "stamp-ok.png",
+    "file2x": "stamp-ok-2x.png",
+    "size": [
+      40,
+      43
+    ],
+    "size2x": [
+      80,
+      86
+    ]
+  },
+  "stamp-x": {
+    "file": "stamp-x.png",
+    "file2x": "stamp-x-2x.png",
+    "size": [
+      39,
+      45
+    ],
+    "size2x": [
+      78,
+      90
+    ]
+  },
+  "stamp-warn": {
+    "file": "stamp-warn.png",
+    "file2x": "stamp-warn-2x.png",
+    "size": [
+      38,
+      40
+    ],
+    "size2x": [
+      76,
+      80
+    ]
+  },
+  "status-green": {
+    "file": "status-green.png",
+    "file2x": "status-green-2x.png",
+    "size": [
+      43,
+      96
+    ],
+    "size2x": [
+      86,
+      192
+    ]
+  },
+  "status-yellow": {
+    "file": "status-yellow.png",
+    "file2x": "status-yellow-2x.png",
+    "size": [
+      42,
+      96
+    ],
+    "size2x": [
+      84,
+      192
+    ]
+  },
+  "status-red": {
+    "file": "status-red.png",
+    "file2x": "status-red-2x.png",
+    "size": [
+      42,
+      96
+    ],
+    "size2x": [
+      84,
+      192
+    ]
+  },
+  "panel-result": {
+    "file": "panel-result.png",
+    "file2x": "panel-result-2x.png",
+    "size": [
+      266,
+      124
+    ],
+    "size2x": [
+      532,
+      248
+    ]
+  },
+  "btn-open": {
+    "file": "btn-open.png",
+    "file2x": "btn-open-2x.png",
+    "size": [
+      325,
+      101
+    ],
+    "size2x": [
+      650,
+      202
+    ]
+  },
+  "panel-bar-9s": {
+    "file": "panel-bar-9s.png",
+    "file2x": "panel-bar-9s-2x.png",
+    "size": [
+      56,
+      52
+    ],
+    "size2x": [
+      112,
+      104
+    ],
+    "insets": {
+      "left": 22,
+      "right": 22,
+      "top": 20,
+      "bottom": 20
+    },
+    "insets2x": {
+      "left": 44,
+      "right": 44,
+      "top": 40,
+      "bottom": 40
+    },
+    "phaser": "this.add.nineslice(x,y,key,null,width,height,left,right,top,bottom)"
+  },
+  "panel-result-9s": {
+    "file": "panel-result-9s.png",
+    "file2x": "panel-result-9s-2x.png",
+    "size": [
+      52,
+      50
+    ],
+    "size2x": [
+      104,
+      100
+    ],
+    "insets": {
+      "left": 20,
+      "right": 20,
+      "top": 19,
+      "bottom": 19
+    },
+    "insets2x": {
+      "left": 40,
+      "right": 40,
+      "top": 38,
+      "bottom": 38
+    },
+    "phaser": "this.add.nineslice(x,y,key,null,width,height,left,right,top,bottom)",
+    "note": "centre is plain parchment; red seal exported separately as seal-mark.png"
+  },
+  "btn-open-9s": {
+    "file": "btn-open-9s.png",
+    "file2x": "btn-open-9s-2x.png",
+    "size": [
+      84,
+      64
+    ],
+    "size2x": [
+      168,
+      128
+    ],
+    "insets": {
+      "left": 36,
+      "right": 36,
+      "top": 26,
+      "bottom": 26
+    },
+    "insets2x": {
+      "left": 72,
+      "right": 72,
+      "top": 52,
+      "bottom": 52
+    },
+    "phaser": "this.add.nineslice(x,y,key,null,width,height,left,right,top,bottom)"
+  },
+  "scroll-panel-9s": {
+    "file": "scroll-panel-9s.png",
+    "file2x": "scroll-panel-9s-2x.png",
+    "size": [
+      48,
+      89
+    ],
+    "size2x": [
+      96,
+      178
+    ],
+    "insets": {
+      "left": 18,
+      "right": 18,
+      "top": 25,
+      "bottom": 52
+    },
+    "insets2x": {
+      "left": 36,
+      "right": 36,
+      "top": 50,
+      "bottom": 104
+    },
+    "phaser": "this.add.nineslice(x,y,key,null,width,height,left,right,top,bottom)",
+    "note": "use as 3-slice vertical (stretch height only) for the checklist; horizontal stretch also works within ~+-30%"
+  },
+  "slot-9s": {
+    "file": "slot-9s.png",
+    "file2x": "slot-9s-2x.png",
+    "size": [
+      38,
+      38
+    ],
+    "size2x": [
+      76,
+      76
+    ],
+    "insets": {
+      "left": 13,
+      "right": 13,
+      "top": 13,
+      "bottom": 13
+    },
+    "insets2x": {
+      "left": 26,
+      "right": 26,
+      "top": 26,
+      "bottom": 26
+    },
+    "phaser": "this.add.nineslice(x,y,key,null,width,height,left,right,top,bottom)"
+  },
+  "seal-mark": {
+    "file": "seal-mark.png",
+    "file2x": "seal-mark-2x.png",
+    "size": [
+      73,
+      66
+    ]
+  }
+}

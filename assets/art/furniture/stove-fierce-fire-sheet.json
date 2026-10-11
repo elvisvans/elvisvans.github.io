@@ -1,0 +1,63 @@
+{
+  "frames": {
+    "fire_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "fire_1": {
+      "frame": {
+        "x": 160,
+        "y": 0,
+        "w": 160,
+        "h": 141
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 141
+      },
+      "sourceSize": {
+        "w": 160,
+        "h": 141
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    }
+  },
+  "meta": {
+    "app": "ghost-restaurant/art/v2/tools/build_b2_furniture.py",
+    "version": "1.0",
+    "image": "stove-fierce-fire-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 320,
+      "h": 141
+    },
+    "scale": "1"
+  }
+}

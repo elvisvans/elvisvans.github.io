@@ -1,0 +1,6 @@
+[
+  { "id": "bainian", "dropFrom": "dengzai", "night": 1, "textId": "card.bainian.text", "titleId": "card.bainian.title", "unlocksDish": "bainian" },
+  { "id": "tonggan", "dropFrom": "ganqilang", "night": 2, "textId": "card.tonggan.text", "titleId": "card.tonggan.title", "unlocksDish": "tonggan" },
+  { "id": "yijian", "dropFrom": "zhigongpo", "night": 3, "textId": "card.yijian.text", "titleId": "card.yijian.title", "unlocksDish": "yijian" },
+  { "id": "yincha", "dropFrom": "daduqiu", "night": 5, "textId": "card.yincha.text", "titleId": "card.yincha.title", "unlocksDish": "yincha" }
+]

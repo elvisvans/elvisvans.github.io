@@ -1,0 +1,231 @@
+{
+  "frames": {
+    "walk_side_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_1": {
+      "frame": {
+        "x": 74,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_2": {
+      "frame": {
+        "x": 148,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_3": {
+      "frame": {
+        "x": 222,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "sit_0": {
+      "frame": {
+        "x": 296,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "eat_0": {
+      "frame": {
+        "x": 370,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "sit_back_0": {
+      "frame": {
+        "x": 444,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 116
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    }
+  },
+  "animations": {
+    "walk_side": [
+      "walk_side_0",
+      "walk_side_1",
+      "walk_side_2",
+      "walk_side_3"
+    ],
+    "sit": [
+      "sit_0"
+    ],
+    "eat": [
+      "eat_0"
+    ],
+    "sit_back": [
+      "sit_back_0"
+    ]
+  },
+  "meta": {
+    "app": "ghost-restaurant/art/v2/tools/build_b3_chars.py",
+    "version": "1.0",
+    "image": "ganqilang-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 518,
+      "h": 116
+    },
+    "scale": "1",
+    "anims": {
+      "walk_side": {
+        "frames": [
+          "walk_side_0",
+          "walk_side_1",
+          "walk_side_2",
+          "walk_side_3"
+        ],
+        "fps": 8
+      },
+      "sit": {
+        "frames": [
+          "sit_0"
+        ],
+        "fps": 1
+      },
+      "eat": {
+        "frames": [
+          "eat_0"
+        ],
+        "fps": 1
+      },
+      "sit_back": {
+        "frames": [
+          "sit_back_0"
+        ],
+        "fps": 1
+      }
+    },
+    "name": "趕七郎",
+    "note": "side frames face RIGHT (flipX for left); pivot (0.5,1) = feet / seat bottom; same baseline for standing & sitting frames"
+  }
+}

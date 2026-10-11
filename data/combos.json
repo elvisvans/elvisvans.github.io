@@ -1,0 +1,5 @@
+[
+  {"id": "tianchang", "dishes": ["tianchang", "youkou"], "windowSec": 20, "effect": {"payMul": 1.5, "rep": 1}},
+  {"id": "liangyuan", "dishes": ["bainian", "yijian"], "windowSec": 20, "effect": {"dropCardFor": "zhigongpo", "lampOilAfterNight3": 3}},
+  {"id": "hejiejiu", "dishes": ["tonggan", "yincha"], "windowSec": 20, "effect": {"forcePay": true, "resentment": -5, "regularAfter": 3}}
+]

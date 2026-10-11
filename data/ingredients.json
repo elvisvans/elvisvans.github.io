@@ -1,0 +1,15 @@
+[
+  { "id": "pork", "category": "meat", "price": 5, "expireNights": 2 },
+  { "id": "lamb", "category": "meat", "price": 8, "expireNights": 2 },
+  { "id": "duck", "category": "meat", "price": 9, "expireNights": 2 },
+  { "id": "wonton_skin", "category": "grain", "price": 2, "expireNights": null },
+  { "id": "golden_rice", "category": "grain", "price": 3, "expireNights": null },
+  { "id": "mushroom", "category": "produce", "price": 3, "expireNights": 1 },
+  { "id": "chive", "category": "produce", "price": 2, "expireNights": 1 },
+  { "id": "taro", "category": "produce", "price": 3, "expireNights": 1 },
+  { "id": "citrus", "category": "produce", "price": 3, "expireNights": 1 },
+  { "id": "bitter_melon", "category": "produce", "price": 2, "expireNights": 1 },
+  { "id": "black_bean", "category": "sundry", "price": 2, "expireNights": null },
+  { "id": "night_dew_wine", "category": "sundry", "price": 3, "expireNights": null },
+  { "id": "osmanthus", "category": "sundry", "price": 2, "expireNights": null }
+]

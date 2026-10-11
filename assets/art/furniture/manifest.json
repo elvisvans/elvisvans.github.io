@@ -1,0 +1,977 @@
+{
+  "tile": 80,
+  "tile2x": 160,
+  "originNote": "origin (0.5,1) = bottom-centre of footprint; place at (x+w/2)*TILE, (y+h)*TILE; depth = foot y",
+  "sprites": [
+    {
+      "key": "chair-bamboo-s",
+      "id": "chair_bamboo",
+      "file": "chair-bamboo-s.png",
+      "file2x": "chair-bamboo-s-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 2,
+      "size": [
+        80,
+        94
+      ],
+      "size2x": [
+        160,
+        188
+      ]
+    },
+    {
+      "key": "chair-bamboo-n",
+      "id": "chair_bamboo",
+      "file": "chair-bamboo-n.png",
+      "file2x": "chair-bamboo-n-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        80,
+        82
+      ],
+      "size2x": [
+        160,
+        164
+      ]
+    },
+    {
+      "key": "chair-bamboo-e",
+      "id": "chair_bamboo",
+      "file": "chair-bamboo-e.png",
+      "file2x": "chair-bamboo-e-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "flipXForRot": 3,
+      "note": "rot 1 = faces east; rot 3 (west) = this image flipped horizontally",
+      "size": [
+        80,
+        95
+      ],
+      "size2x": [
+        160,
+        190
+      ]
+    },
+    {
+      "key": "chair-cushion-s",
+      "id": "chair_cushion",
+      "file": "chair-cushion-s.png",
+      "file2x": "chair-cushion-s-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 2,
+      "size": [
+        80,
+        94
+      ],
+      "size2x": [
+        160,
+        188
+      ]
+    },
+    {
+      "key": "chair-cushion-n",
+      "id": "chair_cushion",
+      "file": "chair-cushion-n.png",
+      "file2x": "chair-cushion-n-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        80,
+        81
+      ],
+      "size2x": [
+        160,
+        162
+      ]
+    },
+    {
+      "key": "chair-cushion-e",
+      "id": "chair_cushion",
+      "file": "chair-cushion-e.png",
+      "file2x": "chair-cushion-e-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "flipXForRot": 3,
+      "note": "rot 1 = faces east; rot 3 (west) = this image flipped horizontally",
+      "size": [
+        80,
+        95
+      ],
+      "size2x": [
+        160,
+        190
+      ]
+    },
+    {
+      "key": "table-small",
+      "id": "table_small",
+      "file": "table-small.png",
+      "file2x": "table-small-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        88,
+        76
+      ],
+      "size2x": [
+        176,
+        152
+      ]
+    },
+    {
+      "key": "table-square",
+      "id": "table_square",
+      "file": "table-square.png",
+      "file2x": "table-square-2x.png",
+      "footprint": [
+        2,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        172,
+        147
+      ],
+      "size2x": [
+        344,
+        294
+      ]
+    },
+    {
+      "key": "table-redwood",
+      "id": "table_redwood",
+      "file": "table-redwood.png",
+      "file2x": "table-redwood-2x.png",
+      "footprint": [
+        2,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        172,
+        144
+      ],
+      "size2x": [
+        344,
+        288
+      ]
+    },
+    {
+      "key": "table-long-h",
+      "id": "table_long",
+      "file": "table-long-h.png",
+      "file2x": "table-long-h-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        168,
+        63
+      ],
+      "size2x": [
+        336,
+        126
+      ]
+    },
+    {
+      "key": "table-long-v",
+      "id": "table_long",
+      "file": "table-long-v.png",
+      "file2x": "table-long-v-2x.png",
+      "footprint": [
+        1,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "size": [
+        84,
+        171
+      ],
+      "size2x": [
+        168,
+        342
+      ]
+    },
+    {
+      "key": "stove",
+      "id": "stove",
+      "file": "stove.png",
+      "file2x": "stove-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        166,
+        82
+      ],
+      "size2x": [
+        332,
+        164
+      ]
+    },
+    {
+      "key": "bar",
+      "id": "bar",
+      "file": "bar.png",
+      "file2x": "bar-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        166,
+        98
+      ],
+      "size2x": [
+        332,
+        196
+      ]
+    },
+    {
+      "key": "counter-h",
+      "id": "counter",
+      "file": "counter-h.png",
+      "file2x": "counter-h-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        166,
+        118
+      ],
+      "size2x": [
+        332,
+        236
+      ]
+    },
+    {
+      "key": "counter-v",
+      "id": "counter",
+      "file": "counter-v.png",
+      "file2x": "counter-v-2x.png",
+      "footprint": [
+        1,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "note": "fitted non-uniformly to the 1x2 footprint (vertical squash x0.76 vs width scale)",
+      "size": [
+        84,
+        182
+      ],
+      "size2x": [
+        168,
+        364
+      ]
+    },
+    {
+      "key": "counter-gold-h",
+      "id": "counter_gold",
+      "file": "counter-gold-h.png",
+      "file2x": "counter-gold-h-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        168,
+        105
+      ],
+      "size2x": [
+        336,
+        210
+      ]
+    },
+    {
+      "key": "counter-gold-v",
+      "id": "counter_gold",
+      "file": "counter-gold-v.png",
+      "file2x": "counter-gold-v-2x.png",
+      "footprint": [
+        1,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "note": "fitted non-uniformly to the 1x2 footprint (vertical stretch x1.38 vs width scale)",
+      "size": [
+        88,
+        182
+      ],
+      "size2x": [
+        176,
+        364
+      ]
+    },
+    {
+      "key": "lantern",
+      "id": "lantern",
+      "file": "lantern.png",
+      "file2x": "lantern-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        80,
+        150
+      ],
+      "size2x": [
+        160,
+        300
+      ]
+    },
+    {
+      "key": "lamp-eternal",
+      "id": "lamp_eternal",
+      "file": "lamp-eternal.png",
+      "file2x": "lamp-eternal-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        80,
+        133
+      ],
+      "size2x": [
+        160,
+        266
+      ]
+    },
+    {
+      "key": "stove-fire-0",
+      "id": "stove",
+      "file": "stove-fire-0.png",
+      "file2x": "stove-fire-0-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        166,
+        82
+      ],
+      "size2x": [
+        332,
+        164
+      ],
+      "anim": "stove-fire"
+    },
+    {
+      "key": "stove-fire-1",
+      "id": "stove",
+      "file": "stove-fire-1.png",
+      "file2x": "stove-fire-1-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        166,
+        82
+      ],
+      "size2x": [
+        332,
+        164
+      ],
+      "anim": "stove-fire"
+    },
+    {
+      "key": "stove-off",
+      "id": "stove",
+      "file": "stove-off.png",
+      "file2x": "stove-off-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        166,
+        82
+      ],
+      "size2x": [
+        332,
+        164
+      ],
+      "note": "identical to stove.png"
+    },
+    {
+      "key": "stove-fire-sheet",
+      "file": "stove-fire-sheet.png",
+      "atlas": "stove-fire-sheet.json",
+      "file2x": "stove-fire-sheet-2x.png",
+      "atlas2x": "stove-fire-sheet-2x.json",
+      "frames": [
+        "fire_0",
+        "fire_1"
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        166,
+        82
+      ]
+    },
+    {
+      "key": "stove-fierce",
+      "id": "stove_fierce",
+      "file": "stove-fierce.png",
+      "file2x": "stove-fierce-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        160,
+        141
+      ],
+      "size2x": [
+        320,
+        282
+      ]
+    },
+    {
+      "key": "clay-pot",
+      "id": "clay_pot",
+      "file": "clay-pot.png",
+      "file2x": "clay-pot-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        80,
+        145
+      ],
+      "size2x": [
+        160,
+        290
+      ]
+    },
+    {
+      "key": "prep-table",
+      "id": "prep_table",
+      "file": "prep-table.png",
+      "file2x": "prep-table-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        84,
+        70
+      ],
+      "size2x": [
+        168,
+        140
+      ]
+    },
+    {
+      "key": "paper-shrine",
+      "id": "paper_shrine",
+      "file": "paper-shrine.png",
+      "file2x": "paper-shrine-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        80,
+        107
+      ],
+      "size2x": [
+        160,
+        214
+      ]
+    },
+    {
+      "key": "waiting-bench-h",
+      "id": "waiting_bench",
+      "file": "waiting-bench-h.png",
+      "file2x": "waiting-bench-h-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        166,
+        65
+      ],
+      "size2x": [
+        332,
+        130
+      ]
+    },
+    {
+      "key": "waiting-bench-v",
+      "id": "waiting_bench",
+      "file": "waiting-bench-v.png",
+      "file2x": "waiting-bench-v-2x.png",
+      "footprint": [
+        1,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "size": [
+        82,
+        167
+      ],
+      "size2x": [
+        164,
+        334
+      ]
+    },
+    {
+      "key": "screen-h",
+      "id": "screen",
+      "file": "screen-h.png",
+      "file2x": "screen-h-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 0,
+      "size": [
+        166,
+        125
+      ],
+      "size2x": [
+        332,
+        250
+      ]
+    },
+    {
+      "key": "screen-v",
+      "id": "screen",
+      "file": "screen-v.png",
+      "file2x": "screen-v-2x.png",
+      "footprint": [
+        1,
+        2
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "rot": 1,
+      "size": [
+        80,
+        208
+      ],
+      "size2x": [
+        160,
+        416
+      ]
+    },
+    {
+      "key": "plant",
+      "id": "plant",
+      "file": "plant.png",
+      "file2x": "plant-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        80,
+        115
+      ],
+      "size2x": [
+        160,
+        230
+      ]
+    },
+    {
+      "key": "peach-sword",
+      "id": "peach_sword",
+      "file": "peach-sword.png",
+      "file2x": "peach-sword-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "note": "horizontal sword overhangs the 1x1 cell by ~10px each side",
+      "size": [
+        100,
+        58
+      ],
+      "size2x": [
+        200,
+        116
+      ]
+    },
+    {
+      "key": "paper-flowers",
+      "id": "paper_flowers",
+      "file": "paper-flowers.png",
+      "file2x": "paper-flowers-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        80,
+        82
+      ],
+      "size2x": [
+        160,
+        164
+      ]
+    },
+    {
+      "key": "window",
+      "id": "window",
+      "file": "window.png",
+      "file2x": "window-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "mount": "wall",
+      "size": [
+        80,
+        76
+      ],
+      "size2x": [
+        160,
+        152
+      ],
+      "note": "wall-mounted: anchor bottom-centre on the wall face of its cell"
+    },
+    {
+      "key": "bagua",
+      "id": "bagua",
+      "file": "bagua.png",
+      "file2x": "bagua-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "mount": "wall",
+      "size": [
+        80,
+        120
+      ],
+      "size2x": [
+        160,
+        240
+      ],
+      "note": "wall-mounted: anchor bottom-centre on the wall face of its cell"
+    },
+    {
+      "key": "door-god-l",
+      "id": "door_god",
+      "file": "door-god-l.png",
+      "file2x": "door-god-l-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "mount": "door",
+      "note": "left leaf; pair spans 1 door cell",
+      "size": [
+        36,
+        84
+      ],
+      "size2x": [
+        72,
+        168
+      ]
+    },
+    {
+      "key": "door-god-r",
+      "id": "door_god",
+      "file": "door-god-r.png",
+      "file2x": "door-god-r-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "mount": "door",
+      "note": "right leaf",
+      "size": [
+        36,
+        84
+      ],
+      "size2x": [
+        72,
+        168
+      ]
+    },
+    {
+      "key": "door-god-pair",
+      "id": "door_god",
+      "file": "door-god-pair.png",
+      "file2x": "door-god-pair-2x.png",
+      "footprint": [
+        1,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "mount": "door",
+      "size": [
+        74,
+        84
+      ],
+      "size2x": [
+        148,
+        168
+      ],
+      "note": "both leaves combined, ~1 door cell wide"
+    },
+    {
+      "key": "stove-fierce-fire-0",
+      "id": "stove_fierce",
+      "file": "stove-fierce-fire-0.png",
+      "file2x": "stove-fierce-fire-0-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        160,
+        141
+      ],
+      "size2x": [
+        320,
+        282
+      ],
+      "anim": "stove-fierce-fire"
+    },
+    {
+      "key": "stove-fierce-fire-1",
+      "id": "stove_fierce",
+      "file": "stove-fierce-fire-1.png",
+      "file2x": "stove-fierce-fire-1-2x.png",
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        160,
+        141
+      ],
+      "size2x": [
+        320,
+        282
+      ],
+      "anim": "stove-fierce-fire"
+    },
+    {
+      "key": "stove-fierce-fire-sheet",
+      "id": "stove_fierce",
+      "file": "stove-fierce-fire-sheet.png",
+      "atlas": "stove-fierce-fire-sheet.json",
+      "file2x": "stove-fierce-fire-sheet-2x.png",
+      "atlas2x": "stove-fierce-fire-sheet-2x.json",
+      "frames": [
+        "fire_0",
+        "fire_1"
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "origin": [
+        0.5,
+        1
+      ],
+      "size": [
+        160,
+        141
+      ],
+      "size2x": [
+        320,
+        282
+      ]
+    }
+  ],
+  "mountNote": "mount:\"wall\" = snaps to an outer wall (not the kitchen segment); mount:\"door\" = drawn on the door leaves"
+}

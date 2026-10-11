@@ -1,0 +1,264 @@
+{
+  "frames": {
+    "walk_side_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_1": {
+      "frame": {
+        "x": 52,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_2": {
+      "frame": {
+        "x": 104,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_front_0": {
+      "frame": {
+        "x": 156,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_front_1": {
+      "frame": {
+        "x": 208,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "sit_0": {
+      "frame": {
+        "x": 260,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "eat_0": {
+      "frame": {
+        "x": 312,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "sit_back_0": {
+      "frame": {
+        "x": 364,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 52,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 52,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    }
+  },
+  "animations": {
+    "walk_side": [
+      "walk_side_0",
+      "walk_side_1",
+      "walk_side_2"
+    ],
+    "walk_front": [
+      "walk_front_0",
+      "walk_front_1"
+    ],
+    "sit": [
+      "sit_0"
+    ],
+    "eat": [
+      "eat_0"
+    ],
+    "sit_back": [
+      "sit_back_0"
+    ]
+  },
+  "meta": {
+    "app": "ghost-restaurant/art/v2/tools/build_b3_chars.py",
+    "version": "1.0",
+    "image": "baibugong-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 416,
+      "h": 114
+    },
+    "scale": "1",
+    "anims": {
+      "walk_side": {
+        "frames": [
+          "walk_side_0",
+          "walk_side_1",
+          "walk_side_2"
+        ],
+        "fps": 8
+      },
+      "walk_front": {
+        "frames": [
+          "walk_front_0",
+          "walk_front_1"
+        ],
+        "fps": 6
+      },
+      "sit": {
+        "frames": [
+          "sit_0"
+        ],
+        "fps": 1
+      },
+      "eat": {
+        "frames": [
+          "eat_0"
+        ],
+        "fps": 1
+      },
+      "sit_back": {
+        "frames": [
+          "sit_back_0"
+        ],
+        "fps": 1
+      }
+    },
+    "name": "白簿公",
+    "note": "side frames face RIGHT (flipX for left); pivot (0.5,1) = feet / seat bottom; same baseline for standing & sitting frames"
+  }
+}

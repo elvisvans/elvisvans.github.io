@@ -1,0 +1,24 @@
+[
+  { "level": 1, "cols": 12, "rows": 8, "zones": [[0, 0, 12, 8]], "cost": 0, "rep": 0, "menuSlots": 4, "partyBonus": 0, "upkeep": 30,
+    "_starterNote": "GDD-v2 §4.3 starter layout, except the two south chairs of the 四方桌 moved from (9,7)/(10,7) facing N to (9,4)/(10,4) facing S: in 12×8 the seat (10,7) is boxed in by (11,5) and cannot be reached from the door (fails the §3.4 open check).",
+    "starter": [
+      { "type": "stove", "x": 2, "y": 0, "rot": 0 },
+      { "type": "bar", "x": 7, "y": 0, "rot": 0 },
+      { "type": "counter", "x": 0, "y": 7, "rot": 0 },
+      { "type": "table_long", "x": 5, "y": 4, "rot": 0 },
+      { "type": "chair_bamboo", "x": 5, "y": 3, "rot": 2 },
+      { "type": "chair_bamboo", "x": 6, "y": 3, "rot": 2 },
+      { "type": "chair_bamboo", "x": 5, "y": 5, "rot": 0 },
+      { "type": "chair_bamboo", "x": 6, "y": 5, "rot": 0 },
+      { "type": "table_square", "x": 9, "y": 5, "rot": 0 },
+      { "type": "chair_bamboo", "x": 8, "y": 5, "rot": 1 },
+      { "type": "chair_bamboo", "x": 11, "y": 5, "rot": 3 },
+      { "type": "chair_bamboo", "x": 9, "y": 4, "rot": 2 },
+      { "type": "chair_bamboo", "x": 10, "y": 4, "rot": 2 },
+      { "type": "lantern", "x": 4, "y": 6, "rot": 0 }
+    ] },
+  { "level": 2, "cols": 16, "rows": 8, "zones": [[12, 0, 4, 8]], "cost": 200, "rep": 8, "menuSlots": 5, "partyBonus": 4, "upkeep": 45 },
+  { "level": 3, "cols": 16, "rows": 11, "zones": [[0, 8, 16, 3]], "cost": 350, "rep": 20, "menuSlots": 6, "partyBonus": 8, "upkeep": 60 },
+  { "level": 4, "cols": 20, "rows": 11, "zones": [[16, 0, 4, 11]], "cost": 550, "rep": 35, "menuSlots": 7, "partyBonus": 12, "upkeep": 75 },
+  { "level": 5, "cols": 23, "rows": 11, "zones": [[20, 0, 3, 11]], "cost": 800, "rep": 50, "menuSlots": 8, "partyBonus": 16, "upkeep": 90 }
+]

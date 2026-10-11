@@ -1,0 +1,63 @@
+{
+  "frames": {
+    "fire_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 166,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 166,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 166,
+        "h": 82
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "fire_1": {
+      "frame": {
+        "x": 166,
+        "y": 0,
+        "w": 166,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 166,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 166,
+        "h": 82
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    }
+  },
+  "meta": {
+    "app": "ghost-restaurant/art/v2/tools/build_furniture.py",
+    "version": "1.0",
+    "image": "stove-fire-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 332,
+      "h": 82
+    },
+    "scale": "1"
+  }
+}

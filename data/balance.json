@@ -1,0 +1,247 @@
+{
+  "_comment": "balance v2.1 (GDD-v2.1 changelog; DESIGN-ANSWERS-v2.1.md). v2.1: runnerCap (meter = min(cook, runner delivery)), fields.windowPerTable, economy.seatsPerExtraParty 3→4, endingA.satisfactionRate 0.6→0.65. Grid + auto-service keys; v1 fatigue/supper/playerCarry/seatHitRadius/nearFireRadius/persuade removed.",
+  "grid": {
+    "tile": 80,
+    "cols": 23,
+    "rows": 11,
+    "door": {
+      "x": 0,
+      "y": 5
+    },
+    "innerDoor": {
+      "x": 1,
+      "y": 5
+    },
+    "kitchenRows": 2,
+    "hudPx": 84,
+    "barPx": 116
+  },
+  "queue": {
+    "slots": 4,
+    "benchBonus": 2,
+    "drainMul": 0.5,
+    "benchDrainMul": 0.25,
+    "groupYieldMax": 3,
+    "ganqilangLeaveAtGroups": 2,
+    "stompPatienceFrac": 0.1
+  },
+  "fields": {
+    "innerDoorNoise": {
+      "v": 1,
+      "r": 2
+    },
+    "guardDoorNoise": {
+      "v": 1,
+      "r": 2
+    },
+    "sizzleNoise": {
+      "v": 2,
+      "r": 2
+    },
+    "sizzleServedNoise": {
+      "v": 2,
+      "r": 2,
+      "sec": 10
+    },
+    "laizhangNoise": {
+      "v": 2,
+      "r": 3
+    },
+    "slamNoise": {
+      "v": 2,
+      "r": 3
+    },
+    "smellR": 3,
+    "isoR": 1,
+    "yaPass": 5,
+    "windowPerTable": true
+  },
+  "ward": {
+    "doorGod": 30,
+    "stoneGuard": 40,
+    "pay": 100,
+    "stop": 60,
+    "slamGlare": 60
+  },
+  "policy": {
+    "default": "persuade",
+    "hejiejiuWindowSec": 20,
+    "stoppedBillMul": 1.1,
+    "stoppedResentment": 3
+  },
+  "speeds": {
+    "guest": 2.5,
+    "piaopiao": 4,
+    "paper": 3,
+    "stone": 2,
+    "piaopiaoScaredMul": 0.7,
+    "scaredR": 2
+  },
+  "service": {
+    "eatSec": 12,
+    "eatPerExtraDish": 4,
+    "clearSec": 2,
+    "graceSec": 45,
+    "runnerWaitSec": 5,
+    "carryMax": 2,
+    "singleDrinkChance": 0.35,
+    "angryPatienceWalkFree": true,
+    "paySecDefault": 2.5,
+    "payDrainMul": 0.5,
+    "lowPatiencePriority": 0.4,
+    "barSec": 3
+  },
+  "runnerCap": {
+    "_doc": "v2.1 送菜力 (道/分) = Σ_runners 60·v ÷ (2·D̄ + v·fixedSec) ÷ tripsPerDish; D̄ = mean staff-path tiles from the nearest serve cell to each seated table (defaultDist if none). Meter = min(出菜力, 送菜力) vs 預估需求.",
+    "fixedSec": 1,
+    "tripsPerDish": 1.7,
+    "defaultDist": 6
+  },
+  "seat": {
+    "pathCoef": 1.5,
+    "shareBonus": 1,
+    "bigTablePenalty": -3
+  },
+  "loveWeight": 3,
+  "otherWeight": 1,
+  "tipRate": [
+    0,
+    0.15,
+    0.25
+  ],
+  "tipMinPatience": 0.5,
+  "resentmentSatisfiedCapPerNight": 5,
+  "lampOilPerCard": 10,
+  "lampOil": {
+    "autoAtSettlement": true,
+    "cardSource": "pending_only",
+    "fallbackCoins": 30,
+    "fallbackRep": 1
+  },
+  "outcomes": {
+    "_default": {
+      "satisfied": {
+        "rep": 1,
+        "resentment": -1
+      },
+      "plain": {
+        "rep": 0,
+        "resentment": 0
+      },
+      "angry": {
+        "rep": -1,
+        "resentment": 2
+      }
+    },
+    "moxiansheng": {
+      "angry": {
+        "rep": -2,
+        "resentment": 2
+      },
+      "badReviewNextNightPartyMul": 0.9
+    },
+    "daduqiu": {
+      "calmByTonggan": {
+        "rep": 0,
+        "resentment": -1
+      }
+    },
+    "baibugong": {
+      "noAngry": true
+    },
+    "queueAngry": {
+      "rep": -1,
+      "resentment": 2
+    }
+  },
+  "ghostRules": {
+    "dengzaiLightDrainMul": 0.75,
+    "dengzaiLightOil": 2,
+    "ganqilangCounterPath": 6,
+    "ganqilangCounterDrainMul": 0.8,
+    "zhigongpoWindowDrainMul": 0.8,
+    "pairSyncSec": 5,
+    "moxianshengLoudN": 3,
+    "moxianshengLoudDrainMul": 1.3,
+    "daduqiuSmellDrainMul": 0.85,
+    "daduqiuStealBelow": 0.3,
+    "daduqiuStealPatienceFrac": 0.2,
+    "inspectorSpeedSec": 50,
+    "inspectorRare": "yijian"
+  },
+  "troublemaker": {
+    "hejiejiu": {
+      "resentment": -5,
+      "rep": 1,
+      "regularAfter": 3
+    },
+    "talisman": {
+      "resentment": 8,
+      "rep": -1,
+      "inspectorMul": 2,
+      "nearbyPatienceFrac": 0.2,
+      "nearbyR": 3,
+      "billMul": 1.1
+    },
+    "dash": {
+      "resentment": 3,
+      "rep": -2
+    },
+    "stopped": {
+      "resentment": 3,
+      "rep": 0,
+      "billMul": 1.1
+    }
+  },
+  "inspector": {
+    "repByStamps": [
+      -5,
+      2,
+      5,
+      8
+    ],
+    "payMulPerStamp": 0.25,
+    "resentmentIfStamped": -1
+  },
+  "economy": {
+    "startCoins": 120,
+    "startReputation": 5,
+    "startResentment": 0,
+    "seatBase": 8,
+    "seatsPerExtraParty": 4,
+    "repPerExtraParty": 25,
+    "repPartyBonusMax": 2,
+    "dishesPerParty": 1.5,
+    "peakFactor": 1.3,
+    "waves": [
+      {
+        "at": 0.3,
+        "sd": 0.1,
+        "share": 0.3
+      },
+      {
+        "at": 0.7,
+        "sd": 0.1,
+        "share": 0.3
+      }
+    ],
+    "warnCapRatio": 0.8,
+    "minSeatsWarn": 6
+  },
+  "mercy": {
+    "atNight": 7,
+    "requireLevel": 4,
+    "minCoinsFracOfLast": 0.4,
+    "minRep": 30,
+    "payAll": true
+  },
+  "finale": {
+    "actSatisfaction": 0.65
+  },
+  "endingA": {
+    "stars": 3,
+    "rep": 80,
+    "resentmentMax": 30,
+    "satisfactionRate": 0.65
+  }
+}

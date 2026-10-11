@@ -1,0 +1,257 @@
+{
+  "frames": {
+    "walk_side_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_1": {
+      "frame": {
+        "x": 82,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_2": {
+      "frame": {
+        "x": 164,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_3": {
+      "frame": {
+        "x": 246,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_front_0": {
+      "frame": {
+        "x": 328,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_front_1": {
+      "frame": {
+        "x": 410,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "guard_0": {
+      "frame": {
+        "x": 492,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "carry_0": {
+      "frame": {
+        "x": 574,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    }
+  },
+  "animations": {
+    "walk_side": [
+      "walk_side_0",
+      "walk_side_1",
+      "walk_side_2",
+      "walk_side_3"
+    ],
+    "walk_front": [
+      "walk_front_0",
+      "walk_front_1"
+    ],
+    "guard": [
+      "guard_0"
+    ],
+    "carry": [
+      "carry_0"
+    ]
+  },
+  "meta": {
+    "app": "ghost-restaurant/art/v2/tools/build_b3_chars.py",
+    "version": "1.0",
+    "image": "shigandang-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 656,
+      "h": 114
+    },
+    "scale": "1",
+    "anims": {
+      "walk_side": {
+        "frames": [
+          "walk_side_0",
+          "walk_side_1",
+          "walk_side_2",
+          "walk_side_3"
+        ],
+        "fps": 8
+      },
+      "walk_front": {
+        "frames": [
+          "walk_front_0",
+          "walk_front_1"
+        ],
+        "fps": 6
+      },
+      "guard": {
+        "frames": [
+          "guard_0"
+        ],
+        "fps": 1
+      },
+      "carry": {
+        "frames": [
+          "carry_0"
+        ],
+        "fps": 1
+      }
+    },
+    "name": "石敢當仔",
+    "note": "side frames face RIGHT (flipX for left); pivot (0.5,1) = feet / seat bottom; same baseline for standing & sitting frames"
+  }
+}

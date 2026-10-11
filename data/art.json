@@ -1,0 +1,14 @@
+{
+  "_doc": "Art key per furniture id (GDD-v2 §18.1). Sprites are looked up in assets/art/furniture/manifest.json as <key>-<n|s|e> (chairs; west = -e flipped), <key>-<h|v> (2-orientation items), else <key>. To swap art (e.g. the black-wood gilded cashier counter), drop the new PNGs + manifest entries and change the key here. Missing sprites fall back to the generated placeholder shape.",
+  "furniture": {
+    "chair_bamboo": "chair-bamboo", "chair_cushion": "chair-cushion",
+    "table_small": "table-small", "table_long": "table-long", "table_square": "table-square", "table_redwood": "table-redwood",
+    "stove": "stove", "stove_fierce": "stove-fierce", "clay_pot": "clay-pot", "prep_table": "prep-table", "bar": "bar",
+    "counter": "counter", "counter_gold": "counter-gold",
+    "paper_shrine": "paper-shrine", "waiting_bench": "waiting-bench",
+    "lantern": "lantern", "lamp_eternal": "lamp-eternal", "screen": "screen", "plant": "plant",
+    "window": "window", "peach_sword": "peach-sword", "bagua": "bagua", "door_god": "door-god-pair", "paper_flowers": "paper-flowers"
+  },
+  "fire": { "stove": ["stove-fire-0", "stove-fire-1"], "stove_fierce": ["stove-fierce-fire-0", "stove-fierce-fire-1"] },
+  "floors": { "dining": "floor-wood", "kitchen": "floor-kitchen", "street": "floor-street" }
+}

@@ -1,0 +1,396 @@
+{
+  "tile": 80,
+  "alphaSteps": [
+    0.35,
+    0.42,
+    0.48,
+    0.55
+  ],
+  "blend": "normal; fill the 80x80 cell with ramp[i] at alphaSteps[i]; draw a 2px border of ramp[3] at alpha 0.7 on the outer edge of each region (optional)",
+  "layers": [
+    {
+      "key": "heat",
+      "zh": "熱",
+      "key_no": 1,
+      "gdd": "熱（紅）",
+      "note": "stove +1 r2, fierce stove +1 r3, clay pot +1 r1",
+      "steps": [
+        {
+          "value": "1",
+          "hex": "#FF9F5E",
+          "alpha": 0.35,
+          "rgba": [
+            255,
+            159,
+            94,
+            89
+          ]
+        },
+        {
+          "value": "2",
+          "hex": "#F46F30",
+          "alpha": 0.42,
+          "rgba": [
+            244,
+            111,
+            48,
+            107
+          ]
+        },
+        {
+          "value": "3",
+          "hex": "#DD411F",
+          "alpha": 0.48,
+          "rgba": [
+            221,
+            65,
+            31,
+            122
+          ]
+        },
+        {
+          "value": "4+",
+          "hex": "#AE1B10",
+          "alpha": 0.55,
+          "rgba": [
+            174,
+            27,
+            16,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "key": "noise",
+      "zh": "噪",
+      "key_no": 2,
+      "gdd": "噪（紫）",
+      "note": "static noise; min 0. Screen/plant subtract",
+      "steps": [
+        {
+          "value": "1",
+          "hex": "#B992E2",
+          "alpha": 0.35,
+          "rgba": [
+            185,
+            146,
+            226,
+            89
+          ]
+        },
+        {
+          "value": "2",
+          "hex": "#9866D2",
+          "alpha": 0.42,
+          "rgba": [
+            152,
+            102,
+            210,
+            107
+          ]
+        },
+        {
+          "value": "3",
+          "hex": "#7642B6",
+          "alpha": 0.48,
+          "rgba": [
+            118,
+            66,
+            182,
+            122
+          ]
+        },
+        {
+          "value": "4+",
+          "hex": "#53208E",
+          "alpha": 0.55,
+          "rgba": [
+            83,
+            32,
+            142,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "key": "light",
+      "zh": "光",
+      "key_no": 3,
+      "gdd": "光（黃）",
+      "note": "lantern +1 r2, eternal lamp +2 r3 (cold light, not heat)",
+      "steps": [
+        {
+          "value": "1",
+          "hex": "#FFF6B0",
+          "alpha": 0.35,
+          "rgba": [
+            255,
+            246,
+            176,
+            89
+          ]
+        },
+        {
+          "value": "2",
+          "hex": "#FFEA6A",
+          "alpha": 0.42,
+          "rgba": [
+            255,
+            234,
+            106,
+            107
+          ]
+        },
+        {
+          "value": "3",
+          "hex": "#FFDB2E",
+          "alpha": 0.48,
+          "rgba": [
+            255,
+            219,
+            46,
+            122
+          ]
+        },
+        {
+          "value": "4+",
+          "hex": "#FFC800",
+          "alpha": 0.55,
+          "rgba": [
+            255,
+            200,
+            0,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ward",
+      "zh": "驅邪",
+      "key_no": 4,
+      "gdd": "驅邪（金色盾牌）",
+      "note": "GDD §10.2: gold + shield icon (drawn at cell centre, 26px) to separate it from light; values are 20..125 -> bin <30, 30-59, 60-99, >=100 (matches §7.5 thresholds)",
+      "bins": [
+        "1-29",
+        "30-59",
+        "60-99",
+        "100+"
+      ],
+      "icon": "shield",
+      "steps": [
+        {
+          "value": "1-29",
+          "hex": "#E8CF6E",
+          "alpha": 0.35,
+          "rgba": [
+            232,
+            207,
+            110,
+            89
+          ]
+        },
+        {
+          "value": "30-59",
+          "hex": "#CCA73C",
+          "alpha": 0.42,
+          "rgba": [
+            204,
+            167,
+            60,
+            107
+          ]
+        },
+        {
+          "value": "60-99",
+          "hex": "#A98222",
+          "alpha": 0.48,
+          "rgba": [
+            169,
+            130,
+            34,
+            122
+          ]
+        },
+        {
+          "value": "100+",
+          "hex": "#7A5C10",
+          "alpha": 0.55,
+          "rgba": [
+            122,
+            92,
+            16,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ya",
+      "zh": "雅與窗",
+      "key_no": 5,
+      "gdd": "雅與窗（青）",
+      "note": "jade/teal 青; window seats can use the same hue with a lattice icon",
+      "steps": [
+        {
+          "value": "1",
+          "hex": "#94E6D3",
+          "alpha": 0.35,
+          "rgba": [
+            148,
+            230,
+            211,
+            89
+          ]
+        },
+        {
+          "value": "2",
+          "hex": "#55D2B8",
+          "alpha": 0.42,
+          "rgba": [
+            85,
+            210,
+            184,
+            107
+          ]
+        },
+        {
+          "value": "3",
+          "hex": "#22B596",
+          "alpha": 0.48,
+          "rgba": [
+            34,
+            181,
+            150,
+            122
+          ]
+        },
+        {
+          "value": "4+",
+          "hex": "#0D8B74",
+          "alpha": 0.55,
+          "rgba": [
+            13,
+            139,
+            116,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "key": "path",
+      "zh": "動線",
+      "key_no": 6,
+      "gdd": "動線（離門的路徑格數）",
+      "note": "BFS steps from door; light = near, dark = far (bins 0-3,4-7,8-11,12+)",
+      "bins": [
+        "0-3",
+        "4-7",
+        "8-11",
+        "12+"
+      ],
+      "steps": [
+        {
+          "value": "0-3",
+          "hex": "#C2DBFF",
+          "alpha": 0.35,
+          "rgba": [
+            194,
+            219,
+            255,
+            89
+          ]
+        },
+        {
+          "value": "4-7",
+          "hex": "#90BAF6",
+          "alpha": 0.42,
+          "rgba": [
+            144,
+            186,
+            246,
+            107
+          ]
+        },
+        {
+          "value": "8-11",
+          "hex": "#5F95E2",
+          "alpha": 0.48,
+          "rgba": [
+            95,
+            149,
+            226,
+            122
+          ]
+        },
+        {
+          "value": "12+",
+          "hex": "#366AC3",
+          "alpha": 0.55,
+          "rgba": [
+            54,
+            106,
+            195,
+            140
+          ]
+        }
+      ]
+    },
+    {
+      "key": "anger",
+      "zh": "生氣熱點",
+      "key_no": null,
+      "gdd": "營業中才有的「生氣熱點」",
+      "note": "service-phase only",
+      "steps": [
+        {
+          "value": "1",
+          "hex": "#FF93A6",
+          "alpha": 0.35,
+          "rgba": [
+            255,
+            147,
+            166,
+            89
+          ]
+        },
+        {
+          "value": "2",
+          "hex": "#F2637F",
+          "alpha": 0.42,
+          "rgba": [
+            242,
+            99,
+            127,
+            107
+          ]
+        },
+        {
+          "value": "3",
+          "hex": "#D7375C",
+          "alpha": 0.48,
+          "rgba": [
+            215,
+            55,
+            92,
+            122
+          ]
+        },
+        {
+          "value": "4+",
+          "hex": "#A9183D",
+          "alpha": 0.55,
+          "rgba": [
+            169,
+            24,
+            61,
+            140
+          ]
+        }
+      ]
+    }
+  ]
+}

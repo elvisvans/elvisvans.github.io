@@ -1,0 +1,5 @@
+[
+  {"id": "zaotou", "role": "cook", "stats": {"speed": 2, "skill": 5, "courage": 4}, "trait": "slow_craft", "lines": {"start": "staff.zaotou.start"}},
+  {"id": "piaopiao", "role": "waiter", "stats": {"speed": 5, "skill": 3, "courage": 1}, "trait": "phase_walk", "lines": {"start": "staff.piaopiao.start"}},
+  {"id": "shigandang", "role": "guard", "stats": {"speed": 1, "skill": 2, "courage": 5}, "trait": "gatekeeper", "lines": {"start": "staff.shigandang.start"}}
+]

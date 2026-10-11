@@ -1,0 +1,224 @@
+{
+  "frames": {
+    "walk_side_0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_1": {
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_2": {
+      "frame": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_side_3": {
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_front_0": {
+      "frame": {
+        "x": 256,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "walk_front_1": {
+      "frame": {
+        "x": 320,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "cook_0": {
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    "cook_1": {
+      "frame": {
+        "x": 448,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 64,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 64,
+        "h": 114
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1
+      }
+    }
+  },
+  "animations": {
+    "walk_side": [
+      "walk_side_0",
+      "walk_side_1",
+      "walk_side_2",
+      "walk_side_3"
+    ],
+    "walk_front": [
+      "walk_front_0",
+      "walk_front_1"
+    ],
+    "cook": [
+      "cook_0",
+      "cook_1"
+    ]
+  },
+  "meta": {
+    "app": "ghost-restaurant/art/v2/tools/build_chars.py",
+    "version": "1.0",
+    "image": "zaotou-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 114
+    },
+    "scale": "1",
+    "note": "side frames face RIGHT (flipX for left); pivot (0.5,1) = feet; baked bob (1x px up): walk_front_1 +1"
+  }
+}
