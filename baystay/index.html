@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>灣宿指南 BayStay｜大灣區出發，亞洲度假村一頁揀清</title>
+  <title>灣宿指南 BayStay｜從海灣出發，住進亞洲的清涼</title>
   <meta name="description" content="大灣區與亞洲熱門度假村／酒店目錄。只談住宿與親子設施，不推廣博彩。" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header site-header--hero">
     <div class="wrap inner">
       <a class="logo" href="index.html">灣宿指南 <span>BayStay</span></a>
       <nav class="nav">
@@ -21,49 +21,83 @@
   </header>
 
   <main>
-    <section class="hero wrap">
-      <h1>大灣區出發，亞洲度假村一頁揀清</h1>
-      <p class="sub">澳門 · 珠海 · 深圳 · 香港 · 泰日韓熱門度假——只談住宿、泳池、親子與放空，不談博彩。</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="listings.html">瀏覽全部住宿</a>
-        <a class="btn btn-ghost" href="partner.html">上架／Featured</a>
+    <section class="hero-ocean">
+      <div class="wrap">
+        <h1>從海灣出發，住進亞洲的清涼</h1>
+        <p class="sub">澳門／廣州／珠海／深圳／香港分開篩選；泰日韓再按城市。只談住宿、泳池與放空——不談博彩。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="listings.html">探索度假村</a>
+          <a class="btn btn-ghost-light" href="partner.html">上架／Featured</a>
+        </div>
       </div>
     </section>
 
-    <section class="section wrap">
-      <div class="value-grid">
-        <div class="value-item"><strong>一頁篩清</strong>按地區、價位、親子、設施標籤快速過濾</div>
-        <div class="value-item"><strong>編輯精選</strong>Featured 推薦幫你少踩雷、少比價焦慮</div>
-        <div class="value-item"><strong>大灣區視角</strong>從澳門／大灣區出發的週末與短途優先</div>
-        <div class="value-item"><strong>純住宿目錄</strong>絕不推廣網上博彩或賭場投注</div>
-      </div>
-    </section>
-
-    <section class="section wrap">
+    <div class="panel-float">
+      <div id="city-chips" class="chips" aria-label="城市篩選"></div>
       <div class="section-head">
         <h2>精選 Featured</h2>
         <a href="listings.html">看全部 →</a>
       </div>
       <div id="featured" class="cards"><p class="empty">載入中…</p></div>
+      <p class="note-center">純住宿目錄 · 非博彩</p>
+    </div>
+
+    <section class="section wrap">
+      <div class="value-grid">
+        <div class="value-item"><strong>一頁篩清</strong>按城市、價位、親子、設施標籤快速過濾</div>
+        <div class="value-item"><strong>編輯精選</strong>Featured 推薦幫你少踩雷、少比價焦慮</div>
+        <div class="value-item"><strong>海灣視角</strong>澳門／大灣區出發的週末與短途優先</div>
+        <div class="value-item"><strong>純住宿目錄</strong>絕不推廣網上博彩或賭場投注</div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap inner">
       <span>© BayStay 灣宿指南 · 非博彩住宿目錄</span>
-      <span><a href="about.html">非博彩政策</a> · <a href="partner.html">合作</a></span>
+      <span class="credit">圖片來源 Unsplash · <a href="about.html">非博彩政策</a> · <a href="partner.html">合作</a></span>
     </div>
   </footer>
 
   <script src="assets/common.js"></script>
   <script>
+    let allFeatured = [];
+    let cityKey = "";
+
+    function renderFeatured() {
+      let rows = allFeatured.slice();
+      if (cityKey) rows = rows.filter((l) => l.city_key === cityKey);
+      const el = document.getElementById("featured");
+      if (!rows.length) {
+        el.innerHTML = cityKey === "guangzhou"
+          ? '<p class="empty">廣州尚無上架住宿，敬請期待</p>'
+          : '<p class="empty">此城市暫無精選，試試「全部」或<a href="listings.html">瀏覽全部住宿</a></p>';
+        return;
+      }
+      el.innerHTML = rows.slice(0, 6).map(cardHTML).join("");
+    }
+
+    function paintChips(counts) {
+      renderCityChips(document.getElementById("city-chips"), {
+        active: cityKey,
+        counts,
+        showCounts: true,
+        onSelect: (k) => {
+          cityKey = k;
+          paintChips(counts);
+          renderFeatured();
+        },
+      });
+    }
+
     loadListings()
       .then(({ listings }) => {
-        const featured = listings.filter((l) => l.featured).slice(0, 6);
-        const el = document.getElementById("featured");
-        el.innerHTML = featured.length
-          ? featured.map(cardHTML).join("")
-          : '<p class="empty">暫無精選</p>';
+        allFeatured = listings
+          .filter((l) => l.featured)
+          .sort((a, b) => (b.editor_score || 0) - (a.editor_score || 0));
+        // If fewer than 3 featured after filter, still OK — chips filter featured set
+        paintChips(countByCityKey(listings));
+        renderFeatured();
       })
       .catch((e) => {
         document.getElementById("featured").innerHTML =
