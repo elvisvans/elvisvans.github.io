@@ -98,7 +98,7 @@ a:hover { text-decoration: underline; }
   color: #fff;
   background:
     linear-gradient(180deg, rgba(10, 40, 48, 0.22), rgba(10, 40, 48, 0.62)),
-    url("hero-home.jpg") center/cover no-repeat;
+    url("https://upload.wikimedia.org/wikipedia/commons/9/99/Cheoc_Van_Beach_12-03-2024%283%29.jpg") center/cover no-repeat;
   padding: 7.5rem 0 3.5rem;
   min-height: 380px;
   display: flex;
