@@ -68,7 +68,7 @@
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261018b"></script>
+  <script src="assets/common.js?v=20261018c"></script>
   <script>
     let all = [];
     let cityKey = "";
@@ -127,7 +127,7 @@
     loadListings()
       .then(({ listings }) => {
         all = listings;
-        cityCounts = countByCityKey(listings);
+        cityCounts = (typeof countByCityKey === 'function' ? countByCityKey : window.countByCityKey)(listings);
         paintChips();
         applyFilters();
       })

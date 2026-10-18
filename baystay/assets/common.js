@@ -117,6 +117,7 @@ window.loadListings = loadListings;
 window.priceLabel = priceLabel;
 window.stars = stars;
 window.listingImage = listingImage;
+window.priceSymbols = priceSymbols;
 window.cardHTML = cardHTML;
 window.countByCityKey = countByCityKey;
 window.renderCityChips = renderCityChips;

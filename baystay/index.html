@@ -59,7 +59,7 @@
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261018b"></script>
+  <script src="assets/common.js?v=20261018c"></script>
   <script>
     let allFeatured = [];
     let cityKey = "";
@@ -96,7 +96,8 @@
           .filter((l) => l.featured)
           .sort((a, b) => (b.editor_score || 0) - (a.editor_score || 0));
         // If fewer than 3 featured after filter, still OK — chips filter featured set
-        paintChips(countByCityKey(listings));
+        const counts = (typeof countByCityKey === 'function' ? countByCityKey : window.countByCityKey)(listings);
+        paintChips(counts);
         renderFeatured();
       })
       .catch((e) => {
