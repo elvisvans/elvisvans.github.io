@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>路氹半日散步：泳池後食乜好｜灣宿指南 BayStay</title>
+  <meta name="description" content="澳門路氹週末短途：先泡泳池再散步覓食。威尼斯人、倫敦人、銀河一帶三類吃法，連回站內酒店。" />
+  <link rel="stylesheet" href="../assets/style.css?v=20261019a" />
+  <style>
+    /* Scoped feature-page additions — Critique P0 link color; white sticky header → no ocean scrim */
+    :root {
+      --teal: #2AA5A0;
+      --teal-text: #1F7A76;
+    }
+    a { color: var(--teal-text); }
+    .btn-primary { background: #2AA5A0; color: #fff; }
+    .nav a:hover, .nav a.active { color: var(--teal-text); }
+    .logo span { color: var(--teal-text); }
+    .site-footer a { color: var(--teal-text); }
+    .feature-close a { color: var(--teal-text); font-weight: 600; }
+
+    .feature-hero {
+      background: linear-gradient(165deg, var(--teal-soft) 0%, #f7fbfc 72%);
+      border-bottom: 1px solid var(--border);
+      padding: 2.25rem 0 2rem;
+    }
+    .feature-hero .eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--teal-text);
+      margin: 0 0 0.65rem;
+    }
+    .feature-hero h1 {
+      margin: 0 0 0.65rem;
+      font-size: clamp(1.55rem, 4vw, 2.15rem);
+      font-weight: 700;
+      line-height: 1.28;
+      max-width: 36rem;
+    }
+    .feature-hero .lead {
+      margin: 0 0 1rem;
+      font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+      color: var(--muted);
+      max-width: 38rem;
+      line-height: 1.65;
+    }
+    .feature-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      align-items: center;
+    }
+    .feature-meta .date-chip {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--chip-text);
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      border-radius: 999px;
+      padding: 0.28rem 0.75rem;
+    }
+    .feature-meta .draft-note {
+      font-size: 0.75rem;
+      color: #8aa0a5;
+    }
+
+    .feature-intro {
+      padding: 1.75rem 0 0.5rem;
+    }
+    .feature-intro .prose-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.5rem;
+      box-shadow: var(--shadow);
+      max-width: 720px;
+      font-size: clamp(0.95rem, 2vw, 1.02rem);
+      line-height: 1.75;
+    }
+    .feature-intro .prose-block p { margin: 0; }
+
+    .feature-stops {
+      padding: 1.5rem 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+    .feature-stop {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem 1.4rem 1.4rem;
+      box-shadow: var(--shadow);
+    }
+    .feature-stop .stop-num {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--teal-text);
+      margin: 0 0 0.35rem;
+    }
+    .feature-stop h2 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.05rem, 2.5vw, 1.22rem);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+    .stop-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      margin-bottom: 0.9rem;
+      padding: 0.75rem 0.9rem;
+      background: var(--teal-soft);
+      border-radius: 12px;
+    }
+    .stop-meta dl {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      min-width: min(100%, 14rem);
+      flex: 1;
+    }
+    .stop-meta dt {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--teal-text);
+      letter-spacing: 0.04em;
+    }
+    .stop-meta dd {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+    .feature-stop .body {
+      font-size: clamp(0.92rem, 2vw, 0.98rem);
+      line-height: 1.75;
+      color: var(--ink);
+      margin: 0 0 1rem;
+    }
+    .feature-stop .body p { margin: 0; }
+    .stop-cta { margin: 0; }
+    .stop-cta .btn { font-size: 0.88rem; padding: 0.55rem 1.15rem; }
+
+    .feature-close {
+      padding: 0.75rem 0 1.5rem;
+    }
+    .feature-close .prose-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem 1.5rem;
+      box-shadow: var(--shadow);
+      max-width: 720px;
+    }
+    .feature-close h2 {
+      margin: 0 0 0.65rem;
+      font-size: 1.12rem;
+      color: var(--ink);
+    }
+    .feature-close .body {
+      margin: 0;
+      font-size: clamp(0.92rem, 2vw, 0.98rem);
+      line-height: 1.75;
+    }
+
+    .stay-rail-section {
+      padding: 0.5rem 0 2.5rem;
+    }
+    .stay-rail-section .section-head {
+      margin-bottom: 0.85rem;
+    }
+    .stay-rail-section .section-head p {
+      margin: 0.2rem 0 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .stay-rail {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .stay-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .stay-card:hover {
+      border-color: #c5e8e5;
+      box-shadow: 0 8px 24px rgba(18, 52, 59, 0.08);
+      text-decoration: none;
+    }
+        .stay-card .card-img {
+      height: 120px;
+      background-size: cover;
+      background-position: center top;
+      background-color: #d5e8ea;
+      flex-shrink: 0;
+    }
+
+.stay-card .card-body { padding: 0.75rem 0.9rem 1rem; flex: 1; display: flex; flex-direction: column; gap: 0.15rem; }
+    .stay-card .city-label { font-size: 0.7rem; color: var(--city); font-weight: 600; }
+    .stay-card h3 { margin: 0.1rem 0; font-size: 0.95rem; font-weight: 600; line-height: 1.35; }
+    .stay-card .en { color: var(--muted); font-size: 0.76rem; }
+    .stay-card .one-liner { font-size: 0.8rem; color: var(--muted); margin: 0.25rem 0 0; flex: 1; }
+    .stay-card .badge-row { margin-top: 0.4rem; }
+
+    .preview-banner {
+      background: #fff8e6;
+      border-bottom: 1px solid #f0e0b0;
+      color: #7a6230;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 0.45rem 1rem;
+    }
+
+    @media (max-width: 800px) {
+      .stay-rail {
+        display: flex;
+        overflow-x: auto;
+        gap: 0.85rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.35rem;
+        margin-inline: -0.25rem;
+        padding-inline: 0.25rem;
+      }
+      .stay-card {
+        flex: 0 0 min(78vw, 260px);
+        scroll-snap-align: start;
+      }
+    }
+    @media (max-width: 640px) {
+      .feature-hero { padding: 1.65rem 0 1.5rem; }
+      .feature-stop { padding: 1.15rem 1.1rem 1.2rem; }
+      .stop-meta { flex-direction: column; gap: 0.65rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="../index.html">灣宿指南 <span>BayStay</span></a>
+      <nav class="nav">
+        <a href="../index.html">首頁</a>
+        <a href="../listings.html">全部住宿</a>
+        <a href="../partner.html">合作贊助</a>
+        <a href="../about.html">關於</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. Feature hero -->
+    <section class="feature-hero">
+      <div class="wrap">
+        <p class="eyebrow">每日專題</p>
+        <h1>路氹半日散步：泳池後食乜好</h1>
+        <p class="lead">澳門路氹週末短途：先泡泳池再散步覓食。威尼斯人、倫敦人、銀河一帶三類吃法，連回站內酒店。</p>
+        <div class="feature-meta">
+          <span class="date-chip">2026-10-19</span>
+          <span class="draft-note">類型：美食 · 掛站內澳門／路氹酒店</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Intro prose -->
+    <section class="feature-intro wrap">
+      <div class="prose-block">
+        <p>週末去澳門路氹，很多人把行程排得很滿——其實更舒服的做法，是<strong>先住下來，再慢慢食</strong>。早上在酒店泳池泡一圈、吹乾頭髮，下午才出街，腿不酸、胃也剛好。下面這條半日散步，圍繞威尼斯人、倫敦人與銀河一帶，只談吃與走，適合短途度假客。</p>
+      </div>
+    </section>
+
+    <!-- 4. Three stops -->
+    <section class="feature-stops wrap" aria-label="半日散步站點">
+      <article class="feature-stop" id="stop-venetian">
+        <p class="stop-num">站點 01</p>
+        <h2>威尼斯人大運河購物中心一帶｜義大利輕食＋甜點</h2>
+        <div class="stop-meta">
+          <dl>
+            <dt>類型</dt>
+            <dd>國際輕食／Gelato</dd>
+          </dl>
+          <dl>
+            <dt>點解啱度假客</dt>
+            <dd>冷氣長廊好行，飯後順便逛，不用趕場。</dd>
+          </dl>
+        </div>
+        <div class="body">
+          <p>從泳池換好衣服出來，第一站可以往威尼斯人「大運河購物中心」一帶走。這裡餐廳密度高，午市選一盤意粉或薄餅就夠；若還想留胃口給下一餐，只點一份 Gelato 或咖啡也完全合理。親子客尤其省心：有得坐、有得逛，孩子走累了也能找得到歇腳位。吃完不必急著離開，沿著室內「運河」再走一圈，節奏剛好對上「半日散步」——不是打卡清單，而是讓胃與腳都放慢。</p>
+        </div>
+        <p class="stop-cta">
+          <a class="btn btn-primary" href="../listing.html?id=bs-mo-25">站內可住：澳門威尼斯人</a>
+        </p>
+      </article>
+
+      <article class="feature-stop" id="stop-londoner">
+        <p class="stop-num">站點 02</p>
+        <h2>倫敦人廣場／主題街區｜Brunch 式正餐</h2>
+        <div class="stop-meta">
+          <dl>
+            <dt>類型</dt>
+            <dd>Brunch／休閒西餐</dd>
+          </dl>
+          <dl>
+            <dt>點解啱度假客</dt>
+            <dd>主題街區好拍照，餐期彈性，適合「游完泳、未到晚市」的空檔。</dd>
+          </dl>
+        </div>
+        <div class="body">
+          <p>第二段往倫敦人廣場與周邊主題街區挪。這裡的氣氛偏輕鬆：英式或國際風的 Brunch、沙拉、短食，都比正襟危坐的晚宴更貼合半日行程。你可以當成「泳池後的第一頓正式一點的東西」——不用點全套，一道主菜加一杯飲品就收工。傍晚燈光亮起前離開也來得及接到下一站，腿程不長，行李還在酒店更安心。</p>
+        </div>
+        <p class="stop-cta">
+          <a class="btn btn-primary" href="../listing.html?id=bs-mo-06">站內可住：澳門倫敦人</a>
+        </p>
+      </article>
+
+      <article class="feature-stop" id="stop-galaxy">
+        <p class="stop-num">站點 03</p>
+        <h2>銀河時尚匯／餐飲集群｜中菜或日料正餐</h2>
+        <div class="stop-meta">
+          <dl>
+            <dt>類型</dt>
+            <dd>中菜／日料／自助</dd>
+          </dl>
+          <dl>
+            <dt>點解啱度假客</dt>
+            <dd>選擇多，收工一頓可以吃飽再回酒店，不必再另覓晚餐。</dd>
+          </dl>
+        </div>
+        <div class="body">
+          <p>第三段把食量留給銀河一帶的餐飲集群（時尚匯及周邊）。這裡適合收尾：想清淡就日料或蒸菜，想熱鬧就中菜熱炒或自助；重點是<strong>以住宿設施與用餐體驗為主</strong>，選你今晚最想坐下來的那一種。吃完不妨往路氹東側挪，或直接回房——夜泳或只是躺一會兒，半日就完整了：不是「食到盡」，而是「住得爽、食得準」。</p>
+        </div>
+        <p class="stop-cta">
+          <a class="btn btn-primary" href="../listing.html?id=bs-mo-24">站內可住：澳門永利皇宮</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- 5. Closing -->
+    <section class="feature-close wrap">
+      <div class="prose-block">
+        <h2>回酒店放空</h2>
+        <p class="body">半日散步的句號，最好畫在酒店。把購物袋放下、沖個澡，泳池邊再坐十分鐘也行。路氹的好，往往不在趕下一間店，而在<strong>住與食之間留白</strong>。想先鎖定房間，可從站內這三間挑起：<a href="../listing.html?id=bs-mo-06">澳門倫敦人</a>、<a href="../listing.html?id=bs-mo-25">澳門威尼斯人</a>、<a href="../listing.html?id=bs-mo-24">澳門永利皇宮</a>——明天若興致還在，把同一條路線反方向再走一次也很好。</p>
+      </div>
+    </section>
+
+    <!-- 6. Stay rail summary -->
+    <section class="stay-rail-section wrap">
+      <div class="section-head" style="flex-direction:column;align-items:flex-start;">
+        <h2>站內可住</h2>
+        <p>本專題掛接三間路氹酒店</p>
+      </div>
+      <div class="stay-rail" aria-label="站內可住摘要">
+        <a class="stay-card" href="../listing.html?id=bs-mo-25">
+          <div class="card-img" role="img" aria-label="澳門威尼斯人外觀" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/4/48/The_Venetian_Macao.jpg')"></div>
+          <div class="card-body">
+            <div class="city-label">澳門路氹</div>
+            <h3>澳門威尼斯人</h3>
+            <div class="en">The Venetian Macao</div>
+            <p class="one-liner">路氹大型度假套房，連購物與表演設施</p>
+            <div class="badge-row">
+              <span class="badge">親子</span>
+              <span class="badge">泳池</span>
+              <span class="badge">套房</span>
+            </div>
+          </div>
+        </a>
+        <a class="stay-card" href="../listing.html?id=bs-mo-06">
+          <div class="card-img" role="img" aria-label="澳門倫敦人外觀" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/61/THE_LONDONER_MACAU_1.jpg')"></div>
+          <div class="card-body">
+            <div class="city-label">澳門路氹</div>
+            <h3>澳門倫敦人</h3>
+            <div class="en">The Londoner Macao</div>
+            <p class="one-liner">英倫主題豪華度假住宿</p>
+            <div class="badge-row">
+              <span class="badge">親子</span>
+              <span class="badge">泳池</span>
+              <span class="badge">主題</span>
+            </div>
+          </div>
+        </a>
+        <a class="stay-card" href="../listing.html?id=bs-mo-24">
+          <div class="card-img" role="img" aria-label="澳門永利皇宮外觀" style="background-image:url('https://photos.prnasia.com/media_files/static/2020/03/202003111104_83d4c633.jpg')"></div>
+          <div class="card-body">
+            <div class="city-label">澳門路氹</div>
+            <h3>澳門永利皇宮</h3>
+            <div class="en">Wynn Palace</div>
+            <p class="one-liner">路氹絢麗度假住宿，空中纜車與泳池景觀</p>
+            <div class="badge-row">
+              <span class="badge">泳池</span>
+              <span class="badge">SPA</span>
+              <span class="badge">景觀</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap inner">
+      <span>© BayStay 灣宿指南</span>
+      <span class="credit">封面圖見各 listing（Commons／PR CDN） · <a href="../about.html">住宿政策</a> · <a href="../partner.html">合作</a></span>
+    </div>
+  </footer>
+</body>
+</html>
