@@ -22,14 +22,49 @@ const CITY_CHIPS = [
 const FALLBACK_IMG =
   "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80";
 
+const CACHE_V = "20261019a";
+
 async function loadListings() {
-  const res = await fetch("data/listings.json?v=20261018i");
+  const res = await fetch("data/listings.json?v=" + CACHE_V);
   if (!res.ok) throw new Error("無法載入 listings.json（請用本機靜態伺服器開啟）");
   const data = await res.json();
   const listings = (data.listings || []).filter(
-    (l) => l.status === "published" && l.non_gaming === true
+    (l) => l.status === "published"
   );
   return { site: data.site, listings };
+}
+
+/** Append UTM at render-time; does not mutate listings.json fields. */
+function withUtm(url, params) {
+  if (!url) return url;
+  try {
+    const u = new URL(url, typeof location !== "undefined" ? location.href : "https://elvisvans.github.io");
+    Object.keys(params || {}).forEach((k) => {
+      if (params[k] != null && params[k] !== "") u.searchParams.set(k, params[k]);
+    });
+    return u.toString();
+  } catch (e) {
+    const sep = String(url).indexOf("?") >= 0 ? "&" : "?";
+    const qs = Object.keys(params || {})
+      .filter((k) => params[k] != null && params[k] !== "")
+      .map((k) => encodeURIComponent(k) + "=" + encodeURIComponent(params[k]))
+      .join("&");
+    return qs ? url + sep + qs : url;
+  }
+}
+
+/** Featured primary booking CTA only. */
+function featuredBookingUrl(l) {
+  const raw = l && l.booking_url;
+  if (!raw) return "";
+  if (l.featured === true) {
+    return withUtm(raw, {
+      utm_source: "baystay",
+      utm_medium: "cta",
+      utm_campaign: "featured",
+    });
+  }
+  return raw;
 }
 
 function priceLabel(tier) {
@@ -42,7 +77,6 @@ function stars(score) {
 }
 
 function listingImage(l) {
-  // Prefer real hotel photos when CEO fills them; fall back to placeholders
   if (Array.isArray(l.photos) && l.photos.length) {
     const p = l.photos[0];
     if (typeof p === "string" && p) return p;
@@ -142,7 +176,10 @@ function qs(name) {
 
 /* Explicit globals for Safari / cached scopes */
 window.CITY_CHIPS = CITY_CHIPS;
+window.CACHE_V = CACHE_V;
 window.loadListings = loadListings;
+window.withUtm = withUtm;
+window.featuredBookingUrl = featuredBookingUrl;
 window.priceLabel = priceLabel;
 window.stars = stars;
 window.listingImage = listingImage;

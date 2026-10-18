@@ -5,7 +5,10 @@
     "tagline_zh": "大灣區出發，亞洲度假村與酒店一頁揀清",
     "tagline_en": "GBA-first resort & hotel picks across Asia",
     "locale_primary": "zh-Hant",
-    "non_gaming_only": false
+    "non_gaming_only": false,
+    "updated": "2026-10-19",
+    "draft_note": "Hard Soft PASS 0.94 — ready for tech push; Hero B",
+    "listing_count": 106
   },
   "listings": [
     {
@@ -53,7 +56,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.artyzen.com/en/hotels/grand-coloane-resort/rooms/"
     },
     {
       "id": "bs-mo-02",
@@ -99,7 +103,8 @@
           "name": "咖喱膶",
           "note": "茶餐廳經典小食"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://all.accor.com/hotel/6480/index.en.shtml"
     },
     {
       "id": "bs-mo-03",
@@ -145,7 +150,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://reserve.sandsresortsmacao.com/en/index"
     },
     {
       "id": "bs-mo-04",
@@ -194,7 +200,8 @@
       ],
       "image_source": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Conrad_Macao.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": "https://reserve.sandsresortsmacao.com/en/index?hotel=CMCMO"
     },
     {
       "id": "bs-zh-01",
@@ -239,7 +246,8 @@
           "name": "橫琴粵菜／海鮮",
           "note": "度假區外選擇"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://zhuhai-chimelong.chimelonghotels.cn/"
     },
     {
       "id": "bs-zh-02",
@@ -259,7 +267,7 @@
       "one_liner_zh": "東澳島萬豪，渡輪抵達後的海島度假",
       "one_liner_en": "Island Marriott on Dong'ao after the ferry",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhmd-zhuhai-dongao-island-marriott-resort/overview/",
-      "cover_image": "",
+      "cover_image": "https://cache.marriott.com/is/image/marriotts7prod/mc-zuhmz-exterior-17455:Wide-Hor",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -270,7 +278,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "zhuhai",
-      "image_url": "",
+      "image_url": "https://cache.marriott.com/is/image/marriotts7prod/mc-zuhmz-exterior-17455:Wide-Hor",
       "highlights": [
         "沙灘",
         "泳池",
@@ -285,7 +293,10 @@
           "name": "糖水",
           "note": "雙皮奶／楊枝甘露"
         }
-      ]
+      ],
+      "image_ok": true,
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.marriott.com/en-us/hotels/zuhmz-zhuhai-dongao-island-marriott-resort-and-spa/photos/"
     },
     {
       "id": "bs-zh-03",
@@ -350,7 +361,7 @@
       "one_liner_zh": "吉大萬豪，往返澳門口岸方便",
       "one_liner_en": "Jida Marriott with easy Macau-border access",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhmc-zhuhai-marriott-hotel/overview/",
-      "cover_image": "",
+      "cover_image": "https://cache.marriott.com/content/dam/marriott-renditions/ZUHMC/zuhmc-exterior-0001-hor-wide.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.1,
@@ -361,7 +372,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "zhuhai",
-      "image_url": "",
+      "image_url": "https://cache.marriott.com/content/dam/marriott-renditions/ZUHMC/zuhmc-exterior-0001-hor-wide.jpg",
       "highlights": [
         "室外泳池",
         "早餐豐富",
@@ -376,7 +387,10 @@
           "name": "糖水",
           "note": "雙皮奶／楊枝甘露"
         }
-      ]
+      ],
+      "image_ok": true,
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.marriott.com/en-us/hotels/zuhmc-zhuhai-marriott-hotel/overview/"
     },
     {
       "id": "bs-sz-01",
@@ -425,7 +439,8 @@
       ],
       "image_source": "Wikimedia Commons (Futian / Fuhua 3rd Road night exterior)",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-sz-02",
@@ -607,7 +622,8 @@
           "name": "雲吞麵",
           "note": "港式麵店經典"
         }
-      ]
+      ],
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-hk-02",
@@ -743,7 +759,8 @@
           "name": "雲吞麵",
           "note": "港式麵店經典"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour/stay"
     },
     {
       "id": "bs-th-01",
@@ -789,7 +806,8 @@
           "name": "雞蛋仔",
           "note": "街頭小食"
         }
-      ]
+      ],
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-th-02",
@@ -1018,7 +1036,8 @@
           "name": "雲吞麵",
           "note": "港式麵店經典"
         }
-      ]
+      ],
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-jp-02",
@@ -1341,7 +1360,8 @@
       ],
       "image_source": "Wikimedia Commons (Category:Four Seasons Hotel Seoul)",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-kr-04",
@@ -1523,7 +1543,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.parisianmacao.com/parisian-hotel.html"
     },
     {
       "id": "bs-mo-06",
@@ -1568,7 +1589,8 @@
           "name": "蛋撻／手信",
           "note": "路氹伴手禮"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://reserve.sandsresortsmacao.com/en/index?hotel=LGHMO"
     },
     {
       "id": "bs-mo-07",
@@ -1615,7 +1637,8 @@
       ],
       "image_source": "Wikimedia Commons (Category:Studio City Macau)",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Studio_City_Macau_27-05-2024.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": "https://www.studiocity-macau.com/en"
     },
     {
       "id": "bs-mo-08",
@@ -1660,7 +1683,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.altiramacau.com/en"
     },
     {
       "id": "bs-mo-09",
@@ -1705,7 +1729,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.mgm.mo/en/stay/mgm-cotai"
     },
     {
       "id": "bs-mo-10",
@@ -1750,7 +1775,8 @@
           "name": "咖喱膶",
           "note": "茶餐廳經典小食"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.mgm.mo/en/stay/mgm-macau"
     },
     {
       "id": "bs-mo-11",
@@ -1798,7 +1824,8 @@
       ],
       "image_source": "Wikimedia Commons (Category:Exterior of Four Seasons Hotel & Resort Macau)",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": "https://reserve.sandsresortsmacao.com/en/index"
     },
     {
       "id": "bs-mo-12",
@@ -1846,7 +1873,8 @@
       ],
       "image_source": "Mandarin Oriental official CDN (ffycdn) — scraped from property page",
       "image_source_url": "https://www.mandarinoriental.com/en/macau/one-central",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": "https://www.mandarinoriental.com/en/macau/one-central/stay"
     },
     {
       "id": "bs-mo-14",
@@ -1894,7 +1922,8 @@
       ],
       "image_source": "Wikimedia Commons (Category:Sheraton Grand Macao)",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Sheraton_Macau_141114.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": "https://reserve.sandsresortsmacao.com/en/index?hotel=LGHMO"
     },
     {
       "id": "bs-mo-15",
@@ -1939,7 +1968,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.galaxymacau.com/hotels/jw-marriott-galaxy-macau/"
     },
     {
       "id": "bs-mo-17",
@@ -1984,7 +2014,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.galaxymacau.com/hotels/galaxy-hotel/"
     },
     {
       "id": "bs-mo-18",
@@ -2029,7 +2060,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.galaxymacau.com/hotels/hotel-okura/"
     },
     {
       "id": "bs-mo-19",
@@ -2074,7 +2106,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.galaxymacau.com/hotels/andaz-macau/"
     },
     {
       "id": "bs-mo-20",
@@ -2119,7 +2152,8 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.grandlisboapalace.com/"
     },
     {
       "id": "bs-zh-05",
@@ -2389,7 +2423,8 @@
           "name": "尖沙咀海傍食肆",
           "note": "步行可達"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.peninsula.com/en/hong-kong/hotel-booking"
     },
     {
       "id": "bs-hk-06",
@@ -2437,7 +2472,8 @@
       ],
       "image_source": "Wikimedia Commons (Category:Exterior of Four Seasons Hotel Hong Kong)",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:2016_-_Four_Seasons_Hotel_Hong_Kong_(_Ank_Kumar_)_02.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-hk-08",
@@ -3023,7 +3059,8 @@
       ],
       "image_source": "Four Seasons Thailand official press kit (fourseasonsthailand.com)",
       "image_source_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-th-13",
@@ -3738,7 +3775,8 @@
       ],
       "image_source": "Wikimedia Commons",
       "image_source_url": "https://commons.wikimedia.org/wiki/File:Broadway_Macau_Hotel_18-03-2023.jpg",
-      "image_ok": true
+      "image_ok": true,
+      "booking_url_fallback": "https://www.broadwaymacau.com.mo/en/rooms/"
     },
     {
       "id": "bs-mo-22",
@@ -3782,7 +3820,8 @@
           "name": "咖喱膶",
           "note": "茶餐廳經典小食"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://hotelisboa.com/?lang=en"
     },
     {
       "id": "bs-mo-23",
@@ -3827,7 +3866,8 @@
           "name": "咖喱膶",
           "note": "茶餐廳經典小食"
         }
-      ]
+      ],
+      "booking_url_fallback": ""
     },
     {
       "id": "bs-zh-08",
@@ -4636,7 +4676,8 @@
           "name": "路環豬扒包",
           "note": "短程可嚐澳門經典"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.wynnresortsmacau.com/en/wynn-palace/"
     },
     {
       "id": "bs-mo-25",
@@ -4682,7 +4723,155 @@
           "name": "安德魯蛋撻",
           "note": "路氹人氣葡撻"
         }
-      ]
+      ],
+      "booking_url_fallback": "https://www.venetianmacao.com/hotel.html"
+    },
+    {
+      "id": "bs-mo-26",
+      "name_zh": "澳門永利酒店",
+      "name_en": "Wynn Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "景觀"
+      ],
+      "one_liner_zh": "半島永利經典住宿，表演湖與泳池度假感",
+      "one_liner_en": "Classic peninsula Wynn stay with performance lake and pool",
+      "booking_url": "https://www.wynnresortsmacau.com/en/wynn-macau/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Wynn_Macau_Resort.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "highlights": [
+        "表演湖景觀",
+        "泳池與SPA",
+        "半島地標住宿"
+      ],
+      "nearby_food": [
+        {
+          "name": "Wing Lei",
+          "note": "來源見官方／指南"
+        },
+        {
+          "name": "Wynn Macau Dining",
+          "note": "來源見官方／指南"
+        }
+      ],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Wynn_Macau_Resort.jpg",
+      "booking_url_fallback": "https://www.wynnmacau.com/",
+      "image_ok": true,
+      "image_source": "commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Wynn_Macau_Resort.jpg"
+    },
+    {
+      "id": "bs-mo-27",
+      "name_zh": "澳門麗思卡爾頓酒店",
+      "name_en": "The Ritz-Carlton, Macau",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "豪華"
+      ],
+      "one_liner_zh": "路氹麗思卡爾頓，高空泳池與禮賓服務",
+      "one_liner_en": "Cotai Ritz-Carlton with sky pool and club-level service",
+      "booking_url": "https://www.galaxymacau.com/hotels/the-ritz-carlton/",
+      "cover_image": "https://img.galaxymacau.com/media_library/01-.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "highlights": [
+        "高空泳池",
+        "麗思禮賓",
+        "路氹綜合度假區"
+      ],
+      "nearby_food": [
+        {
+          "name": "Lai Heen",
+          "note": "來源見官方／指南"
+        },
+        {
+          "name": "The Ritz-Carlton Café",
+          "note": "來源見官方／指南"
+        }
+      ],
+      "image_url": "https://img.galaxymacau.com/media_library/01-.jpg",
+      "booking_url_fallback": "https://www.ritzcarlton.com/en/hotels/mfmmr-the-ritz-carlton-macau/overview/",
+      "image_ok": true,
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.galaxymacau.com/hotels/the-ritz-carlton/"
+    },
+    {
+      "id": "bs-mo-28",
+      "name_zh": "澳門銀河萊佛士",
+      "name_en": "Raffles at Galaxy Macau",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "奢華"
+      ],
+      "one_liner_zh": "銀河內萊佛士，全套房式奢華度假住宿",
+      "one_liner_en": "All-suite Raffles stay inside Galaxy Macau",
+      "booking_url": "https://www.raffles.com/macau/",
+      "cover_image": "https://img.galaxymacau.com/media_library/Hotel_List_RF.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "highlights": [
+        "全套房",
+        "萊佛士服務",
+        "銀河度假設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "Raffles Macau dining",
+          "note": "來源見官方／指南"
+        },
+        {
+          "name": "Lai Heen",
+          "note": "來源見官方／指南"
+        }
+      ],
+      "image_url": "https://img.galaxymacau.com/media_library/Hotel_List_RF.jpg",
+      "booking_url_fallback": "https://www.galaxymacau.com/hotels/raffles-galaxy-macau/",
+      "image_ok": true,
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.galaxymacau.com/nine-world-class-hotels/"
     }
   ]
 }
