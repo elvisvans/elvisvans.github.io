@@ -23,7 +23,7 @@ const FALLBACK_IMG =
   "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80";
 
 async function loadListings() {
-  const res = await fetch("data/listings.json?v=20261018f");
+  const res = await fetch("data/listings.json?v=20261018g");
   if (!res.ok) throw new Error("無法載入 listings.json（請用本機靜態伺服器開啟）");
   const data = await res.json();
   const listings = (data.listings || []).filter(
@@ -42,7 +42,26 @@ function stars(score) {
 }
 
 function listingImage(l) {
-  return l.image_url || l.cover_image || FALLBACK_IMG;
+  // Prefer real hotel photos when CEO fills them; fall back to placeholders
+  if (Array.isArray(l.photos) && l.photos.length) {
+    const p = l.photos[0];
+    if (typeof p === "string" && p) return p;
+    if (p && (p.url || p.src)) return p.url || p.src;
+  }
+  return l.photo || l.image_url || l.cover_image || FALLBACK_IMG;
+}
+
+function nearbyFoodItems(l) {
+  const raw = l.nearby_food || l.nearby_foods || [];
+  const arr = Array.isArray(raw) ? raw : raw ? [raw] : [];
+  return arr
+    .map((x) => {
+      if (!x) return "";
+      if (typeof x === "string") return x.trim();
+      return (x.name_zh || x.name || x.title || "").trim();
+    })
+    .filter(Boolean)
+    .slice(0, 2);
 }
 
 function priceSymbols(tier) {
@@ -63,6 +82,10 @@ function cardHTML(l) {
   const highHtml = highs.length
     ? `<ul class="card-highlights">${highs.map((h) => `<li>${escapeHtml(h)}</li>`).join("")}</ul>`
     : "";
+  const foods = nearbyFoodItems(l);
+  const foodHtml = foods.length
+    ? `<p class="card-food"><span class="food-label">附近美食</span> ${foods.map(escapeHtml).join(" · ")}</p>`
+    : "";
   return `
     <article class="card">
       <a href="listing.html?id=${encodeURIComponent(l.id)}" style="display:contents;color:inherit;text-decoration:none">
@@ -72,6 +95,7 @@ function cardHTML(l) {
           <h3>${escapeHtml(l.name_zh)}</h3>
           <p class="one-liner">${escapeHtml(bits.join(" · "))}</p>
           ${highHtml}
+          ${foodHtml}
         </div>
       </a>
     </article>`;
@@ -122,6 +146,7 @@ window.loadListings = loadListings;
 window.priceLabel = priceLabel;
 window.stars = stars;
 window.listingImage = listingImage;
+window.nearbyFoodItems = nearbyFoodItems;
 window.priceSymbols = priceSymbols;
 window.cardHTML = cardHTML;
 window.countByCityKey = countByCityKey;

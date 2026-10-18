@@ -454,3 +454,20 @@ a:hover { text-decoration: underline; }
   padding: 6px 12px;
   color: #12343B;
 }
+
+
+.card-food, .detail-food {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #5A7A80;
+  line-height: 1.45;
+}
+.card-food .food-label, .detail-food strong {
+  color: #2AA5A0;
+  font-weight: 600;
+  margin-right: 4px;
+}
+.detail-food {
+  font-size: 14px;
+  margin: 10px 0 14px;
+}
