@@ -1,0 +1,934 @@
+{
+  "site": {
+    "name_zh": "灣宿指南",
+    "name_en": "BayStay",
+    "tagline_zh": "大灣區出發，亞洲度假村一頁揀清",
+    "tagline_en": "GBA-first resort & hotel picks across Asia",
+    "locale_primary": "zh-Hant",
+    "non_gaming_only": true
+  },
+  "listings": [
+    {
+      "id": "bs-mo-01",
+      "name_zh": "路環金光酒店 Grand Coloane",
+      "name_en": "Grand Coloane Resort",
+      "region": "gba",
+      "city": "澳門路環",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "沙灘",
+        "親子",
+        "SPA",
+        "高爾夫"
+      ],
+      "one_liner_zh": "黑沙海灘五星度假村，非娛樂場主打，適合週末放空",
+      "one_liner_en": "Beach resort on Hac Sa, Coloane — rooms and pools first",
+      "booking_url": "https://www.artyzen.com/en/hotels/grand-coloane-resort/",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-mo-02",
+      "name_zh": "澳門十六浦索菲特酒店",
+      "name_en": "Sofitel Macau at Ponte 16",
+      "region": "gba",
+      "city": "澳門半島",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "泳池",
+        "SPA",
+        "早餐",
+        "河景"
+      ],
+      "one_liner_zh": "內港索菲特，半島短住與河景",
+      "one_liner_en": "Inner Harbour Sofitel for peninsula short stays",
+      "booking_url": "https://www.sofitel-macau.com/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.2,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-mo-03",
+      "name_zh": "澳門瑞吉酒店",
+      "name_en": "The St. Regis Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "country": "MO",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "早餐",
+        "豪華"
+      ],
+      "one_liner_zh": "路氹瑞吉禮賓服務與泳池，短住儀式感",
+      "one_liner_en": "St. Regis Cotai stay with butler-level service",
+      "booking_url": "https://www.marriott.com/en-us/hotels/mfmxr-the-st-regis-macao/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-mo-04",
+      "name_zh": "澳門康萊德酒店",
+      "name_en": "Conrad Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "親子",
+        "早餐",
+        "購物"
+      ],
+      "one_liner_zh": "金光大道旁康萊德，家庭與短住皆方便",
+      "one_liner_en": "Conrad on Cotai Strip for family and short stays",
+      "booking_url": "https://www.hilton.com/en/hotels/mfmci-conrad-macao/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-zh-01",
+      "name_zh": "珠海長隆橫琴灣酒店",
+      "name_en": "Chimelong Hengqin Bay Hotel",
+      "region": "gba",
+      "city": "珠海橫琴",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題樂園",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "海洋王國旁旗艦酒店，親子週末首選",
+      "one_liner_en": "Flagship hotel beside Ocean Kingdom for families",
+      "booking_url": "https://zhuhai-chimelong.chimelonghotels.cn/booking.html",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-zh-02",
+      "name_zh": "珠海東澳島萬豪度假酒店",
+      "name_en": "Zhuhai Dong'ao Island Marriott Resort",
+      "region": "gba",
+      "city": "珠海東澳島",
+      "country": "CN",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "島嶼",
+        "SPA"
+      ],
+      "one_liner_zh": "東澳島萬豪，渡輪抵達後的海島度假",
+      "one_liner_en": "Island Marriott on Dong'ao after the ferry",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhmd-zhuhai-dongao-island-marriott-resort/overview/",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-zh-03",
+      "name_zh": "珠海瑞吉酒店",
+      "name_en": "The St. Regis Zhuhai",
+      "region": "gba",
+      "city": "珠海香洲",
+      "country": "CN",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "SPA",
+        "豪華",
+        "海景",
+        "早餐"
+      ],
+      "one_liner_zh": "香洲沿岸瑞吉，商務＋休閒混搭",
+      "one_liner_en": "Waterfront St. Regis for leisure-business mixes",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhxr-the-st-regis-zhuhai/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-zh-04",
+      "name_zh": "珠海萬豪酒店",
+      "name_en": "Zhuhai Marriott Hotel",
+      "region": "gba",
+      "city": "珠海吉大",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "早餐",
+        "近口岸"
+      ],
+      "one_liner_zh": "吉大萬豪，往返澳門口岸方便",
+      "one_liner_en": "Jida Marriott with easy Macau-border access",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhmc-zhuhai-marriott-hotel/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.1,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-sz-01",
+      "name_zh": "深圳四季酒店",
+      "name_en": "Four Seasons Hotel Shenzhen",
+      "region": "gba",
+      "city": "深圳福田",
+      "country": "CN",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "豪華",
+        "會展"
+      ],
+      "one_liner_zh": "福田會展旁四季，城中度假質感",
+      "one_liner_en": "Futian Four Seasons by the convention centre",
+      "booking_url": "https://www.fourseasons.com/shenzhen/",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-sz-02",
+      "name_zh": "深圳麗思卡爾頓酒店",
+      "name_en": "The Ritz-Carlton Shenzhen",
+      "region": "gba",
+      "city": "深圳福田",
+      "country": "CN",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "豪華",
+        "早餐"
+      ],
+      "one_liner_zh": "福田麗思，高空泳池與禮賓服務",
+      "one_liner_en": "Ritz-Carlton Futian with sky-high pool service",
+      "booking_url": "https://www.marriott.com/en-us/hotels/szxrz-the-ritz-carlton-shenzhen/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-sz-03",
+      "name_zh": "深圳華僑城洲際大酒店",
+      "name_en": "InterContinental Shenzhen",
+      "region": "gba",
+      "city": "深圳南山",
+      "country": "CN",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "主題樂園",
+        "親子",
+        "SPA"
+      ],
+      "one_liner_zh": "華僑城洲際，近歡樂谷與海岸城",
+      "one_liner_en": "OCT InterContinental near Happy Valley",
+      "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/shenzhen/szxha/hoteldetail",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-sz-04",
+      "name_zh": "深圳大中華喜來登酒店",
+      "name_en": "Sheraton Shenzhen Futian Hotel",
+      "region": "gba",
+      "city": "深圳福田",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "早餐",
+        "商務休閒",
+        "泳池"
+      ],
+      "one_liner_zh": "福田喜來登，會展與購物步行圈",
+      "one_liner_en": "Futian Sheraton in the CBD walkable loop",
+      "booking_url": "https://www.marriott.com/en-us/hotels/szxsi-sheraton-shenzhen-futian-hotel/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.0,
+      "occasion": [
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-hk-01",
+      "name_zh": "香港富麗敦海洋公園酒店",
+      "name_en": "The Fullerton Ocean Park Hotel Hong Kong",
+      "region": "gba",
+      "city": "香港南區",
+      "country": "HK",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "親子",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "海洋公園旁海景度假酒店，親子設施齊",
+      "one_liner_en": "Oceanfront Fullerton beside Ocean Park Water World",
+      "booking_url": "https://www.fullertonhotels.com/fullerton-ocean-park-hotel-hongkong",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-hk-02",
+      "name_zh": "香港海洋公園萬豪酒店",
+      "name_en": "Hong Kong Ocean Park Marriott Hotel",
+      "region": "gba",
+      "city": "香港黃竹坑",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "泳池",
+        "主題樂園",
+        "早餐"
+      ],
+      "one_liner_zh": "天橋直達海洋公園，家庭主題房",
+      "one_liner_en": "Bridge access to Ocean Park with family rooms",
+      "booking_url": "https://www.marriott.com/en-us/hotels/hkgop-hong-kong-ocean-park-marriott-hotel/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-hk-03",
+      "name_zh": "香港迪士尼樂園酒店",
+      "name_en": "Hong Kong Disneyland Hotel",
+      "region": "gba",
+      "city": "香港大嶼山",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題樂園",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "迪士尼官方酒店，入園方便",
+      "one_liner_en": "Official Disneyland hotel with park access perks",
+      "booking_url": "https://www.hongkongdisneyland.com/hotels/hong-kong-disneyland-hotel/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-hk-04",
+      "name_zh": "香港文華東方酒店",
+      "name_en": "Mandarin Oriental, Hong Kong",
+      "region": "gba",
+      "city": "香港中環",
+      "country": "HK",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "SPA",
+        "豪華",
+        "海景",
+        "早餐"
+      ],
+      "one_liner_zh": "中環文華東方，城市度假經典",
+      "one_liner_en": "Iconic Central Mandarin for a city retreat",
+      "booking_url": "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-th-01",
+      "name_zh": "安娜塔拉邁考普吉別墅",
+      "name_en": "Anantara Mai Khao Phuket Villas",
+      "region": "asia",
+      "city": "普吉邁考",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池別墅",
+        "SPA",
+        "親子"
+      ],
+      "one_liner_zh": "邁考海灘泳池別墅，近機場仍安靜",
+      "one_liner_en": "Mai Khao pool villas near the airport, still quiet",
+      "booking_url": "https://www.anantara.com/en/mai-khao-phuket",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "家庭",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-th-02",
+      "name_zh": "六善瑤諾伊",
+      "name_en": "Six Senses Yao Noi",
+      "region": "asia",
+      "city": "攀牙灣瑤諾伊島",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "島嶼",
+        "泳池別墅",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "攀牙灣石灰岩海景，隱世島嶼度假",
+      "one_liner_en": "Phang Nga limestone bay hideaway on Yao Noi",
+      "booking_url": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.9,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-th-03",
+      "name_zh": "安娜塔拉拉揚普吉",
+      "name_en": "Anantara Layan Phuket Resort",
+      "region": "asia",
+      "city": "普吉拉揚",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "SPA",
+        "泳池",
+        "養生"
+      ],
+      "one_liner_zh": "拉揚海灘度假村，養生與海景並重",
+      "one_liner_en": "Layan Beach resort with strong wellness focus",
+      "booking_url": "https://www.anantara.com/en/layan-phuket",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-th-04",
+      "name_zh": "Club Med 普吉",
+      "name_en": "Club Med Phuket",
+      "region": "asia",
+      "city": "普吉卡倫",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "全包",
+        "沙灘",
+        "泳池"
+      ],
+      "one_liner_zh": "卡倫海灘全包度假村，親子活動多",
+      "one_liner_en": "All-inclusive Karon Beach club for families",
+      "booking_url": "https://www.clubmed.com/r/phuket/y",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.2,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-th-05",
+      "name_zh": "華欣森塔拉大酒店",
+      "name_en": "Centara Grand Beach Resort & Villas Hua Hin",
+      "region": "asia",
+      "city": "華欣",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "親子",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "華欣海灘老牌度假村，曼谷週末短線",
+      "one_liner_en": "Classic Hua Hin beach resort for short breaks",
+      "booking_url": "https://www.centarahotelsresorts.com/centaragrand/cghb",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-jp-01",
+      "name_zh": "星野集團 京都 嵐山",
+      "name_en": "HOSHINOYA Kyoto",
+      "region": "asia",
+      "city": "京都嵐山",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "町屋",
+        "河景",
+        "日式",
+        "靜謐"
+      ],
+      "one_liner_zh": "嵐山船渡抵達的星野町屋旅館",
+      "one_liner_en": "Boat-access Hoshinoya townhouse stay in Arashiyama",
+      "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakyoto/",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.9,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-jp-02",
+      "name_zh": "Club Med 北海道佐幌",
+      "name_en": "Club Med Sahoro Hokkaido",
+      "region": "asia",
+      "city": "北海道占冠",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "滑雪",
+        "親子",
+        "全包",
+        "溫泉"
+      ],
+      "one_liner_zh": "佐幌全包滑雪度假村，冬夏皆宜",
+      "one_liner_en": "All-inclusive Sahoro for ski and green seasons",
+      "booking_url": "https://www.clubmed.com/r/sahoro-hokkaido/y",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-jp-03",
+      "name_zh": "東京麗思卡爾頓酒店",
+      "name_en": "The Ritz-Carlton, Tokyo",
+      "region": "asia",
+      "city": "東京六本木",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "豪華",
+        "SPA",
+        "城市景觀",
+        "早餐"
+      ],
+      "one_liner_zh": "六本木高空麗思，城市度假視角",
+      "one_liner_en": "Roppongi Ritz-Carlton skyline city retreat",
+      "booking_url": "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-jp-04",
+      "name_zh": "星野集團 輕井澤",
+      "name_en": "HOSHINOYA Karuizawa",
+      "region": "asia",
+      "city": "長野輕井澤",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "溫泉",
+        "森林",
+        "親子",
+        "日式"
+      ],
+      "one_liner_zh": "輕井澤溪谷星野，森系溫泉度假",
+      "one_liner_en": "Forest onsen retreat at Hoshinoya Karuizawa",
+      "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "家庭",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-jp-05",
+      "name_zh": "沖繩海麗客蘭酒店",
+      "name_en": "Halekulani Okinawa",
+      "region": "asia",
+      "city": "沖繩恩納",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "恩納海岸 Halekulani，沖繩高端海景",
+      "one_liner_en": "Onna Coast Halekulani beach luxury",
+      "booking_url": "https://www.halekulani.com/okinawa/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "情侶",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-kr-01",
+      "name_zh": "首爾Signiel",
+      "name_en": "Signiel Seoul",
+      "region": "asia",
+      "city": "首爾蠶室",
+      "country": "KR",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "豪華",
+        "高空",
+        "SPA",
+        "早餐"
+      ],
+      "one_liner_zh": "樂天世界塔 Signiel，高空城市景觀",
+      "one_liner_en": "Signiel atop Lotte World Tower",
+      "booking_url": "https://www.lottehotel.com/seoul-signiel/en.html",
+      "cover_image": "",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-kr-02",
+      "name_zh": "濟州新羅酒店",
+      "name_en": "The Shilla Jeju",
+      "region": "asia",
+      "city": "濟州中文",
+      "country": "KR",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "親子",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "中文觀光圈新羅，濟州家庭度假穩陣",
+      "one_liner_en": "Jungmun Shilla for a steady Jeju family base",
+      "booking_url": "https://www.shilla.net/jeju/index.do",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-kr-03",
+      "name_zh": "首爾四季酒店",
+      "name_en": "Four Seasons Hotel Seoul",
+      "region": "asia",
+      "city": "首爾鐘路",
+      "country": "KR",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "SPA",
+        "豪華",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "光化門四季，首爾市區度假質感",
+      "one_liner_en": "Gwanghwamun Four Seasons city retreat",
+      "booking_url": "https://www.fourseasons.com/seoul/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-kr-04",
+      "name_zh": "釜山海雲台柏悅酒店",
+      "name_en": "Park Hyatt Busan",
+      "region": "asia",
+      "city": "釜山海雲台",
+      "country": "KR",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "海景",
+        "SPA",
+        "豪華",
+        "泳池"
+      ],
+      "one_liner_zh": "海雲台柏悅，釜山海岸線景觀",
+      "one_liner_en": "Haeundae Park Hyatt on the Busan coast",
+      "booking_url": "https://www.hyatt.com/park-hyatt/en-US/pusph-park-hyatt-busan",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-kr-05",
+      "name_zh": "江原道 Alpensia",
+      "name_en": "InterContinental Alpensia Pyeongchang Resort",
+      "region": "asia",
+      "city": "平昌",
+      "country": "KR",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "滑雪",
+        "親子",
+        "山景",
+        "泳池"
+      ],
+      "one_liner_zh": "平昌阿爾卑西亞洲際，冬夏山區度假",
+      "one_liner_en": "Alpensia InterContinental for mountain seasons",
+      "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/pyeongchang/selal/hoteldetail",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web"
+    },
+    {
+      "id": "bs-th-06",
+      "name_zh": "安娜塔拉瑤艾度假村",
+      "name_en": "Anantara Koh Yao Yai Resort & Villas",
+      "region": "asia",
+      "city": "攀牙灣瑤艾島",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "島嶼",
+        "沙灘",
+        "泳池別墅",
+        "SPA"
+      ],
+      "one_liner_zh": "攀牙灣瑤艾島海灘別墅，家庭與情侶皆適合",
+      "one_liner_en": "Koh Yao Yai beach villas in Phang Nga Bay",
+      "booking_url": "https://www.anantara.com/en/koh-yao-yai-phuket",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "家庭",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "official_web"
+    }
+  ]
+}
