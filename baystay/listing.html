@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>住宿詳情｜灣宿指南 BayStay</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/style.css?v=20261019a" />
 </head>
 <body>
   <header class="site-header">
@@ -31,7 +31,7 @@
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261018i"></script>
+  <script src="assets/common.js?v=20261019a"></script>
   <script>
     const id = qs("id");
     if (!id) {
@@ -80,9 +80,12 @@
                   <dt>場合</dt><dd>${occasions || "—"}</dd>
                   <dt>標籤</dt><dd><div class="badge-row">${tags}</div></dd>
                 </dl>
-                <p>
-                  <a class="btn btn-primary" href="${escapeHtml(l.booking_url)}" rel="noopener noreferrer" target="_blank">查房價／預訂（外部連結）</a>
-                </p>
+                <div class="booking-cta-stack">
+                  <a class="btn btn-primary" href="${escapeHtml(featuredBookingUrl(l) || l.booking_url || '')}" rel="noopener noreferrer" target="_blank">查房價／預訂（外部連結）</a>
+                  ${l.booking_url_fallback && String(l.booking_url_fallback).trim()
+                    ? `<a class="booking-fallback-link" href="${escapeHtml(String(l.booking_url_fallback).trim())}" rel="noopener noreferrer" target="_blank">備用訂房</a>`
+                    : ""}
+                </div>
               </div>
             </article>`;
         })
