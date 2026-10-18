@@ -22,7 +22,7 @@ const CITY_CHIPS = [
 const FALLBACK_IMG =
   "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80";
 
-const CACHE_V = "20261019a";
+const CACHE_V = "20261019b";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
@@ -103,6 +103,13 @@ function priceSymbols(tier) {
   return "$".repeat(n);
 }
 
+function prefersReducedMotion() {
+  return (
+    typeof matchMedia !== "undefined" &&
+    matchMedia("(prefers-reduced-motion: reduce)").matches
+  );
+}
+
 function cardHTML(l) {
   const img = listingImage(l);
   const tagLine = l.featured
@@ -120,10 +127,14 @@ function cardHTML(l) {
   const foodHtml = foods.length
     ? `<p class="card-food"><span class="food-label">附近美食</span> ${foods.map(escapeHtml).join(" · ")}</p>`
     : "";
+  const safeImg = escapeHtml(img);
+  const imgDiv = prefersReducedMotion()
+    ? `<div class="card-img is-loaded" style="background-image:url('${safeImg}')" role="img" aria-label="${escapeHtml(l.name_zh)}"></div>`
+    : `<div class="card-img" data-src="${safeImg}" role="img" aria-label="${escapeHtml(l.name_zh)}"></div>`;
   return `
     <article class="card">
       <a href="listing.html?id=${encodeURIComponent(l.id)}" style="display:contents;color:inherit;text-decoration:none">
-        <div class="card-img" style="background-image:url('${escapeHtml(img)}')" role="img" aria-label="${escapeHtml(l.name_zh)}"></div>
+        ${imgDiv}
         <div class="card-body">
           ${tagLine}
           <h3>${escapeHtml(l.name_zh)}</h3>
@@ -133,6 +144,60 @@ function cardHTML(l) {
         </div>
       </a>
     </article>`;
+}
+
+/** Fade-in card background images after cardHTML insert. */
+function hydrateCardImages(root) {
+  const scope = root && root.querySelectorAll ? root : document;
+  const reduce = prefersReducedMotion();
+  scope.querySelectorAll(".card-img[data-src]").forEach((el) => {
+    const url = el.getAttribute("data-src");
+    if (!url) return;
+    if (reduce) {
+      el.style.backgroundImage = "url('" + url + "')";
+      el.classList.add("is-loaded");
+      el.removeAttribute("data-src");
+      return;
+    }
+    const img = new Image();
+    img.onload = function () {
+      el.style.backgroundImage = "url('" + url + "')";
+      el.classList.add("is-loaded");
+      el.removeAttribute("data-src");
+    };
+    img.onerror = function () {
+      el.style.backgroundImage = "url('" + FALLBACK_IMG + "')";
+      el.classList.add("is-loaded");
+      el.removeAttribute("data-src");
+    };
+    img.src = url;
+  });
+}
+
+/** Soft Lift P1: IntersectionObserver reveal; unobserve after first reveal. */
+function initMotionReveal(selector) {
+  const sel = selector || ".motion-reveal";
+  const nodes = Array.prototype.slice.call(document.querySelectorAll(sel));
+  if (!nodes.length) return;
+  if (prefersReducedMotion()) {
+    nodes.forEach((el) => el.classList.add("is-revealed"));
+    return;
+  }
+  if (typeof IntersectionObserver === "undefined") {
+    nodes.forEach((el) => el.classList.add("is-revealed"));
+    return;
+  }
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-revealed");
+        io.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12 }
+  );
+  nodes.forEach((el) => io.observe(el));
 }
 
 function countByCityKey(listings) {
@@ -186,6 +251,9 @@ window.listingImage = listingImage;
 window.nearbyFoodItems = nearbyFoodItems;
 window.priceSymbols = priceSymbols;
 window.cardHTML = cardHTML;
+window.prefersReducedMotion = prefersReducedMotion;
+window.hydrateCardImages = hydrateCardImages;
+window.initMotionReveal = initMotionReveal;
 window.countByCityKey = countByCityKey;
 window.renderCityChips = renderCityChips;
 window.escapeHtml = escapeHtml;
