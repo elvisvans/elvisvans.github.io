@@ -1,0 +1,4688 @@
+{
+  "site": {
+    "name_zh": "灣宿指南",
+    "name_en": "BayStay",
+    "tagline_zh": "大灣區出發，亞洲度假村與酒店一頁揀清",
+    "tagline_en": "GBA-first resort & hotel picks across Asia",
+    "locale_primary": "zh-Hant",
+    "non_gaming_only": false
+  },
+  "listings": [
+    {
+      "id": "bs-mo-01",
+      "name_zh": "路環金光酒店 Grand Coloane",
+      "name_en": "Grand Coloane Resort",
+      "region": "gba",
+      "city": "澳門路環",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "沙灘",
+        "親子",
+        "SPA",
+        "高爾夫"
+      ],
+      "one_liner_zh": "黑沙海灘五星度假村，適合週末放空",
+      "one_liner_en": "Beach resort on Hac Sa, Coloane",
+      "booking_url": "https://www.artyzen.com/en/hotels/grand-coloane-resort/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hotel_Grand_Coloane_Resort.jpg/1280px-Hotel_Grand_Coloane_Resort.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hotel_Grand_Coloane_Resort.jpg/1280px-Hotel_Grand_Coloane_Resort.jpg",
+      "highlights": [
+        "泳池",
+        "沙灘",
+        "親子"
+      ],
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-02",
+      "name_zh": "澳門十六浦索菲特酒店",
+      "name_en": "Sofitel Macau at Ponte 16",
+      "region": "gba",
+      "city": "澳門半島",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "泳池",
+        "SPA",
+        "早餐",
+        "河景"
+      ],
+      "one_liner_zh": "內港索菲特，半島短住與河景",
+      "one_liner_en": "Inner Harbour Sofitel for peninsula short stays",
+      "booking_url": "https://www.sofitel-macau.com/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Black_Galaxy_bathroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.2,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Black_Galaxy_bathroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "室外泳池",
+        "SPA 放鬆",
+        "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-03",
+      "name_zh": "澳門瑞吉酒店",
+      "name_en": "The St. Regis Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "country": "MO",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "早餐",
+        "豪華"
+      ],
+      "one_liner_zh": "路氹瑞吉禮賓服務與泳池，短住儀式感",
+      "one_liner_en": "St. Regis Cotai stay with butler-level service",
+      "booking_url": "https://www.marriott.com/en-us/hotels/mfmxr-the-st-regis-macao/overview/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_St._Regis_Macao_hotel_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_St._Regis_Macao_hotel_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "瑞吉禮賓服務",
+        "路氹泳池假期",
+        "短住儀式感"
+      ],
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-04",
+      "name_zh": "澳門康萊德酒店",
+      "name_en": "Conrad Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "親子",
+        "早餐",
+        "購物"
+      ],
+      "one_liner_zh": "金光大道旁康萊德，家庭與短住皆方便",
+      "one_liner_en": "Conrad on Cotai Strip for family and short stays",
+      "booking_url": "https://www.hilton.com/en/hotels/mfmcsci-conrad-macao/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Conrad_Macao.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Conrad_Macao.jpg",
+      "highlights": [
+        "室外泳池",
+        "親子友善設施",
+        "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ],
+      "image_source": "Wikimedia Commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Conrad_Macao.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-zh-01",
+      "name_zh": "珠海長隆橫琴灣酒店",
+      "name_en": "Chimelong Hengqin Bay Hotel",
+      "region": "gba",
+      "city": "珠海橫琴",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題樂園",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "海洋王國旁旗艦酒店，親子週末首選",
+      "one_liner_en": "Flagship hotel beside Ocean Kingdom for families",
+      "booking_url": "https://zhuhai-chimelong.chimelonghotels.cn/booking.html",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Hengqin_Bay_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Hengqin_Bay_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "親子",
+        "主題樂園",
+        "泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "長隆園區餐飲",
+          "note": "主題餐廳方便親子"
+        },
+        {
+          "name": "橫琴粵菜／海鮮",
+          "note": "度假區外選擇"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-02",
+      "name_zh": "珠海東澳島萬豪度假酒店",
+      "name_en": "Zhuhai Dong'ao Island Marriott Resort",
+      "region": "gba",
+      "city": "珠海東澳島",
+      "country": "CN",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "島嶼",
+        "SPA"
+      ],
+      "one_liner_zh": "東澳島萬豪，渡輪抵達後的海島度假",
+      "one_liner_en": "Island Marriott on Dong'ao after the ferry",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhmd-zhuhai-dongao-island-marriott-resort/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "",
+      "highlights": [
+        "沙灘",
+        "泳池",
+        "島嶼"
+      ],
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-03",
+      "name_zh": "珠海瑞吉酒店",
+      "name_en": "The St. Regis Zhuhai",
+      "region": "gba",
+      "city": "珠海香洲",
+      "country": "CN",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "SPA",
+        "豪華",
+        "海景",
+        "早餐"
+      ],
+      "one_liner_zh": "香洲沿岸瑞吉，商務＋休閒混搭",
+      "one_liner_en": "Waterfront St. Regis for leisure-business mixes",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhxr-the-st-regis-zhuhai/overview/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hengqin_Island_59.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hengqin_Island_59.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "香洲沿岸",
+        "商務休閒混搭",
+        "瑞吉服務"
+      ],
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-04",
+      "name_zh": "珠海萬豪酒店",
+      "name_en": "Zhuhai Marriott Hotel",
+      "region": "gba",
+      "city": "珠海吉大",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "早餐",
+        "近口岸"
+      ],
+      "one_liner_zh": "吉大萬豪，往返澳門口岸方便",
+      "one_liner_en": "Jida Marriott with easy Macau-border access",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhmc-zhuhai-marriott-hotel/overview/",
+      "cover_image": "",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.1,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "",
+      "highlights": [
+        "室外泳池",
+        "早餐豐富",
+        "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-01",
+      "name_zh": "深圳四季酒店",
+      "name_en": "Four Seasons Hotel Shenzhen",
+      "region": "gba",
+      "city": "深圳福田",
+      "country": "CN",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "豪華",
+        "會展"
+      ],
+      "one_liner_zh": "福田會展旁四季，城中度假質感",
+      "one_liner_en": "Futian Four Seasons by the convention centre",
+      "booking_url": "https://www.fourseasons.com/shenzhen/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
+      "highlights": [
+        "泳池",
+        "SPA",
+        "豪華"
+      ],
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
+      ],
+      "image_source": "Wikimedia Commons (Futian / Fuhua 3rd Road night exterior)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-sz-02",
+      "name_zh": "深圳麗思卡爾頓酒店",
+      "name_en": "The Ritz-Carlton Shenzhen",
+      "region": "gba",
+      "city": "深圳福田",
+      "country": "CN",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "豪華",
+        "早餐"
+      ],
+      "one_liner_zh": "福田麗思，高空泳池與禮賓服務",
+      "one_liner_en": "Ritz-Carlton Futian with sky-high pool service",
+      "booking_url": "https://www.marriott.com/en-us/hotels/szxrz-the-ritz-carlton-shenzhen/overview/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/0/01/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_%E6%98%9F%E6%B2%B3%E9%BA%97%E6%80%9D%E5%8D%A1%E7%88%BE%E9%A0%93%E9%85%92%E5%BA%97_The_Ritz-Carlton_Hotel_night_October_2017_IX1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_%E6%98%9F%E6%B2%B3%E9%BA%97%E6%80%9D%E5%8D%A1%E7%88%BE%E9%A0%93%E9%85%92%E5%BA%97_The_Ritz-Carlton_Hotel_night_October_2017_IX1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "室外泳池",
+        "SPA 放鬆",
+        "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-03",
+      "name_zh": "深圳華僑城洲際大酒店",
+      "name_en": "InterContinental Shenzhen",
+      "region": "gba",
+      "city": "深圳南山",
+      "country": "CN",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "主題樂園",
+        "親子",
+        "SPA"
+      ],
+      "one_liner_zh": "華僑城洲際，近歡樂谷與海岸城",
+      "one_liner_en": "OCT InterContinental near Happy Valley",
+      "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/shenzhen/szxha/hoteldetail",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%8D%97%E5%A4%A7%E9%81%93_Shennan_Blvd_%E6%B7%B1%E5%9C%B3%E8%8F%AF%E5%83%91%E5%9F%8E%E6%B4%B2%E9%9A%9B%E5%A4%A7%E9%85%92%E5%BA%97_OCT_InterContinental_Shenzhen_September_2024_R12S_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%8D%97%E5%A4%A7%E9%81%93_Shennan_Blvd_%E6%B7%B1%E5%9C%B3%E8%8F%AF%E5%83%91%E5%9F%8E%E6%B4%B2%E9%9A%9B%E5%A4%A7%E9%85%92%E5%BA%97_OCT_InterContinental_Shenzhen_September_2024_R12S_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "室外泳池",
+        "親子友善設施",
+        "SPA 放鬆"
+      ],
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-04",
+      "name_zh": "深圳大中華喜來登酒店",
+      "name_en": "Sheraton Shenzhen Futian Hotel",
+      "region": "gba",
+      "city": "深圳福田",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "早餐",
+        "商務休閒",
+        "泳池"
+      ],
+      "one_liner_zh": "福田喜來登，會展與購物步行圈",
+      "one_liner_en": "Futian Sheraton in the CBD walkable loop",
+      "booking_url": "https://www.marriott.com/en-us/hotels/szxsi-sheraton-shenzhen-futian-hotel/overview/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.0,
+      "occasion": [
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "早餐豐富",
+        "室外泳池",
+        "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-01",
+      "name_zh": "香港富麗敦海洋公園酒店",
+      "name_en": "The Fullerton Ocean Park Hotel Hong Kong",
+      "region": "gba",
+      "city": "香港南區",
+      "country": "HK",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "親子",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "海洋公園旁海景度假酒店，親子設施齊",
+      "one_liner_en": "Oceanfront Fullerton beside Ocean Park Water World",
+      "booking_url": "https://www.fullertonhotels.com/fullerton-ocean-park-hotel-hongkong",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Fullerton_Ocean_Park_Hotel_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Fullerton_Ocean_Park_Hotel_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "海景",
+        "親子",
+        "泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-02",
+      "name_zh": "香港海洋公園萬豪酒店",
+      "name_en": "Hong Kong Ocean Park Marriott Hotel",
+      "region": "gba",
+      "city": "香港黃竹坑",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "泳池",
+        "主題樂園",
+        "早餐"
+      ],
+      "one_liner_zh": "天橋直達海洋公園，家庭主題房",
+      "one_liner_en": "Bridge access to Ocean Park with family rooms",
+      "booking_url": "https://www.marriott.com/en-us/hotels/hkgop-hong-kong-ocean-park-marriott-hotel/overview/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hong_Kong_Ocean_Park_Marriott_Hotel_Lobby_201901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hong_Kong_Ocean_Park_Marriott_Hotel_Lobby_201901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "親子友善設施",
+        "室外泳池",
+        "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "園區／酒店餐廳",
+          "note": "主題餐飲為主"
+        },
+        {
+          "name": "大嶼山長沙／東涌美食",
+          "note": "出園後選擇"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-03",
+      "name_zh": "香港迪士尼樂園酒店",
+      "name_en": "Hong Kong Disneyland Hotel",
+      "region": "gba",
+      "city": "香港大嶼山",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題樂園",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "迪士尼官方酒店，入園方便",
+      "one_liner_en": "Official Disneyland hotel with park access perks",
+      "booking_url": "https://www.hongkongdisneyland.com/hotels/hong-kong-disneyland-hotel/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hong_Kong_Disneyland_Hotel.jpg/1280px-Hong_Kong_Disneyland_Hotel.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hong_Kong_Disneyland_Hotel.jpg/1280px-Hong_Kong_Disneyland_Hotel.jpg",
+      "highlights": [
+        "親子友善設施",
+        "室外泳池",
+        "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-04",
+      "name_zh": "香港文華東方酒店",
+      "name_en": "Mandarin Oriental, Hong Kong",
+      "region": "gba",
+      "city": "香港中環",
+      "country": "HK",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "SPA",
+        "豪華",
+        "海景",
+        "早餐"
+      ],
+      "one_liner_zh": "中環文華東方，城市度假經典",
+      "one_liner_en": "Iconic Central Mandarin for a city retreat",
+      "booking_url": "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour",
+      "cover_image": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
+      "highlights": [
+        "SPA",
+        "豪華",
+        "海景"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-01",
+      "name_zh": "安娜塔拉邁考普吉別墅",
+      "name_en": "Anantara Mai Khao Phuket Villas",
+      "region": "asia",
+      "city": "普吉邁考",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池別墅",
+        "SPA",
+        "親子"
+      ],
+      "one_liner_zh": "邁考海灘泳池別墅，近機場仍安靜",
+      "one_liner_en": "Mai Khao pool villas near the airport, still quiet",
+      "booking_url": "https://www.anantara.com/en/mai-khao-phuket",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-mai-khao-phuket-villas/new-images-2026/apk-1920-x-1080.png",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "家庭",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-mai-khao-phuket-villas/new-images-2026/apk-1920-x-1080.png",
+      "highlights": [
+        "沙灘",
+        "泳池別墅",
+        "SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-02",
+      "name_zh": "六善瑤諾伊",
+      "name_en": "Six Senses Yao Noi",
+      "region": "asia",
+      "city": "攀牙灣瑤諾伊島",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "島嶼",
+        "泳池別墅",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "攀牙灣石灰岩海景，隱世島嶼度假",
+      "one_liner_en": "Phang Nga limestone bay hideaway on Yao Noi",
+      "booking_url": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Crab_sand_balls%2C_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.9,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Crab_sand_balls%2C_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "島嶼",
+        "泳池別墅",
+        "SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-03",
+      "name_zh": "安娜塔拉拉揚普吉",
+      "name_en": "Anantara Layan Phuket Resort",
+      "region": "asia",
+      "city": "普吉拉揚",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "SPA",
+        "泳池",
+        "養生"
+      ],
+      "one_liner_zh": "拉揚海灘度假村，養生與海景並重",
+      "one_liner_en": "Layan Beach resort with strong wellness focus",
+      "booking_url": "https://www.anantara.com/en/layan-phuket",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-layan-phuket-resort/new-images-2026/anantara-layan-phuket-resort-hero-shot-1920-x-1080-1-2.png",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-layan-phuket-resort/new-images-2026/anantara-layan-phuket-resort-hero-shot-1920-x-1080-1-2.png",
+      "highlights": [
+        "臨近沙灘",
+        "SPA 放鬆",
+        "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-04",
+      "name_zh": "Club Med 普吉",
+      "name_en": "Club Med Phuket",
+      "region": "asia",
+      "city": "普吉卡倫",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "全包",
+        "沙灘",
+        "泳池"
+      ],
+      "one_liner_zh": "卡倫海灘全包度假村，親子活動多",
+      "one_liner_en": "All-inclusive Karon Beach club for families",
+      "booking_url": "https://www.clubmed.com/r/phuket/y",
+      "cover_image": "https://assets.dream.clubmed/pm_7531_812_812280-uq9lhejyst-swhr.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.2,
+      "occasion": [
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://assets.dream.clubmed/pm_7531_812_812280-uq9lhejyst-swhr.jpg",
+      "highlights": [
+        "親子友善設施",
+        "臨近沙灘",
+        "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-05",
+      "name_zh": "華欣森塔拉大酒店",
+      "name_en": "Centara Grand Beach Resort & Villas Hua Hin",
+      "region": "asia",
+      "city": "華欣",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "親子",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "華欣海灘老牌度假村，曼谷週末短線",
+      "one_liner_en": "Classic Hua Hin beach resort for short breaks",
+      "booking_url": "https://www.centarahotelsresorts.com/centaragrand/cghb",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Centara_Grand_-_former_Sofitel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Centara_Grand_-_former_Sofitel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "臨近沙灘",
+        "親子友善設施",
+        "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-01",
+      "name_zh": "星野集團 京都 嵐山",
+      "name_en": "HOSHINOYA Kyoto",
+      "region": "asia",
+      "city": "京都嵐山",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "町屋",
+        "河景",
+        "日式",
+        "靜謐"
+      ],
+      "one_liner_zh": "嵐山船渡抵達的星野町屋旅館",
+      "one_liner_en": "Boat-access Hoshinoya townhouse stay in Arashiyama",
+      "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakyoto/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Arashiyama_Genrokuzancho%2C_Nishikyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-0007%2C_Japan_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.9,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Arashiyama_Genrokuzancho%2C_Nishikyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-0007%2C_Japan_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "町屋",
+        "河景",
+        "日式"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-02",
+      "name_zh": "Club Med 北海道佐幌",
+      "name_en": "Club Med Sahoro Hokkaido",
+      "region": "asia",
+      "city": "北海道占冠",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "滑雪",
+        "親子",
+        "全包",
+        "溫泉"
+      ],
+      "one_liner_zh": "佐幌全包滑雪度假村，冬夏皆宜",
+      "one_liner_en": "All-inclusive Sahoro for ski and green seasons",
+      "booking_url": "https://www.clubmed.com/r/sahoro-hokkaido/y",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Club_Med_Sahoro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Club_Med_Sahoro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "親子友善設施",
+        "溫泉體驗"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-03",
+      "name_zh": "東京麗思卡爾頓酒店",
+      "name_en": "The Ritz-Carlton, Tokyo",
+      "region": "asia",
+      "city": "東京六本木",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "豪華",
+        "SPA",
+        "城市景觀",
+        "早餐"
+      ],
+      "one_liner_zh": "六本木高空麗思，城市度假視角",
+      "one_liner_en": "Roppongi Ritz-Carlton skyline city retreat",
+      "booking_url": "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Ritz_Carlton_Midtown_Tower_1F_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "tokyo",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Ritz_Carlton_Midtown_Tower_1F_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "SPA 放鬆",
+        "早餐豐富",
+        "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "定食",
+          "note": "日式家常套餐"
+        },
+        {
+          "name": "便利店關東煮",
+          "note": "深夜備選"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-04",
+      "name_zh": "星野集團 輕井澤",
+      "name_en": "HOSHINOYA Karuizawa",
+      "region": "asia",
+      "city": "長野輕井澤",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "溫泉",
+        "森林",
+        "親子",
+        "日式"
+      ],
+      "one_liner_zh": "輕井澤溪谷星野，森系溫泉度假",
+      "one_liner_en": "Forest onsen retreat at Hoshinoya Karuizawa",
+      "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hoshino_Onsen_Ryokan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "家庭",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hoshino_Onsen_Ryokan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "溫泉體驗",
+        "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-05",
+      "name_zh": "沖繩海麗客蘭酒店",
+      "name_en": "Halekulani Okinawa",
+      "region": "asia",
+      "city": "沖繩恩納",
+      "country": "JP",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "恩納海岸 Halekulani，沖繩高端海景",
+      "one_liner_en": "Onna Coast Halekulani beach luxury",
+      "booking_url": "https://www.halekulani.com/okinawa/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chatan_Sunset_Beach_and_Vessel_Hotel_Campana_Okinawa_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "情侶",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chatan_Sunset_Beach_and_Vessel_Hotel_Campana_Okinawa_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "臨近沙灘",
+        "室外泳池",
+        "SPA 放鬆"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-01",
+      "name_zh": "首爾Signiel",
+      "name_en": "Signiel Seoul",
+      "region": "asia",
+      "city": "首爾蠶室",
+      "country": "KR",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "豪華",
+        "高空",
+        "SPA",
+        "早餐"
+      ],
+      "one_liner_zh": "樂天世界塔 Signiel，高空城市景觀",
+      "one_liner_en": "Signiel atop Lotte World Tower",
+      "booking_url": "https://www.lottehotel.com/seoul-signiel/en.html",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "seoul",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
+      "highlights": [
+        "豪華",
+        "高空",
+        "SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-02",
+      "name_zh": "濟州新羅酒店",
+      "name_en": "The Shilla Jeju",
+      "region": "asia",
+      "city": "濟州中文",
+      "country": "KR",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "親子",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "中文觀光圈新羅，濟州家庭度假穩陣",
+      "one_liner_en": "Jungmun Shilla for a steady Jeju family base",
+      "booking_url": "https://www.shilla.net/jeju/index.do",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Koea_China_Japan_Culture_Meeting_04_%2825678008814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "jeju",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Koea_China_Japan_Culture_Meeting_04_%2825678008814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "室外泳池",
+        "親子友善設施",
+        "SPA 放鬆"
+      ],
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-03",
+      "name_zh": "首爾四季酒店",
+      "name_en": "Four Seasons Hotel Seoul",
+      "region": "asia",
+      "city": "首爾鐘路",
+      "country": "KR",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "SPA",
+        "豪華",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "光化門四季，首爾市區度假質感",
+      "one_liner_en": "Gwanghwamun Four Seasons city retreat",
+      "booking_url": "https://www.fourseasons.com/seoul/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "情侶",
+        "商務休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "seoul",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
+      "highlights": [
+        "SPA 放鬆",
+        "室外泳池",
+        "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
+      ],
+      "image_source": "Wikimedia Commons (Category:Four Seasons Hotel Seoul)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-kr-04",
+      "name_zh": "釜山海雲台柏悅酒店",
+      "name_en": "Park Hyatt Busan",
+      "region": "asia",
+      "city": "釜山海雲台",
+      "country": "KR",
+      "price_tier": 5,
+      "family_friendly": false,
+      "tags": [
+        "海景",
+        "SPA",
+        "豪華",
+        "泳池"
+      ],
+      "one_liner_zh": "海雲台柏悅，釜山海岸線景觀",
+      "one_liner_en": "Haeundae Park Hyatt on the Busan coast",
+      "booking_url": "https://www.hyatt.com/park-hyatt/en-US/pusph-park-hyatt-busan",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_from_Igidae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "情侶",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_from_Igidae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "海景客房",
+        "SPA 放鬆",
+        "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-05",
+      "name_zh": "江原道 Alpensia",
+      "name_en": "InterContinental Alpensia Pyeongchang Resort",
+      "region": "asia",
+      "city": "平昌",
+      "country": "KR",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "滑雪",
+        "親子",
+        "山景",
+        "泳池"
+      ],
+      "one_liner_zh": "平昌阿爾卑西亞洲際，冬夏山區度假",
+      "one_liner_en": "Alpensia InterContinental for mountain seasons",
+      "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/pyeongchang/selal/hoteldetail",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alpensia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alpensia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "highlights": [
+        "親子友善設施",
+        "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-06",
+      "name_zh": "安娜塔拉瑤艾度假村",
+      "name_en": "Anantara Koh Yao Yai Resort & Villas",
+      "region": "asia",
+      "city": "攀牙灣瑤艾島",
+      "country": "TH",
+      "price_tier": 5,
+      "family_friendly": true,
+      "tags": [
+        "島嶼",
+        "沙灘",
+        "泳池別墅",
+        "SPA"
+      ],
+      "one_liner_zh": "攀牙灣瑤艾島海灘別墅，家庭與情侶皆適合",
+      "one_liner_en": "Koh Yao Yai beach villas in Phang Nga Bay",
+      "booking_url": "https://www.anantara.com/en/koh-yao-yai-phuket",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-koh-yao-yai-resort-and-villas/01_homepage/anantara_koh_yao_yai_resort_villas_homepage_01_1920x700.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "家庭",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-koh-yao-yai-resort-and-villas/01_homepage/anantara_koh_yao_yai_resort_villas_homepage_01_1920x700.jpg",
+      "highlights": [
+        "臨近沙灘",
+        "SPA 放鬆",
+        "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-05",
+      "name_zh": "澳門巴黎人",
+      "name_en": "The Parisian Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "泳池",
+        "景觀"
+      ],
+      "one_liner_zh": "埃菲爾鐵塔景觀與家庭友善客房",
+      "one_liner_en": "Eiffel Tower views and family-friendly rooms",
+      "booking_url": "https://www.parisianmacao.com/",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "鐵塔景觀",
+        "家庭客房",
+        "泳池設施"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/The_Parisian_Macao.jpg/1280px-The_Parisian_Macao.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/The_Parisian_Macao.jpg/1280px-The_Parisian_Macao.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-06",
+      "name_zh": "澳門倫敦人",
+      "name_en": "The Londoner Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "泳池",
+        "主題"
+      ],
+      "one_liner_zh": "英倫主題豪華度假住宿",
+      "one_liner_en": "London-themed luxury resort stay",
+      "booking_url": "https://www.londonermacao.com/",
+      "featured": true,
+      "editor_score": 4.6,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "英倫主題",
+        "豪華套房",
+        "度假泳池"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/61/THE_LONDONER_MACAU_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/THE_LONDONER_MACAU_1.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "倫敦人內餐廳",
+          "note": "英倫主題度假區用餐"
+        },
+        {
+          "name": "蛋撻／手信",
+          "note": "路氹伴手禮"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-07",
+      "name_zh": "新濠影滙",
+      "name_en": "Studio City Macau",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題",
+        "娛樂"
+      ],
+      "one_liner_zh": "影視主題度假酒店，適合親子短住",
+      "one_liner_en": "Entertainment-themed resort hotel for families",
+      "booking_url": "https://www.studiocity-macau.com/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "影視主題",
+        "親子設施",
+        "路氹方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Studio_City_Macau_27-05-2024.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Studio_City_Macau_27-05-2024.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ],
+      "image_source": "Wikimedia Commons (Category:Studio City Macau)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Studio_City_Macau_27-05-2024.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-mo-08",
+      "name_zh": "新濠鋒",
+      "name_en": "Altira Macau",
+      "region": "gba",
+      "city": "澳門氹仔",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": false,
+      "tags": [
+        "景觀",
+        "SPA",
+        "泳池"
+      ],
+      "one_liner_zh": "氹仔海景高樓住宿",
+      "one_liner_en": "Taipa waterfront high-rise stay",
+      "booking_url": "https://www.altiramacau.com/",
+      "featured": false,
+      "editor_score": 4.2,
+      "occasion": [
+        "休閒",
+        "商務休閒"
+      ],
+      "highlights": [
+        "海景客房",
+        "高空視野",
+        "SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Altira_Casino_%26_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Altira_Casino_%26_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-09",
+      "name_zh": "澳門美獅美高梅",
+      "name_en": "MGM Cotai",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "設計"
+      ],
+      "one_liner_zh": "路氹設計型豪華酒店",
+      "one_liner_en": "Design-led luxury hotel on Cotai",
+      "booking_url": "https://www.mgm.mo/en/cotai",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "設計感大堂",
+        "豪華客房",
+        "泳池SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/MGM_Cotai.jpg/1280px-MGM_Cotai.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/MGM_Cotai.jpg/1280px-MGM_Cotai.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-10",
+      "name_zh": "澳門美高梅",
+      "name_en": "MGM Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "購物",
+        "景觀"
+      ],
+      "one_liner_zh": "半島南灣一帶豪華住宿",
+      "one_liner_en": "Luxury stay near Nam Van on the peninsula",
+      "booking_url": "https://www.mgm.mo/en/macau",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "休閒",
+        "商務休閒"
+      ],
+      "highlights": [
+        "南灣地段",
+        "豪華設施",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MGM_Macau.jpg/1280px-MGM_Macau.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MGM_Macau.jpg/1280px-MGM_Macau.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-11",
+      "name_zh": "澳門四季酒店",
+      "name_en": "Four Seasons Hotel Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "親子"
+      ],
+      "one_liner_zh": "路氹四季品牌豪華度假住宿",
+      "one_liner_en": "Four Seasons Cotai luxury resort stay",
+      "booking_url": "https://www.fourseasons.com/macau/",
+      "featured": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "四季服務",
+        "親子友善",
+        "豪華泳池"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ],
+      "image_source": "Wikimedia Commons (Category:Exterior of Four Seasons Hotel & Resort Macau)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-mo-12",
+      "name_zh": "澳門文華東方",
+      "name_en": "Mandarin Oriental, Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "半島海旁文華東方住宿體驗",
+      "one_liner_en": "Harbourfront Mandarin Oriental stay",
+      "booking_url": "https://www.mandarinoriental.com/en/macau/one-central",
+      "featured": true,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "海旁位置",
+        "文華服務",
+        "SPA泳池"
+      ],
+      "cover_image": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXtJ3AbMM9XZzcUQCi2G.jpg",
+      "image_url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXtJ3AbMM9XZzcUQCi2G.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ],
+      "image_source": "Mandarin Oriental official CDN (ffycdn) — scraped from property page",
+      "image_source_url": "https://www.mandarinoriental.com/en/macau/one-central",
+      "image_ok": true
+    },
+    {
+      "id": "bs-mo-14",
+      "name_zh": "澳門喜來登",
+      "name_en": "Sheraton Grand Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "親子",
+        "會議"
+      ],
+      "one_liner_zh": "路氹大型會議度假酒店",
+      "one_liner_en": "Large Cotai meetings and resort hotel",
+      "booking_url": "https://www.marriott.com/en-us/hotels/mfmsi-sheraton-grand-macao/overview/",
+      "featured": false,
+      "editor_score": 4.2,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "highlights": [
+        "客房充足",
+        "泳池設施",
+        "適合家庭"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sheraton_Macau_141114.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sheraton_Macau_141114.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ],
+      "image_source": "Wikimedia Commons (Category:Sheraton Grand Macao)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Sheraton_Macau_141114.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-mo-15",
+      "name_zh": "澳門JW萬豪",
+      "name_en": "JW Marriott Hotel Macau",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "親子"
+      ],
+      "one_liner_zh": "路氹 JW 萬豪度假住宿",
+      "one_liner_en": "JW Marriott Cotai resort stay",
+      "booking_url": "https://www.marriott.com/en-us/hotels/mfxjw-jw-marriott-hotel-macau/overview/",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "JW服務",
+        "泳池SPA",
+        "親子友善"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Galaxy_Macau_Hotel_Phase_2_201606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Galaxy_Macau_Hotel_Phase_2_201606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-17",
+      "name_zh": "澳門銀河酒店",
+      "name_en": "Galaxy Hotel",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "沙灘",
+        "親子"
+      ],
+      "one_liner_zh": "銀河綜合度假區內酒店住宿",
+      "one_liner_en": "Hotel stay inside Galaxy resort complex",
+      "booking_url": "https://www.galaxymacau.com/en/stay/galaxy-hotel/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "人造沙灘區",
+        "泳池設施",
+        "度假綜合體"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Galaxy_Macau.jpg/1280px-Galaxy_Macau.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Galaxy_Macau.jpg/1280px-Galaxy_Macau.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-18",
+      "name_zh": "澳門大倉酒店",
+      "name_en": "Hotel Okura Macau",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "日式",
+        "SPA",
+        "泳池"
+      ],
+      "one_liner_zh": "銀河內日式服務豪華酒店",
+      "one_liner_en": "Japanese-service luxury hotel at Galaxy",
+      "booking_url": "https://www.galaxymacau.com/en/stay/hotel-okura-macau/",
+      "featured": false,
+      "editor_score": 4.6,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "日式款待",
+        "細緻服務",
+        "豪華設施"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Hotel_Okura_MacauTerrace_Restaurant_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Hotel_Okura_MacauTerrace_Restaurant_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-19",
+      "name_zh": "澳門安達仕",
+      "name_en": "Andaz Macau",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "設計",
+        "泳池",
+        "景觀"
+      ],
+      "one_liner_zh": "路氹設計型 Andaz 住宿",
+      "one_liner_en": "Design-forward Andaz stay on Cotai",
+      "booking_url": "https://www.hyatt.com/andaz/andaz-macau",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "設計感",
+        "年輕時尚",
+        "泳池景觀"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_%E9%8A%80%E6%B2%B3%E7%B6%9C%E8%97%9D%E9%A4%A8_Galaxy_Arena_n_%E6%BE%B3%E9%96%80%E5%AE%89%E9%81%94%E4%BB%95%E9%85%92%E5%BA%97.Galaxy_Andaz_%E6%BE%B3%E9%96%80%E8%93%AE%E8%8A%B1%E8%B7%AF_Estrada_Flor_de_L%C3%B3tus_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_%E9%8A%80%E6%B2%B3%E7%B6%9C%E8%97%9D%E9%A4%A8_Galaxy_Arena_n_%E6%BE%B3%E9%96%80%E5%AE%89%E9%81%94%E4%BB%95%E9%85%92%E5%BA%97.Galaxy_Andaz_%E6%BE%B3%E9%96%80%E8%93%AE%E8%8A%B1%E8%B7%AF_Estrada_Flor_de_L%C3%B3tus_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-20",
+      "name_zh": "澳門上葡京",
+      "name_en": "Grand Lisboa Palace",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "奢華"
+      ],
+      "one_liner_zh": "路氹上葡京豪華客房與設施",
+      "one_liner_en": "Grand Lisboa Palace luxury rooms and amenities",
+      "booking_url": "https://www.grandlisboapalace.com/",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "華麗裝潢",
+        "泳池SPA",
+        "豪華住宿"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_hotel_facade_March_2025_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_hotel_facade_March_2025_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-05",
+      "name_zh": "珠海洲際酒店",
+      "name_en": "InterContinental Zhuhai",
+      "region": "gba",
+      "city": "珠海香洲",
+      "city_key": "zhuhai",
+      "country": "CN",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "香洲海旁洲際品牌住宿",
+      "one_liner_en": "Seaside InterContinental in Xiangzhou",
+      "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/zhuhai/zuhha/hoteldetail",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "商務休閒",
+        "蜜月"
+      ],
+      "highlights": [
+        "海景客房",
+        "洲際服務",
+        "泳池"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/73/BMW_M3_GT_%286631904059%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/BMW_M3_GT_%286631904059%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-06",
+      "name_zh": "珠海華發喜來登",
+      "name_en": "Sheraton Zhuhai Hotel",
+      "region": "gba",
+      "city": "珠海",
+      "city_key": "zhuhai",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "早餐",
+        "景觀"
+      ],
+      "one_liner_zh": "珠海市區喜來登舒適住宿",
+      "one_liner_en": "Sheraton comfort in Zhuhai city",
+      "booking_url": "https://www.marriott.com/en-us/hotels/zuhsi-sheraton-zhuhai-hotel/overview/",
+      "featured": false,
+      "editor_score": 4.1,
+      "occasion": [
+        "商務休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "市區方便",
+        "泳池",
+        "早餐"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E5%B6%BA%E5%8D%97%E7%BE%A3%E9%9B%85%28%E4%BA%8C%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E5%B6%BA%E5%8D%97%E7%BE%A3%E9%9B%85%28%E4%BA%8C%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-07",
+      "name_zh": "珠海海泉灣維景",
+      "name_en": "Grand View Hotel Ocean Spring",
+      "region": "gba",
+      "city": "珠海金灣",
+      "city_key": "zhuhai",
+      "country": "CN",
+      "price_tier": 2,
+      "family_friendly": true,
+      "tags": [
+        "溫泉",
+        "親子",
+        "海邊"
+      ],
+      "one_liner_zh": "海泉灣溫泉親子度假",
+      "one_liner_en": "Ocean Spring hot-spring family resort",
+      "booking_url": "https://www.oceanspring.com.cn/",
+      "featured": false,
+      "editor_score": 4.0,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "溫泉",
+        "親子設施",
+        "海邊氛圍"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/41/How_to_know_New_York_City_-_a_serviceable_and_trustworthy_guide%2C_having_its_starting_point_at_the_Grand_Union_hotel%2C_just_across_the_street_from_the_Grand_Central_depot_%281900%29_%2814579818908%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/How_to_know_New_York_City_-_a_serviceable_and_trustworthy_guide%2C_having_its_starting_point_at_the_Grand_Union_hotel%2C_just_across_the_street_from_the_Grand_Central_depot_%281900%29_%2814579818908%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-05",
+      "name_zh": "深圳聖淘沙酒店",
+      "name_en": "Sea World Hotel Shenzhen",
+      "region": "gba",
+      "city": "深圳蛇口",
+      "city_key": "shenzhen",
+      "country": "CN",
+      "price_tier": 2,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "親子",
+        "餐飲"
+      ],
+      "one_liner_zh": "蛇口海濱城休閒住宿",
+      "one_liner_en": "Sea World seaside leisure stay",
+      "booking_url": "https://www.seaworldhotel.com.cn/",
+      "featured": false,
+      "editor_score": 3.9,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "海濱氛圍",
+        "餐飲方便",
+        "短途放空"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/10/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E8%9B%87%E5%8F%A3_Shekou_%E6%B5%B7%E4%B8%8A%E4%B8%96%E7%95%8C_Sea_World_%E5%A4%AA%E5%AD%90%E8%B7%AF_TaiZi_Road_night_July_2024_R12S_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E8%9B%87%E5%8F%A3_Shekou_%E6%B5%B7%E4%B8%8A%E4%B8%96%E7%95%8C_Sea_World_%E5%A4%AA%E5%AD%90%E8%B7%AF_TaiZi_Road_night_July_2024_R12S_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-06",
+      "name_zh": "深圳大中華喜來登",
+      "name_en": "Sheraton Shenzhen Futian",
+      "region": "gba",
+      "city": "深圳福田",
+      "city_key": "shenzhen",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "早餐",
+        "商務休閒"
+      ],
+      "one_liner_zh": "福田核心喜來登短途放空",
+      "one_liner_en": "Sheraton in Futian for short breaks",
+      "booking_url": "https://www.marriott.com/",
+      "featured": false,
+      "editor_score": 4.1,
+      "occasion": [
+        "商務休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "福田地段",
+        "泳池",
+        "早餐"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-05",
+      "name_zh": "香港半島酒店",
+      "name_en": "The Peninsula Hong Kong",
+      "region": "gba",
+      "city": "香港尖沙咀",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "奢華",
+        "SPA",
+        "海景"
+      ],
+      "one_liner_zh": "維港傳奇奢華住宿",
+      "one_liner_en": "Iconic Victoria Harbour luxury stay",
+      "booking_url": "https://www.peninsula.com/en/hong-kong",
+      "featured": true,
+      "editor_score": 4.9,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "維港景觀",
+        "傳奇服務",
+        "下午茶"
+      ],
+      "cover_image": "https://www.peninsula.com/-/media/01-hong-kong-property/the-peninsula-hong-kong-exterior-1280.jpg",
+      "image_url": "https://www.peninsula.com/-/media/01-hong-kong-property/the-peninsula-hong-kong-exterior-1280.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "半島下午茶",
+          "note": "酒店經典體驗"
+        },
+        {
+          "name": "尖沙咀海傍食肆",
+          "note": "步行可達"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-06",
+      "name_zh": "香港四季酒店",
+      "name_en": "Four Seasons Hotel Hong Kong",
+      "region": "gba",
+      "city": "香港中環",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "景觀"
+      ],
+      "one_liner_zh": "中環天際泳池與豪華客房",
+      "one_liner_en": "Central skyline pool and luxury rooms",
+      "booking_url": "https://www.fourseasons.com/hongkong/",
+      "featured": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "天際泳池",
+        "中環地段",
+        "四季服務"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/2016_-_Four_Seasons_Hotel_Hong_Kong_%28_Ank_Kumar_%29_02.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/2016_-_Four_Seasons_Hotel_Hong_Kong_%28_Ank_Kumar_%29_02.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ],
+      "image_source": "Wikimedia Commons (Category:Exterior of Four Seasons Hotel Hong Kong)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:2016_-_Four_Seasons_Hotel_Hong_Kong_(_Ank_Kumar_)_02.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-hk-08",
+      "name_zh": "香港麗思卡爾頓",
+      "name_en": "The Ritz-Carlton Hong Kong",
+      "region": "gba",
+      "city": "香港九龍",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "景觀"
+      ],
+      "one_liner_zh": "天際泳池與高空奢華客房",
+      "one_liner_en": "Sky pool and elevated luxury rooms",
+      "booking_url": "https://www.ritzcarlton.com/en/hotels/hkgor-the-ritz-carlton-hong-kong/",
+      "featured": false,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "天際泳池",
+        "高空酒吧",
+        "奢華客房"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/ICC_Hong_Kong.jpg/1280px-ICC_Hong_Kong.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/ICC_Hong_Kong.jpg/1280px-ICC_Hong_Kong.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-10",
+      "name_zh": "香港康得思酒店",
+      "name_en": "Cordis Hong Kong",
+      "region": "gba",
+      "city": "香港旺角",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "購物",
+        "早餐"
+      ],
+      "one_liner_zh": "旺角購物區康得思",
+      "one_liner_en": "Cordis in Mong Kok shopping area",
+      "booking_url": "https://www.cordishotels.com/en/hong-kong",
+      "featured": false,
+      "editor_score": 4.2,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "旺角地段",
+        "室外泳池",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/A_View_of_The_Cordis_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/A_View_of_The_Cordis_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-11",
+      "name_zh": "香港港島香格里拉",
+      "name_en": "Island Shangri-La Hong Kong",
+      "region": "gba",
+      "city": "香港金鐘",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "景觀"
+      ],
+      "one_liner_zh": "金鐘太古廣場香格里拉",
+      "one_liner_en": "Island Shangri-La at Pacific Place",
+      "booking_url": "https://www.shangri-la.com/hongkong/islandshangrila/",
+      "featured": false,
+      "editor_score": 4.6,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "太古廣場",
+        "泳池SPA",
+        "維港視野"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Island_Shangri-La%2C_Hong_Kong_-_Horizon_Harbour_View_Room.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Island_Shangri-La%2C_Hong_Kong_-_Horizon_Harbour_View_Room.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-12",
+      "name_zh": "香港奕居",
+      "name_en": "The Upper House",
+      "region": "gba",
+      "city": "香港金鐘",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "設計",
+        "景觀",
+        "奢華"
+      ],
+      "one_liner_zh": "金鐘設計精品酒店",
+      "one_liner_en": "Design boutique hotel in Admiralty",
+      "booking_url": "https://www.upperhouse.com/",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "設計感",
+        "寧靜奢華",
+        "維港景"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/59/117864_the_upper_customs_house_hotel_golan_heights_PikiWiki_Israel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/117864_the_upper_customs_house_hotel_golan_heights_PikiWiki_Israel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-14",
+      "name_zh": "香港美利酒店",
+      "name_en": "The Murray Hong Kong",
+      "region": "gba",
+      "city": "香港中環",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "設計",
+        "泳池",
+        "歷史"
+      ],
+      "one_liner_zh": "中環古蹟改建設計酒店",
+      "one_liner_en": "Heritage-converted design hotel in Central",
+      "booking_url": "https://www.niccolohotels.com/en/hotels/hongkong/the_murray",
+      "featured": false,
+      "editor_score": 4.6,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "古蹟改建",
+        "設計泳池",
+        "中環地段"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/HK_Admiralty_%E9%A6%99%E6%B8%AF%E5%85%AC%E5%9C%92_Hong_Kong_Park_July_2022_Px3_15_The_Murray_hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/HK_Admiralty_%E9%A6%99%E6%B8%AF%E5%85%AC%E5%9C%92_Hong_Kong_Park_July_2022_Px3_15_The_Murray_hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-15",
+      "name_zh": "香港朗廷酒店",
+      "name_en": "The Langham Hong Kong",
+      "region": "gba",
+      "city": "香港尖沙咀",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "SPA",
+        "購物",
+        "早餐"
+      ],
+      "one_liner_zh": "尖沙咀朗廷經典住宿",
+      "one_liner_en": "Classic Langham stay in TST",
+      "booking_url": "https://www.langhamhotels.com/en/the-langham/hong-kong/",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "家庭"
+      ],
+      "highlights": [
+        "尖沙咀地段",
+        "經典服務",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bridge_connecting_Langham_Place_Hotel_and_Langham_Place.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bridge_connecting_Langham_Place_Hotel_and_Langham_Place.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-16",
+      "name_zh": "香港瑰麗酒店",
+      "name_en": "Rosewood Hong Kong",
+      "region": "gba",
+      "city": "香港尖沙咀",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "SPA",
+        "奢華"
+      ],
+      "one_liner_zh": "維港瑰麗奢華住宿",
+      "one_liner_en": "Rosewood luxury on Victoria Harbour",
+      "booking_url": "https://www.rosewoodhotels.com/en/hong-kong",
+      "featured": false,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "維港景觀",
+        "瑰麗服務",
+        "奢華SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hong_Kong_Rosewood_Hotel_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hong_Kong_Rosewood_Hotel_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-07",
+      "name_zh": "普吉奈揚萬豪",
+      "name_en": "Phuket Marriott Resort Nai Yang Beach",
+      "region": "asia",
+      "city": "普吉",
+      "city_key": "phuket",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "奈揚海灘萬豪度假村",
+      "one_liner_en": "Nai Yang beach Marriott resort",
+      "booking_url": "https://www.marriott.com/en-us/hotels/hktcy-phuket-marriott-resort-and-spa-nai-yang-beach/overview/",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "臨近沙灘",
+        "親子泳池",
+        "SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nai_Yang_Beach_%2835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nai_Yang_Beach_%2835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "炭燒海鮮",
+          "note": "海灘區新鮮燒烤"
+        },
+        {
+          "name": "泰式炒河粉",
+          "note": "Pad Thai 街邊版"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-08",
+      "name_zh": "普吉蘇林瑞吉",
+      "name_en": "The St. Regis Phuket",
+      "region": "asia",
+      "city": "普吉",
+      "city_key": "phuket",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "奢華"
+      ],
+      "one_liner_zh": "蘇林海灘瑞吉奢華度假",
+      "one_liner_en": "St. Regis luxury on Surin Beach",
+      "booking_url": "https://www.marriott.com/en-us/hotels/hktxr-the-st-regis-phuket/overview/",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月"
+      ],
+      "highlights": [
+        "蘇林海灘",
+        "無邊際泳池",
+        "奢華度假"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Phuket_%28404430090%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Phuket_%28404430090%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "椰子雪糕",
+          "note": "熱帶甜品"
+        },
+        {
+          "name": "冬陰功",
+          "note": "酸辣開胃"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-09",
+      "name_zh": "普吉卡塔塔尼",
+      "name_en": "Katathani Phuket Beach Resort",
+      "region": "asia",
+      "city": "普吉",
+      "city_key": "phuket",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "卡塔諾伊海灘家庭度假村",
+      "one_liner_en": "Kata Noi beach family resort",
+      "booking_url": "https://www.katathani.com/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "私人感海灘",
+        "多泳池",
+        "親子友善"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Good_maintained_beautiful_courtyard_of_Katathani_Beach_Resort_Phuket_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Good_maintained_beautiful_courtyard_of_Katathani_Beach_Resort_Phuket_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "炭燒海鮮",
+          "note": "海灘區新鮮燒烤"
+        },
+        {
+          "name": "泰式炒河粉",
+          "note": "Pad Thai 街邊版"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-10",
+      "name_zh": "華欣凱悅",
+      "name_en": "Hyatt Regency Hua Hin",
+      "region": "asia",
+      "city": "華欣",
+      "city_key": "huahin",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "華欣海灘凱悅度假",
+      "one_liner_en": "Hua Hin beach Hyatt resort",
+      "booking_url": "https://www.hyatt.com/hyatt-regency/huahin-thailand-hrhuu",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "海灘位置",
+        "親子設施",
+        "多餐廳"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Beach_at_Sheraton_Hua_Hin_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Beach_at_Sheraton_Hua_Hin_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "華欣夜市小食",
+          "note": "海鮮／煎餅"
+        },
+        {
+          "name": "芒果糯米飯",
+          "note": "甜品"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-11",
+      "name_zh": "華欣洲際",
+      "name_en": "InterContinental Hua Hin Resort",
+      "region": "asia",
+      "city": "華欣",
+      "city_key": "huahin",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "華欣洲際海灘度假村",
+      "one_liner_en": "InterContinental Hua Hin beach resort",
+      "booking_url": "https://www.ihg.com/intercontinental/",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "家庭"
+      ],
+      "highlights": [
+        "海灘度假",
+        "SPA",
+        "泳池"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Hua_Hin_hotels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Hua_Hin_hotels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "華欣夜市小食",
+          "note": "海鮮／煎餅"
+        },
+        {
+          "name": "芒果糯米飯",
+          "note": "甜品"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-12",
+      "name_zh": "清邁四季",
+      "name_en": "Four Seasons Resort Chiang Mai",
+      "region": "asia",
+      "city": "清邁",
+      "city_key": "chiangmai",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "山景",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "清邁稻田景觀四季度假村",
+      "one_liner_en": "Rice-field views at Four Seasons Chiang Mai",
+      "booking_url": "https://www.fourseasons.com/chiangmai/",
+      "featured": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "稻田景觀",
+        "泳池別墅",
+        "山城度假"
+      ],
+      "cover_image": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1066.jpg",
+      "image_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1066.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "卡奧索",
+          "note": "北泰咖喱麵"
+        },
+        {
+          "name": "香腸攤",
+          "note": "夜市 Sai ua"
+        }
+      ],
+      "image_source": "Four Seasons Thailand official press kit (fourseasonsthailand.com)",
+      "image_source_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "image_ok": true
+    },
+    {
+      "id": "bs-th-13",
+      "name_zh": "清邁安納塔拉",
+      "name_en": "Anantara Chiang Mai Resort",
+      "region": "asia",
+      "city": "清邁",
+      "city_key": "chiangmai",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "河景",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "清邁河畔安納塔拉",
+      "one_liner_en": "Riverside Anantara Chiang Mai",
+      "booking_url": "https://www.anantara.com/en/chiang-mai",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "河畔位置",
+        "泳池SPA",
+        "古城方便"
+      ],
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-chiang-mai-resort/gallery/anantara-chiang-mai/overview/anantara_chiang_mai_resort_lobby_couple_1920x800.jpg",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-chiang-mai-resort/gallery/anantara-chiang-mai/overview/anantara_chiang_mai_resort_lobby_couple_1920x800.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "卡奧索",
+          "note": "北泰咖喱麵"
+        },
+        {
+          "name": "香腸攤",
+          "note": "夜市 Sai ua"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-14",
+      "name_zh": "蘇梅康萊德",
+      "name_en": "Conrad Koh Samui",
+      "region": "asia",
+      "city": "蘇梅",
+      "city_key": "samui",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "奢華"
+      ],
+      "one_liner_zh": "蘇梅島懸崖海景康萊德",
+      "one_liner_en": "Cliffside sea-view Conrad Samui",
+      "booking_url": "https://www.hilton.com/en/hotels/usmkrci-conrad-koh-samui/",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月"
+      ],
+      "highlights": [
+        "懸崖海景",
+        "私人泳池",
+        "奢華度假"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/View_of_the_southwest_of_Ko_Samui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/View_of_the_southwest_of_Ko_Samui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "海邊海鮮",
+          "note": "鮮蝦／貝類"
+        },
+        {
+          "name": "椰子甜品",
+          "note": "島上消暑"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-15",
+      "name_zh": "蘇梅四季",
+      "name_en": "Four Seasons Resort Koh Samui",
+      "region": "asia",
+      "city": "蘇梅",
+      "city_key": "samui",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "蘇梅四季海灣別墅度假",
+      "one_liner_en": "Four Seasons Samui bay villas",
+      "booking_url": "https://www.fourseasons.com/kohsamui/",
+      "featured": false,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月"
+      ],
+      "highlights": [
+        "海灣別墅",
+        "私人泳池",
+        "隱世感"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/ARKbar_Beach_Club_2023_IMG20230410000855_w2048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/ARKbar_Beach_Club_2023_IMG20230410000855_w2048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "海邊海鮮",
+          "note": "鮮蝦／貝類"
+        },
+        {
+          "name": "椰子甜品",
+          "note": "島上消暑"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-16",
+      "name_zh": "曼谷香格里拉",
+      "name_en": "Shangri-La Bangkok",
+      "region": "asia",
+      "city": "曼谷",
+      "city_key": "bangkok",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "河景",
+        "泳池",
+        "接駁"
+      ],
+      "one_liner_zh": "湄南河香格里拉度假感",
+      "one_liner_en": "Shangri-La riverside resort feel in Bangkok",
+      "booking_url": "https://www.shangri-la.com/bangkok/shangrila/",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "highlights": [
+        "湄南河景",
+        "泳池",
+        "渡輪方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Beautiful_Shangri_La_Hotel%2C_Bangkok_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Beautiful_Shangri_La_Hotel%2C_Bangkok_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "打拋豬飯",
+          "note": "平價泰式常餐"
+        },
+        {
+          "name": "冬陰功",
+          "note": "酸辣湯"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-06",
+      "name_zh": "大阪瑞吉",
+      "name_en": "The St. Regis Osaka",
+      "region": "asia",
+      "city": "大阪",
+      "city_key": "osaka",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "奢華",
+        "SPA",
+        "購物"
+      ],
+      "one_liner_zh": "心齋橋瑞吉奢華住宿",
+      "one_liner_en": "St. Regis luxury in Shinsaibashi",
+      "booking_url": "https://www.marriott.com/en-us/hotels/osaxr-the-st-regis-osaka/overview/",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月"
+      ],
+      "highlights": [
+        "瑞吉禮遇",
+        "心齋橋地段",
+        "奢華"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/ST.REGIS_HOTEL_OSAKA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/ST.REGIS_HOTEL_OSAKA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "章魚燒",
+          "note": "大阪經典"
+        },
+        {
+          "name": "大阪燒",
+          "note": "當地必食"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-07",
+      "name_zh": "京都麗思卡爾頓",
+      "name_en": "The Ritz-Carlton Kyoto",
+      "region": "asia",
+      "city": "京都",
+      "city_key": "kyoto",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "河景",
+        "SPA",
+        "日式"
+      ],
+      "one_liner_zh": "鴨川旁麗思卡爾頓",
+      "one_liner_en": "Ritz-Carlton by the Kamogawa",
+      "booking_url": "https://www.ritzcarlton.com/en/hotels/kyorz-the-ritz-carlton-kyoto/",
+      "featured": false,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "鴨川景觀",
+        "日式庭園感",
+        "奢華SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Ritz-Carton_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Ritz-Carton_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "湯葉料理",
+          "note": "京都豆腐皮"
+        },
+        {
+          "name": "抹茶甜品",
+          "note": "茶屋小休"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-08",
+      "name_zh": "京都四季",
+      "name_en": "Four Seasons Hotel Kyoto",
+      "region": "asia",
+      "city": "京都",
+      "city_key": "kyoto",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "庭園",
+        "SPA",
+        "日式"
+      ],
+      "one_liner_zh": "八坂四季庭園酒店",
+      "one_liner_en": "Four Seasons Kyoto with garden",
+      "booking_url": "https://www.fourseasons.com/kyoto/",
+      "featured": false,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月"
+      ],
+      "highlights": [
+        "日式庭園",
+        "靜謐奢華",
+        "SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Four_Seasons_Hotel_Kyoto_Higashioji-Dori_Avenue_Gate_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Four_Seasons_Hotel_Kyoto_Higashioji-Dori_Avenue_Gate_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "湯葉料理",
+          "note": "京都豆腐皮"
+        },
+        {
+          "name": "抹茶甜品",
+          "note": "茶屋小休"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-09",
+      "name_zh": "箱根凱悅",
+      "name_en": "Hyatt Regency Hakone Resort and Spa",
+      "region": "asia",
+      "city": "箱根",
+      "city_key": "hakone",
+      "country": "JP",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "溫泉",
+        "山景",
+        "SPA"
+      ],
+      "one_liner_zh": "箱根溫泉凱悅度假",
+      "one_liner_en": "Hakone onsen Hyatt resort",
+      "booking_url": "https://www.hyatt.com/hyatt-regency/hakone-japan-tyohr",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "溫泉",
+        "山景",
+        "度假SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Hyatt_regency_hakone_garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Hyatt_regency_hakone_garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑玉子",
+          "note": "溫泉蛋名物"
+        },
+        {
+          "name": "蕎麥麵",
+          "note": "山區暖胃"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-10",
+      "name_zh": "沖繩北谷希爾頓",
+      "name_en": "Hilton Okinawa Chatan Resort",
+      "region": "asia",
+      "city": "沖繩",
+      "city_key": "okinawa",
+      "country": "JP",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "北谷海灘希爾頓度假村",
+      "one_liner_en": "Chatan beach Hilton resort",
+      "booking_url": "https://www.hilton.com/en/hotels/okachhi-hilton-okinawa-chatan-resort/",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "臨近美國村",
+        "泳池沙灘",
+        "親子友善"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/73/5th_Air_Naval_Gunfire_Liaison_Company_celebrates_250th_Marine_Corps_Birthday_%289379628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/5th_Air_Naval_Gunfire_Liaison_Company_celebrates_250th_Marine_Corps_Birthday_%289379628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "沖繩麵",
+          "note": "當地湯麵"
+        },
+        {
+          "name": "苦瓜炒蛋",
+          "note": "ゴーヤーチャンプルー"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-13",
+      "name_zh": "東京椿山莊",
+      "name_en": "Hotel Chinzanso Tokyo",
+      "region": "asia",
+      "city": "東京",
+      "city_key": "tokyo",
+      "country": "JP",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "庭園",
+        "婚禮",
+        "休閒"
+      ],
+      "one_liner_zh": "文京區庭園酒店",
+      "one_liner_en": "Garden hotel in Bunkyo, Tokyo",
+      "booking_url": "https://www.hotel-chinzanso-tokyo.com/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "日式庭園",
+        "市區綠洲",
+        "餐飲豐富"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Garden_%40_Hotel_Chinzanso_Tokyo_%2812970374915%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Garden_%40_Hotel_Chinzanso_Tokyo_%2812970374915%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "定食",
+          "note": "日式家常套餐"
+        },
+        {
+          "name": "便利店關東煮",
+          "note": "深夜備選"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-14",
+      "name_zh": "大阪洲際",
+      "name_en": "InterContinental Osaka",
+      "region": "asia",
+      "city": "大阪",
+      "city_key": "osaka",
+      "country": "JP",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "景觀",
+        "購物",
+        "早餐"
+      ],
+      "one_liner_zh": "梅田摩天輪旁洲際",
+      "one_liner_en": "InterContinental by Umeda skyline",
+      "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/osaka/osaha/hoteldetail",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "highlights": [
+        "梅田地段",
+        "購物方便",
+        "高空景觀"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/8/89/InterContinental_Osaka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/InterContinental_Osaka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "章魚燒",
+          "note": "大阪經典"
+        },
+        {
+          "name": "大阪燒",
+          "note": "當地必食"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-06",
+      "name_zh": "釜山 Signiel",
+      "name_en": "Signiel Busan",
+      "region": "asia",
+      "city": "釜山",
+      "city_key": "busan",
+      "country": "KR",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "奢華",
+        "景觀"
+      ],
+      "one_liner_zh": "釜山 Signiel 高空奢華",
+      "one_liner_en": "Signiel Busan skyline luxury",
+      "booking_url": "https://www.lottehotel.com/busan-signiel/en.html",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月"
+      ],
+      "highlights": [
+        "高空海景",
+        "奢華客房",
+        "地標住宿"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "豬肉湯飯",
+          "note": "釜山名物"
+        },
+        {
+          "name": "海鮮鍋",
+          "note": "海岸新鮮"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-07",
+      "name_zh": "濟州神話世界",
+      "name_en": "Jeju Shinhwa World",
+      "region": "asia",
+      "city": "濟州",
+      "city_key": "jeju",
+      "country": "KR",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題",
+        "泳池"
+      ],
+      "one_liner_zh": "濟州一站式親子度假村",
+      "one_liner_en": "Jeju all-in-one family resort",
+      "booking_url": "https://www.shinhwaworld.com/",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "親子設施多",
+        "度假綜合體",
+        "泳池主題"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Landing_Jeju_Shinhwa_World%2C_Seogwipo%2C_Jeju_Island%2C_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Landing_Jeju_Shinhwa_World%2C_Seogwipo%2C_Jeju_Island%2C_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-09",
+      "name_zh": "濟州樂天酒店",
+      "name_en": "Lotte Hotel Jeju",
+      "region": "asia",
+      "city": "濟州",
+      "city_key": "jeju",
+      "country": "KR",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "親子",
+        "泳池"
+      ],
+      "one_liner_zh": "中文樂天濟州度假酒店",
+      "one_liner_en": "Lotte Hotel Jeju resort stay",
+      "booking_url": "https://www.lottehotel.com/jeju-hotel/en.html",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "海景",
+        "親子設施",
+        "度假泳池"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-10",
+      "name_zh": "首爾樂天酒店",
+      "name_en": "Lotte Hotel Seoul",
+      "region": "asia",
+      "city": "首爾",
+      "city_key": "seoul",
+      "country": "KR",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "購物",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "明洞旁樂天經典酒店",
+      "one_liner_en": "Lotte classic hotel by Myeongdong",
+      "booking_url": "https://www.lottehotel.com/seoul-hotel/en.html",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "highlights": [
+        "明洞方便",
+        "購物連結",
+        "經典服務"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-21",
+      "name_zh": "澳門百老匯酒店",
+      "name_en": "Broadway Macau Hotel",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 2,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "表演",
+        "購物"
+      ],
+      "one_liner_zh": "路氹百老匯綜合娛樂區住宿",
+      "one_liner_en": "Stay by Broadway Macau entertainment zone",
+      "booking_url": "https://www.broadwaymacau.com.mo/",
+      "featured": false,
+      "editor_score": 4.0,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "表演區旁",
+        "親子友善",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Broadway_Macau_Hotel_18-03-2023.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Broadway_Macau_Hotel_18-03-2023.jpg",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ],
+      "image_source": "Wikimedia Commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Broadway_Macau_Hotel_18-03-2023.jpg",
+      "image_ok": true
+    },
+    {
+      "id": "bs-mo-22",
+      "name_zh": "澳門勵宮酒店",
+      "name_en": "Lisboa Hotel Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 2,
+      "family_friendly": true,
+      "tags": [
+        "地標",
+        "購物",
+        "餐飲"
+      ],
+      "one_liner_zh": "半島經典地標酒店住宿",
+      "one_liner_en": "Classic peninsula landmark hotel stay",
+      "booking_url": "https://www.hotellisboa.com/",
+      "featured": false,
+      "editor_score": 3.9,
+      "occasion": [
+        "休閒"
+      ],
+      "highlights": [
+        "地標位置",
+        "餐飲選擇多",
+        "市區方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Casino_Lisboa_%285234400075%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Casino_Lisboa_%285234400075%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-23",
+      "name_zh": "澳門皇都酒店",
+      "name_en": "Hotel Royal Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 2,
+      "family_friendly": true,
+      "tags": [
+        "溫泉",
+        "市區",
+        "早餐"
+      ],
+      "one_liner_zh": "半島市區溫泉酒店",
+      "one_liner_en": "Peninsula city hotel with hot spring",
+      "booking_url": "https://www.hotelroyal.com.mo/",
+      "featured": false,
+      "editor_score": 3.8,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "市區溫泉",
+        "交通方便",
+        "實用舒適"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hotel_Royal_Macau_Hotel_Exterior_Day_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hotel_Royal_Macau_Hotel_Exterior_Day_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-08",
+      "name_zh": "珠海長隆馬戲酒店",
+      "name_en": "Chimelong Circus Hotel",
+      "region": "gba",
+      "city": "珠海橫琴",
+      "city_key": "zhuhai",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "主題",
+        "接駁"
+      ],
+      "one_liner_zh": "馬戲主題親子酒店",
+      "one_liner_en": "Circus-themed family hotel",
+      "booking_url": "https://www.chimelong.com/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "馬戲主題",
+        "親子首選",
+        "景區接駁"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Exterior%2C_Zhuhaichanglong_Railway_Station_20260110-A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Exterior%2C_Zhuhaichanglong_Railway_Station_20260110-A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
+    },
+    {
+      "id": "bs-zh-09",
+      "name_zh": "珠海鳳凰灣悦椿",
+      "name_en": "Angsana Zhuhai Phoenix Bay",
+      "region": "gba",
+      "city": "珠海",
+      "city_key": "zhuhai",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "鳳凰灣海景度假住宿",
+      "one_liner_en": "Phoenix Bay sea-view resort stay",
+      "booking_url": "https://www.angsana.com/",
+      "featured": false,
+      "editor_score": 4.2,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "海景",
+        "泳池",
+        "度假感"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/20251014_Zhuhai_Shi_Hengqin_Zhen_Renmin_Zhengfu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/20251014_Zhuhai_Shi_Hengqin_Zhen_Renmin_Zhengfu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-08",
+      "name_zh": "深圳灣萬豪",
+      "name_en": "Marriott Shenzhen Bay",
+      "region": "gba",
+      "city": "深圳南山",
+      "city_key": "shenzhen",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "灣景",
+        "泳池",
+        "商務休閒"
+      ],
+      "one_liner_zh": "深圳灣萬豪商旅度假",
+      "one_liner_en": "Marriott at Shenzhen Bay",
+      "booking_url": "https://www.marriott.com/",
+      "featured": false,
+      "editor_score": 4.2,
+      "occasion": [
+        "商務休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "灣景",
+        "泳池",
+        "南山方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/91/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%9C%B3%E7%81%A3_Shenzhen_Bay_MixC_mall_pop-up_shop_YSL_Yves_Saint_Laurent_Lovenude_Beauty_Hotel_evening_May_2026_N13P_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%9C%B3%E7%81%A3_Shenzhen_Bay_MixC_mall_pop-up_shop_YSL_Yves_Saint_Laurent_Lovenude_Beauty_Hotel_evening_May_2026_N13P_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
+      ]
+    },
+    {
+      "id": "bs-sz-09",
+      "name_zh": "深圳卓越喜來登",
+      "name_en": "Sheraton Shenzhen Nanshan",
+      "region": "gba",
+      "city": "深圳南山",
+      "city_key": "shenzhen",
+      "country": "CN",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "購物",
+        "早餐"
+      ],
+      "one_liner_zh": "南山喜來登購物商圈住宿",
+      "one_liner_en": "Sheraton in Nanshan shopping area",
+      "booking_url": "https://www.marriott.com/",
+      "featured": false,
+      "editor_score": 4.1,
+      "occasion": [
+        "商務休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "南山地段",
+        "泳池",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1_Nanshan_%E5%8D%97%E6%96%B0%E8%B7%AF_NanXin_Road_HanHao_Hotel_night_September_2024_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1_Nanshan_%E5%8D%97%E6%96%B0%E8%B7%AF_NanXin_Road_HanHao_Hotel_night_September_2024_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-18",
+      "name_zh": "香港帝苑酒店",
+      "name_en": "Royal Garden Hotel Hong Kong",
+      "region": "gba",
+      "city": "香港尖沙咀",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "購物",
+        "泳池",
+        "早餐"
+      ],
+      "one_liner_zh": "尖東帝苑實用舒適",
+      "one_liner_en": "Practical comfort in Tsim Sha Tsui East",
+      "booking_url": "https://www.rghk.com.hk/",
+      "featured": false,
+      "editor_score": 4.0,
+      "occasion": [
+        "家庭",
+        "商務休閒"
+      ],
+      "highlights": [
+        "尖東地段",
+        "室外泳池",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/df/HK_TST_East_Royal_Garden_Hotel_Guan_Yin_Goddess_of_Mercy_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/HK_TST_East_Royal_Garden_Hotel_Guan_Yin_Goddess_of_Mercy_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-19",
+      "name_zh": "香港九龍香格里拉",
+      "name_en": "Kowloon Shangri-La",
+      "region": "gba",
+      "city": "香港尖沙咀",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "SPA"
+      ],
+      "one_liner_zh": "尖東維港香格里拉",
+      "one_liner_en": "Harbourfront Shangri-La in TST East",
+      "booking_url": "https://www.shangri-la.com/hongkong/kowloonshangrila/",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "維港景",
+        "泳池SPA",
+        "尖東方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/54/HK_TST_East_64_Mody_Road_%E4%B9%9D%E9%BE%8D%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E9%85%92%E5%BA%97_Kowloon_Shangri-La_Hotel_directory_sign_Nov-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/HK_TST_East_64_Mody_Road_%E4%B9%9D%E9%BE%8D%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E9%85%92%E5%BA%97_Kowloon_Shangri-La_Hotel_directory_sign_Nov-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-hk-20",
+      "name_zh": "香港置地酒店",
+      "name_en": "The Landmark Mandarin Oriental",
+      "region": "gba",
+      "city": "香港中環",
+      "city_key": "hongkong",
+      "country": "HK",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "奢華",
+        "SPA",
+        "購物"
+      ],
+      "one_liner_zh": "中環置地文華東方精品奢華",
+      "one_liner_en": "Landmark Mandarin Oriental boutique luxury",
+      "booking_url": "https://www.mandarinoriental.com/en/hong-kong/the-landmark",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "中環置地",
+        "精品奢華",
+        "SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/53/HK_Central_The_Landmark_Mandarin_Oriental_Hotel_night_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/HK_Central_The_Landmark_Mandarin_Oriental_Hotel_night_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-17",
+      "name_zh": "曼谷瑞吉",
+      "name_en": "The St. Regis Bangkok",
+      "region": "asia",
+      "city": "曼谷",
+      "city_key": "bangkok",
+      "country": "TH",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "奢華",
+        "SPA",
+        "購物"
+      ],
+      "one_liner_zh": "曼谷瑞吉奢華住宿",
+      "one_liner_en": "St. Regis luxury in Bangkok",
+      "booking_url": "https://www.marriott.com/en-us/hotels/bkkxr-the-st-regis-bangkok/overview/",
+      "featured": false,
+      "editor_score": 4.7,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "瑞吉禮遇",
+        "市中心",
+        "奢華SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bangkok_Pano_%28III%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bangkok_Pano_%28III%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "打拋豬飯",
+          "note": "平價泰式常餐"
+        },
+        {
+          "name": "冬陰功",
+          "note": "酸辣湯"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-19",
+      "name_zh": "普吉拉古娜悦椿",
+      "name_en": "Angsana Laguna Phuket",
+      "region": "asia",
+      "city": "普吉",
+      "city_key": "phuket",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "拉古娜綜合度假區悦椿",
+      "one_liner_en": "Angsana in Laguna Phuket complex",
+      "booking_url": "https://www.angsana.com/en/phuket/lagsuna-phuket",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "拉古娜設施",
+        "多泳池",
+        "親子友善"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Angsana_Laguna_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Angsana_Laguna_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "炭燒海鮮",
+          "note": "海灘區新鮮燒烤"
+        },
+        {
+          "name": "泰式炒河粉",
+          "note": "Pad Thai 街邊版"
+        }
+      ]
+    },
+    {
+      "id": "bs-th-20",
+      "name_zh": "甲米都喜天定",
+      "name_en": "Dusit Thani Krabi",
+      "region": "asia",
+      "city": "甲米",
+      "city_key": "krabi",
+      "country": "TH",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "沙灘",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "甲米海灘都喜天定度假",
+      "one_liner_en": "Dusit Thani Krabi beach resort",
+      "booking_url": "https://www.dusit.com/dusitthani-krabi/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "海灘位置",
+        "親子泳池",
+        "度假SPA"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/%E7%B4%85%E6%A8%93%E5%A4%A2%28%E4%BA%8C%E5%8D%81%E4%B8%80%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/%E7%B4%85%E6%A8%93%E5%A4%A2%28%E4%BA%8C%E5%8D%81%E4%B8%80%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "甲米海鮮",
+          "note": "新鮮燒烤"
+        },
+        {
+          "name": "泰式炒粉",
+          "note": "平價常餐"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-15",
+      "name_zh": "東京君悦",
+      "name_en": "Grand Hyatt Tokyo",
+      "region": "asia",
+      "city": "東京",
+      "city_key": "tokyo",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "購物",
+        "SPA",
+        "奢華"
+      ],
+      "one_liner_zh": "六本木之丘君悦",
+      "one_liner_en": "Grand Hyatt at Roppongi Hills",
+      "booking_url": "https://www.hyatt.com/grand-hyatt/tokyo-japan-tyogh",
+      "featured": false,
+      "editor_score": 4.5,
+      "occasion": [
+        "蜜月",
+        "商務休閒"
+      ],
+      "highlights": [
+        "六本木之丘",
+        "購物方便",
+        "豪華設施"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Grand_Hyatt_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Grand_Hyatt_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "拉麵",
+          "note": "附近巷弄一碗"
+        },
+        {
+          "name": "壽司／海鮮丼",
+          "note": "午餐方便"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-16",
+      "name_zh": "大阪御堂筋皇家公園",
+      "name_en": "The Royal Park Hotel Iconic Osaka Midosuji",
+      "region": "asia",
+      "city": "大阪",
+      "city_key": "osaka",
+      "country": "JP",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "購物",
+        "景觀",
+        "早餐"
+      ],
+      "one_liner_zh": "御堂筋地標設計酒店",
+      "one_liner_en": "Iconic design hotel on Midosuji",
+      "booking_url": "https://www.royalparkhotels.co.jp/",
+      "featured": false,
+      "editor_score": 4.2,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "御堂筋",
+        "設計感",
+        "購物方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/OBIC_Midosuji_Building_20210306-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/OBIC_Midosuji_Building_20210306-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "章魚燒",
+          "note": "大阪經典"
+        },
+        {
+          "name": "大阪燒",
+          "note": "當地必食"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-17",
+      "name_zh": "京都安缦",
+      "name_en": "Aman Kyoto",
+      "region": "asia",
+      "city": "京都",
+      "city_key": "kyoto",
+      "country": "JP",
+      "price_tier": 4,
+      "family_friendly": false,
+      "tags": [
+        "庭園",
+        "SPA",
+        "日式"
+      ],
+      "one_liner_zh": "京都秘境安缦森林旅宿",
+      "one_liner_en": "Aman Kyoto forest sanctuary",
+      "booking_url": "https://www.aman.com/resorts/aman-kyoto",
+      "featured": false,
+      "editor_score": 4.9,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "highlights": [
+        "森林秘境",
+        "安缦靜奢",
+        "日式庭園"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_photograph_of_Nathan_van_Clief_vacationing_at_an_Aman_hotel_in_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_photograph_of_Nathan_van_Clief_vacationing_at_an_Aman_hotel_in_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "湯葉料理",
+          "note": "京都豆腐皮"
+        },
+        {
+          "name": "抹茶甜品",
+          "note": "茶屋小休"
+        }
+      ]
+    },
+    {
+      "id": "bs-jp-18",
+      "name_zh": "沖繩萬豪",
+      "name_en": "Okinawa Marriott Resort and Spa",
+      "region": "asia",
+      "city": "沖繩",
+      "city_key": "okinawa",
+      "country": "JP",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "沖繩萬豪海景度假",
+      "one_liner_en": "Okinawa Marriott ocean resort",
+      "booking_url": "https://www.marriott.com/en-us/hotels/okamc-okinawa-marriott-resort-and-spa/overview/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "家庭"
+      ],
+      "highlights": [
+        "海景",
+        "泳池",
+        "親子友善"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kise_Okinawa_Okinawa-Marriott-Resort-%26-Spa-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kise_Okinawa_Okinawa-Marriott-Resort-%26-Spa-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "沖繩麵",
+          "note": "當地湯麵"
+        },
+        {
+          "name": "苦瓜炒蛋",
+          "note": "ゴーヤーチャンプルー"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-11",
+      "name_zh": "首爾威斯汀朝鮮",
+      "name_en": "The Westin Josun Seoul",
+      "region": "asia",
+      "city": "首爾",
+      "city_key": "seoul",
+      "country": "KR",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "地標",
+        "購物",
+        "早餐"
+      ],
+      "one_liner_zh": "市廳附近朝鮮飯店經典",
+      "one_liner_en": "Classic Josun near City Hall",
+      "booking_url": "https://www.marriott.com/en-us/hotels/selwi-the-westin-josun-seoul/overview/",
+      "featured": false,
+      "editor_score": 4.3,
+      "occasion": [
+        "商務休閒",
+        "家庭"
+      ],
+      "highlights": [
+        "市中心地標",
+        "經典服務",
+        "交通方便"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/The_Westin_Josun_Seoul_Exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/The_Westin_Josun_Seoul_Exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-12",
+      "name_zh": "釜山海雲台格蘭德",
+      "name_en": "Haeundae Grand Hotel Busan",
+      "region": "asia",
+      "city": "釜山",
+      "city_key": "busan",
+      "country": "KR",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "海雲台海景大型酒店",
+      "one_liner_en": "Large Haeundae sea-view hotel",
+      "booking_url": "https://www.haeundaegrandhotel.com/",
+      "featured": false,
+      "editor_score": 4.1,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "highlights": [
+        "海雲台海景",
+        "泳池",
+        "家庭友善"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Haeundae_Grand_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Haeundae_Grand_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "豬肉湯飯",
+          "note": "釜山名物"
+        },
+        {
+          "name": "海鮮鍋",
+          "note": "海岸新鮮"
+        }
+      ]
+    },
+    {
+      "id": "bs-kr-13",
+      "name_zh": "濟州凱悅",
+      "name_en": "Hyatt Regency Jeju",
+      "region": "asia",
+      "city": "濟州",
+      "city_key": "jeju",
+      "country": "KR",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "海景",
+        "泳池",
+        "親子"
+      ],
+      "one_liner_zh": "中文凱悅濟州海景度假",
+      "one_liner_en": "Hyatt Regency Jeju coastal resort",
+      "booking_url": "https://www.hyatt.com/hyatt-regency/jeju-south-korea-cjehr",
+      "featured": false,
+      "editor_score": 4.4,
+      "occasion": [
+        "家庭",
+        "蜜月"
+      ],
+      "highlights": [
+        "海景",
+        "泳池",
+        "親子設施"
+      ],
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hyatt_Regency_hotel%2C_Jeju_Island%2C_South_Korea-12April2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hyatt_Regency_hotel%2C_Jeju_Island%2C_South_Korea-12April2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "status": "published",
+      "source": "official_web",
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-24",
+      "name_zh": "澳門永利皇宮",
+      "name_en": "Wynn Palace",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "泳池",
+        "SPA",
+        "纜車",
+        "景觀"
+      ],
+      "one_liner_zh": "路氹絢麗度假住宿，空中纜車與泳池景觀",
+      "one_liner_en": "Cotai iconic stay with cable car and pool views",
+      "booking_url": "https://www.wynnpalace.com/",
+      "cover_image": "https://photos.prnasia.com/media_files/static/2020/03/202003111104_83d4c633.jpg",
+      "image_url": "https://photos.prnasia.com/media_files/static/2020/03/202003111104_83d4c633.jpg",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.8,
+      "occasion": [
+        "蜜月",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "highlights": [
+        "空中纜車",
+        "華麗泳池",
+        "度假氛圍"
+      ],
+      "nearby_food": [
+        {
+          "name": "永利／路氹一帶葡撻",
+          "note": "綜合度假區內外帶甜點方便"
+        },
+        {
+          "name": "路環豬扒包",
+          "note": "短程可嚐澳門經典"
+        }
+      ]
+    },
+    {
+      "id": "bs-mo-25",
+      "name_zh": "澳門威尼斯人",
+      "name_en": "The Venetian Macao",
+      "region": "gba",
+      "city": "澳門路氹",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "親子",
+        "泳池",
+        "購物",
+        "套房"
+      ],
+      "one_liner_zh": "路氹大型度假套房，連購物與表演設施",
+      "one_liner_en": "Cotai suite resort linked to shopping and shows",
+      "booking_url": "https://www.venetianmacao.com/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Venetian_Macao.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Venetian_Macao.jpg",
+      "featured": true,
+      "non_gaming": true,
+      "editor_score": 4.5,
+      "occasion": [
+        "家庭",
+        "休閒"
+      ],
+      "status": "published",
+      "source": "official_web",
+      "highlights": [
+        "套房空間大",
+        "室內運河氛圍",
+        "親子友善"
+      ],
+      "nearby_food": [
+        {
+          "name": "大運河購物區食肆",
+          "note": "酒店連商場中菜／國際餐"
+        },
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹人氣葡撻"
+        }
+      ]
+    }
+  ]
+}
