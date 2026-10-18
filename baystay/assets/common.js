@@ -20,9 +20,9 @@ const CITY_CHIPS = [
 ];
 
 const FALLBACK_IMG =
-  "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80";
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Wynn_Macau_Resort.jpg";
 
-const CACHE_V = "20261019b";
+const CACHE_V = "20261019c";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
@@ -229,10 +229,10 @@ function renderCityChips(container, opts = {}) {
 
 function escapeHtml(s) {
   return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+    .replace(/&/g, "&")
+    .replace(/</g, "<")
+    .replace(/>/g, ">")
+    .replace(/"/g, """);
 }
 
 function qs(name) {
