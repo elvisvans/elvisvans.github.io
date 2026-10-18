@@ -22,7 +22,7 @@ const CITY_CHIPS = [
 const FALLBACK_IMG =
   "https://upload.wikimedia.org/wikipedia/commons/c/cf/Wynn_Macau_Resort.jpg";
 
-const CACHE_V = "20261019f";
+const CACHE_V = "20261019g";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
