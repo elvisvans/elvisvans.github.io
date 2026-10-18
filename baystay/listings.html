@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>全部住宿｜灣宿指南 BayStay</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="index.html">灣宿指南 <span>BayStay</span></a>
+      <nav class="nav">
+        <a href="index.html">首頁</a>
+        <a class="active" href="listings.html">全部住宿</a>
+        <a href="partner.html">合作贊助</a>
+        <a href="about.html">關於</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section wrap">
+    <h1>全部住宿</h1>
+    <p style="color:var(--muted);margin-top:0">篩選大灣區與亞洲熱門度假村（僅非博彩住宿）</p>
+
+    <div class="filters">
+      <label>地區
+        <select id="f-region">
+          <option value="">全部</option>
+          <option value="gba">大灣區</option>
+          <option value="asia">亞洲熱門</option>
+        </select>
+      </label>
+      <label>價位
+        <select id="f-price">
+          <option value="">全部</option>
+          <option value="1">經濟 $</option>
+          <option value="2">中檔 $$</option>
+          <option value="3">舒適 $$$</option>
+          <option value="4">豪華 $$$$</option>
+        </select>
+      </label>
+      <label>標籤
+        <select id="f-tag">
+          <option value="">全部</option>
+          <option value="泳池">泳池</option>
+          <option value="沙灘">沙灘</option>
+          <option value="SPA">SPA</option>
+          <option value="親子">親子</option>
+          <option value="早餐">早餐</option>
+          <option value="接駁">接駁</option>
+          <option value="主題">主題</option>
+        </select>
+      </label>
+      <label class="filter-check">
+        <input type="checkbox" id="f-family" /> 僅親子友好
+      </label>
+    </div>
+
+    <div class="results-count" id="count"></div>
+    <div id="list" class="cards"><p class="empty">載入中…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap inner">
+      <span>© BayStay 灣宿指南 · 非博彩住宿目錄</span>
+      <span><a href="about.html">非博彩政策</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/common.js"></script>
+  <script>
+    let all = [];
+
+    function applyFilters() {
+      const region = document.getElementById("f-region").value;
+      const price = document.getElementById("f-price").value;
+      const tag = document.getElementById("f-tag").value;
+      const family = document.getElementById("f-family").checked;
+
+      let rows = all.slice();
+      if (region) rows = rows.filter((l) => l.region === region);
+      if (price) rows = rows.filter((l) => String(l.price_tier) === price);
+      if (tag) rows = rows.filter((l) => (l.tags || []).includes(tag));
+      if (family) rows = rows.filter((l) => l.family_friendly);
+
+      // Featured first
+      rows.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || (b.editor_score || 0) - (a.editor_score || 0));
+
+      document.getElementById("count").textContent = `共 ${rows.length} 間`;
+      document.getElementById("list").innerHTML = rows.length
+        ? rows.map(cardHTML).join("")
+        : '<p class="empty">沒有符合條件的住宿，請調整篩選</p>';
+    }
+
+    ["f-region", "f-price", "f-tag", "f-family"].forEach((id) => {
+      document.getElementById(id).addEventListener("change", applyFilters);
+    });
+
+    loadListings()
+      .then(({ listings }) => {
+        all = listings;
+        applyFilters();
+      })
+      .catch((e) => {
+        document.getElementById("list").innerHTML =
+          `<p class="error">${escapeHtml(e.message)}</p>`;
+      });
+  </script>
+</body>
+</html>

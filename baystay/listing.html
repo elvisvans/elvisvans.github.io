@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>住宿詳情｜灣宿指南 BayStay</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="index.html">灣宿指南 <span>BayStay</span></a>
+      <nav class="nav">
+        <a href="index.html">首頁</a>
+        <a href="listings.html">全部住宿</a>
+        <a href="partner.html">合作贊助</a>
+        <a href="about.html">關於</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section wrap">
+    <p><a href="listings.html">← 返回列表</a></p>
+    <div id="detail"><p class="empty">載入中…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap inner">
+      <span>© BayStay 灣宿指南 · 非博彩住宿目錄</span>
+      <span><a href="about.html">非博彩政策</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/common.js"></script>
+  <script>
+    const id = qs("id");
+    if (!id) {
+      document.getElementById("detail").innerHTML =
+        '<p class="error">缺少 id 參數。請從 <a href="listings.html">列表</a> 進入。</p>';
+    } else {
+      loadListings()
+        .then(({ listings }) => {
+          const l = listings.find((x) => x.id === id);
+          if (!l) {
+            document.getElementById("detail").innerHTML =
+              '<p class="error">找不到此住宿。請返回 <a href="listings.html">列表</a>。</p>';
+            return;
+          }
+          document.title = `${l.name_zh}｜灣宿指南`;
+          const tags = (l.tags || []).map((t) => `<span class="badge">${escapeHtml(t)}</span>`).join("");
+          const occasions = (l.occasion || []).map(escapeHtml).join("、");
+          document.getElementById("detail").innerHTML = `
+            <article class="detail">
+              <div class="badge-row">
+                ${l.featured ? '<span class="badge featured">精選</span>' : ""}
+                <span class="badge tier">${priceLabel(l.price_tier)}</span>
+                ${l.family_friendly ? '<span class="badge">親子友好</span>' : ""}
+                <span class="badge">住宿精選</span>
+              </div>
+              <h1>${escapeHtml(l.name_zh)}</h1>
+              <div class="en">${escapeHtml(l.name_en || "")}</div>
+              <p>${escapeHtml(l.one_liner_zh || "")}</p>
+              <p class="en">${escapeHtml(l.one_liner_en || "")}</p>
+              <dl>
+                <dt>地區</dt><dd>${REGION_LABELS[l.region] || l.region} · ${escapeHtml(l.city)}（${COUNTRY_LABELS[l.country] || l.country}）</dd>
+                <dt>編輯評分</dt><dd>${stars(l.editor_score)} ${l.editor_score}/5</dd>
+                <dt>場合</dt><dd>${occasions || "—"}</dd>
+                <dt>標籤</dt><dd><div class="badge-row">${tags}</div></dd>
+              </dl>
+              <div class="policy-note">本站只推介住宿與度假設施（泳池、親子、SPA 等），不推廣網上博彩或賭場投注。</div>
+              <p>
+                <a class="btn btn-primary" href="${escapeHtml(l.booking_url)}" rel="noopener noreferrer" target="_blank">查房價／預訂（外部連結）</a>
+              </p>
+            </article>`;
+        })
+        .catch((e) => {
+          document.getElementById("detail").innerHTML =
+            `<p class="error">${escapeHtml(e.message)}</p>`;
+        });
+    }
+  </script>
+</body>
+</html>
