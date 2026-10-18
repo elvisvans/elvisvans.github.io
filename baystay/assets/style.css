@@ -426,3 +426,31 @@ a:hover { text-decoration: underline; }
   .detail dt { margin-top: 0.5rem; }
   .nav { gap: 0.75rem; font-size: 0.88rem; }
 }
+
+
+/* highlights */
+.card-highlights, .highlights {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.card-highlights li, .highlights li {
+  font-size: 11px;
+  color: #3A6B72;
+  background: #F2F9F9;
+  border: 1px solid #D5E8EA;
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+.highlights {
+  margin: 12px 0 16px;
+  gap: 8px;
+}
+.highlights li {
+  font-size: 13px;
+  padding: 6px 12px;
+  color: #12343B;
+}

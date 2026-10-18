@@ -59,6 +59,10 @@ function cardHTML(l) {
   if ((l.tags || []).length) bits.push((l.tags || []).slice(0, 2).join(" · "));
   if (l.family_friendly) bits.push("親子友善");
   bits.push(priceSymbols(l.price_tier));
+  const highs = (l.highlights || []).filter(Boolean).slice(0, 3);
+  const highHtml = highs.length
+    ? `<ul class="card-highlights">${highs.map((h) => `<li>${escapeHtml(h)}</li>`).join("")}</ul>`
+    : "";
   return `
     <article class="card">
       <a href="listing.html?id=${encodeURIComponent(l.id)}" style="display:contents;color:inherit;text-decoration:none">
@@ -67,6 +71,7 @@ function cardHTML(l) {
           ${tagLine}
           <h3>${escapeHtml(l.name_zh)}</h3>
           <p class="one-liner">${escapeHtml(bits.join(" · "))}</p>
+          ${highHtml}
         </div>
       </a>
     </article>`;
