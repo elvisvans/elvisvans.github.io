@@ -23,7 +23,7 @@ const FALLBACK_IMG =
   "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80";
 
 async function loadListings() {
-  const res = await fetch("data/listings.json?v=20261018g");
+  const res = await fetch("data/listings.json?v=20261018h");
   if (!res.ok) throw new Error("無法載入 listings.json（請用本機靜態伺服器開啟）");
   const data = await res.json();
   const listings = (data.listings || []).filter(

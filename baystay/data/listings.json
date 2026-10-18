@@ -27,7 +27,7 @@
       "one_liner_zh": "黑沙海灘五星度假村，適合週末放空",
       "one_liner_en": "Beach resort on Hac Sa, Coloane",
       "booking_url": "https://www.artyzen.com/en/hotels/grand-coloane-resort/",
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hotel_Grand_Coloane_Resort.jpg/1280px-Hotel_Grand_Coloane_Resort.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -38,11 +38,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "macau",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hotel_Grand_Coloane_Resort.jpg/1280px-Hotel_Grand_Coloane_Resort.jpg",
       "highlights": [
         "泳池",
         "沙灘",
         "親子"
+      ],
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
       ]
     },
     {
@@ -63,7 +73,7 @@
       "one_liner_zh": "內港索菲特，半島短住與河景",
       "one_liner_en": "Inner Harbour Sofitel for peninsula short stays",
       "booking_url": "https://www.sofitel-macau.com/",
-      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Black_Galaxy_bathroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.2,
@@ -74,11 +84,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "macau",
-      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Black_Galaxy_bathroom.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "室外泳池",
         "SPA 放鬆",
         "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
       ]
     },
     {
@@ -99,7 +119,7 @@
       "one_liner_zh": "路氹瑞吉禮賓服務與泳池，短住儀式感",
       "one_liner_en": "St. Regis Cotai stay with butler-level service",
       "booking_url": "https://www.marriott.com/en-us/hotels/mfmxr-the-st-regis-macao/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_St._Regis_Macao_hotel_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -110,11 +130,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "macau",
-      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_St._Regis_Macao_hotel_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "瑞吉禮賓服務",
         "路氹泳池假期",
         "短住儀式感"
+      ],
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
       ]
     },
     {
@@ -134,8 +164,8 @@
       ],
       "one_liner_zh": "金光大道旁康萊德，家庭與短住皆方便",
       "one_liner_en": "Conrad on Cotai Strip for family and short stays",
-      "booking_url": "https://www.hilton.com/en/hotels/mfmci-conrad-macao/",
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "booking_url": "https://www.hilton.com/en/hotels/mfmcsci-conrad-macao/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Conrad_Macao.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.4,
@@ -146,11 +176,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "macau",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Conrad_Macao.jpg",
       "highlights": [
         "室外泳池",
         "親子友善設施",
         "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
       ]
     },
     {
@@ -171,7 +211,7 @@
       "one_liner_zh": "海洋王國旁旗艦酒店，親子週末首選",
       "one_liner_en": "Flagship hotel beside Ocean Kingdom for families",
       "booking_url": "https://zhuhai-chimelong.chimelonghotels.cn/booking.html",
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Hengqin_Bay_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -181,11 +221,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "zhuhai",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Hengqin_Bay_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "親子",
         "主題樂園",
         "泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "長隆園區餐飲",
+          "note": "主題餐廳方便親子"
+        },
+        {
+          "name": "橫琴粵菜／海鮮",
+          "note": "度假區外選擇"
+        }
       ]
     },
     {
@@ -206,7 +256,7 @@
       "one_liner_zh": "東澳島萬豪，渡輪抵達後的海島度假",
       "one_liner_en": "Island Marriott on Dong'ao after the ferry",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhmd-zhuhai-dongao-island-marriott-resort/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80",
+      "cover_image": "",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -217,11 +267,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "zhuhai",
-      "image_url": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80",
+      "image_url": "",
       "highlights": [
         "沙灘",
         "泳池",
         "島嶼"
+      ],
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
       ]
     },
     {
@@ -242,7 +302,7 @@
       "one_liner_zh": "香洲沿岸瑞吉，商務＋休閒混搭",
       "one_liner_en": "Waterfront St. Regis for leisure-business mixes",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhxr-the-st-regis-zhuhai/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hengqin_Island_59.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -253,11 +313,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "zhuhai",
-      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Hengqin_Island_59.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "香洲沿岸",
         "商務休閒混搭",
         "瑞吉服務"
+      ],
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
       ]
     },
     {
@@ -277,7 +347,7 @@
       "one_liner_zh": "吉大萬豪，往返澳門口岸方便",
       "one_liner_en": "Jida Marriott with easy Macau-border access",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhmc-zhuhai-marriott-hotel/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
+      "cover_image": "",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.1,
@@ -288,11 +358,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "zhuhai",
-      "image_url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
+      "image_url": "",
       "highlights": [
         "室外泳池",
         "早餐豐富",
         "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
       ]
     },
     {
@@ -313,7 +393,7 @@
       "one_liner_zh": "福田會展旁四季，城中度假質感",
       "one_liner_en": "Futian Four Seasons by the convention centre",
       "booking_url": "https://www.fourseasons.com/shenzhen/",
-      "cover_image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "cover_image": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-shenzhen/four-seasons-hotel-shenzhen-exterior.jpg",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -324,11 +404,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "shenzhen",
-      "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "image_url": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-shenzhen/four-seasons-hotel-shenzhen-exterior.jpg",
       "highlights": [
         "泳池",
         "SPA",
         "豪華"
+      ],
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
       ]
     },
     {
@@ -349,7 +439,7 @@
       "one_liner_zh": "福田麗思，高空泳池與禮賓服務",
       "one_liner_en": "Ritz-Carlton Futian with sky-high pool service",
       "booking_url": "https://www.marriott.com/en-us/hotels/szxrz-the-ritz-carlton-shenzhen/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/0/01/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_%E6%98%9F%E6%B2%B3%E9%BA%97%E6%80%9D%E5%8D%A1%E7%88%BE%E9%A0%93%E9%85%92%E5%BA%97_The_Ritz-Carlton_Hotel_night_October_2017_IX1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -360,11 +450,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "shenzhen",
-      "image_url": "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_%E6%98%9F%E6%B2%B3%E9%BA%97%E6%80%9D%E5%8D%A1%E7%88%BE%E9%A0%93%E9%85%92%E5%BA%97_The_Ritz-Carlton_Hotel_night_October_2017_IX1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "室外泳池",
         "SPA 放鬆",
         "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
       ]
     },
     {
@@ -385,7 +485,7 @@
       "one_liner_zh": "華僑城洲際，近歡樂谷與海岸城",
       "one_liner_en": "OCT InterContinental near Happy Valley",
       "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/shenzhen/szxha/hoteldetail",
-      "cover_image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%8D%97%E5%A4%A7%E9%81%93_Shennan_Blvd_%E6%B7%B1%E5%9C%B3%E8%8F%AF%E5%83%91%E5%9F%8E%E6%B4%B2%E9%9A%9B%E5%A4%A7%E9%85%92%E5%BA%97_OCT_InterContinental_Shenzhen_September_2024_R12S_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.3,
@@ -396,11 +496,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "shenzhen",
-      "image_url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%8D%97%E5%A4%A7%E9%81%93_Shennan_Blvd_%E6%B7%B1%E5%9C%B3%E8%8F%AF%E5%83%91%E5%9F%8E%E6%B4%B2%E9%9A%9B%E5%A4%A7%E9%85%92%E5%BA%97_OCT_InterContinental_Shenzhen_September_2024_R12S_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "室外泳池",
         "親子友善設施",
         "SPA 放鬆"
+      ],
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
       ]
     },
     {
@@ -420,7 +530,7 @@
       "one_liner_zh": "福田喜來登，會展與購物步行圈",
       "one_liner_en": "Futian Sheraton in the CBD walkable loop",
       "booking_url": "https://www.marriott.com/en-us/hotels/szxsi-sheraton-shenzhen-futian-hotel/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.0,
@@ -430,11 +540,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "shenzhen",
-      "image_url": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "早餐豐富",
         "室外泳池",
         "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
       ]
     },
     {
@@ -455,7 +575,7 @@
       "one_liner_zh": "海洋公園旁海景度假酒店，親子設施齊",
       "one_liner_en": "Oceanfront Fullerton beside Ocean Park Water World",
       "booking_url": "https://www.fullertonhotels.com/fullerton-ocean-park-hotel-hongkong",
-      "cover_image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f1?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Fullerton_Ocean_Park_Hotel_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -466,11 +586,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "hongkong",
-      "image_url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f1?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Fullerton_Ocean_Park_Hotel_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "海景",
         "親子",
         "泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
       ]
     },
     {
@@ -491,7 +621,7 @@
       "one_liner_zh": "天橋直達海洋公園，家庭主題房",
       "one_liner_en": "Bridge access to Ocean Park with family rooms",
       "booking_url": "https://www.marriott.com/en-us/hotels/hkgop-hong-kong-ocean-park-marriott-hotel/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hong_Kong_Ocean_Park_Marriott_Hotel_Lobby_201901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -501,11 +631,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "hongkong",
-      "image_url": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Hong_Kong_Ocean_Park_Marriott_Hotel_Lobby_201901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "親子友善設施",
         "室外泳池",
         "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "園區／酒店餐廳",
+          "note": "主題餐飲為主"
+        },
+        {
+          "name": "大嶼山長沙／東涌美食",
+          "note": "出園後選擇"
+        }
       ]
     },
     {
@@ -526,7 +666,7 @@
       "one_liner_zh": "迪士尼官方酒店，入園方便",
       "one_liner_en": "Official Disneyland hotel with park access perks",
       "booking_url": "https://www.hongkongdisneyland.com/hotels/hong-kong-disneyland-hotel/",
-      "cover_image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hong_Kong_Disneyland_Hotel.jpg/1280px-Hong_Kong_Disneyland_Hotel.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.4,
@@ -536,11 +676,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "hongkong",
-      "image_url": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hong_Kong_Disneyland_Hotel.jpg/1280px-Hong_Kong_Disneyland_Hotel.jpg",
       "highlights": [
         "親子友善設施",
         "室外泳池",
         "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
       ]
     },
     {
@@ -561,7 +711,7 @@
       "one_liner_zh": "中環文華東方，城市度假經典",
       "one_liner_en": "Iconic Central Mandarin for a city retreat",
       "booking_url": "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour",
-      "cover_image": "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&q=80",
+      "cover_image": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -572,11 +722,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "hongkong",
-      "image_url": "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&q=80",
+      "image_url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
       "highlights": [
         "SPA",
         "豪華",
         "海景"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
       ]
     },
     {
@@ -597,7 +757,7 @@
       "one_liner_zh": "邁考海灘泳池別墅，近機場仍安靜",
       "one_liner_en": "Mai Khao pool villas near the airport, still quiet",
       "booking_url": "https://www.anantara.com/en/mai-khao-phuket",
-      "cover_image": "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-mai-khao-phuket-villas/new-images-2026/apk-1920-x-1080.png",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -608,11 +768,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-mai-khao-phuket-villas/new-images-2026/apk-1920-x-1080.png",
       "highlights": [
         "沙灘",
         "泳池別墅",
         "SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
       ]
     },
     {
@@ -633,7 +803,7 @@
       "one_liner_zh": "攀牙灣石灰岩海景，隱世島嶼度假",
       "one_liner_en": "Phang Nga limestone bay hideaway on Yao Noi",
       "booking_url": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
-      "cover_image": "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Crab_sand_balls%2C_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.9,
@@ -644,11 +814,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Crab_sand_balls%2C_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "島嶼",
         "泳池別墅",
         "SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
       ]
     },
     {
@@ -669,7 +849,7 @@
       "one_liner_zh": "拉揚海灘度假村，養生與海景並重",
       "one_liner_en": "Layan Beach resort with strong wellness focus",
       "booking_url": "https://www.anantara.com/en/layan-phuket",
-      "cover_image": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-layan-phuket-resort/new-images-2026/anantara-layan-phuket-resort-hero-shot-1920-x-1080-1-2.png",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -680,11 +860,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-layan-phuket-resort/new-images-2026/anantara-layan-phuket-resort-hero-shot-1920-x-1080-1-2.png",
       "highlights": [
         "臨近沙灘",
         "SPA 放鬆",
         "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
       ]
     },
     {
@@ -705,7 +895,7 @@
       "one_liner_zh": "卡倫海灘全包度假村，親子活動多",
       "one_liner_en": "All-inclusive Karon Beach club for families",
       "booking_url": "https://www.clubmed.com/r/phuket/y",
-      "cover_image": "https://images.unsplash.com/photo-1455587734955-081b22074882?w=800&q=80",
+      "cover_image": "https://assets.dream.clubmed/pm_7531_812_812280-uq9lhejyst-swhr.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.2,
@@ -715,11 +905,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1455587734955-081b22074882?w=800&q=80",
+      "image_url": "https://assets.dream.clubmed/pm_7531_812_812280-uq9lhejyst-swhr.jpg",
       "highlights": [
         "親子友善設施",
         "臨近沙灘",
         "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
       ]
     },
     {
@@ -740,7 +940,7 @@
       "one_liner_zh": "華欣海灘老牌度假村，曼谷週末短線",
       "one_liner_en": "Classic Hua Hin beach resort for short breaks",
       "booking_url": "https://www.centarahotelsresorts.com/centaragrand/cghb",
-      "cover_image": "https://images.unsplash.com/photo-1602002418082-a44448dac4c0?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Centara_Grand_-_former_Sofitel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.3,
@@ -751,11 +951,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1602002418082-a44448dac4c0?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Centara_Grand_-_former_Sofitel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "臨近沙灘",
         "親子友善設施",
         "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
       ]
     },
     {
@@ -776,7 +986,7 @@
       "one_liner_zh": "嵐山船渡抵達的星野町屋旅館",
       "one_liner_en": "Boat-access Hoshinoya townhouse stay in Arashiyama",
       "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakyoto/",
-      "cover_image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Arashiyama_Genrokuzancho%2C_Nishikyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-0007%2C_Japan_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.9,
@@ -787,11 +997,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Arashiyama_Genrokuzancho%2C_Nishikyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-0007%2C_Japan_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "町屋",
         "河景",
         "日式"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
       ]
     },
     {
@@ -812,7 +1032,7 @@
       "one_liner_zh": "佐幌全包滑雪度假村，冬夏皆宜",
       "one_liner_en": "All-inclusive Sahoro for ski and green seasons",
       "booking_url": "https://www.clubmed.com/r/sahoro-hokkaido/y",
-      "cover_image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Club_Med_Sahoro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.4,
@@ -823,10 +1043,20 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Club_Med_Sahoro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "親子友善設施",
         "溫泉體驗"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
       ]
     },
     {
@@ -847,7 +1077,7 @@
       "one_liner_zh": "六本木高空麗思，城市度假視角",
       "one_liner_en": "Roppongi Ritz-Carlton skyline city retreat",
       "booking_url": "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/",
-      "cover_image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Ritz_Carlton_Midtown_Tower_1F_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -858,11 +1088,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "tokyo",
-      "image_url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Ritz_Carlton_Midtown_Tower_1F_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "SPA 放鬆",
         "早餐豐富",
         "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "定食",
+          "note": "日式家常套餐"
+        },
+        {
+          "name": "便利店關東煮",
+          "note": "深夜備選"
+        }
       ]
     },
     {
@@ -883,7 +1123,7 @@
       "one_liner_zh": "輕井澤溪谷星野，森系溫泉度假",
       "one_liner_en": "Forest onsen retreat at Hoshinoya Karuizawa",
       "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/",
-      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hoshino_Onsen_Ryokan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -894,10 +1134,20 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Hoshino_Onsen_Ryokan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "溫泉體驗",
         "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
       ]
     },
     {
@@ -918,7 +1168,7 @@
       "one_liner_zh": "恩納海岸 Halekulani，沖繩高端海景",
       "one_liner_en": "Onna Coast Halekulani beach luxury",
       "booking_url": "https://www.halekulani.com/okinawa/",
-      "cover_image": "https://images.unsplash.com/photo-1559599238-308793637427?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chatan_Sunset_Beach_and_Vessel_Hotel_Campana_Okinawa_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -929,11 +1179,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1559599238-308793637427?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chatan_Sunset_Beach_and_Vessel_Hotel_Campana_Okinawa_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "臨近沙灘",
         "室外泳池",
         "SPA 放鬆"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
       ]
     },
     {
@@ -954,7 +1214,7 @@
       "one_liner_zh": "樂天世界塔 Signiel，高空城市景觀",
       "one_liner_en": "Signiel atop Lotte World Tower",
       "booking_url": "https://www.lottehotel.com/seoul-signiel/en.html",
-      "cover_image": "https://images.unsplash.com/photo-1590490360182-c33d57733428?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -965,11 +1225,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "seoul",
-      "image_url": "https://images.unsplash.com/photo-1590490360182-c33d57733428?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
       "highlights": [
         "豪華",
         "高空",
         "SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
       ]
     },
     {
@@ -990,7 +1260,7 @@
       "one_liner_zh": "中文觀光圈新羅，濟州家庭度假穩陣",
       "one_liner_en": "Jungmun Shilla for a steady Jeju family base",
       "booking_url": "https://www.shilla.net/jeju/index.do",
-      "cover_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Koea_China_Japan_Culture_Meeting_04_%2825678008814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -1001,11 +1271,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "jeju",
-      "image_url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Koea_China_Japan_Culture_Meeting_04_%2825678008814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "室外泳池",
         "親子友善設施",
         "SPA 放鬆"
+      ],
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
       ]
     },
     {
@@ -1026,7 +1306,7 @@
       "one_liner_zh": "光化門四季，首爾市區度假質感",
       "one_liner_en": "Gwanghwamun Four Seasons city retreat",
       "booking_url": "https://www.fourseasons.com/seoul/",
-      "cover_image": "https://images.unsplash.com/photo-1439130490301-25e322d88091?w=800&q=80",
+      "cover_image": "https://imageio.forbes.com/specials-images/imageserve/637ddd0c75fa78c98c3650d6/0x0.jpg?format=jpg&width=1600",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -1037,11 +1317,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "seoul",
-      "image_url": "https://images.unsplash.com/photo-1439130490301-25e322d88091?w=800&q=80",
+      "image_url": "https://imageio.forbes.com/specials-images/imageserve/637ddd0c75fa78c98c3650d6/0x0.jpg?format=jpg&width=1600",
       "highlights": [
         "SPA 放鬆",
         "室外泳池",
         "早餐豐富"
+      ],
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
       ]
     },
     {
@@ -1062,7 +1352,7 @@
       "one_liner_zh": "海雲台柏悅，釜山海岸線景觀",
       "one_liner_en": "Haeundae Park Hyatt on the Busan coast",
       "booking_url": "https://www.hyatt.com/park-hyatt/en-US/pusph-park-hyatt-busan",
-      "cover_image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_from_Igidae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -1073,11 +1363,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_from_Igidae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "海景客房",
         "SPA 放鬆",
         "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
       ]
     },
     {
@@ -1098,7 +1398,7 @@
       "one_liner_zh": "平昌阿爾卑西亞洲際，冬夏山區度假",
       "one_liner_en": "Alpensia InterContinental for mountain seasons",
       "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/pyeongchang/selal/hoteldetail",
-      "cover_image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210d3?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alpensia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.3,
@@ -1109,10 +1409,20 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210d3?w=800&q=80",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alpensia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "親子友善設施",
         "室外泳池"
+      ],
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
       ]
     },
     {
@@ -1133,7 +1443,7 @@
       "one_liner_zh": "攀牙灣瑤艾島海灘別墅，家庭與情侶皆適合",
       "one_liner_en": "Koh Yao Yai beach villas in Phang Nga Bay",
       "booking_url": "https://www.anantara.com/en/koh-yao-yai-phuket",
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-koh-yao-yai-resort-and-villas/01_homepage/anantara_koh_yao_yai_resort_villas_homepage_01_1920x700.jpg",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -1144,11 +1454,21 @@
       "status": "published",
       "source": "official_web",
       "city_key": "other",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-koh-yao-yai-resort-and-villas/01_homepage/anantara_koh_yao_yai_resort_villas_homepage_01_1920x700.jpg",
       "highlights": [
         "臨近沙灘",
         "SPA 放鬆",
         "親子友善設施"
+      ],
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
       ]
     },
     {
@@ -1180,11 +1500,21 @@
         "家庭客房",
         "泳池設施"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/The_Parisian_Macao.jpg/1280px-The_Parisian_Macao.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/The_Parisian_Macao.jpg/1280px-The_Parisian_Macao.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-06",
@@ -1215,11 +1545,21 @@
         "豪華套房",
         "度假泳池"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/61/THE_LONDONER_MACAU_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/THE_LONDONER_MACAU_1.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "倫敦人內餐廳",
+          "note": "英倫主題度假區用餐"
+        },
+        {
+          "name": "蛋撻／手信",
+          "note": "路氹伴手禮"
+        }
+      ]
     },
     {
       "id": "bs-mo-07",
@@ -1249,11 +1589,21 @@
         "親子設施",
         "路氹方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "cover_image": "https://dt6bhtsl5ivrb.cloudfront.net/assets/public/2025-05/Studio-City-Hero.jpg",
+      "image_url": "https://dt6bhtsl5ivrb.cloudfront.net/assets/public/2025-05/Studio-City-Hero.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-08",
@@ -1284,11 +1634,21 @@
         "高空視野",
         "SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Altira_Casino_%26_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Altira_Casino_%26_Hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-09",
@@ -1319,11 +1679,21 @@
         "豪華客房",
         "泳池SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/MGM_Cotai.jpg/1280px-MGM_Cotai.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/MGM_Cotai.jpg/1280px-MGM_Cotai.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-10",
@@ -1354,11 +1724,21 @@
         "豪華設施",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MGM_Macau.jpg/1280px-MGM_Macau.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/MGM_Macau.jpg/1280px-MGM_Macau.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
     },
     {
       "id": "bs-mo-11",
@@ -1389,11 +1769,21 @@
         "親子友善",
         "豪華泳池"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
+      "cover_image": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-macao-cotai-strip/four-seasons-hotel-macao-cotai-strip-exterior.jpg",
+      "image_url": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-macao-cotai-strip/four-seasons-hotel-macao-cotai-strip-exterior.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-12",
@@ -1412,7 +1802,7 @@
       ],
       "one_liner_zh": "半島海旁文華東方住宿體驗",
       "one_liner_en": "Harbourfront Mandarin Oriental stay",
-      "booking_url": "https://www.mandarinoriental.com/en/macau/exterior",
+      "booking_url": "https://www.mandarinoriental.com/en/macau/one-central",
       "featured": true,
       "editor_score": 4.7,
       "occasion": [
@@ -1424,11 +1814,21 @@
         "文華服務",
         "SPA泳池"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Mandarin_Oriental%2C_Macau.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Mandarin_Oriental%2C_Macau.JPG",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
     },
     {
       "id": "bs-mo-14",
@@ -1447,7 +1847,7 @@
       ],
       "one_liner_zh": "路氹大型會議度假酒店",
       "one_liner_en": "Large Cotai meetings and resort hotel",
-      "booking_url": "https://www.marriott.com/en-us/hotels/mfxsi-sheraton-grand-macao/overview/",
+      "booking_url": "https://www.marriott.com/en-us/hotels/mfmsi-sheraton-grand-macao/overview/",
       "featured": false,
       "editor_score": 4.2,
       "occasion": [
@@ -1459,11 +1859,21 @@
         "泳池設施",
         "適合家庭"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+      "cover_image": "https://assets.sandsresortsmacao.cn/content/londonermacao/banner/Londoner-exterior_1920x950_8.jpg",
+      "image_url": "https://assets.sandsresortsmacao.cn/content/londonermacao/banner/Londoner-exterior_1920x950_8.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-15",
@@ -1494,11 +1904,21 @@
         "泳池SPA",
         "親子友善"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Galaxy_Macau_Hotel_Phase_2_201606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Galaxy_Macau_Hotel_Phase_2_201606.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-17",
@@ -1529,11 +1949,21 @@
         "泳池設施",
         "度假綜合體"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Galaxy_Macau.jpg/1280px-Galaxy_Macau.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Galaxy_Macau.jpg/1280px-Galaxy_Macau.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-18",
@@ -1564,11 +1994,21 @@
         "細緻服務",
         "豪華設施"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Hotel_Okura_MacauTerrace_Restaurant_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Hotel_Okura_MacauTerrace_Restaurant_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-19",
@@ -1599,11 +2039,21 @@
         "年輕時尚",
         "泳池景觀"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_%E9%8A%80%E6%B2%B3%E7%B6%9C%E8%97%9D%E9%A4%A8_Galaxy_Arena_n_%E6%BE%B3%E9%96%80%E5%AE%89%E9%81%94%E4%BB%95%E9%85%92%E5%BA%97.Galaxy_Andaz_%E6%BE%B3%E9%96%80%E8%93%AE%E8%8A%B1%E8%B7%AF_Estrada_Flor_de_L%C3%B3tus_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Cotai_shuttle_bus_view_%E9%8A%80%E6%B2%B3%E7%B6%9C%E8%97%9D%E9%A4%A8_Galaxy_Arena_n_%E6%BE%B3%E9%96%80%E5%AE%89%E9%81%94%E4%BB%95%E9%85%92%E5%BA%97.Galaxy_Andaz_%E6%BE%B3%E9%96%80%E8%93%AE%E8%8A%B1%E8%B7%AF_Estrada_Flor_de_L%C3%B3tus_November_2023_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-20",
@@ -1634,11 +2084,21 @@
         "泳池SPA",
         "豪華住宿"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_hotel_facade_March_2025_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/MC_%E6%BE%B3%E9%96%80_Macau_Cotai_%E4%B8%8A%E8%92%B2%E4%BA%AC_Grand_Lisboa_Palace_hotel_facade_March_2025_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-zh-05",
@@ -1669,11 +2129,21 @@
         "洲際服務",
         "泳池"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/73/BMW_M3_GT_%286631904059%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/BMW_M3_GT_%286631904059%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
     },
     {
       "id": "bs-zh-06",
@@ -1704,11 +2174,21 @@
         "泳池",
         "早餐"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E5%B6%BA%E5%8D%97%E7%BE%A3%E9%9B%85%28%E4%BA%8C%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E5%B6%BA%E5%8D%97%E7%BE%A3%E9%9B%85%28%E4%BA%8C%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
+      ]
     },
     {
       "id": "bs-zh-07",
@@ -1739,11 +2219,21 @@
         "親子設施",
         "海邊氛圍"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/41/How_to_know_New_York_City_-_a_serviceable_and_trustworthy_guide%2C_having_its_starting_point_at_the_Grand_Union_hotel%2C_just_across_the_street_from_the_Grand_Central_depot_%281900%29_%2814579818908%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/How_to_know_New_York_City_-_a_serviceable_and_trustworthy_guide%2C_having_its_starting_point_at_the_Grand_Union_hotel%2C_just_across_the_street_from_the_Grand_Central_depot_%281900%29_%2814579818908%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
     },
     {
       "id": "bs-sz-05",
@@ -1774,11 +2264,21 @@
         "餐飲方便",
         "短途放空"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/10/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E8%9B%87%E5%8F%A3_Shekou_%E6%B5%B7%E4%B8%8A%E4%B8%96%E7%95%8C_Sea_World_%E5%A4%AA%E5%AD%90%E8%B7%AF_TaiZi_Road_night_July_2024_R12S_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E8%9B%87%E5%8F%A3_Shekou_%E6%B5%B7%E4%B8%8A%E4%B8%96%E7%95%8C_Sea_World_%E5%A4%AA%E5%AD%90%E8%B7%AF_TaiZi_Road_night_July_2024_R12S_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
+      ]
     },
     {
       "id": "bs-sz-06",
@@ -1809,11 +2309,21 @@
         "泳池",
         "早餐"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
+      ]
     },
     {
       "id": "bs-hk-05",
@@ -1844,11 +2354,21 @@
         "傳奇服務",
         "下午茶"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1584132915807-fd1f5edb0e8?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1584132915807-fd1f5edb0e8?w=800&q=80",
+      "cover_image": "https://www.peninsula.com/-/media/01-hong-kong-property/the-peninsula-hong-kong-exterior-1280.jpg",
+      "image_url": "https://www.peninsula.com/-/media/01-hong-kong-property/the-peninsula-hong-kong-exterior-1280.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "半島下午茶",
+          "note": "酒店經典體驗"
+        },
+        {
+          "name": "尖沙咀海傍食肆",
+          "note": "步行可達"
+        }
+      ]
     },
     {
       "id": "bs-hk-06",
@@ -1879,11 +2399,21 @@
         "中環地段",
         "四季服務"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Four_Seasons_Hotel_Hong_Kong.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Four_Seasons_Hotel_Hong_Kong.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
     },
     {
       "id": "bs-hk-08",
@@ -1914,11 +2444,21 @@
         "高空酒吧",
         "奢華客房"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/ICC_Hong_Kong.jpg/1280px-ICC_Hong_Kong.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/ICC_Hong_Kong.jpg/1280px-ICC_Hong_Kong.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
     },
     {
       "id": "bs-hk-10",
@@ -1949,11 +2489,21 @@
         "室外泳池",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/A_View_of_The_Cordis_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/A_View_of_The_Cordis_Hong_Kong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
     },
     {
       "id": "bs-hk-11",
@@ -1984,11 +2534,21 @@
         "泳池SPA",
         "維港視野"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Island_Shangri-La%2C_Hong_Kong_-_Horizon_Harbour_View_Room.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Island_Shangri-La%2C_Hong_Kong_-_Horizon_Harbour_View_Room.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
     },
     {
       "id": "bs-hk-12",
@@ -2019,11 +2579,21 @@
         "寧靜奢華",
         "維港景"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/59/117864_the_upper_customs_house_hotel_golan_heights_PikiWiki_Israel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/117864_the_upper_customs_house_hotel_golan_heights_PikiWiki_Israel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
     },
     {
       "id": "bs-hk-14",
@@ -2054,11 +2624,21 @@
         "設計泳池",
         "中環地段"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/HK_Admiralty_%E9%A6%99%E6%B8%AF%E5%85%AC%E5%9C%92_Hong_Kong_Park_July_2022_Px3_15_The_Murray_hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/HK_Admiralty_%E9%A6%99%E6%B8%AF%E5%85%AC%E5%9C%92_Hong_Kong_Park_July_2022_Px3_15_The_Murray_hotel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
     },
     {
       "id": "bs-hk-15",
@@ -2089,11 +2669,21 @@
         "經典服務",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bridge_connecting_Langham_Place_Hotel_and_Langham_Place.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Bridge_connecting_Langham_Place_Hotel_and_Langham_Place.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
     },
     {
       "id": "bs-hk-16",
@@ -2124,11 +2714,21 @@
         "瑰麗服務",
         "奢華SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hong_Kong_Rosewood_Hotel_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hong_Kong_Rosewood_Hotel_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
     },
     {
       "id": "bs-th-07",
@@ -2159,11 +2759,21 @@
         "親子泳池",
         "SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nai_Yang_Beach_%2835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nai_Yang_Beach_%2835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "炭燒海鮮",
+          "note": "海灘區新鮮燒烤"
+        },
+        {
+          "name": "泰式炒河粉",
+          "note": "Pad Thai 街邊版"
+        }
+      ]
     },
     {
       "id": "bs-th-08",
@@ -2193,11 +2803,21 @@
         "無邊際泳池",
         "奢華度假"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Phuket_%28404430090%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Phuket_%28404430090%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "椰子雪糕",
+          "note": "熱帶甜品"
+        },
+        {
+          "name": "冬陰功",
+          "note": "酸辣開胃"
+        }
+      ]
     },
     {
       "id": "bs-th-09",
@@ -2227,11 +2847,21 @@
         "多泳池",
         "親子友善"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Good_maintained_beautiful_courtyard_of_Katathani_Beach_Resort_Phuket_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Good_maintained_beautiful_courtyard_of_Katathani_Beach_Resort_Phuket_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "炭燒海鮮",
+          "note": "海灘區新鮮燒烤"
+        },
+        {
+          "name": "泰式炒河粉",
+          "note": "Pad Thai 街邊版"
+        }
+      ]
     },
     {
       "id": "bs-th-10",
@@ -2262,11 +2892,21 @@
         "親子設施",
         "多餐廳"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Beach_at_Sheraton_Hua_Hin_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Beach_at_Sheraton_Hua_Hin_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "華欣夜市小食",
+          "note": "海鮮／煎餅"
+        },
+        {
+          "name": "芒果糯米飯",
+          "note": "甜品"
+        }
+      ]
     },
     {
       "id": "bs-th-11",
@@ -2297,11 +2937,21 @@
         "SPA",
         "泳池"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Hua_Hin_hotels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Hua_Hin_hotels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "華欣夜市小食",
+          "note": "海鮮／煎餅"
+        },
+        {
+          "name": "芒果糯米飯",
+          "note": "甜品"
+        }
+      ]
     },
     {
       "id": "bs-th-12",
@@ -2332,11 +2982,21 @@
         "泳池別墅",
         "山城度假"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
+      "cover_image": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1593.jpg",
+      "image_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1593.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "卡奧索",
+          "note": "北泰咖喱麵"
+        },
+        {
+          "name": "香腸攤",
+          "note": "夜市 Sai ua"
+        }
+      ]
     },
     {
       "id": "bs-th-13",
@@ -2367,11 +3027,21 @@
         "泳池SPA",
         "古城方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1584132915807-fd1f5edb0e8?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1584132915807-fd1f5edb0e8?w=800&q=80",
+      "cover_image": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-chiang-mai-resort/gallery/anantara-chiang-mai/overview/anantara_chiang_mai_resort_lobby_couple_1920x800.jpg",
+      "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-chiang-mai-resort/gallery/anantara-chiang-mai/overview/anantara_chiang_mai_resort_lobby_couple_1920x800.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "卡奧索",
+          "note": "北泰咖喱麵"
+        },
+        {
+          "name": "香腸攤",
+          "note": "夜市 Sai ua"
+        }
+      ]
     },
     {
       "id": "bs-th-14",
@@ -2401,11 +3071,21 @@
         "私人泳池",
         "奢華度假"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/View_of_the_southwest_of_Ko_Samui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/View_of_the_southwest_of_Ko_Samui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "海邊海鮮",
+          "note": "鮮蝦／貝類"
+        },
+        {
+          "name": "椰子甜品",
+          "note": "島上消暑"
+        }
+      ]
     },
     {
       "id": "bs-th-15",
@@ -2435,11 +3115,21 @@
         "私人泳池",
         "隱世感"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/ARKbar_Beach_Club_2023_IMG20230410000855_w2048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/ARKbar_Beach_Club_2023_IMG20230410000855_w2048.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "海邊海鮮",
+          "note": "鮮蝦／貝類"
+        },
+        {
+          "name": "椰子甜品",
+          "note": "島上消暑"
+        }
+      ]
     },
     {
       "id": "bs-th-16",
@@ -2470,11 +3160,21 @@
         "泳池",
         "渡輪方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Beautiful_Shangri_La_Hotel%2C_Bangkok_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Beautiful_Shangri_La_Hotel%2C_Bangkok_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "打拋豬飯",
+          "note": "平價泰式常餐"
+        },
+        {
+          "name": "冬陰功",
+          "note": "酸辣湯"
+        }
+      ]
     },
     {
       "id": "bs-jp-06",
@@ -2504,11 +3204,21 @@
         "心齋橋地段",
         "奢華"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/ST.REGIS_HOTEL_OSAKA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/ST.REGIS_HOTEL_OSAKA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "章魚燒",
+          "note": "大阪經典"
+        },
+        {
+          "name": "大阪燒",
+          "note": "當地必食"
+        }
+      ]
     },
     {
       "id": "bs-jp-07",
@@ -2539,11 +3249,21 @@
         "日式庭園感",
         "奢華SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Ritz-Carton_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Ritz-Carton_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "湯葉料理",
+          "note": "京都豆腐皮"
+        },
+        {
+          "name": "抹茶甜品",
+          "note": "茶屋小休"
+        }
+      ]
     },
     {
       "id": "bs-jp-08",
@@ -2573,11 +3293,21 @@
         "靜謐奢華",
         "SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Four_Seasons_Hotel_Kyoto_Higashioji-Dori_Avenue_Gate_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Four_Seasons_Hotel_Kyoto_Higashioji-Dori_Avenue_Gate_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "湯葉料理",
+          "note": "京都豆腐皮"
+        },
+        {
+          "name": "抹茶甜品",
+          "note": "茶屋小休"
+        }
+      ]
     },
     {
       "id": "bs-jp-09",
@@ -2608,11 +3338,21 @@
         "山景",
         "度假SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Hyatt_regency_hakone_garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Hyatt_regency_hakone_garden.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑玉子",
+          "note": "溫泉蛋名物"
+        },
+        {
+          "name": "蕎麥麵",
+          "note": "山區暖胃"
+        }
+      ]
     },
     {
       "id": "bs-jp-10",
@@ -2642,11 +3382,21 @@
         "泳池沙灘",
         "親子友善"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/73/5th_Air_Naval_Gunfire_Liaison_Company_celebrates_250th_Marine_Corps_Birthday_%289379628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/5th_Air_Naval_Gunfire_Liaison_Company_celebrates_250th_Marine_Corps_Birthday_%289379628%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "沖繩麵",
+          "note": "當地湯麵"
+        },
+        {
+          "name": "苦瓜炒蛋",
+          "note": "ゴーヤーチャンプルー"
+        }
+      ]
     },
     {
       "id": "bs-jp-13",
@@ -2677,11 +3427,21 @@
         "市區綠洲",
         "餐飲豐富"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Garden_%40_Hotel_Chinzanso_Tokyo_%2812970374915%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Garden_%40_Hotel_Chinzanso_Tokyo_%2812970374915%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "定食",
+          "note": "日式家常套餐"
+        },
+        {
+          "name": "便利店關東煮",
+          "note": "深夜備選"
+        }
+      ]
     },
     {
       "id": "bs-jp-14",
@@ -2712,11 +3472,21 @@
         "購物方便",
         "高空景觀"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/8/89/InterContinental_Osaka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/InterContinental_Osaka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "章魚燒",
+          "note": "大阪經典"
+        },
+        {
+          "name": "大阪燒",
+          "note": "當地必食"
+        }
+      ]
     },
     {
       "id": "bs-kr-06",
@@ -2746,11 +3516,21 @@
         "奢華客房",
         "地標住宿"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Lotte_World_Tower_2017.jpg/1280px-Lotte_World_Tower_2017.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "豬肉湯飯",
+          "note": "釜山名物"
+        },
+        {
+          "name": "海鮮鍋",
+          "note": "海岸新鮮"
+        }
+      ]
     },
     {
       "id": "bs-kr-07",
@@ -2780,11 +3560,21 @@
         "度假綜合體",
         "泳池主題"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Landing_Jeju_Shinhwa_World%2C_Seogwipo%2C_Jeju_Island%2C_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Landing_Jeju_Shinhwa_World%2C_Seogwipo%2C_Jeju_Island%2C_South_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
     },
     {
       "id": "bs-kr-09",
@@ -2814,11 +3604,21 @@
         "親子設施",
         "度假泳池"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
     },
     {
       "id": "bs-kr-10",
@@ -2849,11 +3649,21 @@
         "購物連結",
         "經典服務"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
+      ]
     },
     {
       "id": "bs-mo-21",
@@ -2884,11 +3694,21 @@
         "親子友善",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/BroadwayMacau20150728.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/BroadwayMacau20150728.jpg",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹／澳門經典葡撻，適合順路外帶"
+        },
+        {
+          "name": "豬扒包",
+          "note": "澳門街頭經典，早餐或下午茶"
+        }
+      ]
     },
     {
       "id": "bs-mo-22",
@@ -2918,11 +3738,21 @@
         "餐飲選擇多",
         "市區方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Casino_Lisboa_%285234400075%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Casino_Lisboa_%285234400075%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
     },
     {
       "id": "bs-mo-23",
@@ -2953,11 +3783,21 @@
         "交通方便",
         "實用舒適"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hotel_Royal_Macau_Hotel_Exterior_Day_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Hotel_Royal_Macau_Hotel_Exterior_Day_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "水蟹粥",
+          "note": "澳門家常海鮮粥，暖胃"
+        },
+        {
+          "name": "咖喱膶",
+          "note": "茶餐廳經典小食"
+        }
+      ]
     },
     {
       "id": "bs-zh-08",
@@ -2987,11 +3827,21 @@
         "親子首選",
         "景區接駁"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Exterior%2C_Zhuhaichanglong_Railway_Station_20260110-A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Exterior%2C_Zhuhaichanglong_Railway_Station_20260110-A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "橫琴海鮮",
+          "note": "新鮮海鮮快炒，晚餐方便"
+        },
+        {
+          "name": "煲仔飯",
+          "note": "粵式家常，附近商場常見"
+        }
+      ]
     },
     {
       "id": "bs-zh-09",
@@ -3022,11 +3872,21 @@
         "泳池",
         "度假感"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/5e/20251014_Zhuhai_Shi_Hengqin_Zhen_Renmin_Zhengfu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/20251014_Zhuhai_Shi_Hengqin_Zhen_Renmin_Zhengfu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "珠海鮮蝦雲吞",
+          "note": "廣式雲吞麵"
+        },
+        {
+          "name": "糖水",
+          "note": "雙皮奶／楊枝甘露"
+        }
+      ]
     },
     {
       "id": "bs-sz-08",
@@ -3057,11 +3917,21 @@
         "泳池",
         "南山方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/91/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%9C%B3%E7%81%A3_Shenzhen_Bay_MixC_mall_pop-up_shop_YSL_Yves_Saint_Laurent_Lovenude_Beauty_Hotel_evening_May_2026_N13P_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1%E5%8D%80_Nanshan_%E6%B7%B1%E5%9C%B3%E7%81%A3_Shenzhen_Bay_MixC_mall_pop-up_shop_YSL_Yves_Saint_Laurent_Lovenude_Beauty_Hotel_evening_May_2026_N13P_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "潮汕牛肉火鍋",
+          "note": "深圳人氣選擇"
+        },
+        {
+          "name": "腸粉",
+          "note": "粵式早餐／宵夜"
+        }
+      ]
     },
     {
       "id": "bs-sz-09",
@@ -3092,11 +3962,21 @@
         "泳池",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1_Nanshan_%E5%8D%97%E6%96%B0%E8%B7%AF_NanXin_Road_HanHao_Hotel_night_September_2024_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1_Nanshan_%E5%8D%97%E6%96%B0%E8%B7%AF_NanXin_Road_HanHao_Hotel_night_September_2024_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "煲仔飯",
+          "note": "南山／福田商場易找"
+        },
+        {
+          "name": "茶餐廳常餐",
+          "note": "港式快餐方便"
+        }
+      ]
     },
     {
       "id": "bs-hk-18",
@@ -3127,11 +4007,21 @@
         "室外泳池",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/df/HK_TST_East_Royal_Garden_Hotel_Guan_Yin_Goddess_of_Mercy_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/HK_TST_East_Royal_Garden_Hotel_Guan_Yin_Goddess_of_Mercy_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "點心",
+          "note": "飲茶推車或任點"
+        },
+        {
+          "name": "雞蛋仔",
+          "note": "街頭小食"
+        }
+      ]
     },
     {
       "id": "bs-hk-19",
@@ -3162,11 +4052,21 @@
         "泳池SPA",
         "尖東方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/54/HK_TST_East_64_Mody_Road_%E4%B9%9D%E9%BE%8D%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E9%85%92%E5%BA%97_Kowloon_Shangri-La_Hotel_directory_sign_Nov-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/HK_TST_East_64_Mody_Road_%E4%B9%9D%E9%BE%8D%E9%A6%99%E6%A0%BC%E9%87%8C%E6%8B%89%E9%85%92%E5%BA%97_Kowloon_Shangri-La_Hotel_directory_sign_Nov-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "蘭芳園絲襪奶茶",
+          "note": "中環經典（視區域）"
+        },
+        {
+          "name": "點心／燒臘",
+          "note": "午餐方便"
+        }
+      ]
     },
     {
       "id": "bs-hk-20",
@@ -3197,11 +4097,21 @@
         "精品奢華",
         "SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/53/HK_Central_The_Landmark_Mandarin_Oriental_Hotel_night_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/HK_Central_The_Landmark_Mandarin_Oriental_Hotel_night_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "茶餐廳豬扒飯",
+          "note": "港式常餐，附近街坊店多"
+        },
+        {
+          "name": "雲吞麵",
+          "note": "港式麵店經典"
+        }
+      ]
     },
     {
       "id": "bs-th-17",
@@ -3232,11 +4142,21 @@
         "市中心",
         "奢華SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bangkok_Pano_%28III%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Bangkok_Pano_%28III%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "打拋豬飯",
+          "note": "平價泰式常餐"
+        },
+        {
+          "name": "冬陰功",
+          "note": "酸辣湯"
+        }
+      ]
     },
     {
       "id": "bs-th-19",
@@ -3267,11 +4187,21 @@
         "多泳池",
         "親子友善"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Angsana_Laguna_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Angsana_Laguna_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "炭燒海鮮",
+          "note": "海灘區新鮮燒烤"
+        },
+        {
+          "name": "泰式炒河粉",
+          "note": "Pad Thai 街邊版"
+        }
+      ]
     },
     {
       "id": "bs-th-20",
@@ -3302,11 +4232,21 @@
         "親子泳池",
         "度假SPA"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/%E7%B4%85%E6%A8%93%E5%A4%A2%28%E4%BA%8C%E5%8D%81%E4%B8%80%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/%E7%B4%85%E6%A8%93%E5%A4%A2%28%E4%BA%8C%E5%8D%81%E4%B8%80%29.djvu?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "甲米海鮮",
+          "note": "新鮮燒烤"
+        },
+        {
+          "name": "泰式炒粉",
+          "note": "平價常餐"
+        }
+      ]
     },
     {
       "id": "bs-jp-15",
@@ -3337,11 +4277,21 @@
         "購物方便",
         "豪華設施"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Grand_Hyatt_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Grand_Hyatt_Tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "拉麵",
+          "note": "附近巷弄一碗"
+        },
+        {
+          "name": "壽司／海鮮丼",
+          "note": "午餐方便"
+        }
+      ]
     },
     {
       "id": "bs-jp-16",
@@ -3372,11 +4322,21 @@
         "設計感",
         "購物方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/OBIC_Midosuji_Building_20210306-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/OBIC_Midosuji_Building_20210306-001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "章魚燒",
+          "note": "大阪經典"
+        },
+        {
+          "name": "大阪燒",
+          "note": "當地必食"
+        }
+      ]
     },
     {
       "id": "bs-jp-17",
@@ -3407,11 +4367,21 @@
         "安缦靜奢",
         "日式庭園"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_photograph_of_Nathan_van_Clief_vacationing_at_an_Aman_hotel_in_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/A_photograph_of_Nathan_van_Clief_vacationing_at_an_Aman_hotel_in_Kyoto.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "湯葉料理",
+          "note": "京都豆腐皮"
+        },
+        {
+          "name": "抹茶甜品",
+          "note": "茶屋小休"
+        }
+      ]
     },
     {
       "id": "bs-jp-18",
@@ -3441,11 +4411,21 @@
         "泳池",
         "親子友善"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kise_Okinawa_Okinawa-Marriott-Resort-%26-Spa-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kise_Okinawa_Okinawa-Marriott-Resort-%26-Spa-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "沖繩麵",
+          "note": "當地湯麵"
+        },
+        {
+          "name": "苦瓜炒蛋",
+          "note": "ゴーヤーチャンプルー"
+        }
+      ]
     },
     {
       "id": "bs-kr-11",
@@ -3476,11 +4456,21 @@
         "經典服務",
         "交通方便"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/The_Westin_Josun_Seoul_Exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/The_Westin_Josun_Seoul_Exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "韓式烤肉",
+          "note": "燒肉配生菜"
+        },
+        {
+          "name": "参雞湯",
+          "note": "滋補湯品"
+        }
+      ]
     },
     {
       "id": "bs-kr-12",
@@ -3511,11 +4501,21 @@
         "泳池",
         "家庭友善"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424bb9c?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Haeundae_Grand_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Haeundae_Grand_Hotel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "豬肉湯飯",
+          "note": "釜山名物"
+        },
+        {
+          "name": "海鮮鍋",
+          "note": "海岸新鮮"
+        }
+      ]
     },
     {
       "id": "bs-kr-13",
@@ -3546,11 +4546,21 @@
         "泳池",
         "親子設施"
       ],
-      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hyatt_Regency_hotel%2C_Jeju_Island%2C_South_Korea-12April2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hyatt_Regency_hotel%2C_Jeju_Island%2C_South_Korea-12April2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "status": "published",
       "source": "official_web",
-      "non_gaming": true
+      "non_gaming": true,
+      "nearby_food": [
+        {
+          "name": "黑豬肉",
+          "note": "濟州招牌"
+        },
+        {
+          "name": "海鮮火鍋",
+          "note": "海岸口味"
+        }
+      ]
     },
     {
       "id": "bs-mo-24",
@@ -3571,8 +4581,8 @@
       "one_liner_zh": "路氹絢麗度假住宿，空中纜車與泳池景觀",
       "one_liner_en": "Cotai iconic stay with cable car and pool views",
       "booking_url": "https://www.wynnpalace.com/",
-      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "cover_image": "https://photos.prnasia.com/media_files/static/2020/03/202003111104_83d4c633.jpg",
+      "image_url": "https://photos.prnasia.com/media_files/static/2020/03/202003111104_83d4c633.jpg",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -3586,6 +4596,16 @@
         "空中纜車",
         "華麗泳池",
         "度假氛圍"
+      ],
+      "nearby_food": [
+        {
+          "name": "永利／路氹一帶葡撻",
+          "note": "綜合度假區內外帶甜點方便"
+        },
+        {
+          "name": "路環豬扒包",
+          "note": "短程可嚐澳門經典"
+        }
       ]
     },
     {
@@ -3607,8 +4627,8 @@
       "one_liner_zh": "路氹大型度假套房，連購物與表演設施",
       "one_liner_en": "Cotai suite resort linked to shopping and shows",
       "booking_url": "https://www.venetianmacao.com/",
-      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
-      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Venetian_Macao.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Venetian_Macao.jpg",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -3622,6 +4642,16 @@
         "套房空間大",
         "室內運河氛圍",
         "親子友善"
+      ],
+      "nearby_food": [
+        {
+          "name": "大運河購物區食肆",
+          "note": "酒店連商場中菜／國際餐"
+        },
+        {
+          "name": "安德魯蛋撻",
+          "note": "路氹人氣葡撻"
+        }
       ]
     }
   ]
