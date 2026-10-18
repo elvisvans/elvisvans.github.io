@@ -27,7 +27,7 @@
       "one_liner_zh": "黑沙海灘五星度假村，非娛樂場主打，適合週末放空",
       "one_liner_en": "Beach resort on Hac Sa, Coloane — rooms and pools first",
       "booking_url": "https://www.artyzen.com/en/hotels/grand-coloane-resort/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -36,7 +36,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
     },
     {
       "id": "bs-mo-02",
@@ -56,7 +58,7 @@
       "one_liner_zh": "內港索菲特，半島短住與河景",
       "one_liner_en": "Inner Harbour Sofitel for peninsula short stays",
       "booking_url": "https://www.sofitel-macau.com/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.2,
@@ -65,7 +67,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80"
     },
     {
       "id": "bs-mo-03",
@@ -85,7 +89,7 @@
       "one_liner_zh": "路氹瑞吉禮賓服務與泳池，短住儀式感",
       "one_liner_en": "St. Regis Cotai stay with butler-level service",
       "booking_url": "https://www.marriott.com/en-us/hotels/mfmxr-the-st-regis-macao/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -94,7 +98,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80"
     },
     {
       "id": "bs-mo-04",
@@ -114,7 +120,7 @@
       "one_liner_zh": "金光大道旁康萊德，家庭與短住皆方便",
       "one_liner_en": "Conrad on Cotai Strip for family and short stays",
       "booking_url": "https://www.hilton.com/en/hotels/mfmci-conrad-macao/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.4,
@@ -123,7 +129,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "macau",
+      "image_url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&q=80"
     },
     {
       "id": "bs-zh-01",
@@ -143,7 +151,7 @@
       "one_liner_zh": "海洋王國旁旗艦酒店，親子週末首選",
       "one_liner_en": "Flagship hotel beside Ocean Kingdom for families",
       "booking_url": "https://zhuhai-chimelong.chimelonghotels.cn/booking.html",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -151,7 +159,9 @@
         "家庭"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80"
     },
     {
       "id": "bs-zh-02",
@@ -171,7 +181,7 @@
       "one_liner_zh": "東澳島萬豪，渡輪抵達後的海島度假",
       "one_liner_en": "Island Marriott on Dong'ao after the ferry",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhmd-zhuhai-dongao-island-marriott-resort/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -180,7 +190,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800&q=80"
     },
     {
       "id": "bs-zh-03",
@@ -200,7 +212,7 @@
       "one_liner_zh": "香洲沿岸瑞吉，商務＋休閒混搭",
       "one_liner_en": "Waterfront St. Regis for leisure-business mixes",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhxr-the-st-regis-zhuhai/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -209,7 +221,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
     },
     {
       "id": "bs-zh-04",
@@ -228,7 +242,7 @@
       "one_liner_zh": "吉大萬豪，往返澳門口岸方便",
       "one_liner_en": "Jida Marriott with easy Macau-border access",
       "booking_url": "https://www.marriott.com/en-us/hotels/zuhmc-zhuhai-marriott-hotel/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.1,
@@ -237,7 +251,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "zhuhai",
+      "image_url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80"
     },
     {
       "id": "bs-sz-01",
@@ -257,7 +273,7 @@
       "one_liner_zh": "福田會展旁四季，城中度假質感",
       "one_liner_en": "Futian Four Seasons by the convention centre",
       "booking_url": "https://www.fourseasons.com/shenzhen/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -266,7 +282,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"
     },
     {
       "id": "bs-sz-02",
@@ -286,7 +304,7 @@
       "one_liner_zh": "福田麗思，高空泳池與禮賓服務",
       "one_liner_en": "Ritz-Carlton Futian with sky-high pool service",
       "booking_url": "https://www.marriott.com/en-us/hotels/szxrz-the-ritz-carlton-shenzhen/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -295,7 +313,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?w=800&q=80"
     },
     {
       "id": "bs-sz-03",
@@ -315,7 +335,7 @@
       "one_liner_zh": "華僑城洲際，近歡樂谷與海岸城",
       "one_liner_en": "OCT InterContinental near Happy Valley",
       "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/shenzhen/szxha/hoteldetail",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.3,
@@ -324,7 +344,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
     },
     {
       "id": "bs-sz-04",
@@ -343,7 +365,7 @@
       "one_liner_zh": "福田喜來登，會展與購物步行圈",
       "one_liner_en": "Futian Sheraton in the CBD walkable loop",
       "booking_url": "https://www.marriott.com/en-us/hotels/szxsi-sheraton-shenzhen-futian-hotel/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.0,
@@ -351,7 +373,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "shenzhen",
+      "image_url": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80"
     },
     {
       "id": "bs-hk-01",
@@ -371,7 +395,7 @@
       "one_liner_zh": "海洋公園旁海景度假酒店，親子設施齊",
       "one_liner_en": "Oceanfront Fullerton beside Ocean Park Water World",
       "booking_url": "https://www.fullertonhotels.com/fullerton-ocean-park-hotel-hongkong",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f1?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -380,7 +404,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f1?w=800&q=80"
     },
     {
       "id": "bs-hk-02",
@@ -400,7 +426,7 @@
       "one_liner_zh": "天橋直達海洋公園，家庭主題房",
       "one_liner_en": "Bridge access to Ocean Park with family rooms",
       "booking_url": "https://www.marriott.com/en-us/hotels/hkgop-hong-kong-ocean-park-marriott-hotel/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -408,7 +434,9 @@
         "家庭"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?w=800&q=80"
     },
     {
       "id": "bs-hk-03",
@@ -428,7 +456,7 @@
       "one_liner_zh": "迪士尼官方酒店，入園方便",
       "one_liner_en": "Official Disneyland hotel with park access perks",
       "booking_url": "https://www.hongkongdisneyland.com/hotels/hong-kong-disneyland-hotel/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.4,
@@ -436,7 +464,9 @@
         "家庭"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=800&q=80"
     },
     {
       "id": "bs-hk-04",
@@ -456,7 +486,7 @@
       "one_liner_zh": "中環文華東方，城市度假經典",
       "one_liner_en": "Iconic Central Mandarin for a city retreat",
       "booking_url": "https://www.mandarinoriental.com/en/hong-kong/victoria-harbour",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -465,7 +495,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "hongkong",
+      "image_url": "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?w=800&q=80"
     },
     {
       "id": "bs-th-01",
@@ -485,7 +517,7 @@
       "one_liner_zh": "邁考海灘泳池別墅，近機場仍安靜",
       "one_liner_en": "Mai Khao pool villas near the airport, still quiet",
       "booking_url": "https://www.anantara.com/en/mai-khao-phuket",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -494,7 +526,9 @@
         "情侶"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1549294413-26f195200c16?w=800&q=80"
     },
     {
       "id": "bs-th-02",
@@ -514,7 +548,7 @@
       "one_liner_zh": "攀牙灣石灰岩海景，隱世島嶼度假",
       "one_liner_en": "Phang Nga limestone bay hideaway on Yao Noi",
       "booking_url": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.9,
@@ -523,7 +557,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?w=800&q=80"
     },
     {
       "id": "bs-th-03",
@@ -543,7 +579,7 @@
       "one_liner_zh": "拉揚海灘度假村，養生與海景並重",
       "one_liner_en": "Layan Beach resort with strong wellness focus",
       "booking_url": "https://www.anantara.com/en/layan-phuket",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -552,7 +588,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=800&q=80"
     },
     {
       "id": "bs-th-04",
@@ -572,7 +610,7 @@
       "one_liner_zh": "卡倫海灘全包度假村，親子活動多",
       "one_liner_en": "All-inclusive Karon Beach club for families",
       "booking_url": "https://www.clubmed.com/r/phuket/y",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1455587734955-081b22074882?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.2,
@@ -580,7 +618,9 @@
         "家庭"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1455587734955-081b22074882?w=800&q=80"
     },
     {
       "id": "bs-th-05",
@@ -600,7 +640,7 @@
       "one_liner_zh": "華欣海灘老牌度假村，曼谷週末短線",
       "one_liner_en": "Classic Hua Hin beach resort for short breaks",
       "booking_url": "https://www.centarahotelsresorts.com/centaragrand/cghb",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1602002418082-a44448dac4c0?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.3,
@@ -609,7 +649,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1602002418082-a44448dac4c0?w=800&q=80"
     },
     {
       "id": "bs-jp-01",
@@ -629,7 +671,7 @@
       "one_liner_zh": "嵐山船渡抵達的星野町屋旅館",
       "one_liner_en": "Boat-access Hoshinoya townhouse stay in Arashiyama",
       "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakyoto/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.9,
@@ -638,7 +680,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80"
     },
     {
       "id": "bs-jp-02",
@@ -658,7 +702,7 @@
       "one_liner_zh": "佐幌全包滑雪度假村，冬夏皆宜",
       "one_liner_en": "All-inclusive Sahoro for ski and green seasons",
       "booking_url": "https://www.clubmed.com/r/sahoro-hokkaido/y",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.4,
@@ -667,7 +711,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80"
     },
     {
       "id": "bs-jp-03",
@@ -687,7 +733,7 @@
       "one_liner_zh": "六本木高空麗思，城市度假視角",
       "one_liner_en": "Roppongi Ritz-Carlton skyline city retreat",
       "booking_url": "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -696,7 +742,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "tokyo",
+      "image_url": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80"
     },
     {
       "id": "bs-jp-04",
@@ -716,7 +764,7 @@
       "one_liner_zh": "輕井澤溪谷星野，森系溫泉度假",
       "one_liner_en": "Forest onsen retreat at Hoshinoya Karuizawa",
       "booking_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -725,7 +773,9 @@
         "情侶"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80"
     },
     {
       "id": "bs-jp-05",
@@ -745,7 +795,7 @@
       "one_liner_zh": "恩納海岸 Halekulani，沖繩高端海景",
       "one_liner_en": "Onna Coast Halekulani beach luxury",
       "booking_url": "https://www.halekulani.com/okinawa/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1559599238-308793637427?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -754,7 +804,9 @@
         "家庭"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1559599238-308793637427?w=800&q=80"
     },
     {
       "id": "bs-kr-01",
@@ -774,7 +826,7 @@
       "one_liner_zh": "樂天世界塔 Signiel，高空城市景觀",
       "one_liner_en": "Signiel atop Lotte World Tower",
       "booking_url": "https://www.lottehotel.com/seoul-signiel/en.html",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1590490360182-c33d57733428?w=800&q=80",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -783,7 +835,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "seoul",
+      "image_url": "https://images.unsplash.com/photo-1590490360182-c33d57733428?w=800&q=80"
     },
     {
       "id": "bs-kr-02",
@@ -803,7 +857,7 @@
       "one_liner_zh": "中文觀光圈新羅，濟州家庭度假穩陣",
       "one_liner_en": "Jungmun Shilla for a steady Jeju family base",
       "booking_url": "https://www.shilla.net/jeju/index.do",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.5,
@@ -812,7 +866,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "jeju",
+      "image_url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80"
     },
     {
       "id": "bs-kr-03",
@@ -832,7 +888,7 @@
       "one_liner_zh": "光化門四季，首爾市區度假質感",
       "one_liner_en": "Gwanghwamun Four Seasons city retreat",
       "booking_url": "https://www.fourseasons.com/seoul/",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1439130490301-25e322d88091?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -841,7 +897,9 @@
         "商務休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "seoul",
+      "image_url": "https://images.unsplash.com/photo-1439130490301-25e322d88091?w=800&q=80"
     },
     {
       "id": "bs-kr-04",
@@ -861,7 +919,7 @@
       "one_liner_zh": "海雲台柏悅，釜山海岸線景觀",
       "one_liner_en": "Haeundae Park Hyatt on the Busan coast",
       "booking_url": "https://www.hyatt.com/park-hyatt/en-US/pusph-park-hyatt-busan",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.6,
@@ -870,7 +928,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80"
     },
     {
       "id": "bs-kr-05",
@@ -890,7 +950,7 @@
       "one_liner_zh": "平昌阿爾卑西亞洲際，冬夏山區度假",
       "one_liner_en": "Alpensia InterContinental for mountain seasons",
       "booking_url": "https://www.ihg.com/intercontinental/hotels/us/en/pyeongchang/selal/hoteldetail",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210d3?w=800&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.3,
@@ -899,7 +959,9 @@
         "休閒"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1501117716987-c8e1ecb210d3?w=800&q=80"
     },
     {
       "id": "bs-th-06",
@@ -919,7 +981,7 @@
       "one_liner_zh": "攀牙灣瑤艾島海灘別墅，家庭與情侶皆適合",
       "one_liner_en": "Koh Yao Yai beach villas in Phang Nga Bay",
       "booking_url": "https://www.anantara.com/en/koh-yao-yai-phuket",
-      "cover_image": "",
+      "cover_image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80",
       "featured": false,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -928,7 +990,9 @@
         "情侶"
       ],
       "status": "published",
-      "source": "official_web"
+      "source": "official_web",
+      "city_key": "other",
+      "image_url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80"
     }
   ]
 }

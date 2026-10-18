@@ -1,7 +1,26 @@
-/** BayStay shared helpers */
+/** BayStay shared helpers — coastal v2 */
 const PRICE_LABELS = { 1: "經濟 $", 2: "中檔 $$", 3: "舒適 $$$", 4: "豪華 $$$$" };
 const REGION_LABELS = { gba: "大灣區", asia: "亞洲熱門" };
 const COUNTRY_LABELS = { MO: "澳門", CN: "中國", HK: "香港", TH: "泰國", JP: "日本", KR: "韓國" };
+
+const CITY_CHIPS = [
+  { key: "", label: "全部" },
+  { key: "macau", label: "澳門" },
+  { key: "guangzhou", label: "廣州" },
+  { key: "zhuhai", label: "珠海" },
+  { key: "shenzhen", label: "深圳" },
+  { key: "hongkong", label: "香港" },
+  { sep: true },
+  { key: "bangkok", label: "曼谷" },
+  { key: "chiangmai", label: "清邁" },
+  { key: "tokyo", label: "東京" },
+  { key: "osaka", label: "大阪" },
+  { key: "seoul", label: "首爾" },
+  { key: "jeju", label: "濟州" },
+];
+
+const FALLBACK_IMG =
+  "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80";
 
 async function loadListings() {
   const res = await fetch("data/listings.json");
@@ -22,18 +41,62 @@ function stars(score) {
   return "★".repeat(Math.min(5, Math.max(0, n))) + "☆".repeat(Math.max(0, 5 - n));
 }
 
+function listingImage(l) {
+  return l.image_url || l.cover_image || FALLBACK_IMG;
+}
+
+function priceSymbols(tier) {
+  const n = Math.min(4, Math.max(1, Number(tier) || 1));
+  return "$".repeat(n);
+}
+
 function cardHTML(l) {
-  const tags = (l.tags || []).slice(0, 4).map((t) => `<span class="badge">${t}</span>`).join("");
-  const featured = l.featured ? `<span class="badge featured">精選</span>` : "";
+  const img = listingImage(l);
+  const tagLine = l.featured
+    ? `<span class="tag">精選</span>`
+    : `<span class="city-label">${escapeHtml(l.city)}</span>`;
+  const bits = [];
+  if ((l.tags || []).length) bits.push((l.tags || []).slice(0, 2).join(" · "));
+  if (l.family_friendly) bits.push("親子友善");
+  bits.push(priceSymbols(l.price_tier));
   return `
     <article class="card">
-      <div class="badge-row">${featured}<span class="badge tier">${priceLabel(l.price_tier)}</span>${l.family_friendly ? '<span class="badge">親子</span>' : ""}</div>
-      <h3><a href="listing.html?id=${encodeURIComponent(l.id)}">${escapeHtml(l.name_zh)}</a></h3>
-      <div class="en">${escapeHtml(l.name_en || "")}</div>
-      <div class="meta">${REGION_LABELS[l.region] || l.region} · ${escapeHtml(l.city)} · ${stars(l.editor_score)}</div>
-      <p class="one-liner">${escapeHtml(l.one_liner_zh || "")}</p>
-      <div class="badge-row">${tags}</div>
+      <a href="listing.html?id=${encodeURIComponent(l.id)}" style="display:contents;color:inherit;text-decoration:none">
+        <div class="card-img" style="background-image:url('${escapeHtml(img)}')" role="img" aria-label="${escapeHtml(l.name_zh)}"></div>
+        <div class="card-body">
+          ${tagLine}
+          <h3>${escapeHtml(l.name_zh)}</h3>
+          <p class="one-liner">${escapeHtml(bits.join(" · "))}</p>
+        </div>
+      </a>
     </article>`;
+}
+
+function countByCityKey(listings) {
+  const c = {};
+  for (const l of listings) {
+    const k = l.city_key || "other";
+    c[k] = (c[k] || 0) + 1;
+  }
+  return c;
+}
+
+/** Render city chips into container. opts: { active, counts, onSelect } */
+function renderCityChips(container, opts = {}) {
+  const active = opts.active || "";
+  const counts = opts.counts || {};
+  const showCounts = !!opts.showCounts;
+  container.innerHTML = CITY_CHIPS.map((c) => {
+    if (c.sep) return `<span class="chip-sep">｜</span>`;
+    const on = c.key === active ? " on" : "";
+    const n = c.key === "" ? "" : showCounts ? ` <span class="chip-n">(${counts[c.key] || 0})</span>` : "";
+    return `<button type="button" class="chip${on}" data-city="${c.key}">${c.label}${n}</button>`;
+  }).join("");
+  container.querySelectorAll(".chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (typeof opts.onSelect === "function") opts.onSelect(btn.getAttribute("data-city") || "");
+    });
+  });
 }
 
 function escapeHtml(s) {
