@@ -191,7 +191,10 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Conrad_Macao.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-zh-01",
@@ -393,7 +396,7 @@
       "one_liner_zh": "福田會展旁四季，城中度假質感",
       "one_liner_en": "Futian Four Seasons by the convention centre",
       "booking_url": "https://www.fourseasons.com/shenzhen/",
-      "cover_image": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-shenzhen/four-seasons-hotel-shenzhen-exterior.jpg",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.7,
@@ -404,7 +407,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "shenzhen",
-      "image_url": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-shenzhen/four-seasons-hotel-shenzhen-exterior.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
       "highlights": [
         "泳池",
         "SPA",
@@ -419,7 +422,10 @@
           "name": "腸粉",
           "note": "粵式早餐／宵夜"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons (Futian / Fuhua 3rd Road night exterior)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E7%A6%8F%E7%94%B0_Futian_%E7%A6%8F%E8%8F%AF%E4%B8%89%E8%B7%AF_Fuhua_3rd_Road_night_October_2017_IX1_Four_Seasons_Hotel_%E5%9C%8B%E9%9A%9B%E5%95%86%E6%9C%83%E4%B8%AD%E5%BF%83.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-sz-02",
@@ -1306,7 +1312,7 @@
       "one_liner_zh": "光化門四季，首爾市區度假質感",
       "one_liner_en": "Gwanghwamun Four Seasons city retreat",
       "booking_url": "https://www.fourseasons.com/seoul/",
-      "cover_image": "https://imageio.forbes.com/specials-images/imageserve/637ddd0c75fa78c98c3650d6/0x0.jpg?format=jpg&width=1600",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
       "featured": true,
       "non_gaming": true,
       "editor_score": 4.8,
@@ -1317,7 +1323,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "seoul",
-      "image_url": "https://imageio.forbes.com/specials-images/imageserve/637ddd0c75fa78c98c3650d6/0x0.jpg?format=jpg&width=1600",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
       "highlights": [
         "SPA 放鬆",
         "室外泳池",
@@ -1332,7 +1338,10 @@
           "name": "参雞湯",
           "note": "滋補湯品"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons (Category:Four Seasons Hotel Seoul)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Hyundai_Marine_%26_Fire_Insurance_Building.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-kr-04",
@@ -1589,8 +1598,8 @@
         "親子設施",
         "路氹方便"
       ],
-      "cover_image": "https://dt6bhtsl5ivrb.cloudfront.net/assets/public/2025-05/Studio-City-Hero.jpg",
-      "image_url": "https://dt6bhtsl5ivrb.cloudfront.net/assets/public/2025-05/Studio-City-Hero.jpg",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Studio_City_Macau_27-05-2024.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Studio_City_Macau_27-05-2024.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -1603,7 +1612,10 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons (Category:Studio City Macau)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Studio_City_Macau_27-05-2024.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-mo-08",
@@ -1769,8 +1781,8 @@
         "親子友善",
         "豪華泳池"
       ],
-      "cover_image": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-macao-cotai-strip/four-seasons-hotel-macao-cotai-strip-exterior.jpg",
-      "image_url": "https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-macao-cotai-strip/four-seasons-hotel-macao-cotai-strip-exterior.jpg",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -1783,7 +1795,10 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons (Category:Exterior of Four Seasons Hotel & Resort Macau)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:MC_%E6%BE%B3%E9%96%80_Macau_%E8%B7%AF%E6%B0%B9_Taipa_%E9%87%91%E5%85%89%E5%A4%A7%E9%81%93_Cotai_hotel_shuttle_view_November_2019_SS2_16_Four_Seasons_Hotel_%26_Resort_Macau.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-mo-12",
@@ -1814,8 +1829,8 @@
         "文華服務",
         "SPA泳池"
       ],
-      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Mandarin_Oriental%2C_Macau.JPG",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Mandarin_Oriental%2C_Macau.JPG",
+      "cover_image": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXtJ3AbMM9XZzcUQCi2G.jpg",
+      "image_url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXtJ3AbMM9XZzcUQCi2G.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -1828,7 +1843,10 @@
           "name": "咖喱膶",
           "note": "茶餐廳經典小食"
         }
-      ]
+      ],
+      "image_source": "Mandarin Oriental official CDN (ffycdn) — scraped from property page",
+      "image_source_url": "https://www.mandarinoriental.com/en/macau/one-central",
+      "image_ok": true
     },
     {
       "id": "bs-mo-14",
@@ -1859,8 +1877,8 @@
         "泳池設施",
         "適合家庭"
       ],
-      "cover_image": "https://assets.sandsresortsmacao.cn/content/londonermacao/banner/Londoner-exterior_1920x950_8.jpg",
-      "image_url": "https://assets.sandsresortsmacao.cn/content/londonermacao/banner/Londoner-exterior_1920x950_8.jpg",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sheraton_Macau_141114.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Sheraton_Macau_141114.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -1873,7 +1891,10 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons (Category:Sheraton Grand Macao)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Sheraton_Macau_141114.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-mo-15",
@@ -2399,8 +2420,8 @@
         "中環地段",
         "四季服務"
       ],
-      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Four_Seasons_Hotel_Hong_Kong.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Four_Seasons_Hotel_Hong_Kong.jpg",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/2016_-_Four_Seasons_Hotel_Hong_Kong_%28_Ank_Kumar_%29_02.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/2016_-_Four_Seasons_Hotel_Hong_Kong_%28_Ank_Kumar_%29_02.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -2413,7 +2434,10 @@
           "name": "雞蛋仔",
           "note": "街頭小食"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons (Category:Exterior of Four Seasons Hotel Hong Kong)",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:2016_-_Four_Seasons_Hotel_Hong_Kong_(_Ank_Kumar_)_02.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-hk-08",
@@ -2982,8 +3006,8 @@
         "泳池別墅",
         "山城度假"
       ],
-      "cover_image": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1593.jpg",
-      "image_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1593.jpg",
+      "cover_image": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1066.jpg",
+      "image_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1066.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -2996,7 +3020,10 @@
           "name": "香腸攤",
           "note": "夜市 Sai ua"
         }
-      ]
+      ],
+      "image_source": "Four Seasons Thailand official press kit (fourseasonsthailand.com)",
+      "image_source_url": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "image_ok": true
     },
     {
       "id": "bs-th-13",
@@ -3694,8 +3721,8 @@
         "親子友善",
         "購物方便"
       ],
-      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/BroadwayMacau20150728.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/BroadwayMacau20150728.jpg",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Broadway_Macau_Hotel_18-03-2023.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Broadway_Macau_Hotel_18-03-2023.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -3708,7 +3735,10 @@
           "name": "豬扒包",
           "note": "澳門街頭經典，早餐或下午茶"
         }
-      ]
+      ],
+      "image_source": "Wikimedia Commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Broadway_Macau_Hotel_18-03-2023.jpg",
+      "image_ok": true
     },
     {
       "id": "bs-mo-22",
