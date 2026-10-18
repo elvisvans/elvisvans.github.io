@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>灣宿指南 BayStay｜從海灣出發，住進亞洲的清涼</title>
-  <meta name="description" content="大灣區與亞洲熱門度假村／酒店目錄。聚焦泳池、親子、SPA 與放空。" />
-  <link rel="stylesheet" href="assets/style.css?v=20261019d" />
+  <meta name="description" content="大灣區與亞洲熱門度假村／酒店目錄。聚焦泳池、親子、SPA 與放鬆。" />
+  <link rel="stylesheet" href="assets/style.css?v=20261019f" />
 </head>
 <body>
   <header class="site-header site-header--hero">
@@ -21,10 +21,11 @@
   </header>
 
   <main>
+    <!-- 1. Hero -->
     <section class="hero-ocean">
       <div class="wrap">
         <h1>從海灣出發，住進亞洲的清涼</h1>
-        <p class="sub">大灣區與亞洲熱門城市 · 只談住宿與放空</p>
+        <p class="sub">大灣區與亞洲熱門城市 · 只談住宿與放鬆</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="listings.html">探索度假村</a>
           <a class="btn btn-ghost-light" href="partner.html">合作上架</a>
@@ -32,7 +33,25 @@
       </div>
     </section>
 
-    <div class="panel-float motion-reveal">
+    <!-- 2. LARGE TOPIC ZONE — Soft PASS: immediately under Hero, before chips＋Featured -->
+    <section class="topic-hero-zone motion-reveal" aria-label="每日專題大專區">
+      <p class="zone-label">每日專題</p>
+      <a class="topic-editorial" href="features/2026-10-19-cotai-food-walk.html">
+        <div class="copy">
+          <p class="eyebrow">每日專題</p>
+          <h2>路氹午後：泳池之後去用餐</h2>
+          <p class="lead">先住下來，再沿威尼斯人、倫敦人與銀河一帶慢慢走、慢慢吃。三站節奏，連回站內酒店。</p>
+          <div class="meta-row">
+            <span class="date-chip">2026-10-19</span>
+            <span class="btn btn-primary" role="presentation">閱讀專題</span>
+          </div>
+        </div>
+        <div class="media topic-media" role="img" aria-label="專題封面 · Cotai Strip 夜景 16:9"></div>
+      </a>
+    </section>
+
+    <!-- 3. chips＋Featured（權重低於專題） -->
+    <div class="panel-float panel-float--featured motion-reveal">
       <div id="city-chips" class="chips" aria-label="城市篩選"></div>
       <div class="section-head">
         <h2>精選 Featured</h2>
@@ -41,19 +60,6 @@
       <div id="featured" class="cards"><p class="empty">載入中…</p></div>
       <p class="note-center">以住宿與設施為主</p>
     </div>
-
-
-    <aside class="topic-slot motion-reveal" aria-label="每日專題">
-      <p class="eyebrow">每日專題</p>
-      <div class="topic-copy">
-        <h2><a href="features/2026-10-19-cotai-food-walk.html">路氹半日散步：泳池後食乜好</a></h2>
-        <p class="lead">先泡泳池再散步覓食。威尼斯人、倫敦人、銀河一帶三類吃法，連回站內酒店。</p>
-      </div>
-      <div class="topic-actions">
-        <span class="date">2026-10-19</span>
-        <a class="btn btn-primary" href="features/2026-10-19-cotai-food-walk.html">閱讀專題</a>
-      </div>
-    </aside>
 
     <section class="section wrap partner-strip motion-reveal">
       <h2>精選合作</h2>
@@ -64,7 +70,7 @@
     <section class="section wrap motion-reveal">
       <div class="value-grid">
         <div class="value-item"><strong>一頁篩清</strong>按城市、價位、親子、設施標籤快速過濾</div>
-        <div class="value-item"><strong>編輯精選</strong>Featured 推薦幫你少踩雷、少比價焦慮</div>
+        <div class="value-item"><strong>編輯精選</strong>Featured 推薦，減少選錯與比價焦慮</div>
         <div class="value-item"><strong>海灣視角</strong>澳門／大灣區出發的週末與短途優先</div>
         <div class="value-item"><strong>住宿為主</strong>泳池、親子、SPA；綜合度假村亦可上架</div>
       </div>
@@ -75,11 +81,11 @@
   <footer class="site-footer">
     <div class="wrap inner">
       <span>© BayStay 灣宿指南</span>
-      <span class="credit">圖片：Commons／各物業 · 見 <a href="about.html">about</a> · <a href="partner.html">合作</a></span>
+      <span class="credit">封面：Cotai Strip（Commons CC BY-SA）· 見 <a href="about.html">關於</a> · <a href="partner.html">合作</a></span>
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261019d"></script>
+  <script src="assets/common.js?v=20261019f"></script>
   <script>
     if (typeof initMotionReveal === "function") initMotionReveal();
 
@@ -118,7 +124,6 @@
         allFeatured = listings
           .filter((l) => l.featured)
           .sort((a, b) => (b.editor_score || 0) - (a.editor_score || 0));
-        // If fewer than 3 featured after filter, still OK — chips filter featured set
         const counts = (typeof countByCityKey === 'function' ? countByCityKey : window.countByCityKey)(listings);
         paintChips(counts);
         renderFeatured();
