@@ -110,3 +110,18 @@ function escapeHtml(s) {
 function qs(name) {
   return new URLSearchParams(location.search).get(name);
 }
+
+/* Explicit globals for Safari / cached scopes */
+window.CITY_CHIPS = CITY_CHIPS;
+window.loadListings = loadListings;
+window.priceLabel = priceLabel;
+window.stars = stars;
+window.listingImage = listingImage;
+window.cardHTML = cardHTML;
+window.countByCityKey = countByCityKey;
+window.renderCityChips = renderCityChips;
+window.escapeHtml = escapeHtml;
+window.qs = qs;
+window.PRICE_LABELS = PRICE_LABELS;
+window.REGION_LABELS = REGION_LABELS;
+window.COUNTRY_LABELS = COUNTRY_LABELS;
