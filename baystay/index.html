@@ -4,14 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>灣宿指南 BayStay｜從海灣出發，住進亞洲的清涼</title>
-  <meta name="description" content="大灣區與亞洲熱門度假村／酒店目錄。聚焦泳池、親子、SPA 與放鬆。" />
-  <link rel="stylesheet" href="assets/style.css?v=20261019g" />
+  <meta name="description" content="大灣區與亞洲熱門度假村／酒店目錄。聚焦泳池、親子、SPA 與放鬆。每日專題連回站內住宿。" />
+  <link rel="stylesheet" href="assets/style.css?v=20261019i" />
 </head>
 <body>
+  <!-- LN editorial v1 · design/ln-editorial-v1 · Soft PASS stack 0.92/0.93/0.94 · no preview banner -->
+
   <header class="site-header site-header--hero">
     <div class="wrap inner">
       <a class="logo" href="index.html">灣宿指南 <span>BayStay</span></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="主導航">
         <a class="active" href="index.html">首頁</a>
         <a href="listings.html">全部住宿</a>
         <a href="partner.html">合作贊助</a>
@@ -21,71 +23,95 @@
   </header>
 
   <main>
-    <!-- 1. Hero -->
-    <section class="hero-ocean">
-      <div class="wrap">
-        <h1>從海灣出發，住進亞洲的清涼</h1>
-        <p class="sub">大灣區與亞洲熱門城市 · 只談住宿與放鬆</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="listings.html">探索度假村</a>
-          <a class="btn btn-ghost-light" href="partner.html">合作上架</a>
+    <!-- 1. Full-bleed Hero · 竹灣 hero-home.jpg -->
+    <section class="ln-hero" aria-label="首頁 Hero">
+      <div class="inner">
+        <p class="eyebrow">海灣住宿編輯指南</p>
+        <h1>先住下來，再慢慢走</h1>
+        <p class="sub">澳門與大灣區短途：泳池、親子與 SPA 為主軸的住宿目錄，每日專題連回站內酒店。</p>
+        <div class="ctas">
+          <a class="btn-primary" href="#daily-topic">閱讀今日專題</a>
+          <a class="btn-ghost-light" href="listings.html">瀏覽住宿</a>
         </div>
       </div>
+      <span class="scroll-hint" aria-hidden="true">向下瀏覽</span>
     </section>
 
-    <!-- 2. LARGE TOPIC ZONE — Soft PASS: immediately under Hero, before chips＋Featured -->
-    <section class="topic-hero-zone motion-reveal" aria-label="每日專題大專區">
-      <p class="zone-label">每日專題</p>
-      <a class="topic-editorial" href="features/2026-10-19-cotai-food-walk.html">
-        <div class="copy">
-          <p class="eyebrow">每日專題</p>
-          <h2>路氹午後：泳池之後去用餐</h2>
-          <p class="lead">先住下來，再沿威尼斯人、倫敦人與銀河一帶慢慢走、慢慢吃。三站節奏，連回站內酒店。</p>
-          <div class="meta-row">
-            <span class="date-chip">2026-10-19</span>
-            <span class="btn btn-primary" role="presentation">閱讀專題</span>
+    <!-- 2. 每日專題 — larger than Featured · Cotai Strip media -->
+    <section class="ln-chapter chapter-topic motion-reveal" id="daily-topic" aria-label="每日專題">
+      <div class="wrap-ln">
+        <p class="chapter-kicker">CHAPTER</p>
+        <h2 class="chapter-title">每日專題</h2>
+        <p class="chapter-lead">編輯精選半日節奏，圖文連回站內可訂住宿。層級高於精選卡片。</p>
+        <a class="topic-stage" href="features/2026-10-19-cotai-food-walk.html">
+          <div class="copy">
+            <p class="eyebrow">每日專題</p>
+            <h3>路氹午後：泳池之後去用餐</h3>
+            <p class="lead">先住下來，再沿威尼斯人、倫敦人與銀河一帶慢慢走、慢慢吃。三站節奏，連回站內酒店。</p>
+            <p class="meta">2026-10-19 · 澳門路氹</p>
+            <div class="cta-row"><span class="btn-primary" style="pointer-events:none">閱讀專題</span></div>
           </div>
+          <div class="media" role="img" aria-label="專題封面 · Cotai Strip 16:9"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3. City chips — secondary -->
+    <section class="ln-chapter chapter-cities motion-reveal" aria-label="城市探索">
+      <div class="wrap-ln">
+        <p class="chapter-kicker">FILTER</p>
+        <h2 class="chapter-title" style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem">城市探索</h2>
+        <div id="city-chips" class="chips chip-row" aria-label="城市篩選"></div>
+      </div>
+    </section>
+
+    <!-- 4. 精選住宿 -->
+    <section class="ln-chapter chapter-featured motion-reveal" aria-label="精選住宿">
+      <div class="wrap-ln">
+        <div class="section-head-row">
+          <div>
+            <p class="chapter-kicker">STAYS</p>
+            <h2 class="chapter-title" style="margin-bottom:0">精選住宿</h2>
+          </div>
+          <a href="listings.html">查看全部 →</a>
         </div>
-        <div class="media topic-media" role="img" aria-label="專題封面 · Chelsea Garden 16:9"></div>
-      </a>
-    </section>
-
-    <!-- 3. chips＋Featured（權重低於專題） -->
-    <div class="panel-float panel-float--featured motion-reveal">
-      <div id="city-chips" class="chips" aria-label="城市篩選"></div>
-      <div class="section-head">
-        <h2>精選 Featured</h2>
-        <a href="listings.html">看全部 →</a>
-      </div>
-      <div id="featured" class="cards"><p class="empty">載入中…</p></div>
-      <p class="note-center">以住宿與設施為主</p>
-    </div>
-
-    <section class="section wrap partner-strip motion-reveal">
-      <h2>精選合作</h2>
-      <p>度假村與精品酒店，歡迎洽談上架或 Featured。</p>
-      <a class="btn btn-ghost" href="partner.html">了解合作 →</a>
-    </section>
-
-    <section class="section wrap motion-reveal">
-      <div class="value-grid">
-        <div class="value-item"><strong>一頁篩清</strong>按城市、價位、親子、設施標籤快速過濾</div>
-        <div class="value-item"><strong>編輯精選</strong>Featured 推薦，減少選錯與比價焦慮</div>
-        <div class="value-item"><strong>海灣視角</strong>澳門／大灣區出發的週末與短途優先</div>
-        <div class="value-item"><strong>住宿為主</strong>泳池、親子、SPA；綜合度假村亦可上架</div>
+        <div id="featured" class="feat-grid"><p class="empty">載入中…</p></div>
       </div>
     </section>
 
+    <!-- 5. 合作 -->
+    <section class="ln-chapter chapter-partner motion-reveal" aria-label="合作">
+      <div class="wrap-ln">
+        <p class="chapter-kicker">PARTNER</p>
+        <h2 class="chapter-title">合作</h2>
+        <p class="chapter-lead">度假村與精品酒店，歡迎洽談上架或 Featured 編輯精選。</p>
+        <a class="btn-primary" href="partner.html">合作上架</a>
+      </div>
+    </section>
+
+    <!-- 6. Value -->
+    <section class="ln-chapter chapter-value motion-reveal" aria-label="為什麼選擇灣宿指南">
+      <div class="wrap-ln">
+        <p class="chapter-kicker">WHY</p>
+        <h2 class="chapter-title" style="font-size:clamp(1.5rem,3vw,2rem)">為什麼選擇灣宿指南</h2>
+        <div class="value-grid">
+          <div class="value-item"><strong>一頁篩清</strong>按城市、價位、親子、設施標籤快速過濾</div>
+          <div class="value-item"><strong>編輯精選</strong>Featured 推薦減少選錯與比價焦慮</div>
+          <div class="value-item"><strong>海灣視角</strong>澳門／大灣區出發的週末與短途優先</div>
+          <div class="value-item"><strong>住宿為主</strong>泳池、親子、SPA；綜合度假村亦可上架</div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap inner">
       <span>© BayStay 灣宿指南</span>
-      <span class="credit">Hero 竹灣 · 專題卡 Chelsea Garden（Commons）· 見 <a href="about.html">關於</a> · <a href="partner.html">合作</a></span>
+      <span class="credit">Hero 竹灣 · 專題 Cotai Strip · 見 <a href="about.html">關於</a> · <a href="partner.html">合作</a></span>
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261019g"></script>
+  <script src="assets/common.js?v=20261019i"></script>
   <script>
     if (typeof initMotionReveal === "function") initMotionReveal();
 
@@ -102,16 +128,18 @@
           : '<p class="empty">此城市暫無精選，試試「全部」或<a href="listings.html">瀏覽全部住宿</a></p>';
         return;
       }
-      el.innerHTML = rows.slice(0, 6).map(cardHTML).join("");
+      const htmlFn = typeof featCardHTML === "function" ? featCardHTML : cardHTML;
+      el.innerHTML = rows.slice(0, 6).map(htmlFn).join("");
       if (typeof hydrateCardImages === "function") hydrateCardImages(el);
+      // Cards stay visible; chapter .motion-reveal covers section — no re-play on chip filter
     }
 
     function paintChips(counts) {
       renderCityChips(document.getElementById("city-chips"), {
         active: cityKey,
-        counts,
+        counts: counts,
         showCounts: true,
-        onSelect: (k) => {
+        onSelect: function (k) {
           cityKey = k;
           paintChips(counts);
           renderFeatured();
@@ -120,17 +148,18 @@
     }
 
     loadListings()
-      .then(({ listings }) => {
+      .then(function (data) {
+        var listings = data.listings;
         allFeatured = listings
-          .filter((l) => l.featured)
-          .sort((a, b) => (b.editor_score || 0) - (a.editor_score || 0));
-        const counts = (typeof countByCityKey === 'function' ? countByCityKey : window.countByCityKey)(listings);
+          .filter(function (l) { return l.featured; })
+          .sort(function (a, b) { return (b.editor_score || 0) - (a.editor_score || 0); });
+        var counts = (typeof countByCityKey === "function" ? countByCityKey : window.countByCityKey)(listings);
         paintChips(counts);
         renderFeatured();
       })
-      .catch((e) => {
+      .catch(function (e) {
         document.getElementById("featured").innerHTML =
-          `<p class="error">${escapeHtml(e.message)}</p>`;
+          '<p class="error">' + escapeHtml(e.message) + "</p>";
       });
   </script>
 </body>

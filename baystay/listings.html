@@ -4,13 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>全部住宿｜灣宿指南 BayStay</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261019g" />
+  <meta name="description" content="按城市與設施挑選住宿。圖主導目錄網格。" />
+  <link rel="stylesheet" href="assets/style.css?v=20261019i" />
 </head>
-<body>
+<body class="listings-page">
+  <!-- LN editorial v1 · design/ln-editorial-v1/02-listings · no preview banner -->
+
   <header class="site-header">
     <div class="wrap inner">
       <a class="logo" href="index.html">灣宿指南 <span>BayStay</span></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="主導航">
         <a href="index.html">首頁</a>
         <a class="active" href="listings.html">全部住宿</a>
         <a href="partner.html">合作贊助</a>
@@ -19,46 +22,46 @@
     </div>
   </header>
 
-  <main class="section wrap">
-    <div class="hrow">
-      <div>
-        <h1>全部住宿</h1>
-        <p>按城市精準篩選 · 住宿目錄</p>
-      </div>
-      <div class="count" id="count">載入中…</div>
+  <section class="listings-hero motion-reveal" aria-label="城市探索">
+    <div class="wrap-ln">
+      <p class="chapter-kicker">CHAPTER</p>
+      <h1>城市探索</h1>
+      <p class="lead">按城市與設施挑選住宿。圖主導目錄網格，書面編輯語調，專注泳池、親子與 SPA。</p>
     </div>
+  </section>
 
-    <div class="filter-bar">
-      <div id="city-chips" class="chips" aria-label="城市篩選"></div>
-      <div class="filters">
-        <label>價位
-          <select id="f-price">
-            <option value="">全部價位</option>
-            <option value="1">經濟 $</option>
-            <option value="2">中檔 $$</option>
-            <option value="3">舒適 $$$</option>
-            <option value="4">豪華 $$$$</option>
-          </select>
-        </label>
-        <label>標籤
-          <select id="f-tag">
-            <option value="">全部標籤</option>
-            <option value="泳池">泳池</option>
-            <option value="沙灘">沙灘</option>
-            <option value="SPA">SPA</option>
-            <option value="親子">親子</option>
-            <option value="早餐">早餐</option>
-            <option value="接駁">接駁</option>
-            <option value="主題">主題</option>
-          </select>
-        </label>
-        <label class="filter-check">
-          <input type="checkbox" id="f-family" /> 僅親子友好
-        </label>
-      </div>
+  <div class="filter-bar" role="search" aria-label="篩選">
+    <div class="wrap-ln filter-inner">
+      <span class="label">城市</span>
+      <div id="city-chips" class="chips" aria-label="城市篩選" style="margin:0;display:contents"></div>
+      <span class="label" style="margin-left:0.5rem">價位</span>
+      <select id="f-price" aria-label="價位">
+        <option value="">全部價位</option>
+        <option value="1">經濟 $</option>
+        <option value="2">中檔 $$</option>
+        <option value="3">舒適 $$$</option>
+        <option value="4">豪華 $$$$</option>
+      </select>
+      <span class="label">標籤</span>
+      <select id="f-tag" aria-label="標籤">
+        <option value="">全部標籤</option>
+        <option value="泳池">泳池</option>
+        <option value="沙灘">沙灘</option>
+        <option value="SPA">SPA</option>
+        <option value="親子">親子</option>
+        <option value="早餐">早餐</option>
+        <option value="接駁">接駁</option>
+        <option value="主題">主題</option>
+      </select>
+      <label class="filter-check" style="margin-top:0">
+        <input type="checkbox" id="f-family" /> 僅親子友好
+      </label>
     </div>
+  </div>
 
-    <div id="list" class="cards"><p class="empty">載入中…</p></div>
+  <main class="wrap-ln">
+    <p class="results-meta" id="count">載入中…</p>
+    <div id="list" class="dir-grid" aria-label="住宿列表"><p class="empty">載入中…</p></div>
   </main>
 
   <footer class="site-footer">
@@ -68,11 +71,14 @@
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261019g"></script>
+  <script src="assets/common.js?v=20261019i"></script>
   <script>
+    if (typeof initMotionReveal === "function") initMotionReveal(".listings-hero.motion-reveal");
+
     let all = [];
     let cityKey = "";
     let cityCounts = {};
+    let listingsRevealDone = false; // M3: first-load only
 
     function applyFilters() {
       const price = document.getElementById("f-price").value;
@@ -91,7 +97,9 @@
           (b.editor_score || 0) - (a.editor_score || 0)
       );
 
-      document.getElementById("count").textContent = `顯示 ${rows.length} 間`;
+      document.getElementById("count").innerHTML =
+        "顯示 <strong>" + rows.length + "</strong> 間住宿";
+
       const list = document.getElementById("list");
       if (!rows.length) {
         list.innerHTML =
@@ -100,9 +108,32 @@
             : '<p class="empty">沒有符合條件的住宿，請調整篩選</p>';
         return;
       }
-      list.innerHTML = rows.map(cardHTML).join("");
+
+      const htmlFn = typeof dirCardHTML === "function" ? dirCardHTML : cardHTML;
+      list.innerHTML = rows.map(htmlFn).join("");
       if (typeof hydrateCardImages === "function") hydrateCardImages(list);
-      // Soft Lift: skip scroll-reveal on listings (filter re-render must not replay)
+
+      // M3: first-load reveal only; filter re-render must NOT re-play
+      if (!listingsRevealDone) {
+        listingsRevealDone = true;
+        if (typeof prefersReducedMotion === "function" && !prefersReducedMotion()) {
+          const cards = list.querySelectorAll(".dir-card");
+          cards.forEach(function (card, i) {
+            if (i < 6) {
+              card.classList.add("motion-reveal");
+              card.style.transitionDelay = Math.min(i, 5) * 80 + "ms";
+            } else {
+              card.classList.add("is-revealed");
+            }
+          });
+          if (typeof initMotionReveal === "function") initMotionReveal("#list .motion-reveal");
+        }
+      } else {
+        list.querySelectorAll(".dir-card").forEach(function (card) {
+          card.classList.add("is-revealed");
+          card.classList.remove("motion-reveal");
+        });
+      }
     }
 
     function paintChips() {
@@ -110,32 +141,31 @@
         active: cityKey,
         counts: cityCounts,
         showCounts: true,
-        onSelect: (k) => {
+        onSelect: function (k) {
           cityKey = k;
           paintChips();
-          applyFilters();
+          applyFilters(); // 0ms — sync, no setTimeout
         },
       });
     }
 
-    ["f-price", "f-tag", "f-family"].forEach((id) => {
+    ["f-price", "f-tag", "f-family"].forEach(function (id) {
       document.getElementById(id).addEventListener("change", applyFilters);
     });
 
-    // Deep-link ?city=macau
     const qCity = qs("city");
     if (qCity) cityKey = qCity;
 
     loadListings()
-      .then(({ listings }) => {
-        all = listings;
-        cityCounts = (typeof countByCityKey === 'function' ? countByCityKey : window.countByCityKey)(listings);
+      .then(function (data) {
+        all = data.listings;
+        cityCounts = (typeof countByCityKey === "function" ? countByCityKey : window.countByCityKey)(data.listings);
         paintChips();
         applyFilters();
       })
-      .catch((e) => {
+      .catch(function (e) {
         document.getElementById("list").innerHTML =
-          `<p class="error">${escapeHtml(e.message)}</p>`;
+          '<p class="error">' + escapeHtml(e.message) + "</p>";
       });
   </script>
 </body>
