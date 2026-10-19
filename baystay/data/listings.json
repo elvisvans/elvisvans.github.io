@@ -7453,6 +7453,151 @@
       "image_source": "official_cdn",
       "image_source_url": "https://all.accor.com/hotel/8098/index.en.shtml",
       "booking_url_fallback": ""
+    },
+    {
+      "id": "bs-mo-41",
+      "name_zh": "澳門假日酒店",
+      "name_en": "Holiday Inn Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "新口岸",
+        "假日",
+        "家庭",
+        "IHG"
+      ],
+      "one_liner_zh": "新口岸假日酒店，近外港碼頭與市區景點",
+      "one_liner_en": "Holiday Inn on Rua de Pequim near Outer Harbour",
+      "booking_url": "https://www.ihg.com/holidayinn/hotels/us/en/macau/qmpch/hoteldetail",
+      "booking_url_fallback": "https://www.macaotourism.gov.mo/en/accommodation/holiday-inn-macau/",
+      "cover_image": "https://digital.ihg.com/is/image/ihg/holiday-inn-macau-10043769822-2x1",
+      "image_url": "https://digital.ihg.com/is/image/ihg/holiday-inn-macau-10043769822-2x1",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.0,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "daily_hotel_seeds_2026-10-19b_replacement",
+      "city_key": "macau",
+      "highlights": [
+        "IHG 假日品牌",
+        "新口岸位置",
+        "室內泳池／SPA"
+      ],
+      "nearby_food": [
+        {
+          "name": "Oskar's Bar",
+          "note": "酒店內輕食酒吧"
+        },
+        {
+          "name": "新口岸餐飲",
+          "note": "北京街／商業區短途"
+        }
+      ],
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.ihg.com/holidayinn/hotels/us/en/macau/qmpch/hoteldetail"
+    },
+    {
+      "id": "bs-mo-43",
+      "name_zh": "澳門萊斯酒店",
+      "name_en": "Rocks Hotel Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "漁人碼頭",
+        "維多利亞",
+        "半島"
+      ],
+      "one_liner_zh": "漁人碼頭維多利亞風格精品酒店，近港澳碼頭",
+      "one_liner_en": "Victorian boutique hotel at Fisherman's Wharf near ferry terminal",
+      "booking_url": "https://www.fishermanswharf.com.mo/rocks-hotel/",
+      "booking_url_fallback": "https://www.macaotourism.gov.mo/en/accommodation/hotel-rocks/",
+      "cover_image": "https://www.fishermanswharf.com.mo/wp-content/uploads/2022/10/Hotels_5-1200x800-1.webp",
+      "image_url": "https://www.fishermanswharf.com.mo/wp-content/uploads/2022/10/Hotels_5-1200x800-1.webp",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.0,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "daily_hotel_seeds_2026-10-19b",
+      "city_key": "macau",
+      "highlights": [
+        "漁人碼頭維多利亞外觀",
+        "近港澳碼頭",
+        "Vic's 葡菜／天台 Sky Lounge"
+      ],
+      "nearby_food": [
+        {
+          "name": "Vic's Restaurant",
+          "note": "酒店內葡菜／English Bar"
+        },
+        {
+          "name": "新口岸美食",
+          "note": "漁人碼頭外短途"
+        }
+      ],
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.fishermanswharf.com.mo/rocks-hotel/"
+    },
+    {
+      "id": "bs-mo-44",
+      "name_zh": "澳門財神酒店",
+      "name_en": "Hotel Fortuna Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "country": "MO",
+      "price_tier": 2,
+      "family_friendly": true,
+      "tags": [
+        "新口岸",
+        "市區",
+        "性價比"
+      ],
+      "one_liner_zh": "新口岸三星酒店，近港澳碼頭與商業區",
+      "one_liner_en": "3-star NAPE hotel near Outer Harbour and business district",
+      "booking_url": "https://www.hotelfortuna.com.mo/?roomreserving/",
+      "booking_url_fallback": "https://www.hotelfortuna.com.mo/?rates/",
+      "cover_image": "https://www.hotelfortuna.com.mo/static/upload/image/20230725/1690278999396973.jpg",
+      "image_url": "https://www.hotelfortuna.com.mo/static/upload/image/20230725/1690278999396973.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 3.6,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "daily_hotel_seeds_2026-10-19b",
+      "city_key": "macau",
+      "highlights": [
+        "新口岸交通便利",
+        "近港澳碼頭",
+        "中式宴會廳餐飲"
+      ],
+      "nearby_food": [
+        {
+          "name": "財神酒樓／酒店餐廳",
+          "note": "館內中菜宴會"
+        },
+        {
+          "name": "新口岸上海街一帶",
+          "note": "茶餐廳／街頭美食短途"
+        }
+      ],
+      "image_source": "official_cdn",
+      "image_source_url": "https://www.hotelfortuna.com.mo/?main/"
     }
   ]
 }
