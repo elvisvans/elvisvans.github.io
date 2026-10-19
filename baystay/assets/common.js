@@ -19,10 +19,16 @@ const CITY_CHIPS = [
   { key: "jeju", label: "濟州" },
 ];
 
-const FALLBACK_IMG =
-  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Wynn_Macau_Resort.jpg";
+const FALLBACK_IMG = (function () {
+  try {
+    if (typeof document !== "undefined" && document.currentScript && document.currentScript.src) {
+      return new URL("cover-fallback.jpg", document.currentScript.src).href;
+    }
+  } catch (e) {}
+  return "assets/cover-fallback.jpg";
+})();
 
-const CACHE_V = "20261019j";
+const CACHE_V = "20261019k";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
