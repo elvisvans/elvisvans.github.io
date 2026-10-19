@@ -1,15 +1,4 @@
 {
-  "site": {
-    "name_zh": "灣宿指南",
-    "name_en": "BayStay",
-    "tagline_zh": "大灣區出發，亞洲度假村與酒店一頁揀清",
-    "tagline_en": "GBA-first resort & hotel picks across Asia",
-    "locale_primary": "zh-Hant",
-    "non_gaming_only": false,
-    "updated": "2026-10-19",
-    "draft_note": "workspace 210 fail10 residual2 Soft PASS 0.88; holes cleared; NOT live",
-    "listing_count": 210
-  },
   "listings": [
     {
       "id": "bs-mo-01",
