@@ -8,7 +8,7 @@
     "non_gaming_only": false,
     "updated": "2026-10-19",
     "draft_note": "workspace 210 fail10 residual2 Soft PASS 0.88; holes cleared; NOT live",
-    "listing_count": 210
+    "listing_count": 159
   },
   "listings": [
     {
@@ -974,7 +974,7 @@
       ],
       "one_liner_zh": "華欣海灘老牌度假村，曼谷週末短線",
       "one_liner_en": "Classic Hua Hin beach resort for short breaks",
-      "booking_url": "https://www.centarahotelsresorts.com/centaragrand/cghb",
+      "booking_url": "https://www.centarahotelsresorts.com/centaragrand/chbr",
       "cover_image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Centara_Grand_-_former_Sofitel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "featured": false,
       "non_gaming": true,
@@ -1002,7 +1002,7 @@
           "note": "午餐方便"
         }
       ],
-      "booking_url_fallback": ""
+      "booking_url_fallback": "https://www.centarahotelsresorts.com/centaragrand/CHBR/contact"
     },
     {
       "id": "bs-jp-01",
