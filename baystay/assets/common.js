@@ -28,7 +28,7 @@ const FALLBACK_IMG = (function () {
   return "assets/cover-fallback.jpg";
 })();
 
-const CACHE_V = "20261019k";
+const CACHE_V = "20261019l";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
