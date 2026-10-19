@@ -8,9 +8,7 @@
     "non_gaming_only": false,
     "updated": "2026-10-19",
     "draft_note": "workspace 210 fail10 residual2 Soft PASS 0.88; holes cleared; NOT live",
-    "listing_count": 210,
-    "cache_v": "20261019m",
-    "note": "C4 residual 16 Soft PASS 0.96; th-08 draft; standing Soft PASS push m"
+    "listing_count": 210
   },
   "listings": [
     {
@@ -800,7 +798,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "phuket",
       "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-mai-khao-phuket-villas/new-images-2026/apk-1920-x-1080.png",
       "highlights": [
         "沙灘",
@@ -847,7 +845,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "phuket",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Crab_sand_balls%2C_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "島嶼",
@@ -894,7 +892,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "phuket",
       "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-layan-phuket-resort/new-images-2026/anantara-layan-phuket-resort-hero-shot-1920-x-1080-1-2.png",
       "highlights": [
         "臨近沙灘",
@@ -940,7 +938,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "phuket",
       "image_url": "https://assets.dream.clubmed/pm_7531_812_812280-uq9lhejyst-swhr.jpg",
       "highlights": [
         "親子友善設施",
@@ -987,7 +985,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "huahin",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Centara_Grand_-_former_Sofitel_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "臨近沙灘",
@@ -1034,7 +1032,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "kyoto",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Arashiyama_Genrokuzancho%2C_Nishikyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-0007%2C_Japan_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "町屋",
@@ -1220,7 +1218,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "okinawa",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Chatan_Sunset_Beach_and_Vessel_Hotel_Campana_Okinawa_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "臨近沙灘",
@@ -1411,7 +1409,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "busan",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_from_Igidae.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "highlights": [
         "海景客房",
@@ -1504,7 +1502,7 @@
       ],
       "status": "published",
       "source": "official_web",
-      "city_key": "other",
+      "city_key": "phuket",
       "image_url": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-koh-yao-yai-resort-and-villas/01_homepage/anantara_koh_yao_yai_resort_villas_homepage_01_1920x700.jpg",
       "highlights": [
         "臨近沙灘",

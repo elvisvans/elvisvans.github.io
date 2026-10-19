@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>灣宿指南 BayStay｜從海灣出發，住進亞洲的清涼</title>
   <meta name="description" content="大灣區與亞洲熱門度假村／酒店目錄。聚焦泳池、親子、SPA 與放鬆。每日專題連回站內住宿。" />
-  <link rel="stylesheet" href="assets/style.css?v=20261019m" />
+  <link rel="stylesheet" href="assets/style.css?v=20261019n" />
 </head>
 <body>
   <!-- LN editorial v1 · design/ln-editorial-v1 · Soft PASS stack 0.92/0.93/0.94 · no preview banner -->
@@ -111,7 +111,7 @@
     </div>
   </footer>
 
-  <script src="assets/common.js?v=20261019m"></script>
+  <script src="assets/common.js?v=20261019n"></script>
   <script>
     if (typeof initMotionReveal === "function") initMotionReveal();
 
@@ -120,7 +120,7 @@
 
     function renderFeatured() {
       let rows = allFeatured.slice();
-      if (cityKey) rows = rows.filter((l) => l.city_key === cityKey);
+      if (cityKey) rows = rows.filter((l) => matchesCityChip(l, cityKey));
       const el = document.getElementById("featured");
       if (!rows.length) {
         el.innerHTML = cityKey === "guangzhou"

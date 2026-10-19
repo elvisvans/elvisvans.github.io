@@ -13,10 +13,17 @@ const CITY_CHIPS = [
   { sep: true },
   { key: "bangkok", label: "曼谷" },
   { key: "chiangmai", label: "清邁" },
+  { key: "phuket", label: "普吉" },
+  { key: "huahin", label: "華欣" },
+  { key: "samui", label: "蘇梅" },
   { key: "tokyo", label: "東京" },
   { key: "osaka", label: "大阪" },
+  { key: "kyoto", label: "京都" },
+  { key: "hakone", label: "箱根" },
+  { key: "okinawa", label: "沖繩" },
   { key: "seoul", label: "首爾" },
   { key: "jeju", label: "濟州" },
+  { key: "busan", label: "釜山" },
 ];
 
 const FALLBACK_IMG = (function () {
@@ -28,7 +35,7 @@ const FALLBACK_IMG = (function () {
   return "assets/cover-fallback.jpg";
 })();
 
-const CACHE_V = "20261019m";
+const CACHE_V = "20261019n";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
@@ -310,6 +317,14 @@ function initChapterNavSpy(navSelector) {
   pairs.forEach((p) => io.observe(p.section));
 }
 
+
+/** Soft PASS 0.93 Phase1: exact city_key match. */
+function matchesCityChip(listing, cityKey) {
+  if (!cityKey) return true;
+  const raw = listing && listing.city_key != null ? String(listing.city_key) : "";
+  return raw === cityKey;
+}
+
 function countByCityKey(listings) {
   const c = {};
   for (const l of listings) {
@@ -367,6 +382,7 @@ window.prefersReducedMotion = prefersReducedMotion;
 window.hydrateCardImages = hydrateCardImages;
 window.initMotionReveal = initMotionReveal;
 window.initChapterNavSpy = initChapterNavSpy;
+window.matchesCityChip = matchesCityChip;
 window.countByCityKey = countByCityKey;
 window.renderCityChips = renderCityChips;
 window.escapeHtml = escapeHtml;
