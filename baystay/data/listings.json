@@ -7,8 +7,8 @@
     "locale_primary": "zh-Hant",
     "non_gaming_only": false,
     "updated": "2026-10-19",
-    "draft_note": "workspace 210 fail10 residual2 Soft PASS 0.88; holes cleared; NOT live",
-    "listing_count": 210
+    "draft_note": "published snapshot imgurl-sync-20261019; NOT pushed",
+    "listing_count": 161
   },
   "listings": [
     {
@@ -566,7 +566,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "shenzhen",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://cache.marriott.com/content/dam/marriott-renditions/SZXSF/szxsf-exterior-7137-hor-wide.jpg",
       "highlights": [
         "早餐豐富",
         "室外泳池",
@@ -752,7 +752,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "hongkong",
-      "image_url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/HK_Edinburgh_Place_%E6%96%87%E8%8F%AF%E6%9D%B1%E6%96%B9%E9%85%92%E5%BA%97_Mandarin_Oriental_Hotel_Connaught_Road_C.JPG",
       "highlights": [
         "SPA",
         "豪華",
@@ -1033,7 +1033,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "kyoto",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Arashiyama_Genrokuzancho%2C_Nishikyo_Ward%2C_Kyoto%2C_Kyoto_Prefecture_616-0007%2C_Japan_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Hoshinoya_Kyoto.jpg",
       "highlights": [
         "町屋",
         "河景",
@@ -1313,7 +1313,7 @@
       "status": "published",
       "source": "official_web",
       "city_key": "jeju",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Koea_China_Japan_Culture_Meeting_04_%2825678008814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%EC%A0%9C%EC%A3%BC_%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80_%EC%A0%9C%EC%A3%BC_%EC%8B%A0%EB%9D%BC%ED%98%B8%ED%85%94_%282%29.jpg",
       "highlights": [
         "室外泳池",
         "親子友善設施",
@@ -2390,7 +2390,7 @@
         "早餐"
       ],
       "cover_image": "https://cache.marriott.com/content/dam/marriott-renditions/SZXSF/szxsf-exterior-7138-hor-wide.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/SZ_%E6%B7%B1%E5%9C%B3%E5%B8%82_Shenzhen_%E7%A6%8F%E7%94%B0%E5%8D%80_Futian_%E5%A4%A7%E4%B8%AD%E8%8F%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97_Great_China_Sheraton_Hotel_July_2019_SSG_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://cache.marriott.com/content/dam/marriott-renditions/SZXSF/szxsf-exterior-7138-hor-wide.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -2623,7 +2623,7 @@
         "維港視野"
       ],
       "cover_image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flickr-Ian-Muttoo-island-shangri-la-hotel.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Island_Shangri-La%2C_Hong_Kong_-_Horizon_Harbour_View_Room.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flickr-Ian-Muttoo-island-shangri-la-hotel.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -2944,7 +2944,7 @@
         "多餐廳"
       ],
       "cover_image": "https://filecache.mediaroom.com/mr5mr_hyatt2/188751/download/%28Hua%20Hin%29%20Standard%20Pool%20Villa%20-%202.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Beach_at_Sheraton_Hua_Hin_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://filecache.mediaroom.com/mr5mr_hyatt2/188751/download/%28Hua%20Hin%29%20Standard%20Pool%20Villa%20-%202.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -3675,7 +3675,7 @@
         "度假泳池"
       ],
       "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/%EC%A0%9C%EC%A3%BC_%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80_%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94_%EC%A0%9C%EC%A3%BC.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/%EC%A0%9C%EC%A3%BC_%EC%A4%91%EB%AC%B8%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80_%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94_%EC%A0%9C%EC%A3%BC.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -3721,7 +3721,7 @@
         "經典服務"
       ],
       "cover_image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Night_view_of_Euljiro_1-ga_intersection_and_the_Sogong-dong_Lotte_town.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Jeju_Governor_Oh_Young-hun_meets_with_Cambodian_Prime_Minister_Hun_Manet_20240517_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Night_view_of_Euljiro_1-ga_intersection_and_the_Sogong-dong_Lotte_town.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
@@ -4044,7 +4044,7 @@
         "購物方便"
       ],
       "cover_image": "https://cache.marriott.com/content/dam/marriott-renditions/SZXSN/szxsn-exterior-7861-hor-wide.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/SZ_%E6%B7%B1%E5%9C%B3_Shenzhen_%E5%8D%97%E5%B1%B1_Nanshan_%E5%8D%97%E6%96%B0%E8%B7%AF_NanXin_Road_HanHao_Hotel_night_September_2024_R12S_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "image_url": "https://cache.marriott.com/content/dam/marriott-renditions/SZXSN/szxsn-exterior-7861-hor-wide.jpg",
       "status": "published",
       "source": "official_web",
       "non_gaming": true,
