@@ -35,16 +35,15 @@ const FALLBACK_IMG = (function () {
   return "assets/cover-fallback.jpg";
 })();
 
-const CACHE_V = "20261020a";
+const CACHE_V = "20261020b";
 
 async function loadListings() {
   const res = await fetch("data/listings.json?v=" + CACHE_V);
   if (!res.ok) throw new Error("無法載入 listings.json（請用本機靜態伺服器開啟）");
   const data = await res.json();
-  const listings = (data.listings || []).filter(
-    (l) => l.status === "published"
-  );
-  return { site: data.site, listings };
+  const rows = Array.isArray(data) ? data : data.listings || [];
+  const listings = rows.filter((l) => l.status === "published");
+  return { site: data && data.site, listings };
 }
 
 /** Append UTM at render-time; does not mutate listings.json fields. */
