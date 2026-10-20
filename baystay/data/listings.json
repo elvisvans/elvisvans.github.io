@@ -6,9 +6,9 @@
     "tagline_en": "GBA-first resort & hotel picks across Asia",
     "locale_primary": "zh-Hant",
     "non_gaming_only": false,
-    "updated": "2026-10-19",
-    "draft_note": "published snapshot imgurl-sync-20261019; NOT pushed",
-    "listing_count": 161
+    "updated": "2026-10-20",
+    "draft_note": "published snapshot daily20-20261020 Soft PASS; CACHE 20261020a; th-08 absent",
+    "listing_count": 164
   },
   "listings": [
     {
@@ -7598,6 +7598,153 @@
       ],
       "image_source": "official_cdn",
       "image_source_url": "https://www.hotelfortuna.com.mo/?main/"
+    },
+    {
+      "id": "bs-mo-45",
+      "name_zh": "澳門英皇娛樂酒店",
+      "name_en": "Grand Emperor Hotel",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "市中心",
+        "南灣",
+        "步行",
+        "早餐"
+      ],
+      "one_liner_zh": "南灣半島市區酒店，步行可達議事亭一帶",
+      "one_liner_en": "Peninsula hotel near Senado Square and Nam Van",
+      "booking_url": "https://www.grandemperor.com/home",
+      "booking_url_fallback": "https://bookings.travelclick.com/116238",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grand_Emperor_Hotel_19-02-2023.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Grand_Emperor_Hotel_19-02-2023.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 4.0,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "daily_seed_2026-10-20",
+      "highlights": [
+        "市區步行方便",
+        "近議事亭前地",
+        "客房舒適實用"
+      ],
+      "nearby_food": [
+        {
+          "name": "黃枝記",
+          "note": "議事亭前地鮮蝦雲吞麵，步行約數分鐘"
+        },
+        {
+          "name": "鮮味王",
+          "note": "酒店內粵式／海鮮餐廳"
+        }
+      ],
+      "image_source": "commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Grand_Emperor_Hotel_19-02-2023.jpg"
+    },
+    {
+      "id": "bs-mo-46",
+      "name_zh": "澳門 L'Arc 酒店",
+      "name_en": "L'Arc Hotel Macau",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 4,
+      "family_friendly": true,
+      "tags": [
+        "新口岸",
+        "NAPE",
+        "五星",
+        "市區"
+      ],
+      "one_liner_zh": "新口岸歐式外觀酒店，近城市日大馬路",
+      "one_liner_en": "European-style hotel on Avenida 24 de Junho, NAPE",
+      "booking_url": "https://www.larcmacau.com/en/",
+      "booking_url_fallback": "https://www.macaotourism.gov.mo/en/accommodation/l-arc-hotel-macau/",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/4/41/L%27Arc_Macau_11-05-2026.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/L%27Arc_Macau_11-05-2026.jpg",
+      "featured": false,
+      "non_gaming": false,
+      "editor_score": 4.1,
+      "occasion": [
+        "休閒",
+        "情侶"
+      ],
+      "status": "published",
+      "source": "daily_seed_2026-10-20",
+      "highlights": [
+        "歐式拱廊外觀",
+        "新口岸交通方便",
+        "店內中菜／咖啡廳"
+      ],
+      "nearby_food": [
+        {
+          "name": "L'Arc Coffee Shop",
+          "note": "酒店內咖啡廳，全日餐／生日優惠"
+        },
+        {
+          "name": "L'Arc Chinese Restaurant",
+          "note": "酒店內粵菜中餐廳"
+        }
+      ],
+      "image_source": "commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:L%27Arc_Macau_11-05-2026.jpg"
+    },
+    {
+      "id": "bs-mo-47",
+      "name_zh": "澳門皇家金堡酒店",
+      "name_en": "Casa Real Hotel",
+      "region": "gba",
+      "city": "澳門半島",
+      "city_key": "macau",
+      "country": "MO",
+      "price_tier": 3,
+      "family_friendly": true,
+      "tags": [
+        "市區",
+        "家庭",
+        "泳池",
+        "近碼頭"
+      ],
+      "one_liner_zh": "羅理基博士大馬路四星，近松山隧道與外港碼頭",
+      "one_liner_en": "4-star stay on Avenida do Dr. Rodrigo Rodrigues near Outer Harbour",
+      "booking_url": "https://www.casarealhotel.com.mo/",
+      "booking_url_fallback": "https://book.grabrooms.com/casa-real-macau",
+      "cover_image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Casa_Real_Hotel_09-02-2023.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Casa_Real_Hotel_09-02-2023.jpg",
+      "featured": false,
+      "non_gaming": true,
+      "editor_score": 3.8,
+      "occasion": [
+        "休閒",
+        "家庭"
+      ],
+      "status": "published",
+      "source": "daily_seed_2026-10-20",
+      "highlights": [
+        "葡式古堡外觀",
+        "室內恒温泳池／健身室",
+        "免費穿梭巴士"
+      ],
+      "nearby_food": [
+        {
+          "name": "珮納宮西餐廳",
+          "note": "酒店內西餐廳（Pena Restaurant）"
+        },
+        {
+          "name": "御膳坊中餐廳",
+          "note": "酒店內中餐廳"
+        }
+      ],
+      "image_source": "commons",
+      "image_source_url": "https://commons.wikimedia.org/wiki/File:Casa_Real_Hotel_09-02-2023.jpg"
     }
   ]
 }
