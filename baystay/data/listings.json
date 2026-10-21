@@ -7733,5 +7733,152 @@
     ],
     "image_source": "commons",
     "image_source_url": "https://commons.wikimedia.org/wiki/File:Casa_Real_Hotel_09-02-2023.jpg"
+  },
+  {
+    "id": "bs-mo-48",
+    "name_zh": "澳門金龍酒店",
+    "name_en": "Hotel Golden Dragon",
+    "region": "gba",
+    "city": "澳門半島",
+    "city_key": "macau",
+    "country": "MO",
+    "price_tier": 3,
+    "family_friendly": true,
+    "tags": [
+      "市區",
+      "近碼頭",
+      "四星",
+      "步行"
+    ],
+    "one_liner_zh": "馬六甲街四星市區酒店，近外港碼頭與漁人碼頭",
+    "one_liner_en": "4-star peninsula hotel on Rua de Malaca near Outer Harbour ferry and Fisherman's Wharf",
+    "booking_url": "https://www.trip.com/hotels/macau-hotel-detail-345757/hotel-golden-dragon/",
+    "booking_url_fallback": "https://www.agoda.com/hotel-golden-dragon/hotel/macau-mo.html",
+    "cover_image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Macau_-_panoramio_%284%29.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Macau_-_panoramio_%284%29.jpg",
+    "featured": false,
+    "non_gaming": false,
+    "editor_score": 3.6,
+    "occasion": [
+      "休閒",
+      "家庭"
+    ],
+    "source": "daily_seed_2026-10-21",
+    "highlights": [
+      "近外港碼頭／漁人碼頭",
+      "馬六甲街市區步行方便",
+      "店內粵菜金龍軒"
+    ],
+    "nearby_food": [
+      {
+        "name": "金龍軒",
+        "note": "酒店內粵菜／點心中餐廳",
+        "source_url": "https://www.openrice.com/zh/macau/r-%E9%87%91%E9%BE%8D%E8%BB%92-%E6%96%B0%E5%8F%A3%E5%B2%B8-%E7%B2%B5%E8%8F%9C-%E5%BB%A3%E6%9D%B1-r457251"
+      },
+      {
+        "name": "廚泰餐廳",
+        "note": "漁人碼頭泰菜，步行約數分鐘",
+        "source_url": "https://www.openrice.com/zh/macau/r-%E5%BB%9A%E6%B3%B0%E9%A4%90%E5%BB%B3-%E6%96%B0%E5%8F%A3%E5%B2%B8-%E6%B3%B0%E5%9C%8B%E8%8F%9C-r24298"
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "bs-mo-49",
+    "name_zh": "澳門君怡酒店",
+    "name_en": "Grandview Hotel Macau",
+    "region": "gba",
+    "city": "澳門氹仔",
+    "city_key": "macau",
+    "country": "MO",
+    "price_tier": 3,
+    "family_friendly": true,
+    "tags": [
+      "氹仔",
+      "家庭",
+      "四星",
+      "近舊城"
+    ],
+    "one_liner_zh": "氹仔柯維納馬路四星，近輕軌與官也街",
+    "one_liner_en": "4-star Taipa hotel on Estrada Governador Albano de Oliveira near LRT and Rua do Cunha",
+    "booking_url": "https://www.trip.com/hotels/macau-hotel-detail-756511/grandview-hotel-macau/",
+    "booking_url_fallback": "https://www.agoda.com/grandview-hotel-macau/hotel/macau-mo.html",
+    "cover_image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Grandview_Hotel_25-04-2024.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Grandview_Hotel_25-04-2024.jpg",
+    "featured": false,
+    "non_gaming": true,
+    "editor_score": 3.9,
+    "occasion": [
+      "休閒",
+      "家庭"
+    ],
+    "source": "daily_seed_2026-10-21",
+    "highlights": [
+      "近氹仔舊城／官也街",
+      "輕軌站旁交通方便",
+      "客房實用適合家庭"
+    ],
+    "nearby_food": [
+      {
+        "name": "安德魯餅店",
+        "note": "官也街葡撻外帶，距酒店步行可達舊城區",
+        "source_url": "https://www.openrice.com/zh/macau/r-%E5%AE%89%E5%BE%B7%E9%AD%AF%E9%A4%85%E5%BA%97-%E6%B0%B9%E4%BB%94%E8%88%8A%E5%9F%8E%E5%8D%80-%E8%91%A1%E5%9C%8B%E8%8F%9C-r516840"
+      },
+      {
+        "name": "António",
+        "note": "氹仔舊城葡國菜，步行可達",
+        "source_url": "https://www.openrice.com/en/macau/r-antonio-vila-de-taipa-portuguese-r25190"
+      }
+    ],
+    "status": "published"
+  },
+  {
+    "id": "bs-mo-50",
+    "name_zh": "澳門維景酒店",
+    "name_en": "Metropark Hotel Macau",
+    "region": "gba",
+    "city": "澳門半島",
+    "city_key": "macau",
+    "country": "MO",
+    "price_tier": 3,
+    "family_friendly": true,
+    "tags": [
+      "新口岸",
+      "市區",
+      "四星",
+      "近八佰伴"
+    ],
+    "one_liner_zh": "北京街四星市區酒店，近新口岸商圈",
+    "one_liner_en": "4-star peninsula hotel on Rua de Pequim near NAPE shopping",
+    "booking_url": "https://macau.metroparkhotels.cn/booking.html",
+    "booking_url_fallback": "https://www.macaotourism.gov.mo/en/accommodation/metropark-hotel",
+    "cover_image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Metro_Park_Hotel_Macau_29-12-2023%281%29.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Metro_Park_Hotel_Macau_29-12-2023%281%29.jpg",
+    "featured": false,
+    "non_gaming": true,
+    "editor_score": 3.7,
+    "occasion": [
+      "休閒",
+      "商務"
+    ],
+    "source": "daily_seed_2026-10-21",
+    "highlights": [
+      "新口岸北京街交通方便",
+      "頂層旋轉宴會廳景觀",
+      "無賭場／夜總會環境較靜"
+    ],
+    "nearby_food": [
+      {
+        "name": "CIAO Café",
+        "note": "酒店內國際／葡式自助咖啡廳",
+        "source_url": "https://www.macaotourism.gov.mo/en/dining/qtsas-restaurant/4251/"
+      },
+      {
+        "name": "Gold Moon Garden",
+        "note": "酒店內粵菜／中餐廳（金滿軒）",
+        "source_url": "https://www.macaotourism.gov.mo/en/dining/qtsas-restaurant/4250/"
+      }
+    ],
+    "status": "published"
   }
 ]
