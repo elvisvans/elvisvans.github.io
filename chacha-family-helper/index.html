@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Chacha Family Helper Board</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root {
+  --bg: #f6f1ea;
+  --card: #ffffff;
+  --hero: #efe6db;
+  --brown: #6b4f3a;
+  --brown-deep: #4a3426;
+  --text: #2c241c;
+  --muted: #8a7a6b;
+  --line: #eadfd3;
+  --danger: #b42318;
+  --radius: 22px;
+  --shadow: 0 10px 30px rgba(74, 52, 38, 0.06);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.45;
+  padding: 20px 16px 48px; max-width: 440px; margin: 0 auto;
+}
+header { margin-bottom: 18px; }
+header .brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2rem; font-weight: 600; color: var(--brown-deep);
+}
+header .greet { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
+.hero {
+  background: var(--hero); border-radius: 28px; padding: 22px 20px; margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.hero h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.55rem; font-weight: 600; color: var(--brown-deep); margin-bottom: 6px;
+}
+.hero p { color: var(--muted); font-size: 0.92rem; margin-bottom: 14px; }
+.role-bar { display: flex; gap: 8px; }
+.role-bar button {
+  flex: 1; border: none; border-radius: 999px; padding: 12px 10px;
+  font-weight: 600; font-size: 0.88rem; cursor: pointer;
+  background: rgba(255,255,255,0.55); color: var(--brown);
+}
+.role-bar button.active { background: var(--brown); color: #fff; }
+.hint { margin: 14px 0 18px; color: var(--muted); font-size: 0.86rem; }
+.section-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem; color: var(--brown-deep); margin: 8px 0 12px; font-weight: 600;
+}
+.card {
+  background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 16px; margin-bottom: 14px;
+}
+.card h3 {
+  font-size: 0.95rem; font-weight: 700; color: var(--brown-deep);
+  display: flex; align-items: center; gap: 8px; margin-bottom: 12px;
+}
+.card h3 .icon {
+  width: 34px; height: 34px; border-radius: 50%; background: #f3ebe2;
+  display: inline-flex; align-items: center; justify-content: center; font-size: 1rem;
+}
+.sub { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
+.item {
+  display: flex; align-items: flex-start; gap: 10px; padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.item:last-child { border-bottom: none; }
+.item input[type="checkbox"] {
+  width: 20px; height: 20px; accent-color: var(--brown); margin-top: 2px; flex-shrink: 0;
+}
+.item .text { flex: 1; font-size: 0.95rem; word-break: break-word; }
+.item.done .text { text-decoration: line-through; color: var(--muted); }
+.note-item, .req-item {
+  background: #faf6f1; border-radius: 16px; padding: 12px 14px; margin-bottom: 8px;
+  display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+}
+.req-item { background: #f8f1e8; }
+.req-item.done { opacity: 0.6; }
+.tag {
+  display: inline-block; background: #efe6db; color: var(--brown-deep);
+  border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; font-weight: 600; margin-right: 4px;
+}
+.delete {
+  color: var(--danger); background: none; border: none; font-size: 1.2rem;
+  cursor: pointer; padding: 0 4px; line-height: 1;
+}
+.form-grid { display: grid; gap: 8px; margin-top: 10px; }
+.form-grid.two { grid-template-columns: 1fr 1fr; }
+label.field { display: block; font-size: 0.75rem; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
+select, input[type="text"], textarea {
+  width: 100%; padding: 11px 12px; border: 1px solid #e6d9cb; border-radius: 14px;
+  font-size: 0.92rem; background: #fff; color: var(--text); font-family: inherit;
+}
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b4f3a' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px;
+}
+select:disabled { opacity: 0.9; color: var(--text); background-color: #f7f2ec; }
+textarea { min-height: 90px; resize: vertical; }
+.btn {
+  border: none; border-radius: 999px; padding: 12px 16px; font-weight: 700;
+  font-size: 0.92rem; cursor: pointer; background: var(--brown); color: #fff;
+}
+.btn-soft { background: #efe6db; color: var(--brown-deep); }
+.btn-block { width: 100%; margin-top: 8px; }
+.today-pickup {
+  background: #f3ebe2; border-radius: 16px; padding: 12px 14px; margin-bottom: 12px; font-size: 0.92rem;
+}
+.today-pickup strong { color: var(--brown-deep); }
+.school-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; table-layout: fixed; }
+.school-table th {
+  text-align: left; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.03em;
+  color: var(--muted); padding: 4px 3px; font-weight: 700;
+}
+.school-table td { padding: 3px; vertical-align: middle; }
+.school-table th:first-child, .school-table td:first-child { width: 18%; }
+.school-table select { font-size: 0.78rem; padding: 8px 24px 8px 8px; background-position: right 8px center; }
+.badge {
+  display: inline-block; background: var(--brown); color: #fff; font-size: 0.62rem;
+  padding: 2px 6px; border-radius: 999px; margin-left: 2px; font-weight: 700;
+}
+.meal-rows { display: grid; gap: 8px; }
+.meal-row {
+  display: grid; grid-template-columns: 92px 1fr; gap: 8px; align-items: start;
+  background: #faf6f1; border-radius: 16px; padding: 10px;
+}
+.meal-cat {
+  font-weight: 700; color: var(--brown-deep); font-size: 0.9rem; padding-top: 10px;
+}
+.meal-fields { display: grid; gap: 6px; }
+.employer-only, .helper-only { display: none; }
+body.mode-employer .employer-only { display: block; }
+body.mode-helper .helper-only { display: block; }
+.locked-note { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; }
+footer { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top: 18px; }
+.toast {
+  position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%);
+  background: var(--brown-deep); color: #fff; padding: 10px 16px; border-radius: 999px;
+  font-size: 0.86rem; opacity: 0; transition: opacity .2s; z-index: 99; pointer-events: none;
+}
+.toast.show { opacity: 1; }
+</style>
+</head>
+<body class="mode-employer">
+<header>
+  <div class="brand">chacha</div>
+  <div class="greet" id="greet">Good evening</div>
+</header>
+
+<section class="hero">
+  <h2>Family helper board</h2>
+  <p id="heroCopy">Fill tonight’s plan for Lenne, then copy to WhatsApp.</p>
+  <div class="role-bar">
+    <button type="button" id="btnEmployer" class="active" onclick="setRole('employer')">Employer · night</button>
+    <button type="button" id="btnHelper" onclick="setRole('helper')">Helper · day</button>
+  </div>
+</section>
+<p class="hint" id="roleHint">Night plan: meals, school pickup, shopping, medicine, and instructions.</p>
+
+<p class="section-title">Today</p>
+<div class="card">
+  <h3><span class="icon">🏫</span> School pickup <span class="sub">pick up 1 · pick up 2 · one time</span></h3>
+  <p class="locked-note helper-only">Helper view only — pickup who &amp; time are set by employer.</p>
+  <div class="today-pickup" id="todayPickup"></div>
+  <table class="school-table">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Pick up 1</th>
+        <th>Pick up 2</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody id="schoolBody"></tbody>
+  </table>
+</div>
+
+<p class="section-title">Meals</p>
+<div class="card">
+  <h3><span class="icon">🍽️</span> Tonight’s dinner</h3>
+  <p class="sub" style="margin-bottom:8px">Left = category (fixed). Right = note / style.</p>
+  <div class="meal-rows" id="dinnerRows"></div>
+</div>
+
+<div class="card">
+  <h3><span class="icon">🥗</span> Lunch plan</h3>
+  <p class="sub" style="margin-bottom:8px">Left = category (fixed). Right = note / style.</p>
+  <div class="meal-rows" id="lunchRows"></div>
+</div>
+
+<p class="section-title">Care &amp; shopping</p>
+<div class="card">
+  <h3><span class="icon">💊</span> Medicine time</h3>
+  <div id="medicine"></div>
+  <div class="form-grid two" style="margin-top:10px">
+    <div>
+      <label class="field">Time</label>
+      <select id="medTime"></select>
+    </div>
+    <div>
+      <label class="field">Label</label>
+      <input type="text" id="medInput" placeholder="Chacha medicine" value="Chacha medicine">
+    </div>
+  </div>
+  <button type="button" class="btn btn-soft btn-block" onclick="addMed()">Add medicine</button>
+</div>
+
+<div class="card">
+  <h3><span class="icon">🛒</span> Shopping list</h3>
+  <div id="shopping"></div>
+  <div class="form-grid two" style="margin-top:10px">
+    <div>
+      <label class="field">Category</label>
+      <select id="shopCat"></select>
+    </div>
+    <div>
+      <label class="field">Item</label>
+      <input type="text" id="shopInput" placeholder="e.g. Pork 300g @ Royal">
+    </div>
+  </div>
+  <button type="button" class="btn btn-soft btn-block" onclick="addShop()">Add item</button>
+</div>
+
+<div class="card">
+  <h3><span class="icon">✅</span> Daily tasks</h3>
+  <div id="tasks"></div>
+  <div class="form-grid" style="margin-top:10px">
+    <input type="text" id="taskInput" placeholder="e.g. Check fridge for next 2–3 days">
+    <button type="button" class="btn btn-soft" onclick="addTask()">Add task</button>
+  </div>
+</div>
+
+<div class="card employer-only">
+  <h3><span class="icon">📌</span> Instructions for Lenne</h3>
+  <textarea id="instructions" placeholder="Write clear night / tomorrow instructions…" oninput="saveInstructions()"></textarea>
+</div>
+<div class="card helper-only">
+  <h3><span class="icon">📌</span> Instructions from employer</h3>
+  <div id="instructionsRead" class="note-item" style="display:block;white-space:pre-wrap"></div>
+</div>
+
+<div class="card">
+  <h3><span class="icon">📝</span> Notes / fridge</h3>
+  <div id="notes"></div>
+  <div class="form-grid" style="margin-top:10px">
+    <input type="text" id="noteInput" placeholder="e.g. Half fish in freezer">
+    <button type="button" class="btn btn-soft" onclick="addNote()">Add note</button>
+  </div>
+</div>
+
+<div class="card">
+  <h3><span class="icon">🙋</span> Helper updates &amp; requests</h3>
+  <div id="requests"></div>
+  <div class="form-grid helper-only" style="margin-top:10px">
+    <input type="text" id="reqInput" placeholder="e.g. Need more apples; soup done">
+    <button type="button" class="btn btn-soft" onclick="addRequest()">Add update</button>
+  </div>
+  <p class="employer-only sub" style="margin-top:8px">Tick when you have seen / handled an update.</p>
+</div>
+
+<button class="btn btn-block employer-only" type="button" onclick="exportSummary('employer')">Copy night plan for WhatsApp</button>
+<button class="btn btn-block helper-only" type="button" onclick="exportSummary('helper')" style="background:#8a5a3a">Copy day update for WhatsApp</button>
+<button class="btn btn-soft btn-block" type="button" onclick="clearAll()">Clear all</button>
+<footer>Saved on this device · share via WhatsApp copy</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+const PICKUP_WHO = ['Mama', 'Popo', 'Mum', 'Sir', 'Lenne'];
+const PICKUP_TIMES = ['15:40','16:00','16:30','17:00','17:15','17:30','17:45','18:00','18:15','18:30','19:00'];
+const MEAL_CATS = ['Pork', 'Beef', 'Fish', 'Chicken', 'Vege', 'Soup', 'Egg', 'Rice/Noodle', 'Fruit', 'Other'];
+const COOK_STYLES = ['', 'Soup', 'Steam', 'Stir-fry', 'Boil', 'Bake', 'Raw/fresh', 'Reheat', 'Other'];
+const SHOP_CATS = ['Pork', 'Beef', 'Fish', 'Chicken', 'Vege', 'Fruit', 'Dairy', 'Staple', 'Other'];
+const MED_TIMES = ['07:00','08:00','09:00','12:00','15:00','18:00','20:00','21:00','22:00'];
+const DAYS = [
+  { key: 'mon', label: 'Mon' }, { key: 'tue', label: 'Tue' }, { key: 'wed', label: 'Wed' },
+  { key: 'thu', label: 'Thu' }, { key: 'fri', label: 'Fri' }, { key: 'sat', label: 'Sat' },
+  { key: 'sun', label: 'Sun' }
+];
+
+const now = new Date();
+const hour = now.getHours();
+document.getElementById('greet').textContent =
+  (hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening') +
+  ' · ' + now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+const todayKey = ['sun','mon','tue','wed','thu','fri','sat'][now.getDay()];
+
+const keys = {
+  dinner: 'chacha_dinner_v5', lunch: 'chacha_lunch_v5', medicine: 'chacha_medicine_v5',
+  shopping: 'chacha_shop_v5', tasks: 'chacha_tasks_v5', notes: 'chacha_notes_v5',
+  school: 'chacha_school_v5', instructions: 'chacha_instructions_v5',
+  requests: 'chacha_requests_v5', role: 'chacha_role_v5'
+};
+
+function fillSelect(id, options, selected) {
+  const el = document.getElementById(id);
+  el.innerHTML = options.map(o => `<option value="${o}" ${o===selected?'selected':''}>${o || '—'}</option>`).join('');
+}
+fillSelect('shopCat', SHOP_CATS, 'Vege');
+fillSelect('medTime', MED_TIMES, '08:00');
+
+function load(key) {
+  try { return JSON.parse(localStorage.getItem(keys[key])) || []; } catch { return []; }
+}
+function save(key, data) { localStorage.setItem(keys[key], JSON.stringify(data)); }
+function loadText(key) { return localStorage.getItem(keys[key]) || ''; }
+function loadObj(key, fallback) {
+  try { return JSON.parse(localStorage.getItem(keys[key])) || fallback; } catch { return fallback; }
+}
+function saveObj(key, data) { localStorage.setItem(keys[key], JSON.stringify(data)); }
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 1800);
+}
+
+function emptyMeals() {
+  const o = {};
+  MEAL_CATS.forEach(c => { o[c] = { note: '', style: '' }; });
+  return o;
+}
+function loadMeals(kind) {
+  const raw = loadObj(kind, null);
+  const base = emptyMeals();
+  if (!raw || typeof raw !== 'object') return base;
+  MEAL_CATS.forEach(c => {
+    if (raw[c]) base[c] = { note: raw[c].note || '', style: raw[c].style || '' };
+  });
+  return base;
+}
+function saveMeals(kind, data) { saveObj(kind, data); }
+
+function defaultSchool() {
+  const row = { who1: 'Lenne', who2: '', time: '17:30' };
+  return {
+    mon:{...row}, tue:{...row}, wed:{...row}, thu:{...row}, fri:{...row},
+    sat:{who1:'',who2:'',time:''}, sun:{who1:'',who2:'',time:''}
+  };
+}
+function normalizeSchoolDay(row) {
+  row = row || {};
+  if (row.who != null && row.who1 == null) {
+    return { who1: row.who || '', who2: '', time: row.time || row.time1 || '' };
+  }
+  return {
+    who1: row.who1 || '',
+    who2: row.who2 || '',
+    time: row.time || row.time1 || ''
+  };
+}
+function loadSchool() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(keys.school));
+    const base = defaultSchool();
+    if (!raw) return base;
+    const out = { ...base };
+    DAYS.forEach(d => { out[d.key] = normalizeSchoolDay({ ...base[d.key], ...(raw[d.key] || {}) }); });
+    return out;
+  } catch { return defaultSchool(); }
+}
+function saveSchool(data) { localStorage.setItem(keys.school, JSON.stringify(data)); }
+
+function setRole(role) {
+  document.body.classList.toggle('mode-employer', role === 'employer');
+  document.body.classList.toggle('mode-helper', role === 'helper');
+  document.getElementById('btnEmployer').classList.toggle('active', role === 'employer');
+  document.getElementById('btnHelper').classList.toggle('active', role === 'helper');
+  localStorage.setItem(keys.role, role);
+  document.getElementById('heroCopy').textContent = role === 'employer'
+    ? 'Fill tonight’s plan for Lenne, then copy to WhatsApp.'
+    : 'Tick what’s done, add fridge notes and requests, then copy a day update.';
+  document.getElementById('roleHint').textContent = role === 'employer'
+    ? 'Night plan: meals, school pickup, shopping, medicine, and instructions.'
+    : 'Day update: medicine, shopping, tasks, fridge notes, and requests for employer.';
+  renderInstructions();
+  renderMeals('dinner');
+  renderMeals('lunch');
+  renderSchool();
+}
+
+function whoOpts(selected) {
+  return ['', ...PICKUP_WHO].map(p => `<option value="${p}" ${selected===p?'selected':''}>${p || '—'}</option>`).join('');
+}
+function timeOpts(selected) {
+  return ['', ...PICKUP_TIMES].map(t => `<option value="${t}" ${selected===t?'selected':''}>${t || '—'}</option>`).join('');
+}
+function schoolLocked() { return document.body.classList.contains('mode-helper'); }
+
+function renderSchool() {
+  const data = loadSchool();
+  const locked = schoolLocked();
+  const dis = locked ? 'disabled' : '';
+  document.getElementById('schoolBody').innerHTML = DAYS.map(d => {
+    const row = normalizeSchoolDay(data[d.key]);
+    const isToday = d.key === todayKey;
+    return `<tr>
+      <td><strong>${d.label}</strong>${isToday?'<span class="badge">Today</span>':''}</td>
+      <td><select data-day="${d.key}" data-field="who1" onchange="updateSchool(this)" ${dis}>${whoOpts(row.who1)}</select></td>
+      <td><select data-day="${d.key}" data-field="who2" onchange="updateSchool(this)" ${dis}>${whoOpts(row.who2)}</select></td>
+      <td><select data-day="${d.key}" data-field="time" onchange="updateSchool(this)" ${dis}>${timeOpts(row.time)}</select></td>
+    </tr>`;
+  }).join('');
+  const t = normalizeSchoolDay(data[todayKey]);
+  let line = `<strong>Today · Pick up 1:</strong> ${esc(t.who1 || 'Not set')}`;
+  if (t.who2) line += ` · <strong>Pick up 2:</strong> ${esc(t.who2)}`;
+  line += ` @ <strong>${esc(t.time || '—')}</strong>`;
+  document.getElementById('todayPickup').innerHTML = line;
+}
+function updateSchool(el) {
+  if (schoolLocked()) return;
+  const data = loadSchool();
+  const day = el.dataset.day;
+  data[day] = normalizeSchoolDay(data[day]);
+  data[day][el.dataset.field] = el.value;
+  saveSchool(data);
+  renderSchool();
+}
+
+function styleOpts(selected) {
+  return COOK_STYLES.map(s => `<option value="${s}" ${selected===s?'selected':''}>${s || 'Style —'}</option>`).join('');
+}
+function renderMeals(kind) {
+  const data = loadMeals(kind);
+  const el = document.getElementById(kind === 'dinner' ? 'dinnerRows' : 'lunchRows');
+  const locked = schoolLocked(); // helper also shouldn't rewrite employer meal plan categories heavily; allow notes? Employer fills night — helper can read. Lock edits in helper mode.
+  const dis = locked ? 'disabled' : '';
+  el.innerHTML = MEAL_CATS.map(cat => {
+    const row = data[cat] || { note: '', style: '' };
+    return `<div class="meal-row">
+      <div class="meal-cat">${esc(cat)}</div>
+      <div class="meal-fields">
+        <input type="text" data-kind="${kind}" data-cat="${esc(cat)}" data-field="note" value="${esc(row.note)}" placeholder="Note / dish" oninput="updateMeal(this)" ${dis}>
+        <select data-kind="${kind}" data-cat="${esc(cat)}" data-field="style" onchange="updateMeal(this)" ${dis}>${styleOpts(row.style)}</select>
+      </div>
+    </div>`;
+  }).join('');
+}
+function updateMeal(el) {
+  if (schoolLocked()) return;
+  const kind = el.dataset.kind;
+  const cat = el.dataset.cat;
+  const data = loadMeals(kind);
+  if (!data[cat]) data[cat] = { note: '', style: '' };
+  data[cat][el.dataset.field] = el.value;
+  saveMeals(kind, data);
+}
+
+function renderCheck(type, elId, empty, mapText) {
+  const list = load(type);
+  const el = document.getElementById(elId);
+  if (!list.length) { el.innerHTML = `<p class="sub">${empty}</p>`; return; }
+  el.innerHTML = list.map((item, i) => `
+    <div class="item ${item.done?'done':''}">
+      <input type="checkbox" ${item.done?'checked':''} onchange="toggle('${type}', ${i})">
+      <div class="text">${mapText ? mapText(item) : esc(item.text)}</div>
+      <button class="delete" type="button" onclick="remove('${type}', ${i})">×</button>
+    </div>`).join('');
+}
+function renderMedicine() { renderCheck('medicine', 'medicine', 'No medicine reminders'); }
+function renderShopping() {
+  renderCheck('shopping', 'shopping', 'Shopping list empty', i =>
+    `<span class="tag">${esc(i.cat||'Other')}</span> ${esc(i.text)}`);
+}
+function renderTasks() { renderCheck('tasks', 'tasks', 'No tasks'); }
+function renderNotes() {
+  const list = load('notes');
+  document.getElementById('notes').innerHTML = list.length
+    ? list.map((n,i)=>`<div class="note-item"><span>${esc(n)}</span><button class="delete" type="button" onclick="remove('notes',${i})">×</button></div>`).join('')
+    : '<p class="sub">No notes</p>';
+}
+function renderRequests() {
+  const list = load('requests');
+  document.getElementById('requests').innerHTML = list.length
+    ? list.map((item,i)=>`<div class="req-item ${item.done?'done':''}">
+        <label style="display:flex;gap:8px;flex:1;align-items:flex-start">
+          <input type="checkbox" ${item.done?'checked':''} onchange="toggle('requests',${i})" style="margin-top:3px">
+          <span>${esc(item.text)}</span>
+        </label>
+        <button class="delete" type="button" onclick="remove('requests',${i})">×</button>
+      </div>`).join('')
+    : '<p class="sub">No helper updates yet</p>';
+}
+function renderInstructions() {
+  const text = loadText('instructions');
+  document.getElementById('instructions').value = text;
+  document.getElementById('instructionsRead').textContent = text || 'No instructions from employer yet.';
+}
+function saveInstructions() { localStorage.setItem(keys.instructions, document.getElementById('instructions').value); }
+
+function addMed() {
+  const label = document.getElementById('medInput').value.trim() || 'Chacha medicine';
+  const time = document.getElementById('medTime').value;
+  const list = load('medicine');
+  list.push({ text: `${time} ${label}`, done: false });
+  save('medicine', list); renderMedicine();
+}
+function addShop() {
+  const text = document.getElementById('shopInput').value.trim();
+  if (!text) return;
+  const list = load('shopping');
+  list.push({ cat: document.getElementById('shopCat').value, text, done: false });
+  save('shopping', list);
+  document.getElementById('shopInput').value = '';
+  renderShopping();
+}
+function addTask() {
+  const text = document.getElementById('taskInput').value.trim();
+  if (!text) return;
+  const list = load('tasks'); list.push({ text, done: false }); save('tasks', list);
+  document.getElementById('taskInput').value = ''; renderTasks();
+}
+function addNote() {
+  const text = document.getElementById('noteInput').value.trim();
+  if (!text) return;
+  const list = load('notes'); list.push(text); save('notes', list);
+  document.getElementById('noteInput').value = ''; renderNotes();
+}
+function addRequest() {
+  const text = document.getElementById('reqInput').value.trim();
+  if (!text) return;
+  const list = load('requests'); list.push({ text, done: false }); save('requests', list);
+  document.getElementById('reqInput').value = ''; renderRequests();
+}
+function toggle(type, i) {
+  const list = load(type); list[i].done = !list[i].done; save(type, list);
+  ({ shopping: renderShopping, tasks: renderTasks, medicine: renderMedicine, requests: renderRequests })[type]();
+}
+function remove(type, i) {
+  const list = load(type); list.splice(i, 1); save(type, list);
+  ({ shopping: renderShopping, tasks: renderTasks, medicine: renderMedicine, notes: renderNotes, requests: renderRequests })[type]();
+}
+
+function filledMeals(kind) {
+  const data = loadMeals(kind);
+  return MEAL_CATS.filter(c => (data[c].note || data[c].style)).map(c => {
+    const r = data[c];
+    let s = `- ${c}`;
+    if (r.style) s += ` · ${r.style}`;
+    if (r.note) s += `: ${r.note}`;
+    return s;
+  });
+}
+
+function exportSummary(role) {
+  const medicine = load('medicine'), shopping = load('shopping'), tasks = load('tasks');
+  const notes = load('notes'), requests = load('requests'), school = loadSchool();
+  const instructions = loadText('instructions').trim();
+  const tn = normalizeSchoolDay(school[todayKey]);
+  const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  let text = `📅 ${dateStr}\n🏫 Today · Pick up 1: ${tn.who1 || 'Not set'}`;
+  if (tn.who2) text += ` · Pick up 2: ${tn.who2}`;
+  text += ` @ ${tn.time || '—'}\n\n`;
+  if (role === 'employer') {
+    text += `👨‍👩‍👧 Night plan for Lenne\n\n`;
+    if (instructions) text += `📌 Instructions:\n${instructions}\n\n`;
+    const lunch = filledMeals('lunch');
+    const dinner = filledMeals('dinner');
+    if (lunch.length) text += `🥗 Lunch:\n${lunch.join('\n')}\n\n`;
+    if (dinner.length) text += `🍽️ Dinner:\n${dinner.join('\n')}\n\n`;
+    const med = medicine.filter(i => !i.done);
+    if (med.length) text += `💊 Medicine:\n${med.map(m => `- ${m.text}`).join('\n')}\n\n`;
+    const shop = shopping.filter(i => !i.done);
+    if (shop.length) text += `🛒 Please buy:\n${shop.map(s => `- [${s.cat||'Other'}] ${s.text}`).join('\n')}\n\n`;
+    const task = tasks.filter(i => !i.done);
+    if (task.length) text += `✅ Tasks:\n${task.map(t => `- ${t.text}`).join('\n')}\n\n`;
+    text += `🏫 School pickup this week:\n`;
+    DAYS.forEach(d => {
+      const r = normalizeSchoolDay(school[d.key]);
+      if (r.who1 || r.who2 || r.time) {
+        let line = `- ${d.label}: Pick up 1 ${r.who1 || '—'}`;
+        if (r.who2) line += ` · Pick up 2 ${r.who2}`;
+        line += ` @ ${r.time || '—'}`;
+        text += line + `\n`;
+      }
+    });
+    if (notes.length) text += `\n📝 Fridge / notes:\n${notes.map(n => `- ${n}`).join('\n')}\n`;
+  } else {
+    text += `🙋 Day update from Lenne\n\n`;
+    const doneMed = medicine.filter(i => i.done), openMed = medicine.filter(i => !i.done);
+    if (doneMed.length) text += `💊 Medicine done:\n${doneMed.map(m => `- ${m.text}`).join('\n')}\n\n`;
+    if (openMed.length) text += `💊 Still pending:\n${openMed.map(m => `- ${m.text}`).join('\n')}\n\n`;
+    const doneShop = shopping.filter(i => i.done), openShop = shopping.filter(i => !i.done);
+    if (doneShop.length) text += `🛒 Bought:\n${doneShop.map(s => `- [${s.cat||'Other'}] ${s.text}`).join('\n')}\n\n`;
+    if (openShop.length) text += `🛒 Still need:\n${openShop.map(s => `- [${s.cat||'Other'}] ${s.text}`).join('\n')}\n\n`;
+    const doneTasks = tasks.filter(i => i.done), openTasks = tasks.filter(i => !i.done);
+    if (doneTasks.length) text += `✅ Done:\n${doneTasks.map(t => `- ${t.text}`).join('\n')}\n\n`;
+    if (openTasks.length) text += `✅ Open:\n${openTasks.map(t => `- ${t.text}`).join('\n')}\n\n`;
+    const openReq = requests.filter(i => !i.done);
+    if (openReq.length) text += `🙋 Requests / updates:\n${openReq.map(r => `- ${r.text}`).join('\n')}\n\n`;
+    if (notes.length) text += `📝 Fridge / notes:\n${notes.map(n => `- ${n}`).join('\n')}\n`;
+  }
+  const out = text.trim();
+  navigator.clipboard.writeText(out).then(() => toast(role === 'employer' ? 'Night plan copied' : 'Day update copied'))
+    .catch(() => prompt('Copy this text:', out));
+}
+
+function clearAll() {
+  if (!confirm('Clear everything on this device?')) return;
+  Object.values(keys).forEach(k => localStorage.removeItem(k));
+  seedDefaults(true); renderAll(); setRole('employer'); toast('Cleared');
+}
+function seedDefaults(force) {
+  if (force || !localStorage.getItem(keys.tasks)) {
+    save('tasks', [
+      { text: 'Check fridge for next 2–3 days', done: false },
+      { text: 'Prepare daily soup for Chacha', done: false },
+      { text: 'Report what is running low', done: false }
+    ]);
+  }
+  if (force || !localStorage.getItem(keys.medicine)) {
+    save('medicine', [
+      { text: '08:00 Chacha medicine', done: false },
+      { text: '12:00 Chacha medicine', done: false },
+      { text: '20:00 Chacha medicine', done: false }
+    ]);
+  }
+  if (force || !localStorage.getItem(keys.school)) saveSchool(defaultSchool());
+  if (force || !localStorage.getItem(keys.dinner)) saveMeals('dinner', emptyMeals());
+  if (force || !localStorage.getItem(keys.lunch)) saveMeals('lunch', emptyMeals());
+}
+function renderAll() {
+  renderSchool(); renderMeals('dinner'); renderMeals('lunch'); renderMedicine();
+  renderShopping(); renderTasks(); renderNotes(); renderRequests(); renderInstructions();
+}
+seedDefaults(false); renderAll(); setRole(localStorage.getItem(keys.role) || 'employer');
+</script>
+</body>
+</html>
