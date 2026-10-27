@@ -34,6 +34,8 @@
   --shadow: 0 10px 30px rgba(74, 52, 38, 0.06);
   --primary: #6b4f3a;
   --primary-fg: #fff;
+  --sync-ok: #2f7d4a;
+  --sync-wait: #a97812;
 }
 body.mode-helper {
   --bg: #322b24;
@@ -61,6 +63,8 @@ body.mode-helper {
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
   --primary: #c47850;
   --primary-fg: #fff8f0;
+  --sync-ok: #8dcea8;
+  --sync-wait: #e2b15a;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -76,6 +80,15 @@ header .brand {
   font-size: 1.85rem; font-weight: 600; color: var(--brown-deep);
 }
 header .greet { color: var(--muted); font-size: 0.9rem; margin-top: 1px; }
+.sync-status {
+  display: inline-flex; align-items: center; gap: 5px;
+  margin-top: 4px; font-size: 0.72rem; font-weight: 600; color: var(--muted);
+}
+.sync-status .dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--sync-wait);
+}
+.sync-status.synced .dot { background: var(--sync-ok); }
+.sync-status.offline .dot { background: var(--danger); }
 .hero {
   background: var(--hero); border-radius: 22px; padding: 14px 16px; margin-bottom: 10px;
   box-shadow: var(--shadow);
@@ -272,6 +285,9 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
 <header>
   <div class="brand">chacha</div>
   <div class="greet" id="greet">Good evening</div>
+  <div id="syncStatus" class="sync-status syncing" role="status" aria-live="polite">
+    <span class="dot"></span><span class="label">Syncing…</span>
+  </div>
 </header>
 
 <section class="hero">
@@ -410,9 +426,11 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
 <button class="btn btn-block employer-only" type="button" onclick="exportSummary('employer')">Copy night plan for WhatsApp</button>
 <button class="btn btn-block helper-only" type="button" onclick="exportSummary('helper')">Copy day update for WhatsApp</button>
 <button class="btn btn-soft btn-block" type="button" onclick="clearThisDay()">Clear this day</button>
-<footer>Saved on this device · share via WhatsApp copy</footer>
+<footer>Shared family board · copy to WhatsApp</footer>
 <div class="toast" id="toast"></div>
 
+<script src="https://www.gstatic.com/firebasejs/12.9.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.9.0/firebase-database-compat.js"></script>
 <script>
 const PICKUP_WHO = ['Mama', 'Popo', 'Mum', 'Sir', 'Lenne'];
 const PICKUP_TIMES = ['15:40','16:00','16:30','17:00','17:15','17:30','17:45','18:00','18:15','18:30','19:00'];
@@ -547,22 +565,193 @@ function normalizeDayPlan(raw) {
   };
 }
 
+let memoryStore = null;
+let applyingRemote = false;
+let syncReady = false;
+let shouldSeedRemote = false;
+let connected = false;
+let everConnected = false;
+let pushTimer = null;
+let pushInFlight = false;
+let lastPushedPayload = null;
+let pushFailures = 0;
+let boardRef = null;
+
+const FIREBASE_CONFIG = {
+  apiKey: 'AIzaSyDSCkUzSrMGAYDsnTbUiRnqusAR5d70bV0',
+  authDomain: 'chacha-board-macau.firebaseapp.com',
+  databaseURL: 'https://chacha-board-macau-default-rtdb.asia-southeast1.firebasedatabase.app',
+  projectId: 'chacha-board-macau',
+  storageBucket: 'chacha-board-macau.firebasestorage.app',
+  messagingSenderId: '483908213721',
+  appId: '1:483908213721:web:6ae945d87e233e7c5297c8'
+};
+// Whole v6 store lives at this path as one JSON string. RTDB would reject the
+// "Rice/Noodle" meal key and would drop empty lists if stored as a raw object.
+const STORE_PATH = 'board/store';
+const SYNC_DEBOUNCE_MS = 400;
+
+function setSyncStatus(state) {
+  const el = document.getElementById('syncStatus');
+  if (!el) return;
+  const label = state === 'synced' ? 'Synced' : state === 'offline' ? 'Offline' : 'Syncing…';
+  el.classList.remove('synced', 'syncing', 'offline');
+  el.classList.add(state === 'synced' ? 'synced' : state === 'offline' ? 'offline' : 'syncing');
+  const labelEl = el.querySelector('.label');
+  if (labelEl) labelEl.textContent = label;
+}
+
+function stableStringify(value) {
+  if (Array.isArray(value)) return '[' + value.map(stableStringify).join(',') + ']';
+  if (value && typeof value === 'object') {
+    return '{' + Object.keys(value).sort().map(k => JSON.stringify(k) + ':' + stableStringify(value[k])).join(',') + '}';
+  }
+  return JSON.stringify(value);
+}
+
+function parseStore(raw) {
+  if (raw && typeof raw === 'object') {
+    const schoolBase = defaultSchool();
+    const school = { ...schoolBase };
+    if (raw.school) {
+      DAYS.forEach(d => { school[d.key] = normalizeSchoolDay({ ...schoolBase[d.key], ...(raw.school[d.key] || {}) }); });
+    }
+    return { school, days: raw.days && typeof raw.days === 'object' ? raw.days : {} };
+  }
+  return null;
+}
+
 function loadStore() {
+  if (memoryStore) return memoryStore;
   try {
-    const raw = JSON.parse(localStorage.getItem(STORE_KEY));
-    if (raw && typeof raw === 'object') {
-      const schoolBase = defaultSchool();
-      const school = { ...schoolBase };
-      if (raw.school) {
-        DAYS.forEach(d => { school[d.key] = normalizeSchoolDay({ ...schoolBase[d.key], ...(raw.school[d.key] || {}) }); });
-      }
-      return { school, days: raw.days && typeof raw.days === 'object' ? raw.days : {} };
+    const parsed = parseStore(JSON.parse(localStorage.getItem(STORE_KEY)));
+    if (parsed) {
+      memoryStore = parsed;
+      return memoryStore;
     }
   } catch {}
-  return migrateFromV5() || emptyStore();
+  memoryStore = migrateFromV5() || emptyStore();
+  return memoryStore;
 }
 function saveStore(store) {
+  memoryStore = store;
   localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  if (!applyingRemote) scheduleRemotePush();
+}
+
+function scheduleRemotePush() {
+  if (!syncReady || !boardRef) return;
+  setSyncStatus(connected || !everConnected ? 'syncing' : 'offline');
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(pushStoreNow, SYNC_DEBOUNCE_MS);
+}
+
+function pushStoreNow() {
+  if (!boardRef) return;
+  clearTimeout(pushTimer);
+  pushTimer = null;
+  const payload = JSON.stringify(loadStore());
+  if (payload === lastPushedPayload) {
+    if (connected) setSyncStatus('synced');
+    return;
+  }
+  pushInFlight = true;
+  setSyncStatus(connected || !everConnected ? 'syncing' : 'offline');
+  boardRef.set(payload).then(() => {
+    pushInFlight = false;
+    pushFailures = 0;
+    lastPushedPayload = payload;
+    if (pushTimer) return;
+    setSyncStatus(connected ? 'synced' : 'offline');
+  }).catch(() => {
+    pushInFlight = false;
+    setSyncStatus('offline');
+    if (pushFailures < 4) {
+      pushFailures += 1;
+      const wait = 500 * Math.pow(2, pushFailures);
+      clearTimeout(pushTimer);
+      pushTimer = setTimeout(pushStoreNow, wait);
+    }
+  });
+}
+
+function payloadToStore(raw) {
+  if (raw == null) return null;
+  let obj = raw;
+  if (typeof raw === 'string') {
+    try { obj = JSON.parse(raw); } catch { return null; }
+  }
+  return parseStore(obj);
+}
+
+function applyRemotePayload(raw) {
+  const next = payloadToStore(raw);
+  if (!next) return;
+  if (memoryStore && stableStringify(next) === stableStringify(memoryStore)) {
+    if (typeof raw === 'string') lastPushedPayload = raw;
+    if (connected && !pushTimer && !pushInFlight) setSyncStatus('synced');
+    return;
+  }
+  applyingRemote = true;
+  try {
+    memoryStore = next;
+    localStorage.setItem(STORE_KEY, JSON.stringify(next));
+    lastPushedPayload = typeof raw === 'string' ? raw : JSON.stringify(next);
+    renderAll();
+  } finally {
+    applyingRemote = false;
+  }
+  if (connected && !pushTimer && !pushInFlight) setSyncStatus('synced');
+}
+
+function onStoreValue(snap) {
+  const raw = snap.val();
+  if (!syncReady) {
+    syncReady = true;
+    if (raw == null) {
+      if (shouldSeedRemote) pushStoreNow();
+      else if (connected) setSyncStatus('synced');
+    } else {
+      applyRemotePayload(raw);
+    }
+    return;
+  }
+  if (pushTimer || pushInFlight) return;
+  if (typeof raw === 'string' && raw === lastPushedPayload) {
+    if (connected) setSyncStatus('synced');
+    return;
+  }
+  applyRemotePayload(raw);
+}
+
+function initSync() {
+  if (typeof firebase === 'undefined') {
+    setSyncStatus('offline');
+    return;
+  }
+  try {
+    firebase.initializeApp(FIREBASE_CONFIG);
+    const db = firebase.database();
+    boardRef = db.ref(STORE_PATH);
+    db.ref('.info/connected').on('value', (snap) => {
+      connected = snap.val() === true;
+      if (connected) {
+        everConnected = true;
+        if (syncReady && !pushTimer && !pushInFlight) setSyncStatus('synced');
+      } else if (everConnected) {
+        setSyncStatus('offline');
+      }
+    });
+    boardRef.on('value', onStoreValue, () => setSyncStatus('offline'));
+    setTimeout(() => {
+      if (!everConnected) setSyncStatus('offline');
+    }, 8000);
+    window.addEventListener('online', () => {
+      if (syncReady) scheduleRemotePush();
+    });
+  } catch (e) {
+    setSyncStatus('offline');
+  }
 }
 function migrateFromV5() {
   try {
@@ -1050,14 +1239,22 @@ function renderAll() {
   renderWeekPlan();
 }
 
-// Ensure store exists
-if (!localStorage.getItem(STORE_KEY)) {
+// Role and selected date stay in localStorage. The day store is shared.
+const hadLocalStore = !!localStorage.getItem(STORE_KEY);
+const hadLegacyStore = !hadLocalStore && !!(
+  localStorage.getItem(OLD_KEYS.school) ||
+  localStorage.getItem(OLD_KEYS.dinner) ||
+  localStorage.getItem(OLD_KEYS.tasks)
+);
+shouldSeedRemote = hadLocalStore || hadLegacyStore;
+if (!hadLocalStore) {
   const migrated = migrateFromV5();
   if (!migrated) saveStore(emptyStore());
 }
 updateDateUI();
 renderAll();
 setRole(localStorage.getItem(ROLE_KEY) || 'employer');
+initSync();
 </script>
 </body>
 </html>
