@@ -17,14 +17,57 @@
   --muted: #8a7a6b;
   --line: #eadfd3;
   --danger: #b42318;
+  --soft: #faf6f1;
+  --icon-bg: #f3ebe2;
+  --input-bg: #fff;
+  --input-border: #e6d9cb;
+  --select-arrow: %236b4f3a;
+  --btn-soft-bg: #efe6db;
+  --btn-soft-fg: #4a3426;
+  --today-bg: #f3ebe2;
+  --note-bg: #faf6f1;
+  --req-bg: #f8f1e8;
+  --tag-bg: #efe6db;
+  --tag-fg: #4a3426;
+  --meal-row-bg: #faf6f1;
   --radius: 22px;
   --shadow: 0 10px 30px rgba(74, 52, 38, 0.06);
+  --primary: #6b4f3a;
+  --primary-fg: #fff;
+}
+body.mode-helper {
+  --bg: #121212;
+  --card: #1c1814;
+  --hero: #221c17;
+  --brown: #c4a484;
+  --brown-deep: #f2e8dc;
+  --text: #f0e6da;
+  --muted: #9a8b7a;
+  --line: #2e2620;
+  --danger: #e07060;
+  --soft: #241e19;
+  --icon-bg: #2a221c;
+  --input-bg: #241e19;
+  --input-border: #3a3028;
+  --select-arrow: %23c4a484;
+  --btn-soft-bg: #2a221c;
+  --btn-soft-fg: #f2e8dc;
+  --today-bg: #2a221c;
+  --note-bg: #241e19;
+  --req-bg: #2a221c;
+  --tag-bg: #3a2e24;
+  --tag-fg: #f2e8dc;
+  --meal-row-bg: #241e19;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --primary: #b56a45;
+  --primary-fg: #fff8f0;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--bg); color: var(--text); line-height: 1.45;
   padding: 20px 16px 48px; max-width: 440px; margin: 0 auto;
+  transition: background .2s, color .2s;
 }
 header { margin-bottom: 18px; }
 header .brand {
@@ -47,7 +90,30 @@ header .greet { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
   font-weight: 600; font-size: 0.88rem; cursor: pointer;
   background: rgba(255,255,255,0.55); color: var(--brown);
 }
-.role-bar button.active { background: var(--brown); color: #fff; }
+body.mode-helper .role-bar button { background: rgba(255,255,255,0.08); color: var(--muted); }
+.role-bar button.active { background: var(--primary); color: var(--primary-fg); }
+.date-bar {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center;
+  margin: 0 0 10px;
+}
+.date-bar .date-main {
+  text-align: center;
+}
+.date-bar .date-label {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.2rem; font-weight: 600; color: var(--brown-deep);
+}
+.date-bar .date-sub { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.date-nav {
+  width: 42px; height: 42px; border-radius: 50%; border: none; cursor: pointer;
+  background: var(--btn-soft-bg); color: var(--btn-soft-fg); font-size: 1.1rem; font-weight: 700;
+}
+.date-actions { display: grid; gap: 8px; margin-bottom: 8px; }
+.date-actions input[type="date"] {
+  width: 100%; padding: 11px 12px; border: 1px solid var(--input-border); border-radius: 14px;
+  font-size: 0.92rem; background: var(--input-bg); color: var(--text); font-family: inherit;
+  color-scheme: light dark;
+}
 .hint { margin: 14px 0 18px; color: var(--muted); font-size: 0.86rem; }
 .section-title {
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -62,7 +128,7 @@ header .greet { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
   display: flex; align-items: center; gap: 8px; margin-bottom: 12px;
 }
 .card h3 .icon {
-  width: 34px; height: 34px; border-radius: 50%; background: #f3ebe2;
+  width: 34px; height: 34px; border-radius: 50%; background: var(--icon-bg);
   display: inline-flex; align-items: center; justify-content: center; font-size: 1rem;
 }
 .sub { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
@@ -72,18 +138,18 @@ header .greet { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
 }
 .item:last-child { border-bottom: none; }
 .item input[type="checkbox"] {
-  width: 20px; height: 20px; accent-color: var(--brown); margin-top: 2px; flex-shrink: 0;
+  width: 20px; height: 20px; accent-color: var(--primary); margin-top: 2px; flex-shrink: 0;
 }
 .item .text { flex: 1; font-size: 0.95rem; word-break: break-word; }
 .item.done .text { text-decoration: line-through; color: var(--muted); }
 .note-item, .req-item {
-  background: #faf6f1; border-radius: 16px; padding: 12px 14px; margin-bottom: 8px;
+  background: var(--note-bg); border-radius: 16px; padding: 12px 14px; margin-bottom: 8px;
   display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
 }
-.req-item { background: #f8f1e8; }
+.req-item { background: var(--req-bg); }
 .req-item.done { opacity: 0.6; }
 .tag {
-  display: inline-block; background: #efe6db; color: var(--brown-deep);
+  display: inline-block; background: var(--tag-bg); color: var(--tag-fg);
   border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; font-weight: 600; margin-right: 4px;
 }
 .delete {
@@ -94,24 +160,30 @@ header .greet { color: var(--muted); font-size: 0.95rem; margin-top: 2px; }
 .form-grid.two { grid-template-columns: 1fr 1fr; }
 label.field { display: block; font-size: 0.75rem; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
 select, input[type="text"], textarea {
-  width: 100%; padding: 11px 12px; border: 1px solid #e6d9cb; border-radius: 14px;
-  font-size: 0.92rem; background: #fff; color: var(--text); font-family: inherit;
+  width: 100%; padding: 11px 12px; border: 1px solid var(--input-border); border-radius: 14px;
+  font-size: 0.92rem; background: var(--input-bg); color: var(--text); font-family: inherit;
 }
 select {
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b4f3a' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='var(--select-arrow)' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
   background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px;
 }
-select:disabled { opacity: 0.9; color: var(--text); background-color: #f7f2ec; }
+body.mode-employer select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236b4f3a' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+}
+body.mode-helper select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23c4a484' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+}
+select:disabled { opacity: 0.9; color: var(--text); background-color: var(--soft); }
 textarea { min-height: 90px; resize: vertical; }
 .btn {
   border: none; border-radius: 999px; padding: 12px 16px; font-weight: 700;
-  font-size: 0.92rem; cursor: pointer; background: var(--brown); color: #fff;
+  font-size: 0.92rem; cursor: pointer; background: var(--primary); color: var(--primary-fg);
 }
-.btn-soft { background: #efe6db; color: var(--brown-deep); }
+.btn-soft { background: var(--btn-soft-bg); color: var(--btn-soft-fg); }
 .btn-block { width: 100%; margin-top: 8px; }
 .today-pickup {
-  background: #f3ebe2; border-radius: 16px; padding: 12px 14px; margin-bottom: 12px; font-size: 0.92rem;
+  background: var(--today-bg); border-radius: 16px; padding: 12px 14px; margin-bottom: 12px; font-size: 0.92rem;
 }
 .today-pickup strong { color: var(--brown-deep); }
 .school-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; table-layout: fixed; }
@@ -123,13 +195,13 @@ textarea { min-height: 90px; resize: vertical; }
 .school-table th:first-child, .school-table td:first-child { width: 18%; }
 .school-table select { font-size: 0.78rem; padding: 8px 24px 8px 8px; background-position: right 8px center; }
 .badge {
-  display: inline-block; background: var(--brown); color: #fff; font-size: 0.62rem;
+  display: inline-block; background: var(--primary); color: var(--primary-fg); font-size: 0.62rem;
   padding: 2px 6px; border-radius: 999px; margin-left: 2px; font-weight: 700;
 }
 .meal-rows { display: grid; gap: 8px; }
 .meal-row {
   display: grid; grid-template-columns: 92px 1fr; gap: 8px; align-items: start;
-  background: #faf6f1; border-radius: 16px; padding: 10px;
+  background: var(--meal-row-bg); border-radius: 16px; padding: 10px;
 }
 .meal-cat {
   font-weight: 700; color: var(--brown-deep); font-size: 0.9rem; padding-top: 10px;
@@ -142,9 +214,10 @@ body.mode-helper .helper-only { display: block; }
 footer { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top: 18px; }
 .toast {
   position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%);
-  background: var(--brown-deep); color: #fff; padding: 10px 16px; border-radius: 999px;
+  background: var(--brown-deep); color: var(--bg); padding: 10px 16px; border-radius: 999px;
   font-size: 0.86rem; opacity: 0; transition: opacity .2s; z-index: 99; pointer-events: none;
 }
+body.mode-helper .toast { background: #f2e8dc; color: #121212; }
 .toast.show { opacity: 1; }
 </style>
 </head>
@@ -162,9 +235,25 @@ footer { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top
     <button type="button" id="btnHelper" onclick="setRole('helper')">Helper · day</button>
   </div>
 </section>
+
+<div class="card" style="margin-top:0">
+  <div class="date-bar">
+    <button type="button" class="date-nav" onclick="shiftDay(-1)" aria-label="Previous day">‹</button>
+    <div class="date-main">
+      <div class="date-label" id="selectedDateLabel">Today</div>
+      <div class="date-sub" id="selectedDateSub">Plan for this day</div>
+    </div>
+    <button type="button" class="date-nav" onclick="shiftDay(1)" aria-label="Next day">›</button>
+  </div>
+  <div class="date-actions">
+    <input type="date" id="datePicker" onchange="onDatePicked()">
+    <button type="button" class="btn btn-soft btn-block employer-only" onclick="copyFromPreviousDay()">Copy from previous day</button>
+  </div>
+</div>
+
 <p class="hint" id="roleHint">Night plan: meals, school pickup, shopping, medicine, and instructions.</p>
 
-<p class="section-title">Today</p>
+<p class="section-title">School (weekly)</p>
 <div class="card">
   <h3><span class="icon">🏫</span> School pickup <span class="sub">pick up 1 · pick up 2 · one time</span></h3>
   <p class="locked-note helper-only">Helper view only — pickup who &amp; time are set by employer.</p>
@@ -182,7 +271,7 @@ footer { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top
   </table>
 </div>
 
-<p class="section-title">Meals</p>
+<p class="section-title">Meals <span class="sub" id="mealsDateHint"></span></p>
 <div class="card">
   <h3><span class="icon">🍽️</span> Tonight’s dinner</h3>
   <p class="sub" style="margin-bottom:8px">Left = category (fixed). Right = note / style.</p>
@@ -266,7 +355,7 @@ footer { text-align: center; color: var(--muted); font-size: 0.78rem; margin-top
 </div>
 
 <button class="btn btn-block employer-only" type="button" onclick="exportSummary('employer')">Copy night plan for WhatsApp</button>
-<button class="btn btn-block helper-only" type="button" onclick="exportSummary('helper')" style="background:#8a5a3a">Copy day update for WhatsApp</button>
+<button class="btn btn-block helper-only" type="button" onclick="exportSummary('helper')">Copy day update for WhatsApp</button>
 <button class="btn btn-soft btn-block" type="button" onclick="clearAll()">Clear all</button>
 <footer>Saved on this device · share via WhatsApp copy</footer>
 <div class="toast" id="toast"></div>
@@ -284,19 +373,47 @@ const DAYS = [
   { key: 'sun', label: 'Sun' }
 ];
 
-const now = new Date();
-const hour = now.getHours();
-document.getElementById('greet').textContent =
-  (hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening') +
-  ' · ' + now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-const todayKey = ['sun','mon','tue','wed','thu','fri','sat'][now.getDay()];
-
-const keys = {
+const STORE_KEY = 'chacha_board_v6';
+const ROLE_KEY = 'chacha_role_v6';
+const SELECTED_DATE_KEY = 'chacha_selected_date_v6';
+const OLD_KEYS = {
   dinner: 'chacha_dinner_v5', lunch: 'chacha_lunch_v5', medicine: 'chacha_medicine_v5',
   shopping: 'chacha_shop_v5', tasks: 'chacha_tasks_v5', notes: 'chacha_notes_v5',
   school: 'chacha_school_v5', instructions: 'chacha_instructions_v5',
   requests: 'chacha_requests_v5', role: 'chacha_role_v5'
 };
+
+const clockNow = new Date();
+const hour = clockNow.getHours();
+
+function pad(n) { return String(n).padStart(2, '0'); }
+function toYMD(d) {
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+}
+function parseYMD(s) {
+  const [y, m, d] = s.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+function addDaysYMD(ymd, delta) {
+  const d = parseYMD(ymd);
+  d.setDate(d.getDate() + delta);
+  return toYMD(d);
+}
+function weekdayKeyFromYMD(ymd) {
+  return ['sun','mon','tue','wed','thu','fri','sat'][parseYMD(ymd).getDay()];
+}
+function formatLong(ymd) {
+  return parseYMD(ymd).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+}
+function formatShort(ymd) {
+  return parseYMD(ymd).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+}
+
+let selectedDate = localStorage.getItem(SELECTED_DATE_KEY) || toYMD(clockNow);
+
+document.getElementById('greet').textContent =
+  (hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening') +
+  ' · ' + clockNow.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
 
 function fillSelect(id, options, selected) {
   const el = document.getElementById(id);
@@ -305,46 +422,51 @@ function fillSelect(id, options, selected) {
 fillSelect('shopCat', SHOP_CATS, 'Vege');
 fillSelect('medTime', MED_TIMES, '08:00');
 
-function load(key) {
-  try { return JSON.parse(localStorage.getItem(keys[key])) || []; } catch { return []; }
-}
-function save(key, data) { localStorage.setItem(keys[key], JSON.stringify(data)); }
-function loadText(key) { return localStorage.getItem(keys[key]) || ''; }
-function loadObj(key, fallback) {
-  try { return JSON.parse(localStorage.getItem(keys[key])) || fallback; } catch { return fallback; }
-}
-function saveObj(key, data) { localStorage.setItem(keys[key], JSON.stringify(data)); }
-function esc(s) {
-  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-function toast(msg) {
-  const el = document.getElementById('toast');
-  el.textContent = msg; el.classList.add('show');
-  setTimeout(() => el.classList.remove('show'), 1800);
-}
-
 function emptyMeals() {
   const o = {};
   MEAL_CATS.forEach(c => { o[c] = { note: '', style: '' }; });
   return o;
 }
-function loadMeals(kind) {
-  const raw = loadObj(kind, null);
-  const base = emptyMeals();
-  if (!raw || typeof raw !== 'object') return base;
-  MEAL_CATS.forEach(c => {
-    if (raw[c]) base[c] = { note: raw[c].note || '', style: raw[c].style || '' };
-  });
-  return base;
+function emptyDayPlan() {
+  return {
+    dinner: emptyMeals(),
+    lunch: emptyMeals(),
+    medicine: [
+      { text: '08:00 Chacha medicine', done: false },
+      { text: '12:00 Chacha medicine', done: false },
+      { text: '20:00 Chacha medicine', done: false }
+    ],
+    shopping: [],
+    tasks: [
+      { text: 'Check fridge for next 2–3 days', done: false },
+      { text: 'Prepare daily soup for Chacha', done: false },
+      { text: 'Report what is running low', done: false }
+    ],
+    notes: [],
+    instructions: '',
+    requests: []
+  };
 }
-function saveMeals(kind, data) { saveObj(kind, data); }
-
 function defaultSchool() {
   const row = { who1: 'Lenne', who2: '', time: '17:30' };
   return {
     mon:{...row}, tue:{...row}, wed:{...row}, thu:{...row}, fri:{...row},
     sat:{who1:'',who2:'',time:''}, sun:{who1:'',who2:'',time:''}
   };
+}
+function emptyStore() {
+  return { school: defaultSchool(), days: {} };
+}
+
+function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
+
+function normalizeMeals(raw) {
+  const base = emptyMeals();
+  if (!raw || typeof raw !== 'object') return base;
+  MEAL_CATS.forEach(c => {
+    if (raw[c]) base[c] = { note: raw[c].note || '', style: raw[c].style || '' };
+  });
+  return base;
 }
 function normalizeSchoolDay(row) {
   row = row || {};
@@ -357,33 +479,170 @@ function normalizeSchoolDay(row) {
     time: row.time || row.time1 || ''
   };
 }
-function loadSchool() {
-  try {
-    const raw = JSON.parse(localStorage.getItem(keys.school));
-    const base = defaultSchool();
-    if (!raw) return base;
-    const out = { ...base };
-    DAYS.forEach(d => { out[d.key] = normalizeSchoolDay({ ...base[d.key], ...(raw[d.key] || {}) }); });
-    return out;
-  } catch { return defaultSchool(); }
+function normalizeDayPlan(raw) {
+  const base = emptyDayPlan();
+  if (!raw || typeof raw !== 'object') return base;
+  return {
+    dinner: normalizeMeals(raw.dinner),
+    lunch: normalizeMeals(raw.lunch),
+    medicine: Array.isArray(raw.medicine) ? raw.medicine : base.medicine,
+    shopping: Array.isArray(raw.shopping) ? raw.shopping : [],
+    tasks: Array.isArray(raw.tasks) ? raw.tasks : base.tasks,
+    notes: Array.isArray(raw.notes) ? raw.notes : [],
+    instructions: typeof raw.instructions === 'string' ? raw.instructions : '',
+    requests: Array.isArray(raw.requests) ? raw.requests : []
+  };
 }
-function saveSchool(data) { localStorage.setItem(keys.school, JSON.stringify(data)); }
+
+function loadStore() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(STORE_KEY));
+    if (raw && typeof raw === 'object') {
+      const schoolBase = defaultSchool();
+      const school = { ...schoolBase };
+      if (raw.school) {
+        DAYS.forEach(d => { school[d.key] = normalizeSchoolDay({ ...schoolBase[d.key], ...(raw.school[d.key] || {}) }); });
+      }
+      return { school, days: raw.days && typeof raw.days === 'object' ? raw.days : {} };
+    }
+  } catch {}
+  return migrateFromV5() || emptyStore();
+}
+function saveStore(store) {
+  localStorage.setItem(STORE_KEY, JSON.stringify(store));
+}
+function migrateFromV5() {
+  try {
+    const hasOld = localStorage.getItem(OLD_KEYS.school) || localStorage.getItem(OLD_KEYS.dinner) || localStorage.getItem(OLD_KEYS.tasks);
+    if (!hasOld) return null;
+    const store = emptyStore();
+    try {
+      const schoolRaw = JSON.parse(localStorage.getItem(OLD_KEYS.school));
+      if (schoolRaw) {
+        DAYS.forEach(d => { store.school[d.key] = normalizeSchoolDay({ ...store.school[d.key], ...(schoolRaw[d.key] || {}) }); });
+      }
+    } catch {}
+    const today = toYMD(clockNow);
+    const day = emptyDayPlan();
+    try { day.dinner = normalizeMeals(JSON.parse(localStorage.getItem(OLD_KEYS.dinner))); } catch {}
+    try { day.lunch = normalizeMeals(JSON.parse(localStorage.getItem(OLD_KEYS.lunch))); } catch {}
+    try { const m = JSON.parse(localStorage.getItem(OLD_KEYS.medicine)); if (Array.isArray(m) && m.length) day.medicine = m; } catch {}
+    try { const s = JSON.parse(localStorage.getItem(OLD_KEYS.shopping)); if (Array.isArray(s)) day.shopping = s; } catch {}
+    try { const t = JSON.parse(localStorage.getItem(OLD_KEYS.tasks)); if (Array.isArray(t) && t.length) day.tasks = t; } catch {}
+    try { const n = JSON.parse(localStorage.getItem(OLD_KEYS.notes)); if (Array.isArray(n)) day.notes = n; } catch {}
+    try { const r = JSON.parse(localStorage.getItem(OLD_KEYS.requests)); if (Array.isArray(r)) day.requests = r; } catch {}
+    day.instructions = localStorage.getItem(OLD_KEYS.instructions) || '';
+    store.days[today] = day;
+    saveStore(store);
+    const oldRole = localStorage.getItem(OLD_KEYS.role);
+    if (oldRole) localStorage.setItem(ROLE_KEY, oldRole);
+    toast('Migrated previous board data');
+    return store;
+  } catch {
+    return null;
+  }
+}
+
+function getDayPlan(ymd) {
+  const store = loadStore();
+  if (!store.days[ymd]) {
+    store.days[ymd] = emptyDayPlan();
+    saveStore(store);
+  }
+  return normalizeDayPlan(store.days[ymd]);
+}
+function setDayPlan(ymd, plan) {
+  const store = loadStore();
+  store.days[ymd] = normalizeDayPlan(plan);
+  saveStore(store);
+}
+function updateDayPlan(mutator) {
+  const plan = getDayPlan(selectedDate);
+  mutator(plan);
+  setDayPlan(selectedDate, plan);
+}
+
+function dayHasContent(plan) {
+  const mealFilled = (meals) => MEAL_CATS.some(c => meals[c] && (meals[c].note || meals[c].style));
+  const defaultMed = new Set(['08:00 Chacha medicine', '12:00 Chacha medicine', '20:00 Chacha medicine']);
+  const defaultTasks = new Set([
+    'Check fridge for next 2–3 days',
+    'Prepare daily soup for Chacha',
+    'Report what is running low'
+  ]);
+  const medCustom = (plan.medicine || []).some(m => m.done || !defaultMed.has(m.text));
+  const taskCustom = (plan.tasks || []).some(t => t.done || !defaultTasks.has(t.text));
+  return mealFilled(plan.dinner) || mealFilled(plan.lunch) ||
+    (plan.shopping && plan.shopping.length) ||
+    (plan.notes && plan.notes.length) ||
+    (plan.requests && plan.requests.length) ||
+    !!(plan.instructions && plan.instructions.trim()) ||
+    medCustom || taskCustom;
+}
+
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 1800);
+}
+
+function updateDateUI() {
+  const today = toYMD(clockNow);
+  const label = selectedDate === today ? `Today · ${formatShort(selectedDate)}` : formatLong(selectedDate);
+  document.getElementById('selectedDateLabel').textContent = label;
+  document.getElementById('selectedDateSub').textContent = selectedDate === today
+    ? 'Editing today’s plan'
+    : `Editing ${formatShort(selectedDate)}`;
+  document.getElementById('datePicker').value = selectedDate;
+  document.getElementById('mealsDateHint').textContent = `· ${formatShort(selectedDate)}`;
+  localStorage.setItem(SELECTED_DATE_KEY, selectedDate);
+}
+function setSelectedDate(ymd) {
+  selectedDate = ymd;
+  updateDateUI();
+  renderDay();
+  renderSchool();
+}
+function shiftDay(delta) { setSelectedDate(addDaysYMD(selectedDate, delta)); }
+function onDatePicked() {
+  const v = document.getElementById('datePicker').value;
+  if (v) setSelectedDate(v);
+}
+function copyFromPreviousDay() {
+  if (!document.body.classList.contains('mode-employer')) return;
+  const prev = addDaysYMD(selectedDate, -1);
+  const prevPlan = getDayPlan(prev);
+  const curr = getDayPlan(selectedDate);
+  if (dayHasContent(curr)) {
+    if (!confirm(`Replace ${formatShort(selectedDate)} with a copy of ${formatShort(prev)}?`)) return;
+  }
+  const cloned = deepClone(prevPlan);
+  // Reset done flags for a fresh day plan
+  cloned.medicine = (cloned.medicine || []).map(m => ({ ...m, done: false }));
+  cloned.shopping = (cloned.shopping || []).map(s => ({ ...s, done: false }));
+  cloned.tasks = (cloned.tasks || []).map(t => ({ ...t, done: false }));
+  cloned.requests = (cloned.requests || []).map(r => ({ ...r, done: false }));
+  setDayPlan(selectedDate, cloned);
+  renderDay();
+  toast(`Copied from ${formatShort(prev)}`);
+}
 
 function setRole(role) {
   document.body.classList.toggle('mode-employer', role === 'employer');
   document.body.classList.toggle('mode-helper', role === 'helper');
   document.getElementById('btnEmployer').classList.toggle('active', role === 'employer');
   document.getElementById('btnHelper').classList.toggle('active', role === 'helper');
-  localStorage.setItem(keys.role, role);
+  localStorage.setItem(ROLE_KEY, role);
   document.getElementById('heroCopy').textContent = role === 'employer'
     ? 'Fill tonight’s plan for Lenne, then copy to WhatsApp.'
     : 'Tick what’s done, add fridge notes and requests, then copy a day update.';
   document.getElementById('roleHint').textContent = role === 'employer'
-    ? 'Night plan: meals, school pickup, shopping, medicine, and instructions.'
-    : 'Day update: medicine, shopping, tasks, fridge notes, and requests for employer.';
-  renderInstructions();
-  renderMeals('dinner');
-  renderMeals('lunch');
+    ? 'Night plan: pick a date, fill meals, school pickup, shopping, medicine, and instructions.'
+    : 'Day update: pick a date, tick medicine/shopping/tasks, fridge notes, and requests for employer.';
+  renderDay();
   renderSchool();
 }
 
@@ -395,22 +654,37 @@ function timeOpts(selected) {
 }
 function schoolLocked() { return document.body.classList.contains('mode-helper'); }
 
+function loadSchool() {
+  return loadStore().school;
+}
+function saveSchool(data) {
+  const store = loadStore();
+  store.school = data;
+  saveStore(store);
+}
+
 function renderSchool() {
   const data = loadSchool();
   const locked = schoolLocked();
   const dis = locked ? 'disabled' : '';
+  const highlightKey = weekdayKeyFromYMD(selectedDate);
+  const todayKey = weekdayKeyFromYMD(toYMD(clockNow));
   document.getElementById('schoolBody').innerHTML = DAYS.map(d => {
     const row = normalizeSchoolDay(data[d.key]);
+    const isSelected = d.key === highlightKey;
     const isToday = d.key === todayKey;
+    let badge = '';
+    if (isSelected) badge = '<span class="badge">Selected</span>';
+    else if (isToday) badge = '<span class="badge">Today</span>';
     return `<tr>
-      <td><strong>${d.label}</strong>${isToday?'<span class="badge">Today</span>':''}</td>
+      <td><strong>${d.label}</strong>${badge}</td>
       <td><select data-day="${d.key}" data-field="who1" onchange="updateSchool(this)" ${dis}>${whoOpts(row.who1)}</select></td>
       <td><select data-day="${d.key}" data-field="who2" onchange="updateSchool(this)" ${dis}>${whoOpts(row.who2)}</select></td>
       <td><select data-day="${d.key}" data-field="time" onchange="updateSchool(this)" ${dis}>${timeOpts(row.time)}</select></td>
     </tr>`;
   }).join('');
-  const t = normalizeSchoolDay(data[todayKey]);
-  let line = `<strong>Today · Pick up 1:</strong> ${esc(t.who1 || 'Not set')}`;
+  const t = normalizeSchoolDay(data[highlightKey]);
+  let line = `<strong>${formatShort(selectedDate)} · Pick up 1:</strong> ${esc(t.who1 || 'Not set')}`;
   if (t.who2) line += ` · <strong>Pick up 2:</strong> ${esc(t.who2)}`;
   line += ` @ <strong>${esc(t.time || '—')}</strong>`;
   document.getElementById('todayPickup').innerHTML = line;
@@ -429,7 +703,8 @@ function styleOpts(selected) {
   return COOK_STYLES.map(s => `<option value="${s}" ${selected===s?'selected':''}>${s || 'Style —'}</option>`).join('');
 }
 function renderMeals(kind) {
-  const data = loadMeals(kind);
+  const plan = getDayPlan(selectedDate);
+  const data = plan[kind];
   const el = document.getElementById(kind === 'dinner' ? 'dinnerRows' : 'lunchRows');
   const locked = schoolLocked();
   const dis = locked ? 'disabled' : '';
@@ -458,14 +733,21 @@ function updateMeal(el) {
   if (schoolLocked()) return;
   const kind = el.dataset.kind;
   const cat = el.dataset.cat;
-  const data = loadMeals(kind);
-  if (!data[cat]) data[cat] = { note: '', style: '' };
-  data[cat][el.dataset.field] = el.value;
-  saveMeals(kind, data);
+  updateDayPlan(plan => {
+    if (!plan[kind][cat]) plan[kind][cat] = { note: '', style: '' };
+    plan[kind][cat][el.dataset.field] = el.value;
+  });
+}
+
+function loadList(type) {
+  return getDayPlan(selectedDate)[type] || [];
+}
+function saveList(type, list) {
+  updateDayPlan(plan => { plan[type] = list; });
 }
 
 function renderCheck(type, elId, empty, mapText) {
-  const list = load(type);
+  const list = loadList(type);
   const el = document.getElementById(elId);
   if (!list.length) { el.innerHTML = `<p class="sub">${empty}</p>`; return; }
   el.innerHTML = list.map((item, i) => `
@@ -482,13 +764,13 @@ function renderShopping() {
 }
 function renderTasks() { renderCheck('tasks', 'tasks', 'No tasks'); }
 function renderNotes() {
-  const list = load('notes');
+  const list = loadList('notes');
   document.getElementById('notes').innerHTML = list.length
     ? list.map((n,i)=>`<div class="note-item"><span>${esc(n)}</span><button class="delete" type="button" onclick="remove('notes',${i})">×</button></div>`).join('')
     : '<p class="sub">No notes</p>';
 }
 function renderRequests() {
-  const list = load('requests');
+  const list = loadList('requests');
   document.getElementById('requests').innerHTML = list.length
     ? list.map((item,i)=>`<div class="req-item ${item.done?'done':''}">
         <label style="display:flex;gap:8px;flex:1;align-items:flex-start">
@@ -500,57 +782,59 @@ function renderRequests() {
     : '<p class="sub">No helper updates yet</p>';
 }
 function renderInstructions() {
-  const text = loadText('instructions');
+  const text = getDayPlan(selectedDate).instructions || '';
   document.getElementById('instructions').value = text;
   document.getElementById('instructionsRead').textContent = text || 'No instructions from employer yet.';
 }
-function saveInstructions() { localStorage.setItem(keys.instructions, document.getElementById('instructions').value); }
+function saveInstructions() {
+  updateDayPlan(plan => { plan.instructions = document.getElementById('instructions').value; });
+}
 
 function addMed() {
   const label = document.getElementById('medInput').value.trim() || 'Chacha medicine';
   const time = document.getElementById('medTime').value;
-  const list = load('medicine');
+  const list = loadList('medicine');
   list.push({ text: `${time} ${label}`, done: false });
-  save('medicine', list); renderMedicine();
+  saveList('medicine', list); renderMedicine();
 }
 function addShop() {
   const text = document.getElementById('shopInput').value.trim();
   if (!text) return;
-  const list = load('shopping');
+  const list = loadList('shopping');
   list.push({ cat: document.getElementById('shopCat').value, text, done: false });
-  save('shopping', list);
+  saveList('shopping', list);
   document.getElementById('shopInput').value = '';
   renderShopping();
 }
 function addTask() {
   const text = document.getElementById('taskInput').value.trim();
   if (!text) return;
-  const list = load('tasks'); list.push({ text, done: false }); save('tasks', list);
+  const list = loadList('tasks'); list.push({ text, done: false }); saveList('tasks', list);
   document.getElementById('taskInput').value = ''; renderTasks();
 }
 function addNote() {
   const text = document.getElementById('noteInput').value.trim();
   if (!text) return;
-  const list = load('notes'); list.push(text); save('notes', list);
+  const list = loadList('notes'); list.push(text); saveList('notes', list);
   document.getElementById('noteInput').value = ''; renderNotes();
 }
 function addRequest() {
   const text = document.getElementById('reqInput').value.trim();
   if (!text) return;
-  const list = load('requests'); list.push({ text, done: false }); save('requests', list);
+  const list = loadList('requests'); list.push({ text, done: false }); saveList('requests', list);
   document.getElementById('reqInput').value = ''; renderRequests();
 }
 function toggle(type, i) {
-  const list = load(type); list[i].done = !list[i].done; save(type, list);
+  const list = loadList(type); list[i].done = !list[i].done; saveList(type, list);
   ({ shopping: renderShopping, tasks: renderTasks, medicine: renderMedicine, requests: renderRequests })[type]();
 }
 function remove(type, i) {
-  const list = load(type); list.splice(i, 1); save(type, list);
+  const list = loadList(type); list.splice(i, 1); saveList(type, list);
   ({ shopping: renderShopping, tasks: renderTasks, medicine: renderMedicine, notes: renderNotes, requests: renderRequests })[type]();
 }
 
 function filledMeals(kind) {
-  const data = loadMeals(kind);
+  const data = getDayPlan(selectedDate)[kind];
   return MEAL_CATS.filter(c => (data[c].note || data[c].style)).map(c => {
     const r = data[c];
     let s = `- ${c}`;
@@ -561,12 +845,14 @@ function filledMeals(kind) {
 }
 
 function exportSummary(role) {
-  const medicine = load('medicine'), shopping = load('shopping'), tasks = load('tasks');
-  const notes = load('notes'), requests = load('requests'), school = loadSchool();
-  const instructions = loadText('instructions').trim();
-  const tn = normalizeSchoolDay(school[todayKey]);
-  const dateStr = now.toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-  let text = `📅 ${dateStr}\n🏫 Today · Pick up 1: ${tn.who1 || 'Not set'}`;
+  const plan = getDayPlan(selectedDate);
+  const medicine = plan.medicine, shopping = plan.shopping, tasks = plan.tasks;
+  const notes = plan.notes, requests = plan.requests, school = loadSchool();
+  const instructions = (plan.instructions || '').trim();
+  const dayKey = weekdayKeyFromYMD(selectedDate);
+  const tn = normalizeSchoolDay(school[dayKey]);
+  const dateStr = formatLong(selectedDate);
+  let text = `📅 ${dateStr}\n🏫 Pick up 1: ${tn.who1 || 'Not set'}`;
   if (tn.who2) text += ` · Pick up 2: ${tn.who2}`;
   text += ` @ ${tn.time || '—'}\n\n`;
   if (role === 'employer') {
@@ -614,34 +900,35 @@ function exportSummary(role) {
 }
 
 function clearAll() {
-  if (!confirm('Clear everything on this device?')) return;
-  Object.values(keys).forEach(k => localStorage.removeItem(k));
-  seedDefaults(true); renderAll(); setRole('employer'); toast('Cleared');
+  if (!confirm('Clear everything on this device (all dates)?')) return;
+  localStorage.removeItem(STORE_KEY);
+  localStorage.removeItem(SELECTED_DATE_KEY);
+  selectedDate = toYMD(clockNow);
+  saveStore(emptyStore());
+  updateDateUI();
+  renderAll();
+  setRole('employer');
+  toast('Cleared');
 }
-function seedDefaults(force) {
-  if (force || !localStorage.getItem(keys.tasks)) {
-    save('tasks', [
-      { text: 'Check fridge for next 2–3 days', done: false },
-      { text: 'Prepare daily soup for Chacha', done: false },
-      { text: 'Report what is running low', done: false }
-    ]);
-  }
-  if (force || !localStorage.getItem(keys.medicine)) {
-    save('medicine', [
-      { text: '08:00 Chacha medicine', done: false },
-      { text: '12:00 Chacha medicine', done: false },
-      { text: '20:00 Chacha medicine', done: false }
-    ]);
-  }
-  if (force || !localStorage.getItem(keys.school)) saveSchool(defaultSchool());
-  if (force || !localStorage.getItem(keys.dinner)) saveMeals('dinner', emptyMeals());
-  if (force || !localStorage.getItem(keys.lunch)) saveMeals('lunch', emptyMeals());
-}
-function renderAll() {
-  renderSchool(); renderMeals('dinner'); renderMeals('lunch'); renderMedicine();
+
+function renderDay() {
+  renderMeals('dinner'); renderMeals('lunch'); renderMedicine();
   renderShopping(); renderTasks(); renderNotes(); renderRequests(); renderInstructions();
 }
-seedDefaults(false); renderAll(); setRole(localStorage.getItem(keys.role) || 'employer');
+function renderAll() {
+  updateDateUI();
+  renderSchool();
+  renderDay();
+}
+
+// Ensure store exists
+if (!localStorage.getItem(STORE_KEY)) {
+  const migrated = migrateFromV5();
+  if (!migrated) saveStore(emptyStore());
+}
+updateDateUI();
+renderAll();
+setRole(localStorage.getItem(ROLE_KEY) || 'employer');
 </script>
 </body>
 </html>
