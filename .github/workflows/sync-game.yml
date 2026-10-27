@@ -31,19 +31,20 @@ jobs:
           mkdir -p /tmp/game-src
           curl -fsSL https://codeload.github.com/elvisvans/liudeng-inn-web/tar.gz/refs/heads/main \
             | tar -xz -C /tmp/game-src --strip-components=1
-          # Remove old root game files but NEVER delete baystay/ (co-hosted site)
-          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name '.github' ! -name 'baystay' -exec rm -rf {} +
-          # Copy game tree excluding github metadata from source; never overwrite baystay/
+          # Remove old root game files but NEVER delete co-hosted sites
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name '.github' ! -name 'baystay' ! -name 'chacha-family-helper' -exec rm -rf {} +
+          # Copy game tree excluding github metadata from source; never overwrite co-hosted sites
           shopt -s dotglob nullglob
           for item in /tmp/game-src/*; do
             base=$(basename "$item")
             case "$base" in
-              .git|.github|README.md|baystay) ;;
+              .git|.github|README.md|baystay|chacha-family-helper) ;;
               *) cp -a "$item" ./ ;;
             esac
           done
           test -f index.html
           test -d baystay || echo "WARN: baystay/ missing after sync (should have been preserved)"
+          test -d chacha-family-helper || echo "WARN: chacha-family-helper/ missing after sync (should have been preserved)"
           ls -la | head -30
 
       - name: Commit and push
