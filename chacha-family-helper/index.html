@@ -431,9 +431,19 @@ function styleOpts(selected) {
 function renderMeals(kind) {
   const data = loadMeals(kind);
   const el = document.getElementById(kind === 'dinner' ? 'dinnerRows' : 'lunchRows');
-  const locked = schoolLocked(); // helper also shouldn't rewrite employer meal plan categories heavily; allow notes? Employer fills night — helper can read. Lock edits in helper mode.
+  const locked = schoolLocked();
   const dis = locked ? 'disabled' : '';
-  el.innerHTML = MEAL_CATS.map(cat => {
+  const cats = locked
+    ? MEAL_CATS.filter(cat => {
+        const row = data[cat] || { note: '', style: '' };
+        return !!(row.note || row.style);
+      })
+    : MEAL_CATS;
+  if (!cats.length) {
+    el.innerHTML = '<p class="sub">No meal plan from employer yet</p>';
+    return;
+  }
+  el.innerHTML = cats.map(cat => {
     const row = data[cat] || { note: '', style: '' };
     return `<div class="meal-row">
       <div class="meal-cat">${esc(cat)}</div>
