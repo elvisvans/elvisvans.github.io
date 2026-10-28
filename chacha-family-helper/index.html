@@ -254,9 +254,11 @@ textarea { min-height: 72px; resize: vertical; }
 .meal-row.editing { grid-template-columns: minmax(72px, 100px) 1fr auto; }
 .meal-cat-input { font-weight: 700; padding: 8px; }
 .meal-read { font-size: 0.88rem; padding-top: 8px; color: var(--text); }
-.med-form { margin-top: 8px; }
+.med-form { display: none; margin-top: 8px; padding: 8px; border: 1px dashed var(--line); border-radius: 14px; }
+body.mode-employer.med-editing .med-form { display: block; }
 .med-time-fields, .med-doses { display: flex; flex-wrap: wrap; gap: 6px; }
 .med-time-input { width: 84px; padding: 8px; }
+.med-time-read { font-size: 0.9rem; font-variant-numeric: tabular-nums; padding: 2px 0; }
 .med-item { align-items: flex-start; }
 .med-body { flex: 1; min-width: 0; }
 .med-label { font-weight: 700; }
@@ -389,7 +391,7 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
 <div class="card">
   <h3><span class="icon">💊</span> <span data-i18n="medTitle">Medicine time</span></h3>
   <div id="medicine"></div>
-  <div class="med-form">
+  <div class="med-form" id="medForm">
     <div class="form-grid two">
       <div>
         <label class="field" data-i18n="label">Label</label>
@@ -406,6 +408,7 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
     <input type="file" id="medPhoto" accept="image/*">
     <button type="button" class="btn btn-soft btn-block" data-i18n="addMed" onclick="addMed()">Add medicine</button>
   </div>
+  <div id="medActions"></div>
 </div>
 <datalist id="medTimePresets"></datalist>
 
@@ -530,6 +533,7 @@ function formatShort(ymd, loc) {
 let lang = localStorage.getItem(LANG_KEY) === 'zh' ? 'zh' : 'en';
 let selectedDate = localStorage.getItem(SELECTED_DATE_KEY) || toYMD(clockNow);
 let mealEdit = null;
+let medEdit = null;
 
 function defaultMealRows() {
   return MEAL_CATS.map(cat => ({ cat, note: '', style: '' }));
@@ -1082,6 +1086,10 @@ function updateDateUI() {
 }
 function setSelectedDate(ymd) {
   if (mealEdit && mealEdit.date !== ymd) mealEdit = null;
+  if (medEdit && medEdit.date !== ymd) {
+    medEdit = null;
+    resetMedForm();
+  }
   selectedDate = ymd;
   updateDateUI();
   renderDay();
@@ -1101,6 +1109,10 @@ function copyFromPreviousDay() {
   if (dayHasContent(curr)) {
     if (!confirm(t('confirmReplace', { date: formatShort(selectedDate), prev: formatShort(prev) }))) return;
   }
+  if (medEdit) {
+    medEdit = null;
+    resetMedForm();
+  }
   const cloned = deepClone(prevPlan);
   cloned.medicine = (cloned.medicine || []).map(m => {
     const n = normalizeMed(m);
@@ -1119,7 +1131,13 @@ function copyFromPreviousDay() {
 }
 
 function setRole(role) {
-  if (role !== 'employer') mealEdit = null;
+  if (role !== 'employer') {
+    mealEdit = null;
+    if (medEdit) {
+      medEdit = null;
+      resetMedForm();
+    }
+  }
   document.body.classList.toggle('mode-employer', role === 'employer');
   document.body.classList.toggle('mode-helper', role === 'helper');
   document.getElementById('btnEmployer').classList.toggle('active', role === 'employer');
@@ -1295,32 +1313,54 @@ function renderCheck(type, elId, empty, mapText) {
 function safePhotoSrc(photo) {
   return typeof photo === 'string' && /^data:image\/(?:jpeg|jpg|png|webp);base64,[a-z0-9+/=]+$/i.test(photo) ? photo : '';
 }
+function medEditing() {
+  return !!(medEdit && medEdit.date === selectedDate && document.body.classList.contains('mode-employer'));
+}
 function renderMedicine() {
   const el = document.getElementById('medicine');
   if (!el) return;
-  const list = (loadList('medicine') || []).map(normalizeMed).filter(Boolean);
-  if (!list.length) { el.innerHTML = `<p class="sub">${esc(t('noMeds'))}</p>`; return; }
-  el.innerHTML = list.map((m, i) => {
-    const src = safePhotoSrc(m.photo);
-    const doses = m.times.map((tm, ti) => `
-      <label class="dose">
-        <input type="checkbox" ${m.doneTimes[ti] ? 'checked' : ''} onchange="toggleMedDose(${i}, ${ti})">
-        <input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" value="${esc(tm)}" placeholder="08:15" onblur="setMedTime(${i}, ${ti}, this.value)">
-      </label>`).join('');
-    return `<div class="item med-item">
-      ${src ? `<img class="med-thumb" src="${src}" alt="">` : ''}
-      <div class="med-body">
-        <div class="med-label">${esc(m.label)}</div>
-        <div class="med-doses">${doses}</div>
-        <div class="med-meta">
-          <label class="field">${esc(t('timesPerDay'))}</label>
-          <input type="number" min="1" max="8" value="${m.timesPerDay}" onchange="setMedCount(${i}, this.value)">
-          <label class="med-photo-btn">${esc(t('photo'))}<input type="file" accept="image/*" onchange="setMedPhoto(${i}, this)"></label>
+  const editing = medEditing();
+  document.body.classList.toggle('med-editing', editing);
+  const list = editing ? medEdit.rows : medsNow();
+  if (!list.length) {
+    el.innerHTML = `<p class="sub">${esc(t('noMeds'))}</p>`;
+  } else {
+    el.innerHTML = list.map((m, i) => {
+      const src = safePhotoSrc(m.photo);
+      const doses = m.times.map((tm, ti) => {
+        const check = `<input type="checkbox" ${m.doneTimes[ti] ? 'checked' : ''} onchange="toggleMedDose(${i}, ${ti})">`;
+        if (!editing) return `<label class="dose">${check}<span class="med-time-read">${esc(tm)}</span></label>`;
+        return `<span class="dose">${check}<input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" value="${esc(tm)}" placeholder="08:15" onblur="setMedTime(${i}, ${ti}, this)"></span>`;
+      }).join('');
+      const meta = editing
+        ? `<div class="med-meta">
+            <label class="field">${esc(t('timesPerDay'))}</label>
+            <input type="number" min="1" max="8" value="${m.timesPerDay}" onchange="setMedCount(${i}, this.value)">
+            <label class="med-photo-btn">${esc(t('photo'))}<input type="file" accept="image/*" onchange="setMedPhoto(${i}, this)"></label>
+          </div>`
+        : '';
+      const del = editing ? `<button class="delete" type="button" onclick="removeMed(${i})">×</button>` : '';
+      return `<div class="item med-item">
+        ${src ? `<img class="med-thumb" src="${src}" alt="">` : ''}
+        <div class="med-body">
+          <div class="med-label">${esc(m.label)}</div>
+          <div class="med-doses">${doses}</div>
+          ${meta}
         </div>
-      </div>
-      <button class="delete" type="button" onclick="removeMed(${i})">×</button>
-    </div>`;
-  }).join('');
+        ${del}
+      </div>`;
+    }).join('');
+  }
+  const actions = document.getElementById('medActions');
+  if (!actions) return;
+  actions.innerHTML = editing
+    ? `<div class="meal-actions">
+        <button type="button" class="btn" onclick="confirmMedEdit()">${esc(t('confirm'))}</button>
+        <button type="button" class="btn btn-soft" onclick="cancelMedEdit()">${esc(t('cancel'))}</button>
+      </div>`
+    : (document.body.classList.contains('mode-employer')
+        ? `<div class="meal-actions"><button type="button" class="btn btn-soft" onclick="startMedEdit()">${esc(t('modify'))}</button></div>`
+        : '');
 }
 function renderShopping() {
   renderCheck('shopping', 'shopping', t('shopEmpty'), i =>
@@ -1408,23 +1448,69 @@ function saveMeds(list) {
   renderMedicine();
   renderWeekPlan();
 }
+function cloneMedRow(m) {
+  return {
+    label: m.label,
+    photo: m.photo,
+    timesPerDay: m.timesPerDay,
+    times: m.times.slice(),
+    doneTimes: m.doneTimes.slice()
+  };
+}
+function resetMedForm() {
+  const input = document.getElementById('medInput');
+  const photo = document.getElementById('medPhoto');
+  const count = document.getElementById('medCount');
+  const fields = document.getElementById('medTimeFields');
+  if (input) input.value = 'Chacha medicine';
+  if (photo) photo.value = '';
+  if (fields) fields.innerHTML = '';
+  if (count) count.value = '1';
+  syncMedTimeFields();
+}
+function startMedEdit() {
+  if (!document.body.classList.contains('mode-employer')) return;
+  medEdit = { date: selectedDate, rows: medsNow().map(cloneMedRow) };
+  resetMedForm();
+  renderMedicine();
+}
+function cancelMedEdit() {
+  medEdit = null;
+  resetMedForm();
+  renderMedicine();
+}
+function confirmMedEdit() {
+  if (!medEditing()) return;
+  const rows = medEdit.rows.map(normalizeMed).filter(Boolean);
+  medEdit = null;
+  resetMedForm();
+  saveMeds(rows);
+}
 function toggleMedDose(index, timeIndex) {
+  if (medEditing()) {
+    const m = medEdit.rows[index];
+    if (!m || timeIndex < 0 || timeIndex >= m.doneTimes.length) return;
+    m.doneTimes[timeIndex] = !m.doneTimes[timeIndex];
+    renderMedicine();
+    return;
+  }
   const list = medsNow();
   if (!list[index]) return;
   list[index].doneTimes[timeIndex] = !list[index].doneTimes[timeIndex];
   saveMeds(list);
 }
-function setMedTime(index, timeIndex, value) {
-  const norm = normalizeTime(value);
+function setMedTime(index, timeIndex, el) {
+  if (!medEditing()) return;
+  const norm = normalizeTime(el && el.value);
   if (!norm) { toast(t('medInvalid')); renderMedicine(); return; }
-  const list = medsNow();
-  if (!list[index]) return;
-  list[index].times[timeIndex] = norm;
-  saveMeds(list);
+  const m = medEdit.rows[index];
+  if (!m) return;
+  m.times[timeIndex] = norm;
+  el.value = norm;
 }
 function setMedCount(index, count) {
-  const list = medsNow();
-  const m = list[index];
+  if (!medEditing()) return;
+  const m = medEdit.rows[index];
   if (!m) return;
   count = Math.min(8, Math.max(1, Number(count) || 1));
   const suggested = suggestTimes(count);
@@ -1437,27 +1523,28 @@ function setMedCount(index, count) {
   m.timesPerDay = count;
   m.times = times;
   m.doneTimes = done;
-  saveMeds(list);
+  setTimeout(renderMedicine, 0);
 }
 async function setMedPhoto(index, input) {
+  if (!medEditing()) return;
   const file = input.files && input.files[0];
   if (!file) return;
   try {
     const photo = await compressImageFile(file);
-    const list = medsNow();
-    if (!list[index]) return;
-    list[index].photo = photo;
-    saveMeds(list);
+    if (!medEditing() || !medEdit.rows[index]) return;
+    medEdit.rows[index].photo = photo;
+    renderMedicine();
   } catch {
     toast(t('photoFail'));
   }
 }
 function removeMed(index) {
-  const list = medsNow();
-  list.splice(index, 1);
-  saveMeds(list);
+  if (!medEditing()) return;
+  medEdit.rows.splice(index, 1);
+  renderMedicine();
 }
 async function addMed() {
+  if (!medEditing()) return;
   const label = document.getElementById('medInput').value.trim() || 'Chacha medicine';
   const inputs = [...document.querySelectorAll('#medTimeFields input')];
   const times = inputs.map(el => normalizeTime(el.value));
@@ -1468,14 +1555,10 @@ async function addMed() {
     try { photo = await compressImageFile(file); }
     catch { toast(t('photoFail')); return; }
   }
-  const list = medsNow();
-  list.push({ label, photo, timesPerDay: times.length, times, doneTimes: times.map(() => false) });
-  document.getElementById('medInput').value = 'Chacha medicine';
-  document.getElementById('medPhoto').value = '';
-  document.getElementById('medTimeFields').innerHTML = '';
-  document.getElementById('medCount').value = '1';
-  syncMedTimeFields();
-  saveMeds(list);
+  if (!medEditing()) return;
+  medEdit.rows.push({ label, photo, timesPerDay: times.length, times, doneTimes: times.map(() => false) });
+  resetMedForm();
+  renderMedicine();
 }
 function addShop() {
   const text = document.getElementById('shopInput').value.trim();
@@ -1660,6 +1743,8 @@ function clearThisDay() {
   const label = formatShort(selectedDate);
   if (!confirm(t('confirmClear', { date: label }))) return;
   mealEdit = null;
+  medEdit = null;
+  resetMedForm();
   setDayPlan(selectedDate, emptyDayPlan());
   renderDay();
   renderWeekPlan();
