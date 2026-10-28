@@ -470,7 +470,7 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
     <div class="med-controls">
       <div class="med-field">
         <label class="field" for="medCount" data-i18n="timesPerDay">Times per day</label>
-        <input type="number" id="medCount" min="1" max="8" value="1" oninput="syncMedTimeFields()">
+        <input type="number" id="medCount" step="1" inputmode="numeric" autocomplete="off" value="1" data-count="1" oninput="onMedCountInput()" onchange="commitMedCount(false)" onblur="commitMedCount(true)">
       </div>
       <label class="med-file">
         <span class="field" data-i18n="photo">Photo</span>
@@ -1414,7 +1414,7 @@ function renderMedicine() {
         ? `<div class="med-controls">
             <div class="med-field">
               <label class="field" for="medCount${i}">${esc(t('timesPerDay'))}</label>
-              <input type="number" id="medCount${i}" min="1" max="8" value="${m.timesPerDay}" aria-label="${esc(t('timesPerDay'))}" onchange="setMedCount(${i}, this.value)">
+              <input type="number" id="medCount${i}" step="1" inputmode="numeric" autocomplete="off" value="${m.timesPerDay}" data-count="${m.timesPerDay}" aria-label="${esc(t('timesPerDay'))}" oninput="onMedRowCountInput(${i}, this)" onchange="commitMedRowCount(${i}, this, false)" onblur="commitMedRowCount(${i}, this, true)">
             </div>
             <label class="med-file">
               <span class="field">${esc(t('photo'))}</span>
@@ -1490,20 +1490,87 @@ function saveInstructions() {
   renderWeekPlan();
 }
 
-function syncMedTimeFields() {
+// Phone number keypads append instead of replacing, and they fire `input`
+// on every digit. Writing `.value` in that event (or clamping "" → 1 and
+// "14" → max 8) makes the next keystroke overflow and stick at 8. Native
+// min/max do the same snap, so the limit is applied only once typing settles.
+let medCountAdjust = 0;
+function previousMedCount(el) {
+  const n = Number(el && el.dataset.count);
+  return n >= 1 && n <= 8 ? n : null;
+}
+function typedMedCount(raw, previous) {
+  const text = String(raw ?? '').trim();
+  if (/^[1-8]$/.test(text)) return Number(text);
+  if (previous == null) return null;
+  const prev = String(previous);
+  if (text.length !== prev.length + 1) return null;
+  if (text.startsWith(prev) && /^[1-8]$/.test(text.slice(-1))) return Number(text.slice(-1));
+  if (text.endsWith(prev) && /^[1-8]$/.test(text[0])) return Number(text[0]);
+  return null;
+}
+function clampMedCount(raw) {
+  const n = parseInt(String(raw ?? '').trim(), 10);
+  if (!Number.isFinite(n)) return 1;
+  return Math.min(8, Math.max(1, n));
+}
+function syncMedTimeFields(count) {
   const wrap = document.getElementById('medTimeFields');
   const countEl = document.getElementById('medCount');
   if (!wrap || !countEl) return;
-  const count = Math.min(8, Math.max(1, Number(countEl.value) || 1));
-  countEl.value = count;
-  const existing = [...wrap.querySelectorAll('input')].map(el => el.value);
+  if (count == null) count = typedMedCount(countEl.value, previousMedCount(countEl));
+  if (count == null) return;
+  const inputs = [...wrap.querySelectorAll('input')];
+  if (inputs.length === count && wrap.dataset.lang === lang) return;
+  const existing = inputs.map(input => input.value);
   const suggested = suggestTimes(count);
   const timeLabel = esc(t('time'));
+  wrap.dataset.lang = lang;
   wrap.innerHTML = Array.from({ length: count }, (_, i) =>
     `<div class="med-dose med-dose-edit">
       <input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" autocomplete="off" spellcheck="false" placeholder="08:15" aria-label="${timeLabel}" value="${esc(existing[i] || suggested[i] || '')}">
     </div>`
   ).join('');
+}
+function finishMedCount(el, count) {
+  if (!el || !el.isConnected) return;
+  if (el.value !== String(count)) el.value = String(count);
+  el.dataset.count = String(count);
+  syncMedTimeFields(count);
+}
+function onMedCountInput() {
+  const el = document.getElementById('medCount');
+  if (!el) return;
+  const raw = String(el.value);
+  const count = typedMedCount(raw, previousMedCount(el));
+  if (count == null) return;
+  syncMedTimeFields(count);
+  if (raw.trim() === String(count)) {
+    el.dataset.count = String(count);
+    return;
+  }
+  const token = ++medCountAdjust;
+  setTimeout(() => {
+    if (token !== medCountAdjust || !el.isConnected || String(el.value) !== raw) return;
+    finishMedCount(el, count);
+  }, 0);
+}
+function commitMedCount(fromBlur) {
+  const el = document.getElementById('medCount');
+  if (!el) return;
+  const trimmed = String(el.value).trim();
+  if (!fromBlur && trimmed === '') return;
+  const typed = typedMedCount(trimmed, previousMedCount(el));
+  const count = typed != null ? typed : (fromBlur || /^\d$/.test(trimmed) ? clampMedCount(trimmed) : null);
+  if (count == null) return;
+  if (!fromBlur && trimmed !== String(count) && trimmed.length !== 1) return;
+  const token = ++medCountAdjust;
+  const apply = () => {
+    if (token !== medCountAdjust) return;
+    finishMedCount(el, count);
+  };
+  if (fromBlur || trimmed === String(count)) apply();
+  else setTimeout(apply, 0);
 }
 function previewAddMedPhoto(input) {
   const img = document.getElementById('medPhotoPreview');
@@ -1574,9 +1641,13 @@ function resetMedForm() {
     preview.hidden = true;
     preview.removeAttribute('src');
   }
+  medCountAdjust++;
   if (fields) fields.innerHTML = '';
-  if (count) count.value = '1';
-  syncMedTimeFields();
+  if (count) {
+    count.value = '1';
+    count.dataset.count = '1';
+  }
+  syncMedTimeFields(1);
 }
 function startMedEdit() {
   if (!document.body.classList.contains('mode-employer')) return;
@@ -1618,11 +1689,43 @@ function setMedTime(index, timeIndex, el) {
   m.times[timeIndex] = norm;
   el.value = norm;
 }
+function onMedRowCountInput(index, el) {
+  const raw = String(el.value);
+  const count = typedMedCount(raw, previousMedCount(el));
+  if (count == null) return;
+  if (Number(el.dataset.count) === count && raw.trim() === String(count)) return;
+  const token = ++medCountAdjust;
+  setTimeout(() => {
+    if (token !== medCountAdjust || !el.isConnected) return;
+    const now = String(el.value);
+    if (now !== raw && now.trim() !== String(count)) return;
+    setMedCount(index, count);
+  }, 0);
+}
+function commitMedRowCount(index, el, fromBlur) {
+  if (!el || !el.isConnected) return;
+  const trimmed = String(el.value).trim();
+  if (!fromBlur && trimmed === '') return;
+  const typed = typedMedCount(trimmed, previousMedCount(el));
+  const count = typed != null ? typed : (fromBlur || /^\d$/.test(trimmed) ? clampMedCount(trimmed) : null);
+  if (count == null) return;
+  if (!fromBlur && trimmed !== String(count) && trimmed.length !== 1) return;
+  medCountAdjust++;
+  setMedCount(index, count);
+}
 function setMedCount(index, count) {
   if (!medEditing()) return;
   const m = medEdit.rows[index];
   if (!m) return;
   count = Math.min(8, Math.max(1, Number(count) || 1));
+  if (m.timesPerDay === count && m.times.length === count) {
+    const input = document.getElementById('medCount' + index);
+    if (input && input.value !== String(count)) {
+      input.value = String(count);
+      input.dataset.count = String(count);
+    }
+    return;
+  }
   const suggested = suggestTimes(count);
   const times = m.times.slice(0, count);
   const done = m.doneTimes.slice(0, count);
