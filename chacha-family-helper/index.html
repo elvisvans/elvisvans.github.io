@@ -291,11 +291,10 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
 </header>
 
 <section class="hero">
-  <h2>Family helper board</h2>
-  <p id="heroCopy">Fill tonight’s plan for Lenne, then copy to WhatsApp.</p>
+  <h2>family help board</h2>
   <div class="role-bar">
-    <button type="button" id="btnEmployer" class="active" onclick="setRole('employer')">Employer · night</button>
-    <button type="button" id="btnHelper" onclick="setRole('helper')">Helper · day</button>
+    <button type="button" id="btnEmployer" class="active" onclick="setRole('employer')">Sir/Maam</button>
+    <button type="button" id="btnHelper" onclick="setRole('helper')">Lenne</button>
   </div>
 </section>
 
@@ -880,9 +879,6 @@ function setRole(role) {
   document.getElementById('btnEmployer').classList.toggle('active', role === 'employer');
   document.getElementById('btnHelper').classList.toggle('active', role === 'helper');
   localStorage.setItem(ROLE_KEY, role);
-  document.getElementById('heroCopy').textContent = role === 'employer'
-    ? 'Fill tonight’s plan for Lenne, then copy to WhatsApp.'
-    : 'Tick what’s done, add fridge notes and requests, then copy a day update.';
   document.getElementById('roleHint').textContent = role === 'employer'
     ? 'Night plan: pick a date, fill meals, school pickup, shopping, medicine, and instructions.'
     : 'Day update: pick a date, tick medicine/shopping/tasks, fridge notes, and requests for employer.';
