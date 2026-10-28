@@ -36,6 +36,7 @@
   --primary-fg: #fff;
   --sync-ok: #2f7d4a;
   --sync-wait: #a97812;
+  --today-row: #f6e4d0;
 }
 body.mode-helper {
   --bg: #322b24;
@@ -65,6 +66,7 @@ body.mode-helper {
   --primary-fg: #fff8f0;
   --sync-ok: #8dcea8;
   --sync-wait: #e2b15a;
+  --today-row: #6a5344;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -227,12 +229,45 @@ textarea { min-height: 72px; resize: vertical; }
   color: var(--muted); padding: 2px 3px; font-weight: 700;
 }
 .school-table td { padding: 2px; vertical-align: middle; }
-.school-table th:first-child, .school-table td:first-child { width: 18%; }
+.school-table th:first-child, .school-table td:first-child { width: 26%; }
 .school-table select { font-size: 0.76rem; padding: 7px 22px 7px 7px; background-position: right 7px center; }
+.school-table tr.is-today td { background: var(--today-row); }
+.school-table tr.is-today td:first-child { box-shadow: inset 3px 0 0 var(--primary); border-radius: 8px 0 0 8px; }
+.school-table tr.is-today td:last-child { border-radius: 0 8px 8px 0; }
+.school-table tr.is-today select { background-color: var(--today-row); border-color: var(--primary); }
+.school-table tr.is-selected:not(.is-today) td:first-child { box-shadow: inset 3px 0 0 var(--brown); }
+.day-cell { line-height: 1.15; }
+.day-cell .badges { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 2px; }
 .badge {
   display: inline-block; background: var(--primary); color: var(--primary-fg); font-size: 0.6rem;
-  padding: 1px 5px; border-radius: 999px; margin-left: 2px; font-weight: 700;
+  padding: 1px 5px; border-radius: 999px; margin-left: 0; font-weight: 700;
 }
+.badge-today { background: #2f7d4a; color: #fff; }
+.lang-bar { display: flex; gap: 6px; margin: 0 0 8px; }
+.lang-bar button {
+  border: none; border-radius: 999px; padding: 5px 10px; cursor: pointer;
+  font-weight: 700; font-size: 0.75rem; background: var(--btn-soft-bg); color: var(--btn-soft-fg);
+}
+.lang-bar button.active { background: var(--primary); color: var(--primary-fg); }
+.meal-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.meal-actions .btn { margin-top: 0; }
+.meal-row.editing { grid-template-columns: minmax(72px, 100px) 1fr auto; }
+.meal-cat-input { font-weight: 700; padding: 8px; }
+.meal-read { font-size: 0.88rem; padding-top: 8px; color: var(--text); }
+.med-form { margin-top: 8px; }
+.med-time-fields, .med-doses { display: flex; flex-wrap: wrap; gap: 6px; }
+.med-time-input { width: 84px; padding: 8px; }
+.med-item { align-items: flex-start; }
+.med-body { flex: 1; min-width: 0; }
+.med-label { font-weight: 700; }
+.med-thumb { width: 44px; height: 44px; object-fit: cover; border-radius: 10px; flex-shrink: 0; background: var(--soft); }
+.dose { display: inline-flex; align-items: center; gap: 4px; }
+.med-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
+.med-meta input[type="number"] { width: 72px; }
+.med-photo-btn { font-size: 0.75rem; font-weight: 700; color: var(--brown); cursor: pointer; }
+.med-photo-btn input { display: block; margin-top: 3px; font-size: 0.72rem; max-width: 180px; }
+.poop-row { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+.week-day .wd-summary.wa { white-space: pre-wrap; color: var(--text); font-size: 0.75rem; line-height: 1.4; }
 .meal-rows { display: grid; gap: 6px; }
 .meal-row {
   display: grid; grid-template-columns: 88px 1fr; gap: 6px; align-items: start;
@@ -283,6 +318,10 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
 </head>
 <body class="mode-employer">
 <header>
+  <div class="lang-bar" role="group" aria-label="Language">
+    <button type="button" id="btnLangEn" class="active" onclick="setLang('en')">English</button>
+    <button type="button" id="btnLangZh" onclick="setLang('zh')">中文</button>
+  </div>
   <div class="brand">chacha</div>
   <div class="greet" id="greet">Good evening</div>
   <div id="syncStatus" class="sync-status syncing" role="status" aria-live="polite">
@@ -291,141 +330,148 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
 </header>
 
 <section class="hero">
-  <h2>family help board</h2>
+  <h2 data-i18n="title">family help board</h2>
   <div class="role-bar">
-    <button type="button" id="btnEmployer" class="active" onclick="setRole('employer')">Sir/Maam</button>
-    <button type="button" id="btnHelper" onclick="setRole('helper')">Lenne</button>
+    <button type="button" id="btnEmployer" class="active" onclick="setRole('employer')" data-i18n="roleEmployer">Sir/Maam</button>
+    <button type="button" id="btnHelper" onclick="setRole('helper')" data-i18n="roleHelper">Lenne</button>
   </div>
 </section>
 
 <div class="card" style="margin-top:0">
   <div class="date-bar">
-    <button type="button" class="date-nav" onclick="shiftDay(-1)" aria-label="Previous day">‹</button>
+    <button type="button" class="date-nav" onclick="shiftDay(-1)" data-i18n-aria="prevDay" aria-label="Previous day">‹</button>
     <div class="date-main">
       <div class="date-label" id="selectedDateLabel">Today</div>
-      <div class="date-sub" id="selectedDateSub">Plan for this day</div>
     </div>
-    <button type="button" class="date-nav" onclick="shiftDay(1)" aria-label="Next day">›</button>
+    <button type="button" class="date-nav" onclick="shiftDay(1)" data-i18n-aria="nextDay" aria-label="Next day">›</button>
   </div>
   <div class="date-actions">
     <input type="date" id="datePicker" onchange="onDatePicked()">
-    <button type="button" class="btn btn-soft btn-block employer-only" onclick="copyFromPreviousDay()">Copy from previous day</button>
+    <button type="button" class="btn btn-soft btn-block employer-only" onclick="copyFromPreviousDay()" data-i18n="copyPrev">Copy from previous day</button>
   </div>
 </div>
 
-<p class="section-title">Week plan</p>
+<p class="section-title"><span data-i18n="weekPlan">Week plan</span></p>
 <div class="card">
-  <h3><span class="icon">📆</span> This week <span class="sub" id="weekRangeHint"></span></h3>
+  <h3><span class="icon">📆</span> <span data-i18n="thisWeek">This week</span> <span class="sub" id="weekRangeHint"></span></h3>
   <div class="week-plan" id="weekPlan"></div>
 </div>
 
-<p class="hint" id="roleHint">Night plan: meals, school pickup, shopping, medicine, and instructions.</p>
-
-<p class="section-title">School (weekly)</p>
+<p class="section-title"><span data-i18n="schoolWeekly">School (weekly)</span></p>
 <div class="card">
-  <h3><span class="icon">🏫</span> School pickup <span class="sub">pick up 1 · pick up 2 · one time</span></h3>
-  <p class="locked-note helper-only">Helper view only — pickup who &amp; time are set by employer.</p>
+  <h3><span class="icon">🏫</span> <span data-i18n="schoolPickup">School pickup</span></h3>
   <div class="today-pickup" id="todayPickup"></div>
   <table class="school-table">
     <thead>
       <tr>
-        <th>Day</th>
-        <th>Pick up 1</th>
-        <th>Pick up 2</th>
-        <th>Time</th>
+        <th data-i18n="day">Day</th>
+        <th data-i18n="pickup1">Pick up 1</th>
+        <th data-i18n="pickup2">Pick up 2</th>
+        <th data-i18n="time">Time</th>
       </tr>
     </thead>
     <tbody id="schoolBody"></tbody>
   </table>
 </div>
 
-<p class="section-title">Meals <span class="sub" id="mealsDateHint"></span></p>
+<p class="section-title"><span data-i18n="meals">Meals</span> <span class="sub" id="mealsDateHint"></span></p>
 <div class="card">
-  <h3><span class="icon">🍽️</span> Tonight’s dinner</h3>
-  <p class="sub" style="margin-bottom:6px">Left = category (fixed). Right = note / style.</p>
+  <h3><span class="icon">🍽️</span> <span data-i18n="dinnerTitle">Tonight’s dinner</span></h3>
   <div class="meal-rows" id="dinnerRows"></div>
 </div>
 
 <div class="card">
-  <h3><span class="icon">🥗</span> Lunch plan</h3>
-  <p class="sub" style="margin-bottom:6px">Left = category (fixed). Right = note / style.</p>
+  <h3><span class="icon">🥗</span> <span data-i18n="lunchTitle">Lunch plan</span></h3>
   <div class="meal-rows" id="lunchRows"></div>
 </div>
 
-<p class="section-title">Care &amp; shopping</p>
+<p class="section-title"><span data-i18n="care">Care &amp; shopping</span></p>
 <div class="card">
-  <h3><span class="icon">💊</span> Medicine time</h3>
+  <h3><span class="icon">💊</span> <span data-i18n="medTitle">Medicine time</span></h3>
   <div id="medicine"></div>
-  <div class="form-grid two" style="margin-top:6px">
-    <div>
-      <label class="field">Time</label>
-      <select id="medTime"></select>
+  <div class="med-form">
+    <div class="form-grid two">
+      <div>
+        <label class="field" data-i18n="label">Label</label>
+        <input type="text" id="medInput" value="Chacha medicine">
+      </div>
+      <div>
+        <label class="field" data-i18n="timesPerDay">Times per day</label>
+        <input type="number" id="medCount" min="1" max="8" value="1" oninput="syncMedTimeFields()">
+      </div>
     </div>
-    <div>
-      <label class="field">Label</label>
-      <input type="text" id="medInput" placeholder="Chacha medicine" value="Chacha medicine">
-    </div>
+    <label class="field" data-i18n="time">Time</label>
+    <div id="medTimeFields" class="med-time-fields"></div>
+    <label class="field" data-i18n="photo">Photo</label>
+    <input type="file" id="medPhoto" accept="image/*">
+    <button type="button" class="btn btn-soft btn-block" data-i18n="addMed" onclick="addMed()">Add medicine</button>
   </div>
-  <button type="button" class="btn btn-soft btn-block" onclick="addMed()">Add medicine</button>
+</div>
+<datalist id="medTimePresets"></datalist>
+
+<div class="card">
+  <label class="poop-row">
+    <input type="checkbox" id="poopCheck" onchange="savePoop(this.checked)">
+    <span data-i18n="poopLabel">大便 / BB poop today</span>
+  </label>
 </div>
 
 <div class="card">
-  <h3><span class="icon">🛒</span> Shopping list</h3>
+  <h3><span class="icon">🛒</span> <span data-i18n="shopTitle">Shopping list</span></h3>
   <div id="shopping"></div>
   <div class="form-grid two" style="margin-top:6px">
     <div>
-      <label class="field">Category</label>
+      <label class="field" data-i18n="category">Category</label>
       <select id="shopCat"></select>
     </div>
     <div>
-      <label class="field">Item</label>
-      <input type="text" id="shopInput" placeholder="e.g. Pork 300g @ Royal">
+      <label class="field" data-i18n="item">Item</label>
+      <input type="text" id="shopInput" data-i18n-ph="shopPh" placeholder="Item">
     </div>
   </div>
-  <button type="button" class="btn btn-soft btn-block" onclick="addShop()">Add item</button>
+  <button type="button" class="btn btn-soft btn-block" onclick="addShop()" data-i18n="addItem">Add item</button>
 </div>
 
 <div class="card">
-  <h3><span class="icon">✅</span> Daily tasks</h3>
+  <h3><span class="icon">✅</span> <span data-i18n="tasksTitle">Daily tasks</span></h3>
   <div id="tasks"></div>
   <div class="form-grid" style="margin-top:6px">
-    <input type="text" id="taskInput" placeholder="e.g. Check fridge for next 2–3 days">
-    <button type="button" class="btn btn-soft" onclick="addTask()">Add task</button>
+    <input type="text" id="taskInput" data-i18n-ph="taskPh" placeholder="Add a task">
+    <button type="button" class="btn btn-soft" onclick="addTask()" data-i18n="addTask">Add task</button>
   </div>
 </div>
 
 <div class="card employer-only">
-  <h3><span class="icon">📌</span> Instructions for Lenne</h3>
-  <textarea id="instructions" placeholder="Write clear night / tomorrow instructions…" oninput="saveInstructions()"></textarea>
+  <h3><span class="icon">📌</span> <span data-i18n="instrEmployer">Instructions for Lenne</span></h3>
+  <textarea id="instructions" oninput="saveInstructions()"></textarea>
 </div>
 <div class="card helper-only">
-  <h3><span class="icon">📌</span> Instructions from employer</h3>
+  <h3><span class="icon">📌</span> <span data-i18n="instrHelper">Instructions from employer</span></h3>
   <div id="instructionsRead" class="note-item" style="display:block;white-space:pre-wrap"></div>
 </div>
 
 <div class="card">
-  <h3><span class="icon">📝</span> Notes / fridge</h3>
+  <h3><span class="icon">📝</span> <span data-i18n="notesTitle">Notes / fridge</span></h3>
   <div id="notes"></div>
   <div class="form-grid" style="margin-top:6px">
-    <input type="text" id="noteInput" placeholder="e.g. Half fish in freezer">
-    <button type="button" class="btn btn-soft" onclick="addNote()">Add note</button>
+    <input type="text" id="noteInput" data-i18n-ph="notePh" placeholder="Fridge note">
+    <button type="button" class="btn btn-soft" onclick="addNote()" data-i18n="addNote">Add note</button>
   </div>
 </div>
 
 <div class="card">
-  <h3><span class="icon">🙋</span> Helper updates &amp; requests</h3>
+  <h3><span class="icon">🙋</span> <span data-i18n="reqTitle">Helper updates &amp; requests</span></h3>
   <div id="requests"></div>
   <div class="form-grid helper-only" style="margin-top:6px">
-    <input type="text" id="reqInput" placeholder="e.g. Need more apples; soup done">
-    <button type="button" class="btn btn-soft" onclick="addRequest()">Add update</button>
+    <input type="text" id="reqInput" data-i18n-ph="reqPh" placeholder="Update">
+    <button type="button" class="btn btn-soft" onclick="addRequest()" data-i18n="addUpdate">Add update</button>
   </div>
-  <p class="employer-only sub" style="margin-top:6px">Tick when you have seen / handled an update.</p>
 </div>
 
-<button class="btn btn-block employer-only" type="button" onclick="exportSummary('employer')">Copy night plan for WhatsApp</button>
-<button class="btn btn-block helper-only" type="button" onclick="exportSummary('helper')">Copy day update for WhatsApp</button>
-<button class="btn btn-soft btn-block" type="button" onclick="clearThisDay()">Clear this day</button>
-<footer>Shared family board · copy to WhatsApp</footer>
+<button class="btn btn-block employer-only" type="button" onclick="exportSummary('employer')" data-i18n="copyNight">Copy night plan for WhatsApp</button>
+<button class="btn btn-block helper-only" type="button" onclick="exportSummary('helper')" data-i18n="copyDay">Copy day update for WhatsApp</button>
+<button class="btn btn-soft btn-block" type="button" onclick="clearThisDay()" data-i18n="clearDay">Clear this day</button>
+<footer data-i18n="footer">Shared family board</footer>
 <div class="toast" id="toast"></div>
 
 <script src="https://www.gstatic.com/firebasejs/12.9.0/firebase-app-compat.js"></script>
@@ -445,6 +491,7 @@ const DAYS = [
 
 const STORE_KEY = 'chacha_board_v6';
 const ROLE_KEY = 'chacha_role_v6';
+const LANG_KEY = 'chacha_lang_v6';
 const SELECTED_DATE_KEY = 'chacha_selected_date_v6';
 const OLD_KEYS = {
   dinner: 'chacha_dinner_v5', lunch: 'chacha_lunch_v5', medicine: 'chacha_medicine_v5',
@@ -472,49 +519,38 @@ function addDaysYMD(ymd, delta) {
 function weekdayKeyFromYMD(ymd) {
   return ['sun','mon','tue','wed','thu','fri','sat'][parseYMD(ymd).getDay()];
 }
-function formatLong(ymd) {
-  return parseYMD(ymd).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+function uiLocale() { return lang === 'zh' ? 'zh-HK' : 'en-GB'; }
+function formatLong(ymd, loc) {
+  return parseYMD(ymd).toLocaleDateString(loc || uiLocale(), { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 }
-function formatShort(ymd) {
-  return parseYMD(ymd).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+function formatShort(ymd, loc) {
+  return parseYMD(ymd).toLocaleDateString(loc || uiLocale(), { weekday: 'short', day: 'numeric', month: 'short' });
 }
 
+let lang = localStorage.getItem(LANG_KEY) === 'zh' ? 'zh' : 'en';
 let selectedDate = localStorage.getItem(SELECTED_DATE_KEY) || toYMD(clockNow);
+let mealEdit = null;
 
-document.getElementById('greet').textContent =
-  (hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening') +
-  ' · ' + clockNow.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
-
-function fillSelect(id, options, selected) {
-  const el = document.getElementById(id);
-  el.innerHTML = options.map(o => `<option value="${o}" ${o===selected?'selected':''}>${o || '—'}</option>`).join('');
-}
-fillSelect('shopCat', SHOP_CATS, 'Vege');
-fillSelect('medTime', MED_TIMES, '08:00');
-
-function emptyMeals() {
-  const o = {};
-  MEAL_CATS.forEach(c => { o[c] = { note: '', style: '' }; });
-  return o;
+function defaultMealRows() {
+  return MEAL_CATS.map(cat => ({ cat, note: '', style: '' }));
 }
 function emptyDayPlan() {
   return {
-    dinner: emptyMeals(),
-    lunch: emptyMeals(),
-    medicine: [
-      { text: '08:00 Chacha medicine', done: false },
-      { text: '12:00 Chacha medicine', done: false },
-      { text: '20:00 Chacha medicine', done: false }
-    ],
+    dinner: defaultMealRows(),
+    lunch: defaultMealRows(),
+    medicine: [{
+      label: 'Chacha medicine',
+      photo: '',
+      timesPerDay: 3,
+      times: ['08:00', '12:00', '20:00'],
+      doneTimes: [false, false, false]
+    }],
     shopping: [],
-    tasks: [
-      { text: 'Check fridge for next 2–3 days', done: false },
-      { text: 'Prepare daily soup for Chacha', done: false },
-      { text: 'Report what is running low', done: false }
-    ],
+    tasks: [],
     notes: [],
     instructions: '',
-    requests: []
+    requests: [],
+    poop: false
   };
 }
 function defaultSchool() {
@@ -531,12 +567,73 @@ function emptyStore() {
 function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
 
 function normalizeMeals(raw) {
-  const base = emptyMeals();
-  if (!raw || typeof raw !== 'object') return base;
-  MEAL_CATS.forEach(c => {
-    if (raw[c]) base[c] = { note: raw[c].note || '', style: raw[c].style || '' };
-  });
-  return base;
+  if (raw == null) return defaultMealRows();
+  if (Array.isArray(raw)) {
+    return raw.map(r => ({
+      cat: String((r && (r.cat || r.category)) || '').trim(),
+      note: (r && r.note) || '',
+      style: (r && r.style) || ''
+    })).filter(r => r.cat);
+  }
+  if (typeof raw === 'object') {
+    const rows = [];
+    const seen = new Set();
+    MEAL_CATS.forEach(cat => {
+      seen.add(cat);
+      const src = raw[cat] || {};
+      rows.push({ cat, note: src.note || '', style: src.style || '' });
+    });
+    Object.keys(raw).forEach(cat => {
+      if (seen.has(cat) || !raw[cat] || typeof raw[cat] !== 'object') return;
+      rows.push({ cat, note: raw[cat].note || '', style: raw[cat].style || '' });
+    });
+    return rows;
+  }
+  return defaultMealRows();
+}
+function normalizeTime(value) {
+  const m = String(value || '').trim().match(/^(\d{1,2})\s*:\s*(\d{2})$/);
+  if (!m) return '';
+  const h = Number(m[1]);
+  const min = Number(m[2]);
+  if (h > 23 || min > 59) return '';
+  return String(h).padStart(2, '0') + ':' + String(min).padStart(2, '0');
+}
+function suggestTimes(n) {
+  const table = {
+    1: ['08:00'],
+    2: ['08:00', '20:00'],
+    3: ['08:00', '12:00', '20:00'],
+    4: ['08:00', '12:00', '16:00', '20:00'],
+    5: ['08:00', '12:00', '16:00', '18:00', '20:00'],
+    6: ['07:00', '10:00', '12:00', '16:00', '18:00', '20:00'],
+    7: ['07:00', '09:00', '11:00', '13:00', '16:00', '18:00', '20:00'],
+    8: ['07:00', '09:00', '11:00', '13:00', '15:00', '17:00', '19:00', '21:00']
+  };
+  const count = Math.min(8, Math.max(1, Number(n) || 1));
+  return (table[count] || table[3]).slice(0, count);
+}
+function normalizeMed(item) {
+  if (!item || typeof item !== 'object') return null;
+  if (Array.isArray(item.times) || item.label) {
+    let count = Number(item.timesPerDay) || (item.times || []).length || 1;
+    count = Math.min(8, Math.max(1, count));
+    let times = (item.times || []).map(normalizeTime);
+    const suggested = suggestTimes(count);
+    while (times.length < count) times.push(suggested[times.length] || '');
+    times = times.slice(0, count);
+    let doneTimes = Array.isArray(item.doneTimes) ? item.doneTimes.map(Boolean) : [];
+    if (!doneTimes.length && item.done) doneTimes = times.map(() => true);
+    while (doneTimes.length < count) doneTimes.push(false);
+    doneTimes = doneTimes.slice(0, count);
+    const photo = typeof item.photo === 'string' && item.photo.startsWith('data:image/') && item.photo.length < 500000 ? item.photo : '';
+    return { label: String(item.label || 'Medicine').trim() || 'Medicine', photo, timesPerDay: count, times, doneTimes };
+  }
+  const text = String(item.text || '');
+  const m = text.match(/^(\d{1,2}:\d{2})\s+(.*)$/);
+  const time = m ? (normalizeTime(m[1]) || m[1]) : '';
+  const label = (m ? m[2] : text).trim() || 'Medicine';
+  return { label, photo: '', timesPerDay: 1, times: [time || '08:00'], doneTimes: [!!item.done] };
 }
 function normalizeSchoolDay(row) {
   row = row || {};
@@ -555,12 +652,13 @@ function normalizeDayPlan(raw) {
   return {
     dinner: normalizeMeals(raw.dinner),
     lunch: normalizeMeals(raw.lunch),
-    medicine: Array.isArray(raw.medicine) ? raw.medicine : base.medicine,
+    medicine: Array.isArray(raw.medicine) ? raw.medicine.map(normalizeMed).filter(Boolean) : base.medicine.map(normalizeMed),
     shopping: Array.isArray(raw.shopping) ? raw.shopping : [],
-    tasks: Array.isArray(raw.tasks) ? raw.tasks : base.tasks,
+    tasks: Array.isArray(raw.tasks) ? raw.tasks : [],
     notes: Array.isArray(raw.notes) ? raw.notes : [],
     instructions: typeof raw.instructions === 'string' ? raw.instructions : '',
-    requests: Array.isArray(raw.requests) ? raw.requests : []
+    requests: Array.isArray(raw.requests) ? raw.requests : [],
+    poop: raw.poop === true
   };
 }
 
@@ -593,7 +691,7 @@ const SYNC_DEBOUNCE_MS = 400;
 function setSyncStatus(state) {
   const el = document.getElementById('syncStatus');
   if (!el) return;
-  const label = state === 'synced' ? 'Synced' : state === 'offline' ? 'Offline' : 'Syncing…';
+  const label = state === 'synced' ? t('synced') : state === 'offline' ? t('offline') : t('syncing');
   el.classList.remove('synced', 'syncing', 'offline');
   el.classList.add(state === 'synced' ? 'synced' : state === 'offline' ? 'offline' : 'syncing');
   const labelEl = el.querySelector('.label');
@@ -803,22 +901,37 @@ function updateDayPlan(mutator) {
   setDayPlan(selectedDate, plan);
 }
 
+function isDefaultMedicine(list) {
+  const meds = (list || []).map(normalizeMed).filter(Boolean);
+  if (!meds.length) return true;
+  const plain = m => !m.photo && m.doneTimes.every(d => !d);
+  if (meds.length === 1) {
+    const m = meds[0];
+    return plain(m) && m.label === 'Chacha medicine' && m.times.join(',') === '08:00,12:00,20:00';
+  }
+  if (meds.length === 3) {
+    const expect = [['08:00', 'Chacha medicine'], ['12:00', 'Chacha medicine'], ['20:00', 'Chacha medicine']];
+    return meds.every((m, i) => plain(m) && m.times.length === 1 && m.times[0] === expect[i][0] && m.label === expect[i][1]);
+  }
+  return false;
+}
+function isDefaultTasks(tasks) {
+  if (!tasks || !tasks.length) return true;
+  const defaults = ['Check fridge for next 2–3 days', 'Prepare daily soup for Chacha', 'Report what is running low'];
+  if (tasks.length !== defaults.length) return false;
+  return tasks.every((task, i) => task && task.text === defaults[i] && !task.done);
+}
 function dayHasContent(plan) {
-  const mealFilled = (meals) => MEAL_CATS.some(c => meals[c] && (meals[c].note || meals[c].style));
-  const defaultMed = new Set(['08:00 Chacha medicine', '12:00 Chacha medicine', '20:00 Chacha medicine']);
-  const defaultTasks = new Set([
-    'Check fridge for next 2–3 days',
-    'Prepare daily soup for Chacha',
-    'Report what is running low'
-  ]);
-  const medCustom = (plan.medicine || []).some(m => m.done || !defaultMed.has(m.text));
-  const taskCustom = (plan.tasks || []).some(t => t.done || !defaultTasks.has(t.text));
+  if (!plan) return false;
+  const mealFilled = meals => normalizeMeals(meals).some(r => r.note || r.style);
   return mealFilled(plan.dinner) || mealFilled(plan.lunch) ||
     (plan.shopping && plan.shopping.length) ||
     (plan.notes && plan.notes.length) ||
     (plan.requests && plan.requests.length) ||
-    !!(plan.instructions && plan.instructions.trim()) ||
-    medCustom || taskCustom;
+    !!(plan.instructions && String(plan.instructions).trim()) ||
+    !isDefaultMedicine(plan.medicine) ||
+    !isDefaultTasks(plan.tasks) ||
+    plan.poop === true;
 }
 
 function esc(s) {
@@ -830,18 +943,145 @@ function toast(msg) {
   setTimeout(() => el.classList.remove('show'), 1800);
 }
 
+const I18N = {
+  en: {
+    title: 'family help board', roleEmployer: 'Sir/Maam', roleHelper: 'Lenne',
+    weekPlan: 'Week plan', thisWeek: 'This week', schoolWeekly: 'School (weekly)', schoolPickup: 'School pickup',
+    meals: 'Meals', dinnerTitle: 'Tonight’s dinner', lunchTitle: 'Lunch plan', care: 'Care & shopping',
+    medTitle: 'Medicine time', shopTitle: 'Shopping list', tasksTitle: 'Daily tasks',
+    instrEmployer: 'Instructions for Lenne', instrHelper: 'Instructions from employer',
+    notesTitle: 'Notes / fridge', reqTitle: 'Helper updates & requests',
+    copyNight: 'Copy night plan for WhatsApp', copyDay: 'Copy day update for WhatsApp',
+    clearDay: 'Clear this day', copyPrev: 'Copy from previous day',
+    addMed: 'Add medicine', addItem: 'Add item', addTask: 'Add task', addNote: 'Add note', addUpdate: 'Add update',
+    modify: 'Modify', confirm: 'Confirm', cancel: 'Cancel', addCategory: 'Add category',
+    label: 'Label', timesPerDay: 'Times per day', photo: 'Photo', time: 'Time', category: 'Category', item: 'Item',
+    pickup1: 'Pick up 1', pickup2: 'Pick up 2', day: 'Day', today: 'Today', selected: 'Selected', notSet: 'Not set',
+    noPlan: 'No plan yet', noMeals: 'No meal plan from employer yet', noMeds: 'No medicine reminders',
+    shopEmpty: 'Shopping list empty', noTasks: 'No tasks', noNotes: 'No notes', noReqs: 'No helper updates yet',
+    noInstr: 'No instructions from employer yet.', poopLabel: '大便 / BB poop today',
+    taskPh: 'Add a task', shopPh: 'Item', notePh: 'Fridge note', reqPh: 'Update', styleNone: 'Style',
+    goodMorning: 'Good morning', goodAfternoon: 'Good afternoon', goodEvening: 'Good evening',
+    syncing: 'Syncing…', synced: 'Synced', offline: 'Offline', prevDay: 'Previous day', nextDay: 'Next day',
+    footer: 'Shared family board', toastNight: 'Night plan copied', toastDay: 'Day update copied',
+    toastCopied: 'Copied from {date}', toastCleared: 'Cleared this day',
+    confirmReplace: 'Replace {date} with a copy of {prev}?',
+    confirmClear: 'Clear the plan for {date}? School pickup (weekly) stays.',
+    medInvalid: 'Enter a time like 8:15', photoFail: 'Could not read that photo',
+    mon: 'Mon', tue: 'Tue', wed: 'Wed', thu: 'Thu', fri: 'Fri', sat: 'Sat', sun: 'Sun'
+  },
+  zh: {
+    title: '家庭幫手板', roleEmployer: '先生/太太', roleHelper: 'Lenne',
+    weekPlan: '本週安排', thisWeek: '本週', schoolWeekly: '返學（每週）', schoolPickup: '返學接送',
+    meals: '餐', dinnerTitle: '今晚晚餐', lunchTitle: '午餐', care: '護理與購物',
+    medTitle: '食藥時間', shopTitle: '購物清單', tasksTitle: '每日事項',
+    instrEmployer: '給 Lenne 的指示', instrHelper: '僱主指示',
+    notesTitle: '雪櫃備註', reqTitle: '幫手更新',
+    copyNight: '複製晚間安排到 WhatsApp', copyDay: '複製今日更新到 WhatsApp',
+    clearDay: '清除這一天', copyPrev: '複製前一天',
+    addMed: '加藥', addItem: '加項目', addTask: '加事項', addNote: '加備註', addUpdate: '加更新',
+    modify: '修改', confirm: '確定', cancel: '取消', addCategory: '新增種類',
+    label: '名稱', timesPerDay: '每日次數', photo: '相片', time: '時間', category: '類別', item: '項目',
+    pickup1: '接送 1', pickup2: '接送 2', day: '日', today: '今天', selected: '已選', notSet: '未設定',
+    noPlan: '尚未安排', noMeals: '尚未有餐單', noMeds: '沒有藥物',
+    shopEmpty: '購物清單是空的', noTasks: '沒有事項', noNotes: '沒有備註', noReqs: '尚未有更新',
+    noInstr: '尚未有指示。', poopLabel: '大便 / BB poop today',
+    taskPh: '加一項事項', shopPh: '項目', notePh: '雪櫃備註', reqPh: '更新', styleNone: '做法',
+    goodMorning: '早晨', goodAfternoon: '午安', goodEvening: '晚安',
+    syncing: '同步中…', synced: '已同步', offline: '離線', prevDay: '前一天', nextDay: '下一天',
+    footer: '家庭共用板', toastNight: '已複製晚間安排', toastDay: '已複製今日更新',
+    toastCopied: '已從 {date} 複製', toastCleared: '已清除這一天',
+    confirmReplace: '用 {prev} 覆蓋 {date}？',
+    confirmClear: '清除 {date} 的安排？每週返學接送會保留。',
+    medInvalid: '請輸入時間，例如 8:15', photoFail: '無法讀取這張相片',
+    mon: '週一', tue: '週二', wed: '週三', thu: '週四', fri: '週五', sat: '週六', sun: '週日'
+  }
+};
+const CAT_ZH = {
+  Pork: '豬肉', Beef: '牛肉', Fish: '魚', Chicken: '雞', Vege: '菜', Soup: '湯', Egg: '蛋',
+  'Rice/Noodle': '飯/麵', Fruit: '水果', Other: '其他', Dairy: '奶', Staple: '主食'
+};
+const STYLE_ZH = {
+  Soup: '湯', Steam: '蒸', 'Stir-fry': '炒', Boil: '煮', Bake: '烤', 'Raw/fresh': '生食', Reheat: '翻熱', Other: '其他'
+};
+function t(key, vars) {
+  let s = (I18N[lang] && I18N[lang][key]) || I18N.en[key] || key;
+  if (vars) Object.keys(vars).forEach(k => { s = s.split('{' + k + '}').join(vars[k]); });
+  return s;
+}
+function displayCat(cat) {
+  if (!cat) return '';
+  if (lang === 'zh' && CAT_ZH[cat]) return CAT_ZH[cat];
+  return cat;
+}
+function displayStyle(style) {
+  if (!style) return '';
+  if (lang === 'zh' && STYLE_ZH[style]) return STYLE_ZH[style];
+  return style;
+}
+function canonCat(text) {
+  const s = String(text || '').trim();
+  if (!s) return '';
+  if (MEAL_CATS.includes(s)) return s;
+  if (lang === 'zh') {
+    for (const en of MEAL_CATS) if (CAT_ZH[en] === s) return en;
+  }
+  return s;
+}
+function applyI18n() {
+  document.documentElement.lang = lang === 'zh' ? 'zh-Hant' : 'en';
+  document.title = t('title');
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.getAttribute('data-i18n')); });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.setAttribute('placeholder', t(el.getAttribute('data-i18n-ph'))); });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => { el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'))); });
+  const enBtn = document.getElementById('btnLangEn');
+  const zhBtn = document.getElementById('btnLangZh');
+  if (enBtn) enBtn.classList.toggle('active', lang === 'en');
+  if (zhBtn) zhBtn.classList.toggle('active', lang === 'zh');
+}
+function updateGreet() {
+  const greet = hour < 12 ? t('goodMorning') : hour < 18 ? t('goodAfternoon') : t('goodEvening');
+  document.getElementById('greet').textContent = greet + ' · ' + clockNow.toLocaleDateString(uiLocale(), { weekday: 'long', day: 'numeric', month: 'long' });
+}
+function fillShopCat() {
+  const el = document.getElementById('shopCat');
+  if (!el) return;
+  const cur = el.value || 'Vege';
+  el.innerHTML = SHOP_CATS.map(o => `<option value="${esc(o)}" ${o===cur?'selected':''}>${esc(displayCat(o))}</option>`).join('');
+}
+function fillTimePresets() {
+  const list = document.getElementById('medTimePresets');
+  if (!list || list.children.length) return;
+  MED_TIMES.forEach(hm => {
+    const o = document.createElement('option');
+    o.value = hm;
+    list.appendChild(o);
+  });
+}
+function setLang(next) {
+  lang = next === 'zh' ? 'zh' : 'en';
+  localStorage.setItem(LANG_KEY, lang);
+  applyI18n();
+  updateGreet();
+  fillShopCat();
+  const syncEl = document.getElementById('syncStatus');
+  if (syncEl) {
+    const state = syncEl.classList.contains('synced') ? 'synced' : syncEl.classList.contains('offline') ? 'offline' : 'syncing';
+    setSyncStatus(state);
+  }
+  renderAll();
+}
+
 function updateDateUI() {
   const today = toYMD(clockNow);
-  const label = selectedDate === today ? `Today · ${formatShort(selectedDate)}` : formatLong(selectedDate);
+  const label = selectedDate === today ? `${t('today')} · ${formatShort(selectedDate)}` : formatLong(selectedDate);
   document.getElementById('selectedDateLabel').textContent = label;
-  document.getElementById('selectedDateSub').textContent = selectedDate === today
-    ? 'Editing today’s plan'
-    : `Editing ${formatShort(selectedDate)}`;
   document.getElementById('datePicker').value = selectedDate;
   document.getElementById('mealsDateHint').textContent = `· ${formatShort(selectedDate)}`;
   localStorage.setItem(SELECTED_DATE_KEY, selectedDate);
 }
 function setSelectedDate(ymd) {
+  if (mealEdit && mealEdit.date !== ymd) mealEdit = null;
   selectedDate = ymd;
   updateDateUI();
   renderDay();
@@ -859,29 +1099,32 @@ function copyFromPreviousDay() {
   const prevPlan = getDayPlan(prev);
   const curr = getDayPlan(selectedDate);
   if (dayHasContent(curr)) {
-    if (!confirm(`Replace ${formatShort(selectedDate)} with a copy of ${formatShort(prev)}?`)) return;
+    if (!confirm(t('confirmReplace', { date: formatShort(selectedDate), prev: formatShort(prev) }))) return;
   }
   const cloned = deepClone(prevPlan);
-  // Reset done flags for a fresh day plan
-  cloned.medicine = (cloned.medicine || []).map(m => ({ ...m, done: false }));
+  cloned.medicine = (cloned.medicine || []).map(m => {
+    const n = normalizeMed(m);
+    if (!n) return m;
+    n.doneTimes = n.times.map(() => false);
+    return n;
+  });
   cloned.shopping = (cloned.shopping || []).map(s => ({ ...s, done: false }));
-  cloned.tasks = (cloned.tasks || []).map(t => ({ ...t, done: false }));
+  cloned.tasks = (cloned.tasks || []).map(task => ({ ...task, done: false }));
   cloned.requests = (cloned.requests || []).map(r => ({ ...r, done: false }));
+  cloned.poop = false;
   setDayPlan(selectedDate, cloned);
   renderDay();
   renderWeekPlan();
-  toast(`Copied from ${formatShort(prev)}`);
+  toast(t('toastCopied', { date: formatShort(prev) }));
 }
 
 function setRole(role) {
+  if (role !== 'employer') mealEdit = null;
   document.body.classList.toggle('mode-employer', role === 'employer');
   document.body.classList.toggle('mode-helper', role === 'helper');
   document.getElementById('btnEmployer').classList.toggle('active', role === 'employer');
   document.getElementById('btnHelper').classList.toggle('active', role === 'helper');
   localStorage.setItem(ROLE_KEY, role);
-  document.getElementById('roleHint').textContent = role === 'employer'
-    ? 'Night plan: pick a date, fill meals, school pickup, shopping, medicine, and instructions.'
-    : 'Day update: pick a date, tick medicine/shopping/tasks, fridge notes, and requests for employer.';
   renderDay();
   renderSchool();
   renderWeekPlan();
@@ -914,20 +1157,21 @@ function renderSchool() {
     const row = normalizeSchoolDay(data[d.key]);
     const isSelected = d.key === highlightKey;
     const isToday = d.key === todayKey;
-    let badge = '';
-    if (isSelected) badge = '<span class="badge">Selected</span>';
-    else if (isToday) badge = '<span class="badge">Today</span>';
-    return `<tr>
-      <td><strong>${d.label}</strong>${badge}</td>
+    const badges = [];
+    if (isToday) badges.push(`<span class="badge badge-today">${esc(t('today'))}</span>`);
+    if (isSelected) badges.push(`<span class="badge">${esc(t('selected'))}</span>`);
+    const trClass = `${isToday ? 'is-today' : ''}${isSelected ? ' is-selected' : ''}`;
+    return `<tr class="${trClass.trim()}">
+      <td class="day-cell"><strong>${esc(t(d.key))}</strong>${badges.length ? `<div class="badges">${badges.join('')}</div>` : ''}</td>
       <td><select data-day="${d.key}" data-field="who1" onchange="updateSchool(this)" ${dis}>${whoOpts(row.who1)}</select></td>
       <td><select data-day="${d.key}" data-field="who2" onchange="updateSchool(this)" ${dis}>${whoOpts(row.who2)}</select></td>
       <td><select data-day="${d.key}" data-field="time" onchange="updateSchool(this)" ${dis}>${timeOpts(row.time)}</select></td>
     </tr>`;
   }).join('');
-  const t = normalizeSchoolDay(data[highlightKey]);
-  let line = `<strong>${formatShort(selectedDate)} · Pick up 1:</strong> ${esc(t.who1 || 'Not set')}`;
-  if (t.who2) line += ` · <strong>Pick up 2:</strong> ${esc(t.who2)}`;
-  line += ` @ <strong>${esc(t.time || '—')}</strong>`;
+  const pickup = normalizeSchoolDay(data[highlightKey]);
+  let line = `<strong>${formatShort(selectedDate)} · ${esc(t('pickup1'))}:</strong> ${esc(pickup.who1 || t('notSet'))}`;
+  if (pickup.who2) line += ` · <strong>${esc(t('pickup2'))}:</strong> ${esc(pickup.who2)}`;
+  line += ` @ <strong>${esc(pickup.time || '—')}</strong>`;
   document.getElementById('todayPickup').innerHTML = line;
 }
 function updateSchool(el) {
@@ -941,44 +1185,93 @@ function updateSchool(el) {
 }
 
 function styleOpts(selected) {
-  return COOK_STYLES.map(s => `<option value="${s}" ${selected===s?'selected':''}>${s || 'Style —'}</option>`).join('');
+  return COOK_STYLES.map(s => `<option value="${esc(s)}" ${selected===s?'selected':''}>${esc(s ? displayStyle(s) : t('styleNone'))}</option>`).join('');
+}
+function mealRowVisible(row) {
+  return !!(row.note || row.style) || !MEAL_CATS.includes(row.cat);
+}
+function startMealEdit(kind) {
+  if (!document.body.classList.contains('mode-employer')) return;
+  mealEdit = {
+    kind,
+    date: selectedDate,
+    rows: normalizeMeals(getDayPlan(selectedDate)[kind]).map(r => ({ cat: r.cat, note: r.note, style: r.style }))
+  };
+  renderMeals('dinner');
+  renderMeals('lunch');
+}
+function cancelMealEdit() {
+  const kind = mealEdit && mealEdit.kind;
+  mealEdit = null;
+  if (kind) renderMeals(kind);
+}
+function confirmMealEdit() {
+  if (!mealEdit || mealEdit.date !== selectedDate) return;
+  const kind = mealEdit.kind;
+  const rows = mealEdit.rows.map(r => ({
+    cat: canonCat(r.cat),
+    note: r.note || '',
+    style: r.style || ''
+  })).filter(r => r.cat);
+  mealEdit = null;
+  updateDayPlan(plan => { plan[kind] = rows; });
+  renderMeals(kind);
+  renderWeekPlan();
+}
+function onMealDraft(index, field, value) {
+  if (!mealEdit || !mealEdit.rows[index]) return;
+  mealEdit.rows[index][field] = value;
+}
+function deleteMealRow(index) {
+  if (!mealEdit) return;
+  mealEdit.rows.splice(index, 1);
+  renderMeals(mealEdit.kind);
+}
+function addMealRow() {
+  if (!mealEdit) return;
+  mealEdit.rows.push({ cat: '', note: '', style: '' });
+  renderMeals(mealEdit.kind);
 }
 function renderMeals(kind) {
-  const plan = getDayPlan(selectedDate);
-  const data = plan[kind];
   const el = document.getElementById(kind === 'dinner' ? 'dinnerRows' : 'lunchRows');
-  const locked = schoolLocked();
-  const dis = locked ? 'disabled' : '';
-  const cats = locked
-    ? MEAL_CATS.filter(cat => {
-        const row = data[cat] || { note: '', style: '' };
-        return !!(row.note || row.style);
-      })
-    : MEAL_CATS;
-  if (!cats.length) {
-    el.innerHTML = '<p class="sub">No meal plan from employer yet</p>';
+  if (!el) return;
+  const editing = mealEdit && mealEdit.kind === kind && mealEdit.date === selectedDate && document.body.classList.contains('mode-employer');
+  const saved = normalizeMeals(getDayPlan(selectedDate)[kind]);
+  const rows = editing ? mealEdit.rows : saved.filter(mealRowVisible);
+  if (!rows.length && !editing) {
+    el.innerHTML = `<p class="sub">${esc(t('noMeals'))}</p>` +
+      (document.body.classList.contains('mode-employer')
+        ? `<div class="meal-actions"><button type="button" class="btn btn-soft" onclick="startMealEdit('${kind}')">${esc(t('modify'))}</button></div>`
+        : '');
     return;
   }
-  el.innerHTML = cats.map(cat => {
-    const row = data[cat] || { note: '', style: '' };
-    return `<div class="meal-row">
-      <div class="meal-cat">${esc(cat)}</div>
+  const body = rows.map((row, i) => {
+    if (!editing) {
+      const bits = [displayStyle(row.style), row.note].filter(Boolean).join(' · ');
+      return `<div class="meal-row">
+        <div class="meal-cat">${esc(displayCat(row.cat))}</div>
+        <div class="meal-read">${esc(bits)}</div>
+      </div>`;
+    }
+    return `<div class="meal-row editing">
+      <input class="meal-cat-input" value="${esc(displayCat(row.cat))}" placeholder="${esc(t('category'))}" oninput="onMealDraft(${i}, 'cat', this.value)">
       <div class="meal-fields">
-        <input type="text" data-kind="${kind}" data-cat="${esc(cat)}" data-field="note" value="${esc(row.note)}" placeholder="Note / dish" oninput="updateMeal(this)" ${dis}>
-        <select data-kind="${kind}" data-cat="${esc(cat)}" data-field="style" onchange="updateMeal(this)" ${dis}>${styleOpts(row.style)}</select>
+        <input type="text" value="${esc(row.note)}" oninput="onMealDraft(${i}, 'note', this.value)">
+        <select onchange="onMealDraft(${i}, 'style', this.value)">${styleOpts(row.style)}</select>
       </div>
+      <button type="button" class="delete" onclick="deleteMealRow(${i})" aria-label="Delete">×</button>
     </div>`;
   }).join('');
-}
-function updateMeal(el) {
-  if (schoolLocked()) return;
-  const kind = el.dataset.kind;
-  const cat = el.dataset.cat;
-  updateDayPlan(plan => {
-    if (!plan[kind][cat]) plan[kind][cat] = { note: '', style: '' };
-    plan[kind][cat][el.dataset.field] = el.value;
-  });
-  renderWeekPlan();
+  const actions = editing
+    ? `<div class="meal-actions">
+        <button type="button" class="btn btn-soft" onclick="addMealRow()">${esc(t('addCategory'))}</button>
+        <button type="button" class="btn" onclick="confirmMealEdit()">${esc(t('confirm'))}</button>
+        <button type="button" class="btn btn-soft" onclick="cancelMealEdit()">${esc(t('cancel'))}</button>
+      </div>`
+    : (document.body.classList.contains('mode-employer')
+        ? `<div class="meal-actions"><button type="button" class="btn btn-soft" onclick="startMealEdit('${kind}')">${esc(t('modify'))}</button></div>`
+        : '');
+  el.innerHTML = body + actions;
 }
 
 function loadList(type) {
@@ -999,17 +1292,46 @@ function renderCheck(type, elId, empty, mapText) {
       <button class="delete" type="button" onclick="remove('${type}', ${i})">×</button>
     </div>`).join('');
 }
-function renderMedicine() { renderCheck('medicine', 'medicine', 'No medicine reminders'); }
-function renderShopping() {
-  renderCheck('shopping', 'shopping', 'Shopping list empty', i =>
-    `<span class="tag">${esc(i.cat||'Other')}</span> ${esc(i.text)}`);
+function safePhotoSrc(photo) {
+  return typeof photo === 'string' && /^data:image\/(?:jpeg|jpg|png|webp);base64,[a-z0-9+/=]+$/i.test(photo) ? photo : '';
 }
-function renderTasks() { renderCheck('tasks', 'tasks', 'No tasks'); }
+function renderMedicine() {
+  const el = document.getElementById('medicine');
+  if (!el) return;
+  const list = (loadList('medicine') || []).map(normalizeMed).filter(Boolean);
+  if (!list.length) { el.innerHTML = `<p class="sub">${esc(t('noMeds'))}</p>`; return; }
+  el.innerHTML = list.map((m, i) => {
+    const src = safePhotoSrc(m.photo);
+    const doses = m.times.map((tm, ti) => `
+      <label class="dose">
+        <input type="checkbox" ${m.doneTimes[ti] ? 'checked' : ''} onchange="toggleMedDose(${i}, ${ti})">
+        <input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" value="${esc(tm)}" placeholder="08:15" onblur="setMedTime(${i}, ${ti}, this.value)">
+      </label>`).join('');
+    return `<div class="item med-item">
+      ${src ? `<img class="med-thumb" src="${src}" alt="">` : ''}
+      <div class="med-body">
+        <div class="med-label">${esc(m.label)}</div>
+        <div class="med-doses">${doses}</div>
+        <div class="med-meta">
+          <label class="field">${esc(t('timesPerDay'))}</label>
+          <input type="number" min="1" max="8" value="${m.timesPerDay}" onchange="setMedCount(${i}, this.value)">
+          <label class="med-photo-btn">${esc(t('photo'))}<input type="file" accept="image/*" onchange="setMedPhoto(${i}, this)"></label>
+        </div>
+      </div>
+      <button class="delete" type="button" onclick="removeMed(${i})">×</button>
+    </div>`;
+  }).join('');
+}
+function renderShopping() {
+  renderCheck('shopping', 'shopping', t('shopEmpty'), i =>
+    `<span class="tag">${esc(displayCat(i.cat||'Other'))}</span> ${esc(i.text)}`);
+}
+function renderTasks() { renderCheck('tasks', 'tasks', t('noTasks')); }
 function renderNotes() {
   const list = loadList('notes');
   document.getElementById('notes').innerHTML = list.length
     ? list.map((n,i)=>`<div class="note-item"><span>${esc(n)}</span><button class="delete" type="button" onclick="remove('notes',${i})">×</button></div>`).join('')
-    : '<p class="sub">No notes</p>';
+    : `<p class="sub">${esc(t('noNotes'))}</p>`;
 }
 function renderRequests() {
   const list = loadList('requests');
@@ -1021,24 +1343,139 @@ function renderRequests() {
         </label>
         <button class="delete" type="button" onclick="remove('requests',${i})">×</button>
       </div>`).join('')
-    : '<p class="sub">No helper updates yet</p>';
+    : `<p class="sub">${esc(t('noReqs'))}</p>`;
 }
 function renderInstructions() {
   const text = getDayPlan(selectedDate).instructions || '';
   document.getElementById('instructions').value = text;
-  document.getElementById('instructionsRead').textContent = text || 'No instructions from employer yet.';
+  document.getElementById('instructionsRead').textContent = text || t('noInstr');
+}
+function renderPoop() {
+  const el = document.getElementById('poopCheck');
+  if (!el) return;
+  el.checked = !!getDayPlan(selectedDate).poop;
+}
+function savePoop(checked) {
+  updateDayPlan(plan => { plan.poop = !!checked; });
+  renderWeekPlan();
 }
 function saveInstructions() {
   updateDayPlan(plan => { plan.instructions = document.getElementById('instructions').value; });
   renderWeekPlan();
 }
 
-function addMed() {
+function syncMedTimeFields() {
+  const wrap = document.getElementById('medTimeFields');
+  const countEl = document.getElementById('medCount');
+  if (!wrap || !countEl) return;
+  const count = Math.min(8, Math.max(1, Number(countEl.value) || 1));
+  countEl.value = count;
+  const existing = [...wrap.querySelectorAll('input')].map(el => el.value);
+  const suggested = suggestTimes(count);
+  wrap.innerHTML = Array.from({ length: count }, (_, i) =>
+    `<input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" placeholder="08:15" value="${esc(existing[i] || suggested[i] || '')}">`
+  ).join('');
+}
+function compressImageFile(file) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const maxEdge = 320;
+      const scale = Math.min(1, maxEdge / Math.max(img.width, img.height));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.max(1, Math.round(img.width * scale));
+      canvas.height = Math.max(1, Math.round(img.height * scale));
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      URL.revokeObjectURL(url);
+      let quality = 0.62;
+      let data = canvas.toDataURL('image/jpeg', quality);
+      while (data.length > 90000 && quality > 0.35) {
+        quality -= 0.08;
+        data = canvas.toDataURL('image/jpeg', quality);
+      }
+      resolve(data);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('image')); };
+    img.src = url;
+  });
+}
+function medsNow() {
+  return (loadList('medicine') || []).map(normalizeMed).filter(Boolean);
+}
+function saveMeds(list) {
+  saveList('medicine', list);
+  renderMedicine();
+  renderWeekPlan();
+}
+function toggleMedDose(index, timeIndex) {
+  const list = medsNow();
+  if (!list[index]) return;
+  list[index].doneTimes[timeIndex] = !list[index].doneTimes[timeIndex];
+  saveMeds(list);
+}
+function setMedTime(index, timeIndex, value) {
+  const norm = normalizeTime(value);
+  if (!norm) { toast(t('medInvalid')); renderMedicine(); return; }
+  const list = medsNow();
+  if (!list[index]) return;
+  list[index].times[timeIndex] = norm;
+  saveMeds(list);
+}
+function setMedCount(index, count) {
+  const list = medsNow();
+  const m = list[index];
+  if (!m) return;
+  count = Math.min(8, Math.max(1, Number(count) || 1));
+  const suggested = suggestTimes(count);
+  const times = m.times.slice(0, count);
+  const done = m.doneTimes.slice(0, count);
+  while (times.length < count) {
+    times.push(suggested[times.length] || '');
+    done.push(false);
+  }
+  m.timesPerDay = count;
+  m.times = times;
+  m.doneTimes = done;
+  saveMeds(list);
+}
+async function setMedPhoto(index, input) {
+  const file = input.files && input.files[0];
+  if (!file) return;
+  try {
+    const photo = await compressImageFile(file);
+    const list = medsNow();
+    if (!list[index]) return;
+    list[index].photo = photo;
+    saveMeds(list);
+  } catch {
+    toast(t('photoFail'));
+  }
+}
+function removeMed(index) {
+  const list = medsNow();
+  list.splice(index, 1);
+  saveMeds(list);
+}
+async function addMed() {
   const label = document.getElementById('medInput').value.trim() || 'Chacha medicine';
-  const time = document.getElementById('medTime').value;
-  const list = loadList('medicine');
-  list.push({ text: `${time} ${label}`, done: false });
-  saveList('medicine', list); renderMedicine(); renderWeekPlan();
+  const inputs = [...document.querySelectorAll('#medTimeFields input')];
+  const times = inputs.map(el => normalizeTime(el.value));
+  if (!times.length || times.some(tm => !tm)) { toast(t('medInvalid')); return; }
+  let photo = '';
+  const file = document.getElementById('medPhoto').files && document.getElementById('medPhoto').files[0];
+  if (file) {
+    try { photo = await compressImageFile(file); }
+    catch { toast(t('photoFail')); return; }
+  }
+  const list = medsNow();
+  list.push({ label, photo, timesPerDay: times.length, times, doneTimes: times.map(() => false) });
+  document.getElementById('medInput').value = 'Chacha medicine';
+  document.getElementById('medPhoto').value = '';
+  document.getElementById('medTimeFields').innerHTML = '';
+  document.getElementById('medCount').value = '1';
+  syncMedTimeFields();
+  saveMeds(list);
 }
 function addShop() {
   const text = document.getElementById('shopInput').value.trim();
@@ -1077,69 +1514,104 @@ function remove(type, i) {
   renderWeekPlan();
 }
 
-function filledMeals(kind) {
-  const data = getDayPlan(selectedDate)[kind];
-  return MEAL_CATS.filter(c => (data[c].note || data[c].style)).map(c => {
-    const r = data[c];
-    let s = `- ${c}`;
+function mealLinesFrom(plan, kind) {
+  return normalizeMeals(plan[kind]).filter(r => r.note || r.style).map(r => {
+    let s = `- ${r.cat}`;
     if (r.style) s += ` · ${r.style}`;
     if (r.note) s += `: ${r.note}`;
     return s;
   });
 }
-
-function exportSummary(role) {
-  const plan = getDayPlan(selectedDate);
-  const medicine = plan.medicine, shopping = plan.shopping, tasks = plan.tasks;
-  const notes = plan.notes, requests = plan.requests, school = loadSchool();
-  const instructions = (plan.instructions || '').trim();
-  const dayKey = weekdayKeyFromYMD(selectedDate);
-  const tn = normalizeSchoolDay(school[dayKey]);
-  const dateStr = formatLong(selectedDate);
-  let text = `📅 ${dateStr}\n🏫 Pick up 1: ${tn.who1 || 'Not set'}`;
-  if (tn.who2) text += ` · Pick up 2: ${tn.who2}`;
-  text += ` @ ${tn.time || '—'}\n\n`;
-  if (role === 'employer') {
-    text += `👨‍👩‍👧 Night plan for Lenne\n\n`;
-    if (instructions) text += `📌 Instructions:\n${instructions}\n\n`;
-    const lunch = filledMeals('lunch');
-    const dinner = filledMeals('dinner');
-    if (lunch.length) text += `🥗 Lunch:\n${lunch.join('\n')}\n\n`;
-    if (dinner.length) text += `🍽️ Dinner:\n${dinner.join('\n')}\n\n`;
-    const med = medicine.filter(i => !i.done);
-    if (med.length) text += `💊 Medicine:\n${med.map(m => `- ${m.text}`).join('\n')}\n\n`;
-    const shop = shopping.filter(i => !i.done);
-    if (shop.length) text += `🛒 Please buy:\n${shop.map(s => `- [${s.cat||'Other'}] ${s.text}`).join('\n')}\n\n`;
-    const task = tasks.filter(i => !i.done);
-    if (task.length) text += `✅ Tasks:\n${task.map(t => `- ${t.text}`).join('\n')}\n\n`;
-    text += `🏫 School pickup this week:\n`;
-    DAYS.forEach(d => {
-      const r = normalizeSchoolDay(school[d.key]);
-      if (r.who1 || r.who2 || r.time) {
-        let line = `- ${d.label}: Pick up 1 ${r.who1 || '—'}`;
-        if (r.who2) line += ` · Pick up 2 ${r.who2}`;
-        line += ` @ ${r.time || '—'}`;
-        text += line + `\n`;
-      }
+function medGroups(meds) {
+  const done = [];
+  const open = [];
+  (meds || []).forEach(raw => {
+    const m = normalizeMed(raw);
+    if (!m) return;
+    const doneTimes = [];
+    const openTimes = [];
+    m.times.forEach((tm, i) => {
+      if (!tm) return;
+      (m.doneTimes[i] ? doneTimes : openTimes).push(tm);
     });
-    if (notes.length) text += `\n📝 Fridge / notes:\n${notes.map(n => `- ${n}`).join('\n')}\n`;
-  } else {
-    text += `🙋 Day update from Lenne\n\n`;
-    const doneMed = medicine.filter(i => i.done), openMed = medicine.filter(i => !i.done);
-    if (doneMed.length) text += `💊 Medicine done:\n${doneMed.map(m => `- ${m.text}`).join('\n')}\n\n`;
-    if (openMed.length) text += `💊 Still pending:\n${openMed.map(m => `- ${m.text}`).join('\n')}\n\n`;
-    const doneShop = shopping.filter(i => i.done), openShop = shopping.filter(i => !i.done);
-    if (doneShop.length) text += `🛒 Bought:\n${doneShop.map(s => `- [${s.cat||'Other'}] ${s.text}`).join('\n')}\n\n`;
-    if (openShop.length) text += `🛒 Still need:\n${openShop.map(s => `- [${s.cat||'Other'}] ${s.text}`).join('\n')}\n\n`;
-    const doneTasks = tasks.filter(i => i.done), openTasks = tasks.filter(i => !i.done);
-    if (doneTasks.length) text += `✅ Done:\n${doneTasks.map(t => `- ${t.text}`).join('\n')}\n\n`;
-    if (openTasks.length) text += `✅ Open:\n${openTasks.map(t => `- ${t.text}`).join('\n')}\n\n`;
-    const openReq = requests.filter(i => !i.done);
-    if (openReq.length) text += `🙋 Requests / updates:\n${openReq.map(r => `- ${r.text}`).join('\n')}\n\n`;
-    if (notes.length) text += `📝 Fridge / notes:\n${notes.map(n => `- ${n}`).join('\n')}\n`;
+    if (doneTimes.length) done.push(`- ${m.label}: ${doneTimes.join(', ')}`);
+    if (openTimes.length) open.push(`- ${m.label}: ${openTimes.join(', ')}`);
+  });
+  return { done, open };
+}
+function pickupLine(ymd, school) {
+  const tn = normalizeSchoolDay(school[weekdayKeyFromYMD(ymd)]);
+  let line = `🏫 Pick up 1: ${tn.who1 || 'Not set'}`;
+  if (tn.who2) line += ` · Pick up 2: ${tn.who2}`;
+  line += ` @ ${tn.time || '—'}`;
+  return { line, relevant: !!(tn.who1 || tn.who2 || tn.time) };
+}
+function buildDayWhatsAppText(ymd, role, opts) {
+  const card = !!(opts && opts.card);
+  const plan = (opts && opts.plan) || peekDayPlan(ymd) || emptyDayPlan();
+  const school = loadSchool();
+  const pickup = pickupLine(ymd, school);
+  const instructions = (plan.instructions || '').trim();
+  const lunch = mealLinesFrom(plan, 'lunch');
+  const dinner = mealLinesFrom(plan, 'dinner');
+  const meds = medGroups(plan.medicine);
+  const notes = plan.notes || [];
+  const poop = plan.poop === true;
+  const chunks = [];
+  if (role === 'employer') {
+    if (!card) {
+      chunks.push(`📅 ${formatLong(ymd, 'en-GB')}\n${pickup.line}`);
+      chunks.push('👨‍👩‍👧 Night plan for Lenne');
+    } else if (pickup.relevant) {
+      chunks.push(pickup.line);
+    }
+    if (instructions) chunks.push(`📌 Instructions:\n${instructions}`);
+    if (lunch.length) chunks.push(`🥗 Lunch:\n${lunch.join('\n')}`);
+    if (dinner.length) chunks.push(`🍽️ Dinner:\n${dinner.join('\n')}`);
+    if (meds.open.length) chunks.push(`💊 Medicine:\n${meds.open.join('\n')}`);
+    if (poop) chunks.push('💩 BB poop today: yes');
+    const shop = (plan.shopping || []).filter(i => !i.done);
+    if (shop.length) chunks.push(`🛒 Please buy:\n${shop.map(s => `- [${s.cat || 'Other'}] ${s.text}`).join('\n')}`);
+    const tasks = (plan.tasks || []).filter(i => !i.done);
+    if (tasks.length) chunks.push(`✅ Tasks:\n${tasks.map(task => `- ${task.text}`).join('\n')}`);
+    if (!card) {
+      let schoolBlock = '🏫 School pickup this week:';
+      DAYS.forEach(d => {
+        const r = normalizeSchoolDay(school[d.key]);
+        if (r.who1 || r.who2 || r.time) {
+          let line = `- ${d.label}: Pick up 1 ${r.who1 || '—'}`;
+          if (r.who2) line += ` · Pick up 2 ${r.who2}`;
+          line += ` @ ${r.time || '—'}`;
+          schoolBlock += `\n${line}`;
+        }
+      });
+      chunks.push(schoolBlock);
+    }
+    if (notes.length) chunks.push(`📝 Fridge / notes:\n${notes.map(n => `- ${n}`).join('\n')}`);
+    return chunks.join('\n\n').trim();
   }
-  const out = text.trim();
-  navigator.clipboard.writeText(out).then(() => toast(role === 'employer' ? 'Night plan copied' : 'Day update copied'))
+  chunks.push(`📅 ${formatLong(ymd, 'en-GB')}\n${pickup.line}`);
+  chunks.push('🙋 Day update from Lenne');
+  if (meds.done.length) chunks.push(`💊 Medicine done:\n${meds.done.join('\n')}`);
+  if (meds.open.length) chunks.push(`💊 Still pending:\n${meds.open.join('\n')}`);
+  const doneShop = (plan.shopping || []).filter(i => i.done);
+  const openShop = (plan.shopping || []).filter(i => !i.done);
+  if (doneShop.length) chunks.push(`🛒 Bought:\n${doneShop.map(s => `- [${s.cat || 'Other'}] ${s.text}`).join('\n')}`);
+  if (openShop.length) chunks.push(`🛒 Still need:\n${openShop.map(s => `- [${s.cat || 'Other'}] ${s.text}`).join('\n')}`);
+  const doneTasks = (plan.tasks || []).filter(i => i.done);
+  const openTasks = (plan.tasks || []).filter(i => !i.done);
+  if (doneTasks.length) chunks.push(`✅ Done:\n${doneTasks.map(task => `- ${task.text}`).join('\n')}`);
+  if (openTasks.length) chunks.push(`✅ Open:\n${openTasks.map(task => `- ${task.text}`).join('\n')}`);
+  const openReq = (plan.requests || []).filter(i => !i.done);
+  if (openReq.length) chunks.push(`🙋 Requests / updates:\n${openReq.map(r => `- ${r.text}`).join('\n')}`);
+  if (poop) chunks.push('💩 BB poop today: yes');
+  if (notes.length) chunks.push(`📝 Fridge / notes:\n${notes.map(n => `- ${n}`).join('\n')}`);
+  return chunks.join('\n\n').trim();
+}
+function exportSummary(role) {
+  getDayPlan(selectedDate);
+  const out = buildDayWhatsAppText(selectedDate, role);
+  navigator.clipboard.writeText(out).then(() => toast(role === 'employer' ? t('toastNight') : t('toastDay')))
     .catch(() => prompt('Copy this text:', out));
 }
 
@@ -1156,34 +1628,6 @@ function peekDayPlan(ymd) {
   if (!store.days || !store.days[ymd]) return null;
   return normalizeDayPlan(store.days[ymd]);
 }
-function summarizeDayPlan(plan) {
-  if (!plan || !dayHasContent(plan)) return null;
-  const lines = [];
-  const dinnerBits = MEAL_CATS.filter(c => plan.dinner[c] && plan.dinner[c].note)
-    .map(c => `${c}: ${plan.dinner[c].note}`);
-  const lunchBits = MEAL_CATS.filter(c => plan.lunch[c] && plan.lunch[c].note)
-    .map(c => `${c}: ${plan.lunch[c].note}`);
-  if (dinnerBits.length) lines.push(`Dinner · ${dinnerBits.join('; ')}`);
-  if (lunchBits.length) lines.push(`Lunch · ${lunchBits.join('; ')}`);
-  const meds = (plan.medicine || []).map(m => m.text).filter(Boolean);
-  if (meds.length) lines.push(`Med · ${meds.join(', ')}`);
-  const instr = (plan.instructions || '').trim().replace(/\s+/g, ' ');
-  if (instr) {
-    const snip = instr.length > 80 ? instr.slice(0, 77) + '…' : instr;
-    lines.push(`Note · ${snip}`);
-  }
-  if (!lines.length) {
-    // Has non-default tasks/shopping/etc but no meal/med/instructions
-    const extras = [];
-    if (plan.shopping && plan.shopping.length) extras.push(`${plan.shopping.length} shop`);
-    if (plan.tasks && plan.tasks.some(t => t.done || !['Check fridge for next 2–3 days','Prepare daily soup for Chacha','Report what is running low'].includes(t.text)))
-      extras.push('tasks');
-    if (plan.notes && plan.notes.length) extras.push(`${plan.notes.length} notes`);
-    if (plan.requests && plan.requests.length) extras.push(`${plan.requests.length} updates`);
-    if (extras.length) lines.push(extras.join(' · '));
-  }
-  return lines.length ? lines : null;
-}
 function renderWeekPlan() {
   const mon = mondayOfWeek(selectedDate);
   const days = [];
@@ -1196,19 +1640,16 @@ function renderWeekPlan() {
   if (!el) return;
   el.innerHTML = days.map(ymd => {
     const plan = peekDayPlan(ymd);
-    const summary = summarizeDayPlan(plan);
+    const text = plan && dayHasContent(plan) ? buildDayWhatsAppText(ymd, 'employer', { card: true, plan }) : '';
     const isSelected = ymd === selectedDate;
     const isToday = ymd === today;
     let badges = '';
-    if (isSelected) badges += '<span class="badge">Selected</span>';
-    else if (isToday) badges += '<span class="badge">Today</span>';
-    let body;
-    if (!summary) {
-      body = '<div class="wd-summary wd-empty">No plan yet</div>';
-    } else {
-      body = '<div class="wd-summary">' + summary.map(s => `<div class="line">${esc(s)}</div>`).join('') + '</div>';
-    }
-    return `<button type="button" class="week-day${isSelected ? ' selected' : ''}" onclick="setSelectedDate('${ymd}')">
+    if (isToday) badges += `<span class="badge badge-today">${esc(t('today'))}</span>`;
+    if (isSelected) badges += `<span class="badge">${esc(t('selected'))}</span>`;
+    const body = text
+      ? `<div class="wd-summary wa">${esc(text)}</div>`
+      : `<div class="wd-summary wd-empty">${esc(t('noPlan'))}</div>`;
+    return `<button type="button" class="week-day${isSelected ? ' selected' : ''}${isToday ? ' is-today' : ''}" onclick="setSelectedDate('${ymd}')">
       <div class="wd-label">${esc(formatShort(ymd))}${badges}</div>
       ${body}
     </button>`;
@@ -1217,15 +1658,17 @@ function renderWeekPlan() {
 
 function clearThisDay() {
   const label = formatShort(selectedDate);
-  if (!confirm(`Clear the plan for ${label}? School pickup (weekly) stays.`)) return;
+  if (!confirm(t('confirmClear', { date: label }))) return;
+  mealEdit = null;
   setDayPlan(selectedDate, emptyDayPlan());
   renderDay();
   renderWeekPlan();
-  toast('Cleared this day');
+  toast(t('toastCleared'));
 }
 
 function renderDay() {
   renderMeals('dinner'); renderMeals('lunch'); renderMedicine();
+  renderPoop();
   renderShopping(); renderTasks(); renderNotes(); renderRequests(); renderInstructions();
 }
 function renderAll() {
@@ -1247,8 +1690,9 @@ if (!hadLocalStore) {
   const migrated = migrateFromV5();
   if (!migrated) saveStore(emptyStore());
 }
-updateDateUI();
-renderAll();
+fillTimePresets();
+syncMedTimeFields();
+setLang(lang);
 setRole(localStorage.getItem(ROLE_KEY) || 'employer');
 initSync();
 </script>
