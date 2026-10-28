@@ -194,7 +194,7 @@ body.mode-helper .role-bar button { background: rgba(255,255,255,0.08); color: v
 }
 .form-grid { display: grid; gap: 6px; margin-top: 8px; }
 .form-grid.two { grid-template-columns: 1fr 1fr; }
-label.field { display: block; font-size: 0.72rem; color: var(--muted); font-weight: 600; margin-bottom: 3px; }
+label.field, .med-file > .field { display: block; font-size: 0.72rem; color: var(--muted); font-weight: 600; margin-bottom: 3px; }
 select, input[type="text"], textarea {
   width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box;
   padding: 9px 10px; border: 1px solid var(--input-border); border-radius: 12px;
@@ -254,18 +254,68 @@ textarea { min-height: 72px; resize: vertical; }
 .meal-row.editing { grid-template-columns: minmax(72px, 100px) 1fr auto; }
 .meal-cat-input { font-weight: 700; padding: 8px; }
 .meal-read { font-size: 0.88rem; padding-top: 8px; color: var(--text); }
-.med-form { margin-top: 8px; }
-.med-time-fields, .med-doses { display: flex; flex-wrap: wrap; gap: 6px; }
-.med-time-input { width: 84px; padding: 8px; }
-.med-item { align-items: flex-start; }
-.med-body { flex: 1; min-width: 0; }
-.med-label { font-weight: 700; }
-.med-thumb { width: 44px; height: 44px; object-fit: cover; border-radius: 10px; flex-shrink: 0; background: var(--soft); }
-.dose { display: inline-flex; align-items: center; gap: 4px; }
-.med-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 6px; }
-.med-meta input[type="number"] { width: 72px; }
-.med-photo-btn { font-size: 0.75rem; font-weight: 700; color: var(--brown); cursor: pointer; }
-.med-photo-btn input { display: block; margin-top: 3px; font-size: 0.72rem; max-width: 180px; }
+#medicine { display: grid; gap: 8px; }
+.med-block {
+  display: grid; gap: 8px; padding: 10px; border-radius: 14px;
+  background: var(--meal-row-bg); min-width: 0;
+}
+.med-head {
+  display: flex; align-items: center; gap: 8px; min-width: 0;
+}
+.med-thumb {
+  width: 36px; height: 36px; object-fit: cover; border-radius: 8px;
+  flex: 0 0 36px; background: var(--soft);
+}
+.med-label {
+  flex: 1; min-width: 0; font-weight: 700; font-size: 0.92rem;
+  line-height: 1.25; word-break: break-word;
+}
+.med-head .delete { flex: 0 0 auto; }
+.med-doses { display: grid; gap: 6px; }
+.med-dose {
+  display: grid; grid-template-columns: 22px minmax(0, 1fr);
+  gap: 8px; align-items: center; min-width: 0;
+}
+.med-dose-edit { grid-template-columns: minmax(0, 1fr); }
+.med-dose input[type="checkbox"] {
+  width: 18px; height: 18px; margin: 0; accent-color: var(--primary);
+}
+.med-time-wrap { position: relative; min-width: 0; }
+.med-time-input { width: 100%; min-width: 0; padding: 8px 10px; }
+.med-dose.done .med-time-input { background: var(--soft); color: var(--muted); }
+.med-dose.done .med-time-wrap::after {
+  content: ""; position: absolute; left: 12px; right: 12px; top: 50%;
+  height: 1px; background: var(--muted); pointer-events: none;
+}
+.med-controls {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px; align-items: end;
+}
+.med-field { min-width: 0; }
+.med-head .med-field { flex: 1; min-width: 0; }
+.med-controls input[type="number"] {
+  width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box;
+  padding: 9px 10px; border: 1px solid var(--input-border); border-radius: 12px;
+  font-size: 0.9rem; background: var(--input-bg); color: var(--text); font-family: inherit;
+}
+.med-file {
+  position: relative; display: grid; gap: 0; min-width: 0; cursor: pointer;
+}
+.med-file-btn {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 38px; padding: 8px 10px; border-radius: 12px;
+  border: 1px solid var(--input-border); background: var(--input-bg);
+  color: var(--brown); font-size: 0.8rem; font-weight: 700; white-space: nowrap;
+}
+.med-file input[type="file"] {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  opacity: 0; cursor: pointer; font-size: 0;
+}
+.med-form {
+  display: grid; gap: 8px; margin-top: 10px; padding: 10px;
+  border: 1.5px dashed var(--brown); border-radius: 14px; background: transparent;
+}
+.med-form .btn-block { margin-top: 0; }
 .poop-row { display: flex; align-items: center; gap: 10px; font-weight: 700; }
 .week-day .wd-summary.wa { white-space: pre-wrap; color: var(--text); font-size: 0.75rem; line-height: 1.4; }
 .meal-rows { display: grid; gap: 6px; }
@@ -390,20 +440,28 @@ body.mode-helper .toast { background: #f2e8dc; color: #322b24; }
   <h3><span class="icon">💊</span> <span data-i18n="medTitle">Medicine time</span></h3>
   <div id="medicine"></div>
   <div class="med-form">
-    <div class="form-grid two">
-      <div>
-        <label class="field" data-i18n="label">Label</label>
+    <div class="med-head">
+      <img id="medPhotoPreview" class="med-thumb" alt="" hidden>
+      <div class="med-field">
+        <label class="field" for="medInput" data-i18n="label">Label</label>
         <input type="text" id="medInput" value="Chacha medicine">
       </div>
-      <div>
-        <label class="field" data-i18n="timesPerDay">Times per day</label>
+    </div>
+    <div class="med-field">
+      <label class="field" data-i18n="time">Time</label>
+      <div id="medTimeFields" class="med-doses"></div>
+    </div>
+    <div class="med-controls">
+      <div class="med-field">
+        <label class="field" for="medCount" data-i18n="timesPerDay">Times per day</label>
         <input type="number" id="medCount" min="1" max="8" value="1" oninput="syncMedTimeFields()">
       </div>
+      <label class="med-file">
+        <span class="field" data-i18n="photo">Photo</span>
+        <span class="med-file-btn" data-i18n="photo">Photo</span>
+        <input type="file" id="medPhoto" accept="image/*" data-i18n-aria="photo" aria-label="Photo" onchange="previewAddMedPhoto(this)">
+      </label>
     </div>
-    <label class="field" data-i18n="time">Time</label>
-    <div id="medTimeFields" class="med-time-fields"></div>
-    <label class="field" data-i18n="photo">Photo</label>
-    <input type="file" id="medPhoto" accept="image/*">
     <button type="button" class="btn btn-soft btn-block" data-i18n="addMed" onclick="addMed()">Add medicine</button>
   </div>
 </div>
@@ -1070,6 +1128,7 @@ function setLang(next) {
     setSyncStatus(state);
   }
   renderAll();
+  syncMedTimeFields();
 }
 
 function updateDateUI() {
@@ -1303,22 +1362,30 @@ function renderMedicine() {
   el.innerHTML = list.map((m, i) => {
     const src = safePhotoSrc(m.photo);
     const doses = m.times.map((tm, ti) => `
-      <label class="dose">
-        <input type="checkbox" ${m.doneTimes[ti] ? 'checked' : ''} onchange="toggleMedDose(${i}, ${ti})">
-        <input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" value="${esc(tm)}" placeholder="08:15" onblur="setMedTime(${i}, ${ti}, this.value)">
-      </label>`).join('');
-    return `<div class="item med-item">
-      ${src ? `<img class="med-thumb" src="${src}" alt="">` : ''}
-      <div class="med-body">
-        <div class="med-label">${esc(m.label)}</div>
-        <div class="med-doses">${doses}</div>
-        <div class="med-meta">
-          <label class="field">${esc(t('timesPerDay'))}</label>
-          <input type="number" min="1" max="8" value="${m.timesPerDay}" onchange="setMedCount(${i}, this.value)">
-          <label class="med-photo-btn">${esc(t('photo'))}<input type="file" accept="image/*" onchange="setMedPhoto(${i}, this)"></label>
+      <div class="med-dose${m.doneTimes[ti] ? ' done' : ''}">
+        <input type="checkbox" ${m.doneTimes[ti] ? 'checked' : ''} aria-label="${esc(t('time'))} ${esc(tm)}" onchange="toggleMedDose(${i}, ${ti})">
+        <div class="med-time-wrap">
+          <input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" autocomplete="off" spellcheck="false" value="${esc(tm)}" placeholder="08:15" aria-label="${esc(t('time'))}" onblur="setMedTime(${i}, ${ti}, this.value)" onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur();}">
         </div>
+      </div>`).join('');
+    return `<div class="med-block">
+      <div class="med-head">
+        ${src ? `<img class="med-thumb" src="${src}" alt="">` : ''}
+        <div class="med-label">${esc(m.label)}</div>
+        <button class="delete" type="button" onclick="removeMed(${i})" aria-label="Delete">×</button>
       </div>
-      <button class="delete" type="button" onclick="removeMed(${i})">×</button>
+      <div class="med-doses">${doses}</div>
+      <div class="med-controls">
+        <div class="med-field">
+          <label class="field" for="medCount${i}">${esc(t('timesPerDay'))}</label>
+          <input type="number" id="medCount${i}" min="1" max="8" value="${m.timesPerDay}" aria-label="${esc(t('timesPerDay'))}" onchange="setMedCount(${i}, this.value)">
+        </div>
+        <label class="med-file">
+          <span class="field">${esc(t('photo'))}</span>
+          <span class="med-file-btn">${esc(t('photo'))}</span>
+          <input type="file" accept="image/*" aria-label="${esc(t('photo'))}" onchange="setMedPhoto(${i}, this)">
+        </label>
+      </div>
     </div>`;
   }).join('');
 }
@@ -1372,9 +1439,28 @@ function syncMedTimeFields() {
   countEl.value = count;
   const existing = [...wrap.querySelectorAll('input')].map(el => el.value);
   const suggested = suggestTimes(count);
+  const timeLabel = esc(t('time'));
   wrap.innerHTML = Array.from({ length: count }, (_, i) =>
-    `<input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" placeholder="08:15" value="${esc(existing[i] || suggested[i] || '')}">`
+    `<div class="med-dose med-dose-edit">
+      <input type="text" class="med-time-input" list="medTimePresets" inputmode="numeric" autocomplete="off" spellcheck="false" placeholder="08:15" aria-label="${timeLabel}" value="${esc(existing[i] || suggested[i] || '')}">
+    </div>`
   ).join('');
+}
+function previewAddMedPhoto(input) {
+  const img = document.getElementById('medPhotoPreview');
+  if (!img) return;
+  const file = input.files && input.files[0];
+  if (!file) {
+    img.hidden = true;
+    img.removeAttribute('src');
+    return;
+  }
+  const reader = new FileReader();
+  reader.onload = () => {
+    img.src = reader.result;
+    img.hidden = false;
+  };
+  reader.readAsDataURL(file);
 }
 function compressImageFile(file) {
   return new Promise((resolve, reject) => {
@@ -1472,6 +1558,11 @@ async function addMed() {
   list.push({ label, photo, timesPerDay: times.length, times, doneTimes: times.map(() => false) });
   document.getElementById('medInput').value = 'Chacha medicine';
   document.getElementById('medPhoto').value = '';
+  const preview = document.getElementById('medPhotoPreview');
+  if (preview) {
+    preview.hidden = true;
+    preview.removeAttribute('src');
+  }
   document.getElementById('medTimeFields').innerHTML = '';
   document.getElementById('medCount').value = '1';
   syncMedTimeFields();
